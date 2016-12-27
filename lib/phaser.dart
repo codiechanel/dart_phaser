@@ -20,6 +20,8 @@ import "dart:html"
 import "dart:typed_data" show ByteBuffer, Uint8List, Uint32List, Float32List;
 import "package:func/func.dart";
 import "dart:web_gl" show Framebuffer;
+import 'microsoft.dart';
+import 'p2.dart' as p2;
 import "pixi.dart" as PIXI;
 import "pixi.dart";
 
@@ -9006,7 +9008,7 @@ class Debug {
   external set renderShadow(bool v);
   external Image get sprite;
   external set sprite(Image v);
-  external void AStar(AStar astar, num x, num y, bool showVisited);
+  external void AStar(AStarPath astar, num x, num y, bool showVisited);
   external void boot();
   external void body(Sprite sprite, [String color, bool filled]);
   external void bodyInfo(Sprite sprite, num x, num y, [String color]);
