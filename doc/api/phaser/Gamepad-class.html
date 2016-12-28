@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the Gamepad class from the phaser library, for the Dart programming language.">
+  <title>Gamepad class - phaser library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">phaser</a></li>
+            <li><a href="phaser/phaser-library.html">phaser</a></li>
+            <li class="self-crumb">Gamepad</li>
+          </ol>
+          <div class="self-name">Gamepad</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">phaser</a></li>
+          <li><a href="phaser/phaser-library.html">phaser</a></li>
+          <li class="self-crumb">Gamepad</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <span class="kind">class</span> Gamepad
+          </h1>
+        </div>
+        <ul class="subnav">
+          <li><a href="phaser/Gamepad-class.html#static-properties">Static Properties</a></li>
+          <li><a href="phaser/Gamepad-class.html#instance-properties">Properties</a></li>
+          <li><a href="phaser/Gamepad-class.html#constructors">Constructors</a></li>
+          <li><a href="phaser/Gamepad-class.html#operators">Operators</a></li>
+          <li><a href="phaser/Gamepad-class.html#instance-methods">Methods</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">phaser</a></h5>
+    <h5><a href="phaser/phaser-library.html">phaser</a></h5>
+
+    <ol>
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#typedefs">Typedefs</a></li>
+      <li><a href="phaser/ResizeCallback.html">ResizeCallback</a></li>
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#properties">Properties</a></li>
+      <li><a href="phaser/Default.html">Default</a></li>
+      <li><a href="phaser/Power0.html">Power0</a></li>
+      <li><a href="phaser/Power1.html">Power1</a></li>
+      <li><a href="phaser/power2.html">power2</a></li>
+      <li><a href="phaser/power3.html">power3</a></li>
+      <li><a href="phaser/power4.html">power4</a></li>
+    
+    
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#classes">Classes</a></li>
+      <li><a href="phaser/AABB-class.html">AABB</a></li>
+      <li><a href="phaser/Animation-class.html">Animation</a></li>
+      <li><a href="phaser/AnimationManager-class.html">AnimationManager</a></li>
+      <li><a href="phaser/AnimationParser-class.html">AnimationParser</a></li>
+      <li><a href="phaser/Arcade-class.html">Arcade</a></li>
+      <li><a href="phaser/ArraySet-class.html">ArraySet</a></li>
+      <li><a href="phaser/ArrayUtils-class.html">ArrayUtils</a></li>
+      <li><a href="phaser/AStar-class.html">AStar</a></li>
+      <li><a href="phaser/AStarNode-class.html">AStarNode</a></li>
+      <li><a href="phaser/AStarPath-class.html">AStarPath</a></li>
+      <li><a href="phaser/AudioSprite-class.html">AudioSprite</a></li>
+      <li><a href="phaser/Back-class.html">Back</a></li>
+      <li><a href="phaser/BinarySerpents-class.html">BinarySerpents</a></li>
+      <li><a href="phaser/BitmapData-class.html">BitmapData</a></li>
+      <li><a href="phaser/BitmapFont-class.html">BitmapFont</a></li>
+      <li><a href="phaser/BitmapText-class.html">BitmapText</a></li>
+      <li><a href="phaser/BlurX-class.html">BlurX</a></li>
+      <li><a href="phaser/BlurY-class.html">BlurY</a></li>
+      <li><a href="phaser/BMFont-class.html">BMFont</a></li>
+      <li><a href="phaser/BMFontChar-class.html">BMFontChar</a></li>
+      <li><a href="phaser/Body-class.html">Body</a></li>
+      <li><a href="phaser/BodyDebug-class.html">BodyDebug</a></li>
+      <li><a href="phaser/Bounce-class.html">Bounce</a></li>
+      <li><a href="phaser/Bullet-class.html">Bullet</a></li>
+      <li><a href="phaser/Button-class.html">Button</a></li>
+      <li><a href="phaser/Cache-class.html">Cache</a></li>
+      <li><a href="phaser/CachedRenderTexture-class.html">CachedRenderTexture</a></li>
+      <li><a href="phaser/Camera-class.html">Camera</a></li>
+      <li><a href="phaser/Canvas-class.html">Canvas</a></li>
+      <li><a href="phaser/CausticLight-class.html">CausticLight</a></li>
+      <li><a href="phaser/CheckerWave-class.html">CheckerWave</a></li>
+      <li><a href="phaser/Circle-class.html">Circle</a></li>
+      <li><a href="phaser/Circular-class.html">Circular</a></li>
+      <li><a href="phaser/CollisionGroup-class.html">CollisionGroup</a></li>
+      <li><a href="phaser/Color-class.html">Color</a></li>
+      <li><a href="phaser/ColorBars-class.html">ColorBars</a></li>
+      <li><a href="phaser/ColorComponents-class.html">ColorComponents</a></li>
+      <li><a href="phaser/ColorHarmony-class.html">ColorHarmony</a></li>
+      <li><a href="phaser/ContactMaterial-class.html">ContactMaterial</a></li>
+      <li><a href="phaser/Create-class.html">Create</a></li>
+      <li><a href="phaser/CSS3Filters-class.html">CSS3Filters</a></li>
+      <li><a href="phaser/Cubic-class.html">Cubic</a></li>
+      <li><a href="phaser/CursorKeys-class.html">CursorKeys</a></li>
+      <li><a href="phaser/Debug-class.html">Debug</a></li>
+      <li><a href="phaser/Device-class.html">Device</a></li>
+      <li><a href="phaser/DeviceButton-class.html">DeviceButton</a></li>
+      <li><a href="phaser/DistanceConstraint-class.html">DistanceConstraint</a></li>
+      <li><a href="phaser/DOM-class.html">DOM</a></li>
+      <li><a href="phaser/Elastic-class.html">Elastic</a></li>
+      <li><a href="phaser/Ellipse-class.html">Ellipse</a></li>
+      <li><a href="phaser/Emitter-class.html">Emitter</a></li>
+      <li><a href="phaser/Events-class.html">Events</a></li>
+      <li><a href="phaser/Exponential-class.html">Exponential</a></li>
+      <li><a href="phaser/FaceChoices-class.html">FaceChoices</a></li>
+      <li><a href="phaser/Filter-class.html">Filter</a></li>
+      <li><a href="phaser/Fire-class.html">Fire</a></li>
+      <li><a href="phaser/FixtureList-class.html">FixtureList</a></li>
+      <li><a href="phaser/FlexGrid-class.html">FlexGrid</a></li>
+      <li><a href="phaser/FlexLayer-class.html">FlexLayer</a></li>
+      <li><a href="phaser/Frame-class.html">Frame</a></li>
+      <li><a href="phaser/FrameData-class.html">FrameData</a></li>
+      <li><a href="phaser/Game-class.html">Game</a></li>
+      <li><a href="phaser/GameObjectCreator-class.html">GameObjectCreator</a></li>
+      <li><a href="phaser/GameObjectFactory-class.html">GameObjectFactory</a></li>
+      <li><a href="phaser/Gamepad-class.html">Gamepad</a></li>
+      <li><a href="phaser/GearConstraint-class.html">GearConstraint</a></li>
+      <li><a href="phaser/Graphics-class.html">Graphics</a></li>
+      <li><a href="phaser/Gray-class.html">Gray</a></li>
+      <li><a href="phaser/Group-class.html">Group</a></li>
+      <li><a href="phaser/HueRotate-class.html">HueRotate</a></li>
+      <li><a href="phaser/IGameConfig-class.html">IGameConfig</a></li>
+      <li><a href="phaser/Image-class.html">Image</a></li>
+      <li><a href="phaser/ImageCollection-class.html">ImageCollection</a></li>
+      <li><a href="phaser/Input-class.html">Input</a></li>
+      <li><a href="phaser/InputHandler-class.html">InputHandler</a></li>
+      <li><a href="phaser/InversePointProxy-class.html">InversePointProxy</a></li>
+      <li><a href="phaser/IStateCycle-class.html">IStateCycle</a></li>
+      <li><a href="phaser/Juicy-class.html">Juicy</a></li>
+      <li><a href="phaser/Key-class.html">Key</a></li>
+      <li><a href="phaser/Keyboard-class.html">Keyboard</a></li>
+      <li><a href="phaser/KeyCode-class.html">KeyCode</a></li>
+      <li><a href="phaser/LazerBeam-class.html">LazerBeam</a></li>
+      <li><a href="phaser/LightBeam-class.html">LightBeam</a></li>
+      <li><a href="phaser/Line-class.html">Line</a></li>
+      <li><a href="phaser/Linear-class.html">Linear</a></li>
+      <li><a href="phaser/LinkedList-class.html">LinkedList</a></li>
+      <li><a href="phaser/Loader-class.html">Loader</a></li>
+      <li><a href="phaser/LoaderParser-class.html">LoaderParser</a></li>
+      <li><a href="phaser/LockConstraint-class.html">LockConstraint</a></li>
+      <li><a href="phaser/Marble-class.html">Marble</a></li>
+      <li><a href="phaser/Material-class.html">Material</a></li>
+      <li><a href="phaser/Math-class.html">Math</a></li>
+      <li><a href="phaser/Matrix-class.html">Matrix</a></li>
+      <li><a href="phaser/Mouse-class.html">Mouse</a></li>
+      <li><a href="phaser/MSPointer-class.html">MSPointer</a></li>
+      <li><a href="phaser/Net-class.html">Net</a></li>
+      <li><a href="phaser/Ninja-class.html">Ninja</a></li>
+      <li><a href="phaser/Ninja_Body-class.html">Ninja_Body</a></li>
+      <li><a href="phaser/Ninja_Circle-class.html">Ninja_Circle</a></li>
+      <li><a href="phaser/Ninja_Tile-class.html">Ninja_Tile</a></li>
+      <li><a href="phaser/P2-class.html">P2</a></li>
+      <li><a href="phaser/P2_Body-class.html">P2_Body</a></li>
+      <li><a href="phaser/Particle-class.html">Particle</a></li>
+      <li><a href="phaser/Particles-class.html">Particles</a></li>
+      <li><a href="phaser/Phaser-class.html">Phaser</a></li>
+      <li><a href="phaser/PhaserTextStyle-class.html">PhaserTextStyle</a></li>
+      <li><a href="phaser/Physics-class.html">Physics</a></li>
+      <li><a href="phaser/Pixelate-class.html">Pixelate</a></li>
+      <li><a href="phaser/Plasma-class.html">Plasma</a></li>
+      <li><a href="phaser/Plugin-class.html">Plugin</a></li>
+      <li><a href="phaser/PluginConstructorOf-class.html">PluginConstructorOf</a></li>
+      <li><a href="phaser/PluginManager-class.html">PluginManager</a></li>
+      <li><a href="phaser/Point-class.html">Point</a></li>
+      <li><a href="phaser/Pointer-class.html">Pointer</a></li>
+      <li><a href="phaser/PointerMode-class.html">PointerMode</a></li>
+      <li><a href="phaser/PointProxy-class.html">PointProxy</a></li>
+      <li><a href="phaser/Polygon-class.html">Polygon</a></li>
+      <li><a href="phaser/PrismaticConstraint-class.html">PrismaticConstraint</a></li>
+      <li><a href="phaser/Quadratic-class.html">Quadratic</a></li>
+      <li><a href="phaser/QuadTree-class.html">QuadTree</a></li>
+      <li><a href="phaser/Quartic-class.html">Quartic</a></li>
+      <li><a href="phaser/Quintic-class.html">Quintic</a></li>
+      <li><a href="phaser/RandomDataGenerator-class.html">RandomDataGenerator</a></li>
+      <li><a href="phaser/Rectangle-class.html">Rectangle</a></li>
+      <li><a href="phaser/RenderTexture-class.html">RenderTexture</a></li>
+      <li><a href="phaser/RequestAnimationFrame-class.html">RequestAnimationFrame</a></li>
+      <li><a href="phaser/RetroFont-class.html">RetroFont</a></li>
+      <li><a href="phaser/RevoluteConstraint-class.html">RevoluteConstraint</a></li>
+      <li><a href="phaser/RGBColor-class.html">RGBColor</a></li>
+      <li><a href="phaser/Rope-class.html">Rope</a></li>
+      <li><a href="phaser/RoundedRectangle-class.html">RoundedRectangle</a></li>
+      <li><a href="phaser/SampleFilter-class.html">SampleFilter</a></li>
+      <li><a href="phaser/SamplePlugin-class.html">SamplePlugin</a></li>
+      <li><a href="phaser/SaveCPU-class.html">SaveCPU</a></li>
+      <li><a href="phaser/ScaleManager-class.html">ScaleManager</a></li>
+      <li><a href="phaser/ScreenFlash-class.html">ScreenFlash</a></li>
+      <li><a href="phaser/Signal-class.html">Signal</a></li>
+      <li><a href="phaser/SignalBinding-class.html">SignalBinding</a></li>
+      <li><a href="phaser/SinglePad-class.html">SinglePad</a></li>
+      <li><a href="phaser/Sinusoidal-class.html">Sinusoidal</a></li>
+      <li><a href="phaser/Sound-class.html">Sound</a></li>
+      <li><a href="phaser/SoundManager-class.html">SoundManager</a></li>
+      <li><a href="phaser/Spring-class.html">Spring</a></li>
+      <li><a href="phaser/Sprite-class.html">Sprite</a></li>
+      <li><a href="phaser/SpriteBatch-class.html">SpriteBatch</a></li>
+      <li><a href="phaser/Stage-class.html">Stage</a></li>
+      <li><a href="phaser/State-class.html">State</a></li>
+      <li><a href="phaser/StateManager-class.html">StateManager</a></li>
+      <li><a href="phaser/Text-class.html">Text</a></li>
+      <li><a href="phaser/Tile-class.html">Tile</a></li>
+      <li><a href="phaser/Tilemap-class.html">Tilemap</a></li>
+      <li><a href="phaser/TilemapLayer-class.html">TilemapLayer</a></li>
+      <li><a href="phaser/TilemapLayerGL-class.html">TilemapLayerGL</a></li>
+      <li><a href="phaser/TilemapParser-class.html">TilemapParser</a></li>
+      <li><a href="phaser/TilemapWalker-class.html">TilemapWalker</a></li>
+      <li><a href="phaser/Tileset-class.html">Tileset</a></li>
+      <li><a href="phaser/TileSprite-class.html">TileSprite</a></li>
+      <li><a href="phaser/TileType-class.html">TileType</a></li>
+      <li><a href="phaser/Time-class.html">Time</a></li>
+      <li><a href="phaser/Timer-class.html">Timer</a></li>
+      <li><a href="phaser/TimerEvent-class.html">TimerEvent</a></li>
+      <li><a href="phaser/Touch-class.html">Touch</a></li>
+      <li><a href="phaser/Trail-class.html">Trail</a></li>
+      <li><a href="phaser/Tunnel-class.html">Tunnel</a></li>
+      <li><a href="phaser/Tween-class.html">Tween</a></li>
+      <li><a href="phaser/TweenData-class.html">TweenData</a></li>
+      <li><a href="phaser/TweenManager-class.html">TweenManager</a></li>
+      <li><a href="phaser/Utils-class.html">Utils</a></li>
+      <li><a href="phaser/Video-class.html">Video</a></li>
+      <li><a href="phaser/VirtualJoystick-class.html">VirtualJoystick</a></li>
+      <li><a href="phaser/Weapon-class.html">Weapon</a></li>
+      <li><a href="phaser/Webcam-class.html">Webcam</a></li>
+      <li><a href="phaser/WheelEventProxy-class.html">WheelEventProxy</a></li>
+      <li><a href="phaser/World-class.html">World</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    
+    <section>
+      <dl class="dl-horizontal">
+
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>JS("Phaser.Gamepad")</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="static-properties">
+      <h2>Static Properties</h2>
+
+      <dl class="properties">
+        <dt id="AXIS_0" class="property">
+          <span class="name"><a href="phaser/Gamepad/AXIS_0.html">AXIS_0</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="AXIS_1" class="property">
+          <span class="name"><a href="phaser/Gamepad/AXIS_1.html">AXIS_1</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="AXIS_2" class="property">
+          <span class="name"><a href="phaser/Gamepad/AXIS_2.html">AXIS_2</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="AXIS_3" class="property">
+          <span class="name"><a href="phaser/Gamepad/AXIS_3.html">AXIS_3</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="AXIS_4" class="property">
+          <span class="name"><a href="phaser/Gamepad/AXIS_4.html">AXIS_4</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="AXIS_5" class="property">
+          <span class="name"><a href="phaser/Gamepad/AXIS_5.html">AXIS_5</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="AXIS_6" class="property">
+          <span class="name"><a href="phaser/Gamepad/AXIS_6.html">AXIS_6</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="AXIS_7" class="property">
+          <span class="name"><a href="phaser/Gamepad/AXIS_7.html">AXIS_7</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="AXIS_8" class="property">
+          <span class="name"><a href="phaser/Gamepad/AXIS_8.html">AXIS_8</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="AXIS_9" class="property">
+          <span class="name"><a href="phaser/Gamepad/AXIS_9.html">AXIS_9</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_0" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_0.html">BUTTON_0</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_1" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_1.html">BUTTON_1</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_2" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_2.html">BUTTON_2</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_3" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_3.html">BUTTON_3</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_4" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_4.html">BUTTON_4</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_5" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_5.html">BUTTON_5</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_6" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_6.html">BUTTON_6</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_7" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_7.html">BUTTON_7</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_8" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_8.html">BUTTON_8</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_9" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_9.html">BUTTON_9</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_10" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_10.html">BUTTON_10</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_11" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_11.html">BUTTON_11</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_12" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_12.html">BUTTON_12</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_13" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_13.html">BUTTON_13</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_14" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_14.html">BUTTON_14</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="BUTTON_15" class="property">
+          <span class="name"><a href="phaser/Gamepad/BUTTON_15.html">BUTTON_15</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_CIRCLE" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_CIRCLE.html">PS3XC_CIRCLE</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_DPAD_DOWN" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_DPAD_DOWN.html">PS3XC_DPAD_DOWN</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_DPAD_LEFT" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_DPAD_LEFT.html">PS3XC_DPAD_LEFT</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_DPAD_RIGHT" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_DPAD_RIGHT.html">PS3XC_DPAD_RIGHT</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_DPAD_UP" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_DPAD_UP.html">PS3XC_DPAD_UP</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_L1" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_L1.html">PS3XC_L1</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_L2" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_L2.html">PS3XC_L2</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_R1" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_R1.html">PS3XC_R1</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_R2" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_R2.html">PS3XC_R2</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_SELECT" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_SELECT.html">PS3XC_SELECT</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_SQUARE" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_SQUARE.html">PS3XC_SQUARE</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_START" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_START.html">PS3XC_START</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_STICK_LEFT_BUTTON" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_STICK_LEFT_BUTTON.html">PS3XC_STICK_LEFT_BUTTON</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_STICK_LEFT_X" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_STICK_LEFT_X.html">PS3XC_STICK_LEFT_X</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_STICK_LEFT_Y" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_STICK_LEFT_Y.html">PS3XC_STICK_LEFT_Y</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_STICK_RIGHT_BUTTON" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_STICK_RIGHT_BUTTON.html">PS3XC_STICK_RIGHT_BUTTON</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_STICK_RIGHT_X" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_STICK_RIGHT_X.html">PS3XC_STICK_RIGHT_X</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_STICK_RIGHT_Y" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_STICK_RIGHT_Y.html">PS3XC_STICK_RIGHT_Y</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_TRIANGLE" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_TRIANGLE.html">PS3XC_TRIANGLE</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PS3XC_X" class="property">
+          <span class="name"><a href="phaser/Gamepad/PS3XC_X.html">PS3XC_X</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_A" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_A.html">XBOX360_A</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_B" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_B.html">XBOX360_B</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_BACK" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_BACK.html">XBOX360_BACK</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_DPAD_DOWN" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_DPAD_DOWN.html">XBOX360_DPAD_DOWN</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_DPAD_LEFT" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_DPAD_LEFT.html">XBOX360_DPAD_LEFT</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_DPAD_RIGHT" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_DPAD_RIGHT.html">XBOX360_DPAD_RIGHT</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_DPAD_UP" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_DPAD_UP.html">XBOX360_DPAD_UP</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_LEFT_BUMPER" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_LEFT_BUMPER.html">XBOX360_LEFT_BUMPER</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_LEFT_TRIGGER" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_LEFT_TRIGGER.html">XBOX360_LEFT_TRIGGER</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_RIGHT_BUMPER" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_RIGHT_BUMPER.html">XBOX360_RIGHT_BUMPER</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_RIGHT_TRIGGER" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_RIGHT_TRIGGER.html">XBOX360_RIGHT_TRIGGER</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_START" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_START.html">XBOX360_START</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_STICK_LEFT_BUTTON" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_STICK_LEFT_BUTTON.html">XBOX360_STICK_LEFT_BUTTON</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_STICK_LEFT_X" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_STICK_LEFT_X.html">XBOX360_STICK_LEFT_X</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_STICK_LEFT_Y" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_STICK_LEFT_Y.html">XBOX360_STICK_LEFT_Y</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_STICK_RIGHT_BUTTON" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_STICK_RIGHT_BUTTON.html">XBOX360_STICK_RIGHT_BUTTON</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_STICK_RIGHT_X" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_STICK_RIGHT_X.html">XBOX360_STICK_RIGHT_X</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_STICK_RIGHT_Y" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_STICK_RIGHT_Y.html">XBOX360_STICK_RIGHT_Y</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_X" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_X.html">XBOX360_X</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="XBOX360_Y" class="property">
+          <span class="name"><a href="phaser/Gamepad/XBOX360_Y.html">XBOX360_Y</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+      </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="Gamepad" class="callable">
+          <span class="name"><a href="phaser/Gamepad/Gamepad.html">Gamepad</a></span><span class="signature">(<span class="parameter" id="-param-game"><span class="type-annotation"><a href="phaser/Game-class.html">Game</a></span> <span class="parameter-name">game</span></span>)</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Gamepad.fakeConstructor$" class="callable">
+          <span class="name"><a href="phaser/Gamepad/Gamepad.fakeConstructor$.html">Gamepad.fakeConstructor$</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="active" class="property">
+          <span class="name"><a href="phaser/Gamepad/active.html">active</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="callbackContext" class="property">
+          <span class="name"><a href="phaser/Gamepad/callbackContext.html">callbackContext</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="enabled" class="property">
+          <span class="name"><a href="phaser/Gamepad/enabled.html">enabled</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="game" class="property">
+          <span class="name"><a href="phaser/Gamepad/game.html">game</a></span>
+          <span class="signature">&#8594; <a href="phaser/Game-class.html">Game</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="phaser/Gamepad/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span>
+        </dt>
+        <dd class="inherited">
+          <p>Get a hash code for this object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="onAxisCallBack" class="property">
+          <span class="name"><a href="phaser/Gamepad/onAxisCallBack.html">onAxisCallBack</a></span>
+          <span class="signature">&#8594; Function</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onConnectCallback" class="property">
+          <span class="name"><a href="phaser/Gamepad/onConnectCallback.html">onConnectCallback</a></span>
+          <span class="signature">&#8594; Function</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onDisconnectCallback" class="property">
+          <span class="name"><a href="phaser/Gamepad/onDisconnectCallback.html">onDisconnectCallback</a></span>
+          <span class="signature">&#8594; Function</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onDownCallback" class="property">
+          <span class="name"><a href="phaser/Gamepad/onDownCallback.html">onDownCallback</a></span>
+          <span class="signature">&#8594; Function</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onFloatCallback" class="property">
+          <span class="name"><a href="phaser/Gamepad/onFloatCallback.html">onFloatCallback</a></span>
+          <span class="signature">&#8594; Function</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onUpCallback" class="property">
+          <span class="name"><a href="phaser/Gamepad/onUpCallback.html">onUpCallback</a></span>
+          <span class="signature">&#8594; Function</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="pad1" class="property">
+          <span class="name"><a href="phaser/Gamepad/pad1.html">pad1</a></span>
+          <span class="signature">&#8594; <a href="phaser/SinglePad-class.html">SinglePad</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="pad2" class="property">
+          <span class="name"><a href="phaser/Gamepad/pad2.html">pad2</a></span>
+          <span class="signature">&#8594; <a href="phaser/SinglePad-class.html">SinglePad</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="pad3" class="property">
+          <span class="name"><a href="phaser/Gamepad/pad3.html">pad3</a></span>
+          <span class="signature">&#8594; <a href="phaser/SinglePad-class.html">SinglePad</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="pad4" class="property">
+          <span class="name"><a href="phaser/Gamepad/pad4.html">pad4</a></span>
+          <span class="signature">&#8594; <a href="phaser/SinglePad-class.html">SinglePad</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="padsConnected" class="property">
+          <span class="name"><a href="phaser/Gamepad/padsConnected.html">padsConnected</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="phaser/Gamepad/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd class="inherited">
+          <p>A representation of the runtime type of the object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="supported" class="property">
+          <span class="name"><a href="phaser/Gamepad/supported.html">supported</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="phaser/Gamepad/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>The equality operator.</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="addCallbacks" class="callable">
+          <span class="name"><a href="phaser/Gamepad/addCallbacks.html">addCallbacks</a></span><span class="signature">(<wbr><span class="parameter" id="addCallbacks-param-context"><span class="parameter-name">context</span>, </span> <span class="parameter" id="addCallbacks-param-callbacks"><span class="parameter-name">callbacks</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="isDown" class="callable">
+          <span class="name"><a href="phaser/Gamepad/isDown.html">isDown</a></span><span class="signature">(<wbr><span class="parameter" id="isDown-param-buttonCode"><span class="type-annotation">num</span> <span class="parameter-name">buttonCode</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="justPressed" class="callable">
+          <span class="name"><a href="phaser/Gamepad/justPressed.html">justPressed</a></span><span class="signature">(<wbr><span class="parameter" id="justPressed-param-buttonCode"><span class="type-annotation">num</span> <span class="parameter-name">buttonCode</span>, [</span> <span class="parameter" id="justPressed-param-duration"><span class="type-annotation">num</span> <span class="parameter-name">duration</span></span> ])
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="justReleased" class="callable">
+          <span class="name"><a href="phaser/Gamepad/justReleased.html">justReleased</a></span><span class="signature">(<wbr><span class="parameter" id="justReleased-param-buttonCode"><span class="type-annotation">num</span> <span class="parameter-name">buttonCode</span>, [</span> <span class="parameter" id="justReleased-param-duration"><span class="type-annotation">num</span> <span class="parameter-name">duration</span></span> ])
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="phaser/Gamepad/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Invoked when a non-existent method or property is accessed.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="reset" class="callable">
+          <span class="name"><a href="phaser/Gamepad/reset.html">reset</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="setDeadZones" class="callable">
+          <span class="name"><a href="phaser/Gamepad/setDeadZones.html">setDeadZones</a></span><span class="signature">(<wbr><span class="parameter" id="setDeadZones-param-value"><span class="parameter-name">value</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="start" class="callable">
+          <span class="name"><a href="phaser/Gamepad/start.html">start</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="stop" class="callable">
+          <span class="name"><a href="phaser/Gamepad/stop.html">stop</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="phaser/Gamepad/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a string representation of this object.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="update" class="callable">
+          <span class="name"><a href="phaser/Gamepad/update.html">update</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>Gamepad</h5>
+    <ol>
+    
+      <li class="section-title"><a href="phaser/Gamepad-class.html#static-properties">Static properties</a></li>
+      <li><a href="phaser/Gamepad/AXIS_0.html">AXIS_0</a></li>
+      <li><a href="phaser/Gamepad/AXIS_1.html">AXIS_1</a></li>
+      <li><a href="phaser/Gamepad/AXIS_2.html">AXIS_2</a></li>
+      <li><a href="phaser/Gamepad/AXIS_3.html">AXIS_3</a></li>
+      <li><a href="phaser/Gamepad/AXIS_4.html">AXIS_4</a></li>
+      <li><a href="phaser/Gamepad/AXIS_5.html">AXIS_5</a></li>
+      <li><a href="phaser/Gamepad/AXIS_6.html">AXIS_6</a></li>
+      <li><a href="phaser/Gamepad/AXIS_7.html">AXIS_7</a></li>
+      <li><a href="phaser/Gamepad/AXIS_8.html">AXIS_8</a></li>
+      <li><a href="phaser/Gamepad/AXIS_9.html">AXIS_9</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_0.html">BUTTON_0</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_1.html">BUTTON_1</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_2.html">BUTTON_2</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_3.html">BUTTON_3</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_4.html">BUTTON_4</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_5.html">BUTTON_5</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_6.html">BUTTON_6</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_7.html">BUTTON_7</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_8.html">BUTTON_8</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_9.html">BUTTON_9</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_10.html">BUTTON_10</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_11.html">BUTTON_11</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_12.html">BUTTON_12</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_13.html">BUTTON_13</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_14.html">BUTTON_14</a></li>
+      <li><a href="phaser/Gamepad/BUTTON_15.html">BUTTON_15</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_CIRCLE.html">PS3XC_CIRCLE</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_DPAD_DOWN.html">PS3XC_DPAD_DOWN</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_DPAD_LEFT.html">PS3XC_DPAD_LEFT</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_DPAD_RIGHT.html">PS3XC_DPAD_RIGHT</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_DPAD_UP.html">PS3XC_DPAD_UP</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_L1.html">PS3XC_L1</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_L2.html">PS3XC_L2</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_R1.html">PS3XC_R1</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_R2.html">PS3XC_R2</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_SELECT.html">PS3XC_SELECT</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_SQUARE.html">PS3XC_SQUARE</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_START.html">PS3XC_START</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_STICK_LEFT_BUTTON.html">PS3XC_STICK_LEFT_BUTTON</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_STICK_LEFT_X.html">PS3XC_STICK_LEFT_X</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_STICK_LEFT_Y.html">PS3XC_STICK_LEFT_Y</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_STICK_RIGHT_BUTTON.html">PS3XC_STICK_RIGHT_BUTTON</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_STICK_RIGHT_X.html">PS3XC_STICK_RIGHT_X</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_STICK_RIGHT_Y.html">PS3XC_STICK_RIGHT_Y</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_TRIANGLE.html">PS3XC_TRIANGLE</a></li>
+      <li><a href="phaser/Gamepad/PS3XC_X.html">PS3XC_X</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_A.html">XBOX360_A</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_B.html">XBOX360_B</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_BACK.html">XBOX360_BACK</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_DPAD_DOWN.html">XBOX360_DPAD_DOWN</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_DPAD_LEFT.html">XBOX360_DPAD_LEFT</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_DPAD_RIGHT.html">XBOX360_DPAD_RIGHT</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_DPAD_UP.html">XBOX360_DPAD_UP</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_LEFT_BUMPER.html">XBOX360_LEFT_BUMPER</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_LEFT_TRIGGER.html">XBOX360_LEFT_TRIGGER</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_RIGHT_BUMPER.html">XBOX360_RIGHT_BUMPER</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_RIGHT_TRIGGER.html">XBOX360_RIGHT_TRIGGER</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_START.html">XBOX360_START</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_STICK_LEFT_BUTTON.html">XBOX360_STICK_LEFT_BUTTON</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_STICK_LEFT_X.html">XBOX360_STICK_LEFT_X</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_STICK_LEFT_Y.html">XBOX360_STICK_LEFT_Y</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_STICK_RIGHT_BUTTON.html">XBOX360_STICK_RIGHT_BUTTON</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_STICK_RIGHT_X.html">XBOX360_STICK_RIGHT_X</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_STICK_RIGHT_Y.html">XBOX360_STICK_RIGHT_Y</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_X.html">XBOX360_X</a></li>
+      <li><a href="phaser/Gamepad/XBOX360_Y.html">XBOX360_Y</a></li>
+    
+    
+      <li class="section-title"><a href="phaser/Gamepad-class.html#constructors">Constructors</a></li>
+      <li><a href="phaser/Gamepad/Gamepad.html">Gamepad</a></li>
+      <li><a href="phaser/Gamepad/Gamepad.fakeConstructor$.html">fakeConstructor$</a></li>
+    
+      <li class="section-title">
+        <a href="phaser/Gamepad-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="phaser/Gamepad/active.html">active</a></li>
+      <li><a href="phaser/Gamepad/callbackContext.html">callbackContext</a></li>
+      <li><a href="phaser/Gamepad/enabled.html">enabled</a></li>
+      <li><a href="phaser/Gamepad/game.html">game</a></li>
+      <li class="inherited"><a href="phaser/Gamepad/hashCode.html">hashCode</a></li>
+      <li><a href="phaser/Gamepad/onAxisCallBack.html">onAxisCallBack</a></li>
+      <li><a href="phaser/Gamepad/onConnectCallback.html">onConnectCallback</a></li>
+      <li><a href="phaser/Gamepad/onDisconnectCallback.html">onDisconnectCallback</a></li>
+      <li><a href="phaser/Gamepad/onDownCallback.html">onDownCallback</a></li>
+      <li><a href="phaser/Gamepad/onFloatCallback.html">onFloatCallback</a></li>
+      <li><a href="phaser/Gamepad/onUpCallback.html">onUpCallback</a></li>
+      <li><a href="phaser/Gamepad/pad1.html">pad1</a></li>
+      <li><a href="phaser/Gamepad/pad2.html">pad2</a></li>
+      <li><a href="phaser/Gamepad/pad3.html">pad3</a></li>
+      <li><a href="phaser/Gamepad/pad4.html">pad4</a></li>
+      <li><a href="phaser/Gamepad/padsConnected.html">padsConnected</a></li>
+      <li class="inherited"><a href="phaser/Gamepad/runtimeType.html">runtimeType</a></li>
+      <li><a href="phaser/Gamepad/supported.html">supported</a></li>
+    
+      <li class="section-title inherited"><a href="phaser/Gamepad-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="phaser/Gamepad/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="phaser/Gamepad-class.html#instance-methods">Methods</a></li>
+      <li><a href="phaser/Gamepad/addCallbacks.html">addCallbacks</a></li>
+      <li><a href="phaser/Gamepad/isDown.html">isDown</a></li>
+      <li><a href="phaser/Gamepad/justPressed.html">justPressed</a></li>
+      <li><a href="phaser/Gamepad/justReleased.html">justReleased</a></li>
+      <li class="inherited"><a href="phaser/Gamepad/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a href="phaser/Gamepad/reset.html">reset</a></li>
+      <li><a href="phaser/Gamepad/setDeadZones.html">setDeadZones</a></li>
+      <li><a href="phaser/Gamepad/start.html">start</a></li>
+      <li><a href="phaser/Gamepad/stop.html">stop</a></li>
+      <li class="inherited"><a href="phaser/Gamepad/toString.html">toString</a></li>
+      <li><a href="phaser/Gamepad/update.html">update</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          phaser 2.6.2-beta+1
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+</body>
+
+</html>

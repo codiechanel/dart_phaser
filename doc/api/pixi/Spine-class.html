@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the Spine class from the pixi library, for the Dart programming language.">
+  <title>Spine class - pixi library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">phaser</a></li>
+            <li><a href="pixi/pixi-library.html">pixi</a></li>
+            <li class="self-crumb">Spine</li>
+          </ol>
+          <div class="self-name">Spine</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">phaser</a></li>
+          <li><a href="pixi/pixi-library.html">pixi</a></li>
+          <li class="self-crumb">Spine</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <span class="kind">class</span> Spine
+          </h1>
+        </div>
+        <ul class="subnav">
+          <li><a href="pixi/Spine-class.html#instance-properties">Properties</a></li>
+          <li><a href="pixi/Spine-class.html#constructors">Constructors</a></li>
+          <li><a href="pixi/Spine-class.html#operators">Operators</a></li>
+          <li><a href="pixi/Spine-class.html#instance-methods">Methods</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">phaser</a></h5>
+    <h5><a href="pixi/pixi-library.html">pixi</a></h5>
+
+    <ol>
+    
+      <li class="section-title"><a href="pixi/pixi-library.html#typedefs">Typedefs</a></li>
+      <li><a href="pixi/IEventCallback.html">IEventCallback</a></li>
+      <li><a href="pixi/IInteractionDataCallback.html">IInteractionDataCallback</a></li>
+    
+      <li class="section-title"><a href="pixi/pixi-library.html#properties">Properties</a></li>
+      <li><a href="pixi/AUTO_PREVENT_DEFAULT.html">AUTO_PREVENT_DEFAULT</a></li>
+      <li><a href="pixi/BitmapText.html">BitmapText</a></li>
+      <li><a href="pixi/CANVAS_RENDERER.html">CANVAS_RENDERER</a></li>
+      <li><a href="pixi/defaultRenderOptions.html">defaultRenderOptions</a></li>
+      <li><a href="pixi/DEG_TO_RAD.html">DEG_TO_RAD</a></li>
+      <li><a href="pixi/game.html">game</a></li>
+      <li><a href="pixi/glContexts.html">glContexts</a></li>
+      <li><a href="pixi/identityMatrix.html">identityMatrix</a></li>
+      <li><a href="pixi/instances.html">instances</a></li>
+      <li><a href="pixi/INTERACTION_REQUENCY.html">INTERACTION_REQUENCY</a></li>
+      <li><a href="pixi/PI_2.html">PI_2</a></li>
+      <li><a href="pixi/RAD_TO_DEG.html">RAD_TO_DEG</a></li>
+      <li><a href="pixi/RETINA_PREFIX.html">RETINA_PREFIX</a></li>
+      <li><a href="pixi/TextureSilentFail.html">TextureSilentFail</a></li>
+      <li><a href="pixi/VERSION.html">VERSION</a></li>
+      <li><a href="pixi/WEBGL_RENDERER.html">WEBGL_RENDERER</a></li>
+    
+      <li class="section-title"><a href="pixi/pixi-library.html#functions">Functions</a></li>
+      <li><a href="pixi/AjaxRequest.html">AjaxRequest</a></li>
+      <li><a href="pixi/autoDetectRecommendedRenderer.html">autoDetectRecommendedRenderer</a></li>
+      <li><a href="pixi/autoDetectRenderer.html">autoDetectRenderer</a></li>
+      <li><a href="pixi/canUseNewCanvasBlendModes.html">canUseNewCanvasBlendModes</a></li>
+      <li><a href="pixi/CompileFragmentShader.html">CompileFragmentShader</a></li>
+      <li><a href="pixi/CompileProgram.html">CompileProgram</a></li>
+      <li><a href="pixi/getNextPowerOfTwo.html">getNextPowerOfTwo</a></li>
+      <li><a href="pixi/hex2rgb.html">hex2rgb</a></li>
+      <li><a href="pixi/isPowerOfTwo.html">isPowerOfTwo</a></li>
+      <li><a href="pixi/requestAnimFrame.html">requestAnimFrame</a></li>
+      <li><a href="pixi/rgb2hex.html">rgb2hex</a></li>
+      <li><a href="pixi/Triangulate.html">Triangulate</a></li>
+    
+    
+      <li class="section-title"><a href="pixi/pixi-library.html#classes">Classes</a></li>
+      <li><a href="pixi/AbstractFilter-class.html">AbstractFilter</a></li>
+      <li><a href="pixi/AlphaMaskFilter-class.html">AlphaMaskFilter</a></li>
+      <li><a href="pixi/Animation-class.html">Animation</a></li>
+      <li><a href="pixi/AnimationState-class.html">AnimationState</a></li>
+      <li><a href="pixi/AnimationStateData-class.html">AnimationStateData</a></li>
+      <li><a href="pixi/AsciiFilter-class.html">AsciiFilter</a></li>
+      <li><a href="pixi/AssetLoader-class.html">AssetLoader</a></li>
+      <li><a href="pixi/Atlas-class.html">Atlas</a></li>
+      <li><a href="pixi/AtlasAttachmentLoader-class.html">AtlasAttachmentLoader</a></li>
+      <li><a href="pixi/AtlasLoader-class.html">AtlasLoader</a></li>
+      <li><a href="pixi/AtlasPage-class.html">AtlasPage</a></li>
+      <li><a href="pixi/AtlasReader-class.html">AtlasReader</a></li>
+      <li><a href="pixi/AtlasRegion-class.html">AtlasRegion</a></li>
+      <li><a href="pixi/AttachmentTimeline-class.html">AttachmentTimeline</a></li>
+      <li><a href="pixi/BaseTexture-class.html">BaseTexture</a></li>
+      <li><a href="pixi/BitmapFontLoader-class.html">BitmapFontLoader</a></li>
+      <li><a href="pixi/BitmapTextStyle-class.html">BitmapTextStyle</a></li>
+      <li><a href="pixi/blendModes-class.html">blendModes</a></li>
+      <li><a href="pixi/BlurFilter-class.html">BlurFilter</a></li>
+      <li><a href="pixi/BlurXFilter-class.html">BlurXFilter</a></li>
+      <li><a href="pixi/BlurYFilter-class.html">BlurYFilter</a></li>
+      <li><a href="pixi/Bone-class.html">Bone</a></li>
+      <li><a href="pixi/BoneData-class.html">BoneData</a></li>
+      <li><a href="pixi/CanvasBuffer-class.html">CanvasBuffer</a></li>
+      <li><a href="pixi/CanvasMaskManager-class.html">CanvasMaskManager</a></li>
+      <li><a href="pixi/CanvasPool-class.html">CanvasPool</a></li>
+      <li><a href="pixi/CanvasRenderer-class.html">CanvasRenderer</a></li>
+      <li><a href="pixi/CanvasTinter-class.html">CanvasTinter</a></li>
+      <li><a href="pixi/Circle-class.html">Circle</a></li>
+      <li><a href="pixi/ColorMatrixFilter-class.html">ColorMatrixFilter</a></li>
+      <li><a href="pixi/ColorStepFilter-class.html">ColorStepFilter</a></li>
+      <li><a href="pixi/ColorTimeline-class.html">ColorTimeline</a></li>
+      <li><a href="pixi/ComplexPrimitiveShader-class.html">ComplexPrimitiveShader</a></li>
+      <li><a href="pixi/ConvolutionFilter-class.html">ConvolutionFilter</a></li>
+      <li><a href="pixi/CrossHatchFilter-class.html">CrossHatchFilter</a></li>
+      <li><a href="pixi/Curves-class.html">Curves</a></li>
+      <li><a href="pixi/DisplacementFilter-class.html">DisplacementFilter</a></li>
+      <li><a href="pixi/DisplayObject-class.html">DisplayObject</a></li>
+      <li><a href="pixi/DisplayObjectContainer-class.html">DisplayObjectContainer</a></li>
+      <li><a href="pixi/DotScreenFilter-class.html">DotScreenFilter</a></li>
+      <li><a href="pixi/Ellipse-class.html">Ellipse</a></li>
+      <li><a href="pixi/Event-class.html">Event</a></li>
+      <li><a href="pixi/EventTarget-class.html">EventTarget</a></li>
+      <li><a href="pixi/FilterBlock-class.html">FilterBlock</a></li>
+      <li><a href="pixi/FilterTexture-class.html">FilterTexture</a></li>
+      <li><a href="pixi/Graphics-class.html">Graphics</a></li>
+      <li><a href="pixi/GraphicsData-class.html">GraphicsData</a></li>
+      <li><a href="pixi/GrayFilter-class.html">GrayFilter</a></li>
+      <li><a href="pixi/HitArea-class.html">HitArea</a></li>
+      <li><a href="pixi/IEvent-class.html">IEvent</a></li>
+      <li><a href="pixi/ImageLoader-class.html">ImageLoader</a></li>
+      <li><a href="pixi/InteractionData-class.html">InteractionData</a></li>
+      <li><a href="pixi/InteractionManager-class.html">InteractionManager</a></li>
+      <li><a href="pixi/InvertFilter-class.html">InvertFilter</a></li>
+      <li><a href="pixi/IPixiShader-class.html">IPixiShader</a></li>
+      <li><a href="pixi/ISpineTimeline-class.html">ISpineTimeline</a></li>
+      <li><a href="pixi/JsonLoader-class.html">JsonLoader</a></li>
+      <li><a href="pixi/Loader-class.html">Loader</a></li>
+      <li><a href="pixi/MaskData-class.html">MaskData</a></li>
+      <li><a href="pixi/Matrix-class.html">Matrix</a></li>
+      <li><a href="pixi/Mixin-class.html">Mixin</a></li>
+      <li><a href="pixi/NoiseFilter-class.html">NoiseFilter</a></li>
+      <li><a href="pixi/NormalMapFilter-class.html">NormalMapFilter</a></li>
+      <li><a href="pixi/PixelateFilter-class.html">PixelateFilter</a></li>
+      <li><a href="pixi/PixiFastShader-class.html">PixiFastShader</a></li>
+      <li><a href="pixi/PixiRenderer-class.html">PixiRenderer</a></li>
+      <li><a href="pixi/PixiRendererOptions-class.html">PixiRendererOptions</a></li>
+      <li><a href="pixi/PixiShader-class.html">PixiShader</a></li>
+      <li><a href="pixi/Point-class.html">Point</a></li>
+      <li><a href="pixi/Polygon-class.html">Polygon</a></li>
+      <li><a href="pixi/PrimitiveShader-class.html">PrimitiveShader</a></li>
+      <li><a href="pixi/Rectangle-class.html">Rectangle</a></li>
+      <li><a href="pixi/RegionAttachment-class.html">RegionAttachment</a></li>
+      <li><a href="pixi/RenderSession-class.html">RenderSession</a></li>
+      <li><a href="pixi/RenderTexture-class.html">RenderTexture</a></li>
+      <li><a href="pixi/RGBSplitFilter-class.html">RGBSplitFilter</a></li>
+      <li><a href="pixi/Rope-class.html">Rope</a></li>
+      <li><a href="pixi/RotateTimeline-class.html">RotateTimeline</a></li>
+      <li><a href="pixi/RoundedRectangle-class.html">RoundedRectangle</a></li>
+      <li><a href="pixi/scaleModes-class.html">scaleModes</a></li>
+      <li><a href="pixi/ScaleTimeline-class.html">ScaleTimeline</a></li>
+      <li><a href="pixi/SepiaFilter-class.html">SepiaFilter</a></li>
+      <li><a href="pixi/ShaderAttribute-class.html">ShaderAttribute</a></li>
+      <li><a href="pixi/Skeleton-class.html">Skeleton</a></li>
+      <li><a href="pixi/SkeletonData-class.html">SkeletonData</a></li>
+      <li><a href="pixi/SkeletonJson-class.html">SkeletonJson</a></li>
+      <li><a href="pixi/Skin-class.html">Skin</a></li>
+      <li><a href="pixi/Slot-class.html">Slot</a></li>
+      <li><a href="pixi/SlotData-class.html">SlotData</a></li>
+      <li><a href="pixi/SmartBlurFilter-class.html">SmartBlurFilter</a></li>
+      <li><a href="pixi/Spine-class.html">Spine</a></li>
+      <li><a href="pixi/SpineLoader-class.html">SpineLoader</a></li>
+      <li><a href="pixi/SpineTextureLoader-class.html">SpineTextureLoader</a></li>
+      <li><a href="pixi/Sprite-class.html">Sprite</a></li>
+      <li><a href="pixi/SpriteBatch-class.html">SpriteBatch</a></li>
+      <li><a href="pixi/SpriteSheetLoader-class.html">SpriteSheetLoader</a></li>
+      <li><a href="pixi/Strip-class.html">Strip</a></li>
+      <li><a href="pixi/StripShader-class.html">StripShader</a></li>
+      <li><a href="pixi/TextStyle-class.html">TextStyle</a></li>
+      <li><a href="pixi/Texture-class.html">Texture</a></li>
+      <li><a href="pixi/TilingSprite-class.html">TilingSprite</a></li>
+      <li><a href="pixi/TiltShiftFilter-class.html">TiltShiftFilter</a></li>
+      <li><a href="pixi/TiltShiftXFilter-class.html">TiltShiftXFilter</a></li>
+      <li><a href="pixi/TiltShiftYFilter-class.html">TiltShiftYFilter</a></li>
+      <li><a href="pixi/TranslateTimeline-class.html">TranslateTimeline</a></li>
+      <li><a href="pixi/TwistFilter-class.html">TwistFilter</a></li>
+      <li><a href="pixi/VideoTexture-class.html">VideoTexture</a></li>
+      <li><a href="pixi/WebGLBlendModeManager-class.html">WebGLBlendModeManager</a></li>
+      <li><a href="pixi/WebGLFastSpriteBatch-class.html">WebGLFastSpriteBatch</a></li>
+      <li><a href="pixi/WebGLFilterManager-class.html">WebGLFilterManager</a></li>
+      <li><a href="pixi/WebGLGraphics-class.html">WebGLGraphics</a></li>
+      <li><a href="pixi/WebGLGraphicsData-class.html">WebGLGraphicsData</a></li>
+      <li><a href="pixi/WebGLMaskManager-class.html">WebGLMaskManager</a></li>
+      <li><a href="pixi/WebGLRenderer-class.html">WebGLRenderer</a></li>
+      <li><a href="pixi/WebGLShaderManager-class.html">WebGLShaderManager</a></li>
+      <li><a href="pixi/WebGLSpriteBatch-class.html">WebGLSpriteBatch</a></li>
+      <li><a href="pixi/WebGLStencilManager-class.html">WebGLStencilManager</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    
+    <section>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li>Object</li>
+          <li><a href="pixi/DisplayObject-class.html">DisplayObject</a></li>
+          <li><a href="pixi/DisplayObjectContainer-class.html">DisplayObjectContainer</a></li>
+          <li>Spine</li>
+        </ul></dd>
+
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>JS("PIXI.Spine")</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+
+
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="Spine" class="callable">
+          <span class="name"><a href="pixi/Spine/Spine.html">Spine</a></span><span class="signature">(<span class="parameter" id="-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span></span>)</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Spine.fakeConstructor$" class="callable">
+          <span class="name"><a href="pixi/Spine/Spine.fakeConstructor$.html">Spine.fakeConstructor$</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="alpha" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/alpha.html">alpha</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="autoUpdate" class="property">
+          <span class="name"><a href="pixi/Spine/autoUpdate.html">autoUpdate</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="buttonMode" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/buttonMode.html">buttonMode</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="cacheAsBitmap" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/cacheAsBitmap.html">cacheAsBitmap</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="children" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/children.html">children</a></span>
+          <span class="signature">&#8594; List&lt;<a href="pixi/DisplayObject-class.html">DisplayObject</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="defaultCursor" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/defaultCursor.html">defaultCursor</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="filterArea" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/filterArea.html">filterArea</a></span>
+          <span class="signature">&#8594; <a href="pixi/Rectangle-class.html">Rectangle</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="filters" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/filters.html">filters</a></span>
+          <span class="signature">&#8594; List&lt;<a href="pixi/AbstractFilter-class.html">AbstractFilter</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="pixi/Spine/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span>
+        </dt>
+        <dd class="inherited">
+          <p>Get a hash code for this object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="height" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/height.html">height</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="hitArea" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/hitArea.html">hitArea</a></span>
+          <span class="signature">&#8594; <a href="pixi/HitArea-class.html">HitArea</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="ignoreChildInput" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/ignoreChildInput.html">ignoreChildInput</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="interactive" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/interactive.html">interactive</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="mask" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/mask.html">mask</a></span>
+          <span class="signature">&#8594; <a href="pixi/Graphics-class.html">Graphics</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="parent" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/parent.html">parent</a></span>
+          <span class="signature">&#8594; <a href="pixi/DisplayObjectContainer-class.html">DisplayObjectContainer</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="pivot" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/pivot.html">pivot</a></span>
+          <span class="signature">&#8594; <a href="pixi/Point-class.html">Point</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="position" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/position.html">position</a></span>
+          <span class="signature">&#8594; <a href="pixi/Point-class.html">Point</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="renderable" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/renderable.html">renderable</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="rotation" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/rotation.html">rotation</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="pixi/Spine/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd class="inherited">
+          <p>A representation of the runtime type of the object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="scale" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/scale.html">scale</a></span>
+          <span class="signature">&#8594; <a href="pixi/Point-class.html">Point</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="skeleton" class="property">
+          <span class="name"><a href="pixi/Spine/skeleton.html">skeleton</a></span>
+          <span class="signature">&#8594; <a href="pixi/Skeleton-class.html">Skeleton</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="slotContainers" class="property">
+          <span class="name"><a href="pixi/Spine/slotContainers.html">slotContainers</a></span>
+          <span class="signature">&#8594; List&lt;<a href="pixi/DisplayObjectContainer-class.html">DisplayObjectContainer</a>&gt;</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="spineData" class="property">
+          <span class="name"><a href="pixi/Spine/spineData.html">spineData</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="stage" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/stage.html">stage</a></span>
+          <span class="signature">&#8594; <a href="pixi/DisplayObjectContainer-class.html">DisplayObjectContainer</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="state" class="property">
+          <span class="name"><a href="pixi/Spine/state.html">state</a></span>
+          <span class="signature">&#8594; <a href="pixi/AnimationState-class.html">AnimationState</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="stateData" class="property">
+          <span class="name"><a href="pixi/Spine/stateData.html">stateData</a></span>
+          <span class="signature">&#8594; <a href="pixi/AnimationStateData-class.html">AnimationStateData</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="visible" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/visible.html">visible</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="width" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/width.html">width</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="worldAlpha" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/worldAlpha.html">worldAlpha</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="worldPosition" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/worldPosition.html">worldPosition</a></span>
+          <span class="signature">&#8594; <a href="pixi/Point-class.html">Point</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="worldRotation" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/worldRotation.html">worldRotation</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="worldScale" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/worldScale.html">worldScale</a></span>
+          <span class="signature">&#8594; <a href="pixi/Point-class.html">Point</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="worldTransform" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/worldTransform.html">worldTransform</a></span>
+          <span class="signature">&#8594; <a href="pixi/Matrix-class.html">Matrix</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="worldVisible" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/worldVisible.html">worldVisible</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="x" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/x.html">x</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="y" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/y.html">y</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="pixi/Spine/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>The equality operator.</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="addChild" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/addChild.html">addChild</a></span><span class="signature">(<wbr><span class="parameter" id="addChild-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; <a href="pixi/DisplayObject-class.html">DisplayObject</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="addChildAt" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/addChildAt.html">addChildAt</a></span><span class="signature">(<wbr><span class="parameter" id="addChildAt-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span>, </span> <span class="parameter" id="addChildAt-param-index"><span class="type-annotation">num</span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; <a href="pixi/DisplayObject-class.html">DisplayObject</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="click" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/click.html">click</a></span><span class="signature">(<wbr><span class="parameter" id="click-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="contains" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/contains.html">contains</a></span><span class="signature">(<wbr><span class="parameter" id="contains-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="createSprite" class="callable">
+          <span class="name"><a href="pixi/Spine/createSprite.html">createSprite</a></span><span class="signature">(<wbr><span class="parameter" id="createSprite-param-slot"><span class="type-annotation"><a href="pixi/Slot-class.html">Slot</a></span> <span class="parameter-name">slot</span>, </span> <span class="parameter" id="createSprite-param-descriptor"><span class="parameter-name">descriptor</span></span>)
+            <span class="returntype parameter">&#8594; List&lt;<a href="pixi/Sprite-class.html">Sprite</a>&gt;</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="displayObjectUpdateTransform" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/displayObjectUpdateTransform.html">displayObjectUpdateTransform</a></span><span class="signature">(<wbr>[<span class="parameter" id="displayObjectUpdateTransform-param-parent"><span class="type-annotation"><a href="pixi/DisplayObjectContainer-class.html">DisplayObjectContainer</a></span> <span class="parameter-name">parent</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="generateTexture" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/generateTexture.html">generateTexture</a></span><span class="signature">(<wbr>[<span class="parameter" id="generateTexture-param-resolution"><span class="type-annotation">num</span> <span class="parameter-name">resolution</span>, </span> <span class="parameter" id="generateTexture-param-scaleMode"><span class="type-annotation">num</span> <span class="parameter-name">scaleMode</span>, </span> <span class="parameter" id="generateTexture-param-renderer"><span class="parameter-name">renderer</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="pixi/RenderTexture-class.html">RenderTexture</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getBounds" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/getBounds.html">getBounds</a></span><span class="signature">(<wbr>[<span class="parameter" id="getBounds-param-targetCoordinateSpace"><span class="parameter-name">targetCoordinateSpace</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="pixi/Rectangle-class.html">Rectangle</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getChildAt" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/getChildAt.html">getChildAt</a></span><span class="signature">(<wbr><span class="parameter" id="getChildAt-param-index"><span class="type-annotation">num</span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; <a href="pixi/DisplayObject-class.html">DisplayObject</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getChildIndex" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/getChildIndex.html">getChildIndex</a></span><span class="signature">(<wbr><span class="parameter" id="getChildIndex-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; num</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getLocalBounds" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/getLocalBounds.html">getLocalBounds</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="pixi/Rectangle-class.html">Rectangle</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="mousedown" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/mousedown.html">mousedown</a></span><span class="signature">(<wbr><span class="parameter" id="mousedown-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="mousemove" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/mousemove.html">mousemove</a></span><span class="signature">(<wbr><span class="parameter" id="mousemove-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="mouseout" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/mouseout.html">mouseout</a></span><span class="signature">(<wbr><span class="parameter" id="mouseout-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="mouseover" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/mouseover.html">mouseover</a></span><span class="signature">(<wbr><span class="parameter" id="mouseover-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="mouseup" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/mouseup.html">mouseup</a></span><span class="signature">(<wbr><span class="parameter" id="mouseup-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="mouseupoutside" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/mouseupoutside.html">mouseupoutside</a></span><span class="signature">(<wbr><span class="parameter" id="mouseupoutside-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="pixi/Spine/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Invoked when a non-existent method or property is accessed.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeChild" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/removeChild.html">removeChild</a></span><span class="signature">(<wbr><span class="parameter" id="removeChild-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; <a href="pixi/DisplayObject-class.html">DisplayObject</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeChildAt" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/removeChildAt.html">removeChildAt</a></span><span class="signature">(<wbr><span class="parameter" id="removeChildAt-param-index"><span class="type-annotation">num</span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; <a href="pixi/DisplayObject-class.html">DisplayObject</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeChildren" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/removeChildren.html">removeChildren</a></span><span class="signature">(<wbr>[<span class="parameter" id="removeChildren-param-beginIndex"><span class="type-annotation">num</span> <span class="parameter-name">beginIndex</span>, </span> <span class="parameter" id="removeChildren-param-endIndex"><span class="type-annotation">num</span> <span class="parameter-name">endIndex</span></span> ])
+            <span class="returntype parameter">&#8594; List&lt;<a href="pixi/DisplayObject-class.html">DisplayObject</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeStageReference" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/removeStageReference.html">removeStageReference</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="rightclick" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/rightclick.html">rightclick</a></span><span class="signature">(<wbr><span class="parameter" id="rightclick-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="rightdown" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/rightdown.html">rightdown</a></span><span class="signature">(<wbr><span class="parameter" id="rightdown-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="rightup" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/rightup.html">rightup</a></span><span class="signature">(<wbr><span class="parameter" id="rightup-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="rightupoutside" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/rightupoutside.html">rightupoutside</a></span><span class="signature">(<wbr><span class="parameter" id="rightupoutside-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="setChildIndex" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/setChildIndex.html">setChildIndex</a></span><span class="signature">(<wbr><span class="parameter" id="setChildIndex-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span>, </span> <span class="parameter" id="setChildIndex-param-index"><span class="type-annotation">num</span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="setStageReference" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/setStageReference.html">setStageReference</a></span><span class="signature">(<wbr><span class="parameter" id="setStageReference-param-stage"><span class="type-annotation"><a href="pixi/DisplayObjectContainer-class.html">DisplayObjectContainer</a></span> <span class="parameter-name">stage</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="swapChildren" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/swapChildren.html">swapChildren</a></span><span class="signature">(<wbr><span class="parameter" id="swapChildren-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span>, </span> <span class="parameter" id="swapChildren-param-child2"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child2</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="tap" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/tap.html">tap</a></span><span class="signature">(<wbr><span class="parameter" id="tap-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="toGlobal" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/toGlobal.html">toGlobal</a></span><span class="signature">(<wbr><span class="parameter" id="toGlobal-param-position"><span class="type-annotation"><a href="pixi/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>)
+            <span class="returntype parameter">&#8594; <a href="pixi/Point-class.html">Point</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="toLocal" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/toLocal.html">toLocal</a></span><span class="signature">(<wbr><span class="parameter" id="toLocal-param-position"><span class="type-annotation"><a href="pixi/Point-class.html">Point</a></span> <span class="parameter-name">position</span>, </span> <span class="parameter" id="toLocal-param-from"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">from</span></span>)
+            <span class="returntype parameter">&#8594; <a href="pixi/Point-class.html">Point</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="pixi/Spine/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a string representation of this object.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="touchend" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/touchend.html">touchend</a></span><span class="signature">(<wbr><span class="parameter" id="touchend-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="touchendoutside" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/touchendoutside.html">touchendoutside</a></span><span class="signature">(<wbr><span class="parameter" id="touchendoutside-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="touchmove" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/touchmove.html">touchmove</a></span><span class="signature">(<wbr><span class="parameter" id="touchmove-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="touchstart" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/touchstart.html">touchstart</a></span><span class="signature">(<wbr><span class="parameter" id="touchstart-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="update" class="callable">
+          <span class="name"><a href="pixi/Spine/update.html">update</a></span><span class="signature">(<wbr><span class="parameter" id="update-param-dt"><span class="type-annotation">num</span> <span class="parameter-name">dt</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="updateTransform" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/updateTransform.html">updateTransform</a></span><span class="signature">(<wbr>[<span class="parameter" id="updateTransform-param-parent"><span class="type-annotation"><a href="pixi/DisplayObjectContainer-class.html">DisplayObjectContainer</a></span> <span class="parameter-name">parent</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>Spine</h5>
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="pixi/Spine-class.html#constructors">Constructors</a></li>
+      <li><a href="pixi/Spine/Spine.html">Spine</a></li>
+      <li><a href="pixi/Spine/Spine.fakeConstructor$.html">fakeConstructor$</a></li>
+    
+      <li class="section-title">
+        <a href="pixi/Spine-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a href="pixi/DisplayObject/alpha.html">alpha</a></li>
+      <li><a href="pixi/Spine/autoUpdate.html">autoUpdate</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/buttonMode.html">buttonMode</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/cacheAsBitmap.html">cacheAsBitmap</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/children.html">children</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/defaultCursor.html">defaultCursor</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/filterArea.html">filterArea</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/filters.html">filters</a></li>
+      <li class="inherited"><a href="pixi/Spine/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/height.html">height</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/hitArea.html">hitArea</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/ignoreChildInput.html">ignoreChildInput</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/interactive.html">interactive</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mask.html">mask</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/parent.html">parent</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/pivot.html">pivot</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/position.html">position</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/renderable.html">renderable</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/rotation.html">rotation</a></li>
+      <li class="inherited"><a href="pixi/Spine/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/scale.html">scale</a></li>
+      <li><a href="pixi/Spine/skeleton.html">skeleton</a></li>
+      <li><a href="pixi/Spine/slotContainers.html">slotContainers</a></li>
+      <li><a href="pixi/Spine/spineData.html">spineData</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/stage.html">stage</a></li>
+      <li><a href="pixi/Spine/state.html">state</a></li>
+      <li><a href="pixi/Spine/stateData.html">stateData</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/visible.html">visible</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/width.html">width</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldAlpha.html">worldAlpha</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldPosition.html">worldPosition</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldRotation.html">worldRotation</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldScale.html">worldScale</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldTransform.html">worldTransform</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldVisible.html">worldVisible</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/x.html">x</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/y.html">y</a></li>
+    
+      <li class="section-title inherited"><a href="pixi/Spine-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="pixi/Spine/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="pixi/Spine-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/addChild.html">addChild</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/addChildAt.html">addChildAt</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/click.html">click</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/contains.html">contains</a></li>
+      <li><a href="pixi/Spine/createSprite.html">createSprite</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/displayObjectUpdateTransform.html">displayObjectUpdateTransform</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/generateTexture.html">generateTexture</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/getBounds.html">getBounds</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/getChildAt.html">getChildAt</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/getChildIndex.html">getChildIndex</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/getLocalBounds.html">getLocalBounds</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mousedown.html">mousedown</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mousemove.html">mousemove</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mouseout.html">mouseout</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mouseover.html">mouseover</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mouseup.html">mouseup</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mouseupoutside.html">mouseupoutside</a></li>
+      <li class="inherited"><a href="pixi/Spine/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/removeChild.html">removeChild</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/removeChildAt.html">removeChildAt</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/removeChildren.html">removeChildren</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/removeStageReference.html">removeStageReference</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/rightclick.html">rightclick</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/rightdown.html">rightdown</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/rightup.html">rightup</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/rightupoutside.html">rightupoutside</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/setChildIndex.html">setChildIndex</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/setStageReference.html">setStageReference</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/swapChildren.html">swapChildren</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/tap.html">tap</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/toGlobal.html">toGlobal</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/toLocal.html">toLocal</a></li>
+      <li class="inherited"><a href="pixi/Spine/toString.html">toString</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/touchend.html">touchend</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/touchendoutside.html">touchendoutside</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/touchmove.html">touchmove</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/touchstart.html">touchstart</a></li>
+      <li><a href="pixi/Spine/update.html">update</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/updateTransform.html">updateTransform</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          phaser 2.6.2-beta+1
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+</body>
+
+</html>

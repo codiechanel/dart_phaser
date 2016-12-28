@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the preUpdate method from the Group class, for the Dart programming language.">
+  <title>preUpdate method - Group class - phaser library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">phaser</a></li>
+            <li><a href="phaser/phaser-library.html">phaser</a></li>
+            <li><a href="phaser/Group-class.html">Group</a></li>
+            <li class="self-crumb">preUpdate</li>
+          </ol>
+          <div class="self-name">preUpdate</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">phaser</a></li>
+          <li><a href="phaser/phaser-library.html">phaser</a></li>
+          <li><a href="phaser/Group-class.html">Group</a></li>
+          <li class="self-crumb">preUpdate</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <span class="kind">method</span> preUpdate
+          </h1>
+        </div>
+        <ul class="subnav">
+          <li><a href="phaser/Group/preUpdate.html#source">Source</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">phaser</a></h5>
+    <h5><a href="phaser/phaser-library.html">phaser</a></h5>
+    <h5><a href="phaser/Group-class.html">Group</a></h5>
+
+    <ol>
+    
+      <li class="section-title"><a href="phaser/Group-class.html#static-properties">Static properties</a></li>
+      <li><a href="phaser/Group/RETURN_ALL.html">RETURN_ALL</a></li>
+      <li><a href="phaser/Group/RETURN_CHILD.html">RETURN_CHILD</a></li>
+      <li><a href="phaser/Group/RETURN_NONE.html">RETURN_NONE</a></li>
+      <li><a href="phaser/Group/RETURN_TOTAL.html">RETURN_TOTAL</a></li>
+      <li><a href="phaser/Group/SORT_ASCENDING.html">SORT_ASCENDING</a></li>
+      <li><a href="phaser/Group/SORT_DESCENDING.html">SORT_DESCENDING</a></li>
+    
+    
+      <li class="section-title"><a href="phaser/Group-class.html#constructors">Constructors</a></li>
+      <li><a href="phaser/Group/Group.html">Group</a></li>
+      <li><a href="phaser/Group/Group.fakeConstructor$.html">fakeConstructor$</a></li>
+    
+      <li class="section-title">
+        <a href="phaser/Group-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="phaser/Group/alive.html">alive</a></li>
+      <li><a href="phaser/Group/alpha.html">alpha</a></li>
+      <li><a href="phaser/Group/angle.html">angle</a></li>
+      <li><a href="phaser/Group/bottom.html">bottom</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/buttonMode.html">buttonMode</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/cacheAsBitmap.html">cacheAsBitmap</a></li>
+      <li><a href="phaser/Group/cameraOffset.html">cameraOffset</a></li>
+      <li><a href="phaser/Group/centerX.html">centerX</a></li>
+      <li><a href="phaser/Group/centerY.html">centerY</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/children.html">children</a></li>
+      <li><a href="phaser/Group/classType.html">classType</a></li>
+      <li><a href="phaser/Group/cursor.html">cursor</a></li>
+      <li><a href="phaser/Group/cursorIndex.html">cursorIndex</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/defaultCursor.html">defaultCursor</a></li>
+      <li><a href="phaser/Group/enableBody.html">enableBody</a></li>
+      <li><a href="phaser/Group/enableBodyDebug.html">enableBodyDebug</a></li>
+      <li><a href="phaser/Group/exists.html">exists</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/filterArea.html">filterArea</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/filters.html">filters</a></li>
+      <li><a href="phaser/Group/fixedToCamera.html">fixedToCamera</a></li>
+      <li><a href="phaser/Group/game.html">game</a></li>
+      <li><a href="phaser/Group/hash.html">hash</a></li>
+      <li class="inherited"><a href="phaser/Group/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/height.html">height</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/hitArea.html">hitArea</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/ignoreChildInput.html">ignoreChildInput</a></li>
+      <li><a href="phaser/Group/ignoreDestroy.html">ignoreDestroy</a></li>
+      <li><a href="phaser/Group/inputEnableChildren.html">inputEnableChildren</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/interactive.html">interactive</a></li>
+      <li><a href="phaser/Group/left.html">left</a></li>
+      <li><a href="phaser/Group/length.html">length</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mask.html">mask</a></li>
+      <li><a href="phaser/Group/name.html">name</a></li>
+      <li><a href="phaser/Group/onChildInputDown.html">onChildInputDown</a></li>
+      <li><a href="phaser/Group/onChildInputOut.html">onChildInputOut</a></li>
+      <li><a href="phaser/Group/onChildInputOver.html">onChildInputOver</a></li>
+      <li><a href="phaser/Group/onChildInputUp.html">onChildInputUp</a></li>
+      <li><a href="phaser/Group/onDestroy.html">onDestroy</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/parent.html">parent</a></li>
+      <li><a href="phaser/Group/pendingDestroy.html">pendingDestroy</a></li>
+      <li><a href="phaser/Group/physicsBodyType.html">physicsBodyType</a></li>
+      <li><a href="phaser/Group/physicsSortDirection.html">physicsSortDirection</a></li>
+      <li><a href="phaser/Group/physicsType.html">physicsType</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/pivot.html">pivot</a></li>
+      <li><a href="phaser/Group/position.html">position</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/renderable.html">renderable</a></li>
+      <li><a href="phaser/Group/right.html">right</a></li>
+      <li><a href="phaser/Group/rotation.html">rotation</a></li>
+      <li class="inherited"><a href="phaser/Group/runtimeType.html">runtimeType</a></li>
+      <li><a href="phaser/Group/scale.html">scale</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/stage.html">stage</a></li>
+      <li><a href="phaser/Group/top.html">top</a></li>
+      <li><a href="phaser/Group/total.html">total</a></li>
+      <li><a href="phaser/Group/type.html">type</a></li>
+      <li><a href="phaser/Group/visible.html">visible</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/width.html">width</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldAlpha.html">worldAlpha</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldPosition.html">worldPosition</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldRotation.html">worldRotation</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldScale.html">worldScale</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldTransform.html">worldTransform</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldVisible.html">worldVisible</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/x.html">x</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/y.html">y</a></li>
+      <li><a href="phaser/Group/z.html">z</a></li>
+    
+      <li class="section-title inherited"><a href="phaser/Group-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="phaser/Group/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="phaser/Group-class.html#instance-methods">Methods</a></li>
+      <li><a href="phaser/Group/add.html">add</a></li>
+      <li><a href="phaser/Group/addAll.html">addAll</a></li>
+      <li><a href="phaser/Group/addAt.html">addAt</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/addChild.html">addChild</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/addChildAt.html">addChildAt</a></li>
+      <li><a href="phaser/Group/addMultiple.html">addMultiple</a></li>
+      <li><a href="phaser/Group/addToHash.html">addToHash</a></li>
+      <li><a href="phaser/Group/align.html">align</a></li>
+      <li><a href="phaser/Group/alignIn.html">alignIn</a></li>
+      <li><a href="phaser/Group/alignTo.html">alignTo</a></li>
+      <li><a href="phaser/Group/bringToTop.html">bringToTop</a></li>
+      <li><a href="phaser/Group/callAll.html">callAll</a></li>
+      <li><a href="phaser/Group/callAllExists.html">callAllExists</a></li>
+      <li><a href="phaser/Group/callbackFromArray.html">callbackFromArray</a></li>
+      <li><a href="phaser/Group/checkAll.html">checkAll</a></li>
+      <li><a href="phaser/Group/checkProperty.html">checkProperty</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/click.html">click</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/contains.html">contains</a></li>
+      <li><a href="phaser/Group/countDead.html">countDead</a></li>
+      <li><a href="phaser/Group/countLiving.html">countLiving</a></li>
+      <li><a href="phaser/Group/create.html">create</a></li>
+      <li><a href="phaser/Group/createMultiple.html">createMultiple</a></li>
+      <li><a href="phaser/Group/customSort.html">customSort</a></li>
+      <li><a href="phaser/Group/destroy.html">destroy</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/displayObjectUpdateTransform.html">displayObjectUpdateTransform</a></li>
+      <li><a href="phaser/Group/divideAll.html">divideAll</a></li>
+      <li><a href="phaser/Group/filter.html">filter</a></li>
+      <li><a href="phaser/Group/forEach.html">forEach</a></li>
+      <li><a href="phaser/Group/forEachAlive.html">forEachAlive</a></li>
+      <li><a href="phaser/Group/forEachDead.html">forEachDead</a></li>
+      <li><a href="phaser/Group/forEachExists.html">forEachExists</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/generateTexture.html">generateTexture</a></li>
+      <li><a href="phaser/Group/getAt.html">getAt</a></li>
+      <li><a href="phaser/Group/getBottom.html">getBottom</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/getBounds.html">getBounds</a></li>
+      <li><a href="phaser/Group/getByName.html">getByName</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/getChildAt.html">getChildAt</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/getChildIndex.html">getChildIndex</a></li>
+      <li><a href="phaser/Group/getClosestTo.html">getClosestTo</a></li>
+      <li><a href="phaser/Group/getFirstAlive.html">getFirstAlive</a></li>
+      <li><a href="phaser/Group/getFirstDead.html">getFirstDead</a></li>
+      <li><a href="phaser/Group/getFirstExists.html">getFirstExists</a></li>
+      <li><a href="phaser/Group/getFurthestFrom.html">getFurthestFrom</a></li>
+      <li><a href="phaser/Group/getIndex.html">getIndex</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/getLocalBounds.html">getLocalBounds</a></li>
+      <li><a href="phaser/Group/getRandom.html">getRandom</a></li>
+      <li><a href="phaser/Group/getTop.html">getTop</a></li>
+      <li><a href="phaser/Group/hasProperty.html">hasProperty</a></li>
+      <li><a href="phaser/Group/iterate.html">iterate</a></li>
+      <li><a href="phaser/Group/JS$set.html">JS$set</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mousedown.html">mousedown</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mousemove.html">mousemove</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mouseout.html">mouseout</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mouseover.html">mouseover</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mouseup.html">mouseup</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mouseupoutside.html">mouseupoutside</a></li>
+      <li><a href="phaser/Group/moveAll.html">moveAll</a></li>
+      <li><a href="phaser/Group/moveDown.html">moveDown</a></li>
+      <li><a href="phaser/Group/moveUp.html">moveUp</a></li>
+      <li><a href="phaser/Group/multiplyAll.html">multiplyAll</a></li>
+      <li><a href="phaser/Group/next.html">next</a></li>
+      <li class="inherited"><a href="phaser/Group/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a href="phaser/Group/postUpdate.html">postUpdate</a></li>
+      <li><a href="phaser/Group/preUpdate.html">preUpdate</a></li>
+      <li><a href="phaser/Group/previous.html">previous</a></li>
+      <li><a href="phaser/Group/remove.html">remove</a></li>
+      <li><a href="phaser/Group/removeAll.html">removeAll</a></li>
+      <li><a href="phaser/Group/removeBetween.html">removeBetween</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/removeChild.html">removeChild</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/removeChildAt.html">removeChildAt</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/removeChildren.html">removeChildren</a></li>
+      <li><a href="phaser/Group/removeFromHash.html">removeFromHash</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/removeStageReference.html">removeStageReference</a></li>
+      <li><a href="phaser/Group/replace.html">replace</a></li>
+      <li><a href="phaser/Group/resetChild.html">resetChild</a></li>
+      <li><a href="phaser/Group/resetCursor.html">resetCursor</a></li>
+      <li><a href="phaser/Group/reverse.html">reverse</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/rightclick.html">rightclick</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/rightdown.html">rightdown</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/rightup.html">rightup</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/rightupoutside.html">rightupoutside</a></li>
+      <li><a href="phaser/Group/sendToBack.html">sendToBack</a></li>
+      <li><a href="phaser/Group/setAll.html">setAll</a></li>
+      <li><a href="phaser/Group/setAllChildren.html">setAllChildren</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/setChildIndex.html">setChildIndex</a></li>
+      <li><a href="phaser/Group/setProperty.html">setProperty</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/setStageReference.html">setStageReference</a></li>
+      <li><a href="phaser/Group/sort.html">sort</a></li>
+      <li><a href="phaser/Group/subAll.html">subAll</a></li>
+      <li><a href="phaser/Group/swap.html">swap</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/swapChildren.html">swapChildren</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/tap.html">tap</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/toGlobal.html">toGlobal</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/toLocal.html">toLocal</a></li>
+      <li class="inherited"><a href="phaser/Group/toString.html">toString</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/touchend.html">touchend</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/touchendoutside.html">touchendoutside</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/touchmove.html">touchmove</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/touchstart.html">touchstart</a></li>
+      <li><a href="phaser/Group/update.html">update</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/updateTransform.html">updateTransform</a></li>
+      <li><a href="phaser/Group/updateZ.html">updateZ</a></li>
+      <li><a href="phaser/Group/xy.html">xy</a></li>
+    </ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <section class="multi-line-signature">
+      <span class="returntype">void</span>
+      <span class="name ">preUpdate</span>(<wbr>)
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre class="prettyprint language-dart">external void preUpdate();</pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          phaser 2.6.2-beta+1
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+</body>
+
+</html>

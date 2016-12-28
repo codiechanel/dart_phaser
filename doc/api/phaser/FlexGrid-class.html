@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the FlexGrid class from the phaser library, for the Dart programming language.">
+  <title>FlexGrid class - phaser library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">phaser</a></li>
+            <li><a href="phaser/phaser-library.html">phaser</a></li>
+            <li class="self-crumb">FlexGrid</li>
+          </ol>
+          <div class="self-name">FlexGrid</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">phaser</a></li>
+          <li><a href="phaser/phaser-library.html">phaser</a></li>
+          <li class="self-crumb">FlexGrid</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <span class="kind">class</span> FlexGrid
+          </h1>
+        </div>
+        <ul class="subnav">
+          <li><a href="phaser/FlexGrid-class.html#instance-properties">Properties</a></li>
+          <li><a href="phaser/FlexGrid-class.html#constructors">Constructors</a></li>
+          <li><a href="phaser/FlexGrid-class.html#operators">Operators</a></li>
+          <li><a href="phaser/FlexGrid-class.html#instance-methods">Methods</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">phaser</a></h5>
+    <h5><a href="phaser/phaser-library.html">phaser</a></h5>
+
+    <ol>
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#typedefs">Typedefs</a></li>
+      <li><a href="phaser/ResizeCallback.html">ResizeCallback</a></li>
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#properties">Properties</a></li>
+      <li><a href="phaser/Default.html">Default</a></li>
+      <li><a href="phaser/Power0.html">Power0</a></li>
+      <li><a href="phaser/Power1.html">Power1</a></li>
+      <li><a href="phaser/power2.html">power2</a></li>
+      <li><a href="phaser/power3.html">power3</a></li>
+      <li><a href="phaser/power4.html">power4</a></li>
+    
+    
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#classes">Classes</a></li>
+      <li><a href="phaser/AABB-class.html">AABB</a></li>
+      <li><a href="phaser/Animation-class.html">Animation</a></li>
+      <li><a href="phaser/AnimationManager-class.html">AnimationManager</a></li>
+      <li><a href="phaser/AnimationParser-class.html">AnimationParser</a></li>
+      <li><a href="phaser/Arcade-class.html">Arcade</a></li>
+      <li><a href="phaser/ArraySet-class.html">ArraySet</a></li>
+      <li><a href="phaser/ArrayUtils-class.html">ArrayUtils</a></li>
+      <li><a href="phaser/AStar-class.html">AStar</a></li>
+      <li><a href="phaser/AStarNode-class.html">AStarNode</a></li>
+      <li><a href="phaser/AStarPath-class.html">AStarPath</a></li>
+      <li><a href="phaser/AudioSprite-class.html">AudioSprite</a></li>
+      <li><a href="phaser/Back-class.html">Back</a></li>
+      <li><a href="phaser/BinarySerpents-class.html">BinarySerpents</a></li>
+      <li><a href="phaser/BitmapData-class.html">BitmapData</a></li>
+      <li><a href="phaser/BitmapFont-class.html">BitmapFont</a></li>
+      <li><a href="phaser/BitmapText-class.html">BitmapText</a></li>
+      <li><a href="phaser/BlurX-class.html">BlurX</a></li>
+      <li><a href="phaser/BlurY-class.html">BlurY</a></li>
+      <li><a href="phaser/BMFont-class.html">BMFont</a></li>
+      <li><a href="phaser/BMFontChar-class.html">BMFontChar</a></li>
+      <li><a href="phaser/Body-class.html">Body</a></li>
+      <li><a href="phaser/BodyDebug-class.html">BodyDebug</a></li>
+      <li><a href="phaser/Bounce-class.html">Bounce</a></li>
+      <li><a href="phaser/Bullet-class.html">Bullet</a></li>
+      <li><a href="phaser/Button-class.html">Button</a></li>
+      <li><a href="phaser/Cache-class.html">Cache</a></li>
+      <li><a href="phaser/CachedRenderTexture-class.html">CachedRenderTexture</a></li>
+      <li><a href="phaser/Camera-class.html">Camera</a></li>
+      <li><a href="phaser/Canvas-class.html">Canvas</a></li>
+      <li><a href="phaser/CausticLight-class.html">CausticLight</a></li>
+      <li><a href="phaser/CheckerWave-class.html">CheckerWave</a></li>
+      <li><a href="phaser/Circle-class.html">Circle</a></li>
+      <li><a href="phaser/Circular-class.html">Circular</a></li>
+      <li><a href="phaser/CollisionGroup-class.html">CollisionGroup</a></li>
+      <li><a href="phaser/Color-class.html">Color</a></li>
+      <li><a href="phaser/ColorBars-class.html">ColorBars</a></li>
+      <li><a href="phaser/ColorComponents-class.html">ColorComponents</a></li>
+      <li><a href="phaser/ColorHarmony-class.html">ColorHarmony</a></li>
+      <li><a href="phaser/ContactMaterial-class.html">ContactMaterial</a></li>
+      <li><a href="phaser/Create-class.html">Create</a></li>
+      <li><a href="phaser/CSS3Filters-class.html">CSS3Filters</a></li>
+      <li><a href="phaser/Cubic-class.html">Cubic</a></li>
+      <li><a href="phaser/CursorKeys-class.html">CursorKeys</a></li>
+      <li><a href="phaser/Debug-class.html">Debug</a></li>
+      <li><a href="phaser/Device-class.html">Device</a></li>
+      <li><a href="phaser/DeviceButton-class.html">DeviceButton</a></li>
+      <li><a href="phaser/DistanceConstraint-class.html">DistanceConstraint</a></li>
+      <li><a href="phaser/DOM-class.html">DOM</a></li>
+      <li><a href="phaser/Elastic-class.html">Elastic</a></li>
+      <li><a href="phaser/Ellipse-class.html">Ellipse</a></li>
+      <li><a href="phaser/Emitter-class.html">Emitter</a></li>
+      <li><a href="phaser/Events-class.html">Events</a></li>
+      <li><a href="phaser/Exponential-class.html">Exponential</a></li>
+      <li><a href="phaser/FaceChoices-class.html">FaceChoices</a></li>
+      <li><a href="phaser/Filter-class.html">Filter</a></li>
+      <li><a href="phaser/Fire-class.html">Fire</a></li>
+      <li><a href="phaser/FixtureList-class.html">FixtureList</a></li>
+      <li><a href="phaser/FlexGrid-class.html">FlexGrid</a></li>
+      <li><a href="phaser/FlexLayer-class.html">FlexLayer</a></li>
+      <li><a href="phaser/Frame-class.html">Frame</a></li>
+      <li><a href="phaser/FrameData-class.html">FrameData</a></li>
+      <li><a href="phaser/Game-class.html">Game</a></li>
+      <li><a href="phaser/GameObjectCreator-class.html">GameObjectCreator</a></li>
+      <li><a href="phaser/GameObjectFactory-class.html">GameObjectFactory</a></li>
+      <li><a href="phaser/Gamepad-class.html">Gamepad</a></li>
+      <li><a href="phaser/GearConstraint-class.html">GearConstraint</a></li>
+      <li><a href="phaser/Graphics-class.html">Graphics</a></li>
+      <li><a href="phaser/Gray-class.html">Gray</a></li>
+      <li><a href="phaser/Group-class.html">Group</a></li>
+      <li><a href="phaser/HueRotate-class.html">HueRotate</a></li>
+      <li><a href="phaser/IGameConfig-class.html">IGameConfig</a></li>
+      <li><a href="phaser/Image-class.html">Image</a></li>
+      <li><a href="phaser/ImageCollection-class.html">ImageCollection</a></li>
+      <li><a href="phaser/Input-class.html">Input</a></li>
+      <li><a href="phaser/InputHandler-class.html">InputHandler</a></li>
+      <li><a href="phaser/InversePointProxy-class.html">InversePointProxy</a></li>
+      <li><a href="phaser/IStateCycle-class.html">IStateCycle</a></li>
+      <li><a href="phaser/Juicy-class.html">Juicy</a></li>
+      <li><a href="phaser/Key-class.html">Key</a></li>
+      <li><a href="phaser/Keyboard-class.html">Keyboard</a></li>
+      <li><a href="phaser/KeyCode-class.html">KeyCode</a></li>
+      <li><a href="phaser/LazerBeam-class.html">LazerBeam</a></li>
+      <li><a href="phaser/LightBeam-class.html">LightBeam</a></li>
+      <li><a href="phaser/Line-class.html">Line</a></li>
+      <li><a href="phaser/Linear-class.html">Linear</a></li>
+      <li><a href="phaser/LinkedList-class.html">LinkedList</a></li>
+      <li><a href="phaser/Loader-class.html">Loader</a></li>
+      <li><a href="phaser/LoaderParser-class.html">LoaderParser</a></li>
+      <li><a href="phaser/LockConstraint-class.html">LockConstraint</a></li>
+      <li><a href="phaser/Marble-class.html">Marble</a></li>
+      <li><a href="phaser/Material-class.html">Material</a></li>
+      <li><a href="phaser/Math-class.html">Math</a></li>
+      <li><a href="phaser/Matrix-class.html">Matrix</a></li>
+      <li><a href="phaser/Mouse-class.html">Mouse</a></li>
+      <li><a href="phaser/MSPointer-class.html">MSPointer</a></li>
+      <li><a href="phaser/Net-class.html">Net</a></li>
+      <li><a href="phaser/Ninja-class.html">Ninja</a></li>
+      <li><a href="phaser/Ninja_Body-class.html">Ninja_Body</a></li>
+      <li><a href="phaser/Ninja_Circle-class.html">Ninja_Circle</a></li>
+      <li><a href="phaser/Ninja_Tile-class.html">Ninja_Tile</a></li>
+      <li><a href="phaser/P2-class.html">P2</a></li>
+      <li><a href="phaser/P2_Body-class.html">P2_Body</a></li>
+      <li><a href="phaser/Particle-class.html">Particle</a></li>
+      <li><a href="phaser/Particles-class.html">Particles</a></li>
+      <li><a href="phaser/Phaser-class.html">Phaser</a></li>
+      <li><a href="phaser/PhaserTextStyle-class.html">PhaserTextStyle</a></li>
+      <li><a href="phaser/Physics-class.html">Physics</a></li>
+      <li><a href="phaser/Pixelate-class.html">Pixelate</a></li>
+      <li><a href="phaser/Plasma-class.html">Plasma</a></li>
+      <li><a href="phaser/Plugin-class.html">Plugin</a></li>
+      <li><a href="phaser/PluginConstructorOf-class.html">PluginConstructorOf</a></li>
+      <li><a href="phaser/PluginManager-class.html">PluginManager</a></li>
+      <li><a href="phaser/Point-class.html">Point</a></li>
+      <li><a href="phaser/Pointer-class.html">Pointer</a></li>
+      <li><a href="phaser/PointerMode-class.html">PointerMode</a></li>
+      <li><a href="phaser/PointProxy-class.html">PointProxy</a></li>
+      <li><a href="phaser/Polygon-class.html">Polygon</a></li>
+      <li><a href="phaser/PrismaticConstraint-class.html">PrismaticConstraint</a></li>
+      <li><a href="phaser/Quadratic-class.html">Quadratic</a></li>
+      <li><a href="phaser/QuadTree-class.html">QuadTree</a></li>
+      <li><a href="phaser/Quartic-class.html">Quartic</a></li>
+      <li><a href="phaser/Quintic-class.html">Quintic</a></li>
+      <li><a href="phaser/RandomDataGenerator-class.html">RandomDataGenerator</a></li>
+      <li><a href="phaser/Rectangle-class.html">Rectangle</a></li>
+      <li><a href="phaser/RenderTexture-class.html">RenderTexture</a></li>
+      <li><a href="phaser/RequestAnimationFrame-class.html">RequestAnimationFrame</a></li>
+      <li><a href="phaser/RetroFont-class.html">RetroFont</a></li>
+      <li><a href="phaser/RevoluteConstraint-class.html">RevoluteConstraint</a></li>
+      <li><a href="phaser/RGBColor-class.html">RGBColor</a></li>
+      <li><a href="phaser/Rope-class.html">Rope</a></li>
+      <li><a href="phaser/RoundedRectangle-class.html">RoundedRectangle</a></li>
+      <li><a href="phaser/SampleFilter-class.html">SampleFilter</a></li>
+      <li><a href="phaser/SamplePlugin-class.html">SamplePlugin</a></li>
+      <li><a href="phaser/SaveCPU-class.html">SaveCPU</a></li>
+      <li><a href="phaser/ScaleManager-class.html">ScaleManager</a></li>
+      <li><a href="phaser/ScreenFlash-class.html">ScreenFlash</a></li>
+      <li><a href="phaser/Signal-class.html">Signal</a></li>
+      <li><a href="phaser/SignalBinding-class.html">SignalBinding</a></li>
+      <li><a href="phaser/SinglePad-class.html">SinglePad</a></li>
+      <li><a href="phaser/Sinusoidal-class.html">Sinusoidal</a></li>
+      <li><a href="phaser/Sound-class.html">Sound</a></li>
+      <li><a href="phaser/SoundManager-class.html">SoundManager</a></li>
+      <li><a href="phaser/Spring-class.html">Spring</a></li>
+      <li><a href="phaser/Sprite-class.html">Sprite</a></li>
+      <li><a href="phaser/SpriteBatch-class.html">SpriteBatch</a></li>
+      <li><a href="phaser/Stage-class.html">Stage</a></li>
+      <li><a href="phaser/State-class.html">State</a></li>
+      <li><a href="phaser/StateManager-class.html">StateManager</a></li>
+      <li><a href="phaser/Text-class.html">Text</a></li>
+      <li><a href="phaser/Tile-class.html">Tile</a></li>
+      <li><a href="phaser/Tilemap-class.html">Tilemap</a></li>
+      <li><a href="phaser/TilemapLayer-class.html">TilemapLayer</a></li>
+      <li><a href="phaser/TilemapLayerGL-class.html">TilemapLayerGL</a></li>
+      <li><a href="phaser/TilemapParser-class.html">TilemapParser</a></li>
+      <li><a href="phaser/TilemapWalker-class.html">TilemapWalker</a></li>
+      <li><a href="phaser/Tileset-class.html">Tileset</a></li>
+      <li><a href="phaser/TileSprite-class.html">TileSprite</a></li>
+      <li><a href="phaser/TileType-class.html">TileType</a></li>
+      <li><a href="phaser/Time-class.html">Time</a></li>
+      <li><a href="phaser/Timer-class.html">Timer</a></li>
+      <li><a href="phaser/TimerEvent-class.html">TimerEvent</a></li>
+      <li><a href="phaser/Touch-class.html">Touch</a></li>
+      <li><a href="phaser/Trail-class.html">Trail</a></li>
+      <li><a href="phaser/Tunnel-class.html">Tunnel</a></li>
+      <li><a href="phaser/Tween-class.html">Tween</a></li>
+      <li><a href="phaser/TweenData-class.html">TweenData</a></li>
+      <li><a href="phaser/TweenManager-class.html">TweenManager</a></li>
+      <li><a href="phaser/Utils-class.html">Utils</a></li>
+      <li><a href="phaser/Video-class.html">Video</a></li>
+      <li><a href="phaser/VirtualJoystick-class.html">VirtualJoystick</a></li>
+      <li><a href="phaser/Weapon-class.html">Weapon</a></li>
+      <li><a href="phaser/Webcam-class.html">Webcam</a></li>
+      <li><a href="phaser/WheelEventProxy-class.html">WheelEventProxy</a></li>
+      <li><a href="phaser/World-class.html">World</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    
+    <section>
+      <dl class="dl-horizontal">
+
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>JS("Phaser.FlexGrid")</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+
+
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="FlexGrid" class="callable">
+          <span class="name"><a href="phaser/FlexGrid/FlexGrid.html">FlexGrid</a></span><span class="signature">(<span class="parameter" id="-param-manager"><span class="type-annotation"><a href="phaser/ScaleManager-class.html">ScaleManager</a></span> <span class="parameter-name">manager</span>, </span> <span class="parameter" id="-param-width"><span class="type-annotation">num</span> <span class="parameter-name">width</span>, </span> <span class="parameter" id="-param-height"><span class="type-annotation">num</span> <span class="parameter-name">height</span></span>)</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="FlexGrid.fakeConstructor$" class="callable">
+          <span class="name"><a href="phaser/FlexGrid/FlexGrid.fakeConstructor$.html">FlexGrid.fakeConstructor$</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="boundsCustom" class="property">
+          <span class="name"><a href="phaser/FlexGrid/boundsCustom.html">boundsCustom</a></span>
+          <span class="signature">&#8594; <a href="phaser/Rectangle-class.html">Rectangle</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="boundsFluid" class="property">
+          <span class="name"><a href="phaser/FlexGrid/boundsFluid.html">boundsFluid</a></span>
+          <span class="signature">&#8594; <a href="phaser/Rectangle-class.html">Rectangle</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="boundsFull" class="property">
+          <span class="name"><a href="phaser/FlexGrid/boundsFull.html">boundsFull</a></span>
+          <span class="signature">&#8594; <a href="phaser/Rectangle-class.html">Rectangle</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="boundsNone" class="property">
+          <span class="name"><a href="phaser/FlexGrid/boundsNone.html">boundsNone</a></span>
+          <span class="signature">&#8594; <a href="phaser/Rectangle-class.html">Rectangle</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="customHeight" class="property">
+          <span class="name"><a href="phaser/FlexGrid/customHeight.html">customHeight</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="customOffsetX" class="property">
+          <span class="name"><a href="phaser/FlexGrid/customOffsetX.html">customOffsetX</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="customOffsetY" class="property">
+          <span class="name"><a href="phaser/FlexGrid/customOffsetY.html">customOffsetY</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="customWidth" class="property">
+          <span class="name"><a href="phaser/FlexGrid/customWidth.html">customWidth</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="game" class="property">
+          <span class="name"><a href="phaser/FlexGrid/game.html">game</a></span>
+          <span class="signature">&#8594; <a href="phaser/Game-class.html">Game</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="phaser/FlexGrid/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span>
+        </dt>
+        <dd class="inherited">
+          <p>Get a hash code for this object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="height" class="property">
+          <span class="name"><a href="phaser/FlexGrid/height.html">height</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="manager" class="property">
+          <span class="name"><a href="phaser/FlexGrid/manager.html">manager</a></span>
+          <span class="signature">&#8594; <a href="phaser/ScaleManager-class.html">ScaleManager</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="multiplier" class="property">
+          <span class="name"><a href="phaser/FlexGrid/multiplier.html">multiplier</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="positionCustom" class="property">
+          <span class="name"><a href="phaser/FlexGrid/positionCustom.html">positionCustom</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="positionFluid" class="property">
+          <span class="name"><a href="phaser/FlexGrid/positionFluid.html">positionFluid</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="positionFull" class="property">
+          <span class="name"><a href="phaser/FlexGrid/positionFull.html">positionFull</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="positionNone" class="property">
+          <span class="name"><a href="phaser/FlexGrid/positionNone.html">positionNone</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="ratioH" class="property">
+          <span class="name"><a href="phaser/FlexGrid/ratioH.html">ratioH</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="ratioV" class="property">
+          <span class="name"><a href="phaser/FlexGrid/ratioV.html">ratioV</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="phaser/FlexGrid/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd class="inherited">
+          <p>A representation of the runtime type of the object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="scaleCustom" class="property">
+          <span class="name"><a href="phaser/FlexGrid/scaleCustom.html">scaleCustom</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="scaleFluid" class="property">
+          <span class="name"><a href="phaser/FlexGrid/scaleFluid.html">scaleFluid</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="scaleFluidInversed" class="property">
+          <span class="name"><a href="phaser/FlexGrid/scaleFluidInversed.html">scaleFluidInversed</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="scaleFull" class="property">
+          <span class="name"><a href="phaser/FlexGrid/scaleFull.html">scaleFull</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="scaleNone" class="property">
+          <span class="name"><a href="phaser/FlexGrid/scaleNone.html">scaleNone</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="width" class="property">
+          <span class="name"><a href="phaser/FlexGrid/width.html">width</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="phaser/FlexGrid/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>The equality operator.</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="createCustomLayer" class="callable">
+          <span class="name"><a href="phaser/FlexGrid/createCustomLayer.html">createCustomLayer</a></span><span class="signature">(<wbr><span class="parameter" id="createCustomLayer-param-width"><span class="type-annotation">num</span> <span class="parameter-name">width</span>, </span> <span class="parameter" id="createCustomLayer-param-height"><span class="type-annotation">num</span> <span class="parameter-name">height</span>, [</span> <span class="parameter" id="createCustomLayer-param-children"><span class="type-annotation">List&lt;<a href="pixi/DisplayObject-class.html">DisplayObject</a>&gt;</span> <span class="parameter-name">children</span>, </span> <span class="parameter" id="createCustomLayer-param-addToWorld"><span class="type-annotation">bool</span> <span class="parameter-name">addToWorld</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/FlexLayer-class.html">FlexLayer</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="createFixedLayer" class="callable">
+          <span class="name"><a href="phaser/FlexGrid/createFixedLayer.html">createFixedLayer</a></span><span class="signature">(<wbr><span class="parameter" id="createFixedLayer-param-children"><span class="type-annotation">List&lt;<a href="pixi/DisplayObject-class.html">DisplayObject</a>&gt;</span> <span class="parameter-name">children</span></span>)
+            <span class="returntype parameter">&#8594; <a href="phaser/FlexLayer-class.html">FlexLayer</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="createFluidLayer" class="callable">
+          <span class="name"><a href="phaser/FlexGrid/createFluidLayer.html">createFluidLayer</a></span><span class="signature">(<wbr><span class="parameter" id="createFluidLayer-param-children"><span class="type-annotation">List&lt;<a href="pixi/DisplayObject-class.html">DisplayObject</a>&gt;</span> <span class="parameter-name">children</span></span>)
+            <span class="returntype parameter">&#8594; <a href="phaser/FlexLayer-class.html">FlexLayer</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="createFullLayer" class="callable">
+          <span class="name"><a href="phaser/FlexGrid/createFullLayer.html">createFullLayer</a></span><span class="signature">(<wbr><span class="parameter" id="createFullLayer-param-children"><span class="type-annotation">List&lt;<a href="pixi/DisplayObject-class.html">DisplayObject</a>&gt;</span> <span class="parameter-name">children</span></span>)
+            <span class="returntype parameter">&#8594; <a href="phaser/FlexLayer-class.html">FlexLayer</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="debug" class="callable">
+          <span class="name"><a href="phaser/FlexGrid/debug.html">debug</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="fitSprite" class="callable">
+          <span class="name"><a href="phaser/FlexGrid/fitSprite.html">fitSprite</a></span><span class="signature">(<wbr><span class="parameter" id="fitSprite-param-sprite"><span class="type-annotation"><a href="phaser/Sprite-class.html">Sprite</a></span> <span class="parameter-name">sprite</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="phaser/FlexGrid/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Invoked when a non-existent method or property is accessed.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="onResize" class="callable">
+          <span class="name"><a href="phaser/FlexGrid/onResize.html">onResize</a></span><span class="signature">(<wbr><span class="parameter" id="onResize-param-width"><span class="type-annotation">num</span> <span class="parameter-name">width</span>, </span> <span class="parameter" id="onResize-param-height"><span class="type-annotation">num</span> <span class="parameter-name">height</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="refresh" class="callable">
+          <span class="name"><a href="phaser/FlexGrid/refresh.html">refresh</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="reset" class="callable">
+          <span class="name"><a href="phaser/FlexGrid/reset.html">reset</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="setSize" class="callable">
+          <span class="name"><a href="phaser/FlexGrid/setSize.html">setSize</a></span><span class="signature">(<wbr><span class="parameter" id="setSize-param-width"><span class="type-annotation">num</span> <span class="parameter-name">width</span>, </span> <span class="parameter" id="setSize-param-height"><span class="type-annotation">num</span> <span class="parameter-name">height</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="phaser/FlexGrid/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a string representation of this object.</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>FlexGrid</h5>
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="phaser/FlexGrid-class.html#constructors">Constructors</a></li>
+      <li><a href="phaser/FlexGrid/FlexGrid.html">FlexGrid</a></li>
+      <li><a href="phaser/FlexGrid/FlexGrid.fakeConstructor$.html">fakeConstructor$</a></li>
+    
+      <li class="section-title">
+        <a href="phaser/FlexGrid-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="phaser/FlexGrid/boundsCustom.html">boundsCustom</a></li>
+      <li><a href="phaser/FlexGrid/boundsFluid.html">boundsFluid</a></li>
+      <li><a href="phaser/FlexGrid/boundsFull.html">boundsFull</a></li>
+      <li><a href="phaser/FlexGrid/boundsNone.html">boundsNone</a></li>
+      <li><a href="phaser/FlexGrid/customHeight.html">customHeight</a></li>
+      <li><a href="phaser/FlexGrid/customOffsetX.html">customOffsetX</a></li>
+      <li><a href="phaser/FlexGrid/customOffsetY.html">customOffsetY</a></li>
+      <li><a href="phaser/FlexGrid/customWidth.html">customWidth</a></li>
+      <li><a href="phaser/FlexGrid/game.html">game</a></li>
+      <li class="inherited"><a href="phaser/FlexGrid/hashCode.html">hashCode</a></li>
+      <li><a href="phaser/FlexGrid/height.html">height</a></li>
+      <li><a href="phaser/FlexGrid/manager.html">manager</a></li>
+      <li><a href="phaser/FlexGrid/multiplier.html">multiplier</a></li>
+      <li><a href="phaser/FlexGrid/positionCustom.html">positionCustom</a></li>
+      <li><a href="phaser/FlexGrid/positionFluid.html">positionFluid</a></li>
+      <li><a href="phaser/FlexGrid/positionFull.html">positionFull</a></li>
+      <li><a href="phaser/FlexGrid/positionNone.html">positionNone</a></li>
+      <li><a href="phaser/FlexGrid/ratioH.html">ratioH</a></li>
+      <li><a href="phaser/FlexGrid/ratioV.html">ratioV</a></li>
+      <li class="inherited"><a href="phaser/FlexGrid/runtimeType.html">runtimeType</a></li>
+      <li><a href="phaser/FlexGrid/scaleCustom.html">scaleCustom</a></li>
+      <li><a href="phaser/FlexGrid/scaleFluid.html">scaleFluid</a></li>
+      <li><a href="phaser/FlexGrid/scaleFluidInversed.html">scaleFluidInversed</a></li>
+      <li><a href="phaser/FlexGrid/scaleFull.html">scaleFull</a></li>
+      <li><a href="phaser/FlexGrid/scaleNone.html">scaleNone</a></li>
+      <li><a href="phaser/FlexGrid/width.html">width</a></li>
+    
+      <li class="section-title inherited"><a href="phaser/FlexGrid-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="phaser/FlexGrid/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="phaser/FlexGrid-class.html#instance-methods">Methods</a></li>
+      <li><a href="phaser/FlexGrid/createCustomLayer.html">createCustomLayer</a></li>
+      <li><a href="phaser/FlexGrid/createFixedLayer.html">createFixedLayer</a></li>
+      <li><a href="phaser/FlexGrid/createFluidLayer.html">createFluidLayer</a></li>
+      <li><a href="phaser/FlexGrid/createFullLayer.html">createFullLayer</a></li>
+      <li><a href="phaser/FlexGrid/debug.html">debug</a></li>
+      <li><a href="phaser/FlexGrid/fitSprite.html">fitSprite</a></li>
+      <li class="inherited"><a href="phaser/FlexGrid/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a href="phaser/FlexGrid/onResize.html">onResize</a></li>
+      <li><a href="phaser/FlexGrid/refresh.html">refresh</a></li>
+      <li><a href="phaser/FlexGrid/reset.html">reset</a></li>
+      <li><a href="phaser/FlexGrid/setSize.html">setSize</a></li>
+      <li class="inherited"><a href="phaser/FlexGrid/toString.html">toString</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          phaser 2.6.2-beta+1
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+</body>
+
+</html>

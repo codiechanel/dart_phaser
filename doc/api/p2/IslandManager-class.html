@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the IslandManager class from the p2 library, for the Dart programming language.">
+  <title>IslandManager class - p2 library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">phaser</a></li>
+            <li><a href="p2/p2-library.html">p2</a></li>
+            <li class="self-crumb">IslandManager</li>
+          </ol>
+          <div class="self-name">IslandManager</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">phaser</a></li>
+          <li><a href="p2/p2-library.html">p2</a></li>
+          <li class="self-crumb">IslandManager</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <span class="kind">class</span> IslandManager
+          </h1>
+        </div>
+        <ul class="subnav">
+          <li><a href="p2/IslandManager-class.html#static-methods">Static Methods</a></li>
+          <li><a href="p2/IslandManager-class.html#instance-properties">Properties</a></li>
+          <li><a href="p2/IslandManager-class.html#constructors">Constructors</a></li>
+          <li><a href="p2/IslandManager-class.html#operators">Operators</a></li>
+          <li><a href="p2/IslandManager-class.html#instance-methods">Methods</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">phaser</a></h5>
+    <h5><a href="p2/p2-library.html">p2</a></h5>
+
+    <ol>
+    
+    
+    
+    
+    
+      <li class="section-title"><a href="p2/p2-library.html#classes">Classes</a></li>
+      <li><a href="p2/AABB-class.html">AABB</a></li>
+      <li><a href="p2/AngleLockEquation-class.html">AngleLockEquation</a></li>
+      <li><a href="p2/Body-class.html">Body</a></li>
+      <li><a href="p2/BodyOptions-class.html">BodyOptions</a></li>
+      <li><a href="p2/Broadphase-class.html">Broadphase</a></li>
+      <li><a href="p2/Capsule-class.html">Capsule</a></li>
+      <li><a href="p2/Circle-class.html">Circle</a></li>
+      <li><a href="p2/Constraint-class.html">Constraint</a></li>
+      <li><a href="p2/ContactEquation-class.html">ContactEquation</a></li>
+      <li><a href="p2/ContactMaterial-class.html">ContactMaterial</a></li>
+      <li><a href="p2/ContactMaterialOptions-class.html">ContactMaterialOptions</a></li>
+      <li><a href="p2/Convex-class.html">Convex</a></li>
+      <li><a href="p2/DistanceConstraint-class.html">DistanceConstraint</a></li>
+      <li><a href="p2/Equation-class.html">Equation</a></li>
+      <li><a href="p2/EventEmitter-class.html">EventEmitter</a></li>
+      <li><a href="p2/FrictionEquation-class.html">FrictionEquation</a></li>
+      <li><a href="p2/GearConstraint-class.html">GearConstraint</a></li>
+      <li><a href="p2/GridBroadphase-class.html">GridBroadphase</a></li>
+      <li><a href="p2/GSSolver-class.html">GSSolver</a></li>
+      <li><a href="p2/Heightfield-class.html">Heightfield</a></li>
+      <li><a href="p2/Island-class.html">Island</a></li>
+      <li><a href="p2/IslandManager-class.html">IslandManager</a></li>
+      <li><a href="p2/IslandNode-class.html">IslandNode</a></li>
+      <li><a href="p2/Line-class.html">Line</a></li>
+      <li><a href="p2/LinearSpring-class.html">LinearSpring</a></li>
+      <li><a href="p2/LockConstraint-class.html">LockConstraint</a></li>
+      <li><a href="p2/Material-class.html">Material</a></li>
+      <li><a href="p2/Narrowphase-class.html">Narrowphase</a></li>
+      <li><a href="p2/NativeBroadphase-class.html">NativeBroadphase</a></li>
+      <li><a href="p2/OverlapKeeper-class.html">OverlapKeeper</a></li>
+      <li><a href="p2/Particle-class.html">Particle</a></li>
+      <li><a href="p2/Plane-class.html">Plane</a></li>
+      <li><a href="p2/PrismaticConstraint-class.html">PrismaticConstraint</a></li>
+      <li><a href="p2/Rectangle-class.html">Rectangle</a></li>
+      <li><a href="p2/RevoluteConstraint-class.html">RevoluteConstraint</a></li>
+      <li><a href="p2/RotationalLockEquation-class.html">RotationalLockEquation</a></li>
+      <li><a href="p2/RotationalSpring-class.html">RotationalSpring</a></li>
+      <li><a href="p2/RotationalVelocityEquation-class.html">RotationalVelocityEquation</a></li>
+      <li><a href="p2/SAPBroadphase-class.html">SAPBroadphase</a></li>
+      <li><a href="p2/Shape-class.html">Shape</a></li>
+      <li><a href="p2/Solver-class.html">Solver</a></li>
+      <li><a href="p2/Spring-class.html">Spring</a></li>
+      <li><a href="p2/TupleDictionary-class.html">TupleDictionary</a></li>
+      <li><a href="p2/Utils-class.html">Utils</a></li>
+      <li><a href="p2/vec2-class.html">vec2</a></li>
+      <li><a href="p2/World-class.html">World</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    
+    <section>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li>Object</li>
+          <li><a href="p2/EventEmitter-class.html">EventEmitter</a></li>
+          <li><a href="p2/Solver-class.html">Solver</a></li>
+          <li>IslandManager</li>
+        </ul></dd>
+
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>JS("p2.IslandManager")</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+
+
+    <section class="summary offset-anchor" id="static-methods">
+      <h2>Static Methods</h2>
+      <dl class="callables">
+        <dt id="getUnvisitedNode" class="callable">
+          <span class="name"><a href="p2/IslandManager/getUnvisitedNode.html">getUnvisitedNode</a></span><span class="signature">(<wbr><span class="parameter" id="getUnvisitedNode-param-nodes"><span class="type-annotation">List&lt;Node&gt;</span> <span class="parameter-name">nodes</span></span>)
+            <span class="returntype parameter">&#8594; <a href="p2/IslandNode-class.html">IslandNode</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="IslandManager.fakeConstructor$" class="callable">
+          <span class="name"><a href="p2/IslandManager/IslandManager.fakeConstructor$.html">IslandManager.fakeConstructor$</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="equations" class="property">
+          <span class="name"><a href="p2/IslandManager/equations.html">equations</a></span>
+          <span class="signature">&#8594; List&lt;<a href="p2/Equation-class.html">Equation</a>&gt;</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="equationSortFunction" class="property inherited">
+          <span class="name"><a href="p2/Solver/equationSortFunction.html">equationSortFunction</a></span>
+          <span class="signature">&#8594; <a href="p2/Equation-class.html">Equation</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="p2/IslandManager/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span>
+        </dt>
+        <dd class="inherited">
+          <p>Get a hash code for this object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="islands" class="property">
+          <span class="name"><a href="p2/IslandManager/islands.html">islands</a></span>
+          <span class="signature">&#8594; List&lt;<a href="p2/Island-class.html">Island</a>&gt;</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="nodes" class="property">
+          <span class="name"><a href="p2/IslandManager/nodes.html">nodes</a></span>
+          <span class="signature">&#8594; List&lt;<a href="p2/IslandNode-class.html">IslandNode</a>&gt;</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="p2/IslandManager/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd class="inherited">
+          <p>A representation of the runtime type of the object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="type" class="property inherited">
+          <span class="name"><a href="p2/Solver/type.html">type</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="p2/IslandManager/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>The equality operator.</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="addEquation" class="callable inherited">
+          <span class="name"><a href="p2/Solver/addEquation.html">addEquation</a></span><span class="signature">(<wbr><span class="parameter" id="addEquation-param-eq"><span class="type-annotation"><a href="p2/Equation-class.html">Equation</a></span> <span class="parameter-name">eq</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="addEquations" class="callable inherited">
+          <span class="name"><a href="p2/Solver/addEquations.html">addEquations</a></span><span class="signature">(<wbr><span class="parameter" id="addEquations-param-eqs"><span class="type-annotation">List&lt;<a href="p2/Equation-class.html">Equation</a>&gt;</span> <span class="parameter-name">eqs</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="bfs" class="callable">
+          <span class="name"><a href="p2/IslandManager/bfs.html">bfs</a></span><span class="signature">(<wbr><span class="parameter" id="bfs-param-root"><span class="type-annotation"><a href="p2/IslandNode-class.html">IslandNode</a></span> <span class="parameter-name">root</span>, </span> <span class="parameter" id="bfs-param-bds"><span class="type-annotation">List&lt;<a href="p2/Body-class.html">Body</a>&gt;</span> <span class="parameter-name">bds</span>, </span> <span class="parameter" id="bfs-param-eqs"><span class="type-annotation">List&lt;<a href="p2/Equation-class.html">Equation</a>&gt;</span> <span class="parameter-name">eqs</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="emit" class="callable inherited">
+          <span class="name"><a href="p2/EventEmitter/emit.html">emit</a></span><span class="signature">(<wbr><span class="parameter" id="emit-param-event"><span class="parameter-name">event</span></span>)
+            <span class="returntype parameter">&#8594; <a href="p2/EventEmitter-class.html">EventEmitter</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="has" class="callable inherited">
+          <span class="name"><a href="p2/EventEmitter/has.html">has</a></span><span class="signature">(<wbr><span class="parameter" id="has-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span>, </span> <span class="parameter" id="has-param-listener"><span class="type-annotation">Function</span> <span class="parameter-name">listener</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="p2/IslandManager/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Invoked when a non-existent method or property is accessed.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="off" class="callable inherited">
+          <span class="name"><a href="p2/EventEmitter/off.html">off</a></span><span class="signature">(<wbr><span class="parameter" id="off-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span>, </span> <span class="parameter" id="off-param-listener"><span class="type-annotation">Function</span> <span class="parameter-name">listener</span></span>)
+            <span class="returntype parameter">&#8594; <a href="p2/EventEmitter-class.html">EventEmitter</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="on" class="callable inherited">
+          <span class="name"><a href="p2/EventEmitter/on.html">on</a></span><span class="signature">(<wbr><span class="parameter" id="on-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span>, </span> <span class="parameter" id="on-param-listener"><span class="type-annotation">Function</span> <span class="parameter-name">listener</span>, </span> <span class="parameter" id="on-param-context"><span class="parameter-name">context</span></span>)
+            <span class="returntype parameter">&#8594; <a href="p2/EventEmitter-class.html">EventEmitter</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeAllEquations" class="callable inherited">
+          <span class="name"><a href="p2/Solver/removeAllEquations.html">removeAllEquations</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeEquation" class="callable inherited">
+          <span class="name"><a href="p2/Solver/removeEquation.html">removeEquation</a></span><span class="signature">(<wbr><span class="parameter" id="removeEquation-param-eq"><span class="type-annotation"><a href="p2/Equation-class.html">Equation</a></span> <span class="parameter-name">eq</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="solve" class="callable inherited">
+          <span class="name"><a href="p2/Solver/solve.html">solve</a></span><span class="signature">(<wbr><span class="parameter" id="solve-param-dy"><span class="type-annotation">num</span> <span class="parameter-name">dy</span>, </span> <span class="parameter" id="solve-param-world"><span class="type-annotation"><a href="p2/World-class.html">World</a></span> <span class="parameter-name">world</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="solveIsland" class="callable inherited">
+          <span class="name"><a href="p2/Solver/solveIsland.html">solveIsland</a></span><span class="signature">(<wbr><span class="parameter" id="solveIsland-param-dy"><span class="type-annotation">num</span> <span class="parameter-name">dy</span>, </span> <span class="parameter" id="solveIsland-param-island"><span class="type-annotation"><a href="p2/Island-class.html">Island</a></span> <span class="parameter-name">island</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="sortEquations" class="callable inherited">
+          <span class="name"><a href="p2/Solver/sortEquations.html">sortEquations</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="split" class="callable">
+          <span class="name"><a href="p2/IslandManager/split.html">split</a></span><span class="signature">(<wbr><span class="parameter" id="split-param-world"><span class="type-annotation"><a href="p2/World-class.html">World</a></span> <span class="parameter-name">world</span></span>)
+            <span class="returntype parameter">&#8594; List&lt;<a href="p2/Island-class.html">Island</a>&gt;</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="p2/IslandManager/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a string representation of this object.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="visit" class="callable">
+          <span class="name"><a href="p2/IslandManager/visit.html">visit</a></span><span class="signature">(<wbr><span class="parameter" id="visit-param-node"><span class="type-annotation"><a href="p2/IslandNode-class.html">IslandNode</a></span> <span class="parameter-name">node</span>, </span> <span class="parameter" id="visit-param-bds"><span class="type-annotation">List&lt;<a href="p2/Body-class.html">Body</a>&gt;</span> <span class="parameter-name">bds</span>, </span> <span class="parameter" id="visit-param-eqs"><span class="type-annotation">List&lt;<a href="p2/Equation-class.html">Equation</a>&gt;</span> <span class="parameter-name">eqs</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>IslandManager</h5>
+    <ol>
+    
+    
+      <li class="section-title"><a href="p2/IslandManager-class.html#static-methods">Static methods</a></li>
+      <li><a href="p2/IslandManager/getUnvisitedNode.html">getUnvisitedNode</a></li>
+    
+      <li class="section-title"><a href="p2/IslandManager-class.html#constructors">Constructors</a></li>
+      <li><a href="p2/IslandManager/IslandManager.fakeConstructor$.html">fakeConstructor$</a></li>
+    
+      <li class="section-title">
+        <a href="p2/IslandManager-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="p2/IslandManager/equations.html">equations</a></li>
+      <li class="inherited"><a href="p2/Solver/equationSortFunction.html">equationSortFunction</a></li>
+      <li class="inherited"><a href="p2/IslandManager/hashCode.html">hashCode</a></li>
+      <li><a href="p2/IslandManager/islands.html">islands</a></li>
+      <li><a href="p2/IslandManager/nodes.html">nodes</a></li>
+      <li class="inherited"><a href="p2/IslandManager/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="p2/Solver/type.html">type</a></li>
+    
+      <li class="section-title inherited"><a href="p2/IslandManager-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="p2/IslandManager/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="p2/IslandManager-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"><a href="p2/Solver/addEquation.html">addEquation</a></li>
+      <li class="inherited"><a href="p2/Solver/addEquations.html">addEquations</a></li>
+      <li><a href="p2/IslandManager/bfs.html">bfs</a></li>
+      <li class="inherited"><a href="p2/EventEmitter/emit.html">emit</a></li>
+      <li class="inherited"><a href="p2/EventEmitter/has.html">has</a></li>
+      <li class="inherited"><a href="p2/IslandManager/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="p2/EventEmitter/off.html">off</a></li>
+      <li class="inherited"><a href="p2/EventEmitter/on.html">on</a></li>
+      <li class="inherited"><a href="p2/Solver/removeAllEquations.html">removeAllEquations</a></li>
+      <li class="inherited"><a href="p2/Solver/removeEquation.html">removeEquation</a></li>
+      <li class="inherited"><a href="p2/Solver/solve.html">solve</a></li>
+      <li class="inherited"><a href="p2/Solver/solveIsland.html">solveIsland</a></li>
+      <li class="inherited"><a href="p2/Solver/sortEquations.html">sortEquations</a></li>
+      <li><a href="p2/IslandManager/split.html">split</a></li>
+      <li class="inherited"><a href="p2/IslandManager/toString.html">toString</a></li>
+      <li><a href="p2/IslandManager/visit.html">visit</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          phaser 2.6.2-beta+1
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+</body>
+
+</html>

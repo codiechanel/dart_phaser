@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the Rope class from the phaser library, for the Dart programming language.">
+  <title>Rope class - phaser library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">phaser</a></li>
+            <li><a href="phaser/phaser-library.html">phaser</a></li>
+            <li class="self-crumb">Rope</li>
+          </ol>
+          <div class="self-name">Rope</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">phaser</a></li>
+          <li><a href="phaser/phaser-library.html">phaser</a></li>
+          <li class="self-crumb">Rope</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <span class="kind">class</span> Rope
+          </h1>
+        </div>
+        <ul class="subnav">
+          <li><a href="phaser/Rope-class.html#instance-properties">Properties</a></li>
+          <li><a href="phaser/Rope-class.html#constructors">Constructors</a></li>
+          <li><a href="phaser/Rope-class.html#operators">Operators</a></li>
+          <li><a href="phaser/Rope-class.html#instance-methods">Methods</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">phaser</a></h5>
+    <h5><a href="phaser/phaser-library.html">phaser</a></h5>
+
+    <ol>
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#typedefs">Typedefs</a></li>
+      <li><a href="phaser/ResizeCallback.html">ResizeCallback</a></li>
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#properties">Properties</a></li>
+      <li><a href="phaser/Default.html">Default</a></li>
+      <li><a href="phaser/Power0.html">Power0</a></li>
+      <li><a href="phaser/Power1.html">Power1</a></li>
+      <li><a href="phaser/power2.html">power2</a></li>
+      <li><a href="phaser/power3.html">power3</a></li>
+      <li><a href="phaser/power4.html">power4</a></li>
+    
+    
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#classes">Classes</a></li>
+      <li><a href="phaser/AABB-class.html">AABB</a></li>
+      <li><a href="phaser/Animation-class.html">Animation</a></li>
+      <li><a href="phaser/AnimationManager-class.html">AnimationManager</a></li>
+      <li><a href="phaser/AnimationParser-class.html">AnimationParser</a></li>
+      <li><a href="phaser/Arcade-class.html">Arcade</a></li>
+      <li><a href="phaser/ArraySet-class.html">ArraySet</a></li>
+      <li><a href="phaser/ArrayUtils-class.html">ArrayUtils</a></li>
+      <li><a href="phaser/AStar-class.html">AStar</a></li>
+      <li><a href="phaser/AStarNode-class.html">AStarNode</a></li>
+      <li><a href="phaser/AStarPath-class.html">AStarPath</a></li>
+      <li><a href="phaser/AudioSprite-class.html">AudioSprite</a></li>
+      <li><a href="phaser/Back-class.html">Back</a></li>
+      <li><a href="phaser/BinarySerpents-class.html">BinarySerpents</a></li>
+      <li><a href="phaser/BitmapData-class.html">BitmapData</a></li>
+      <li><a href="phaser/BitmapFont-class.html">BitmapFont</a></li>
+      <li><a href="phaser/BitmapText-class.html">BitmapText</a></li>
+      <li><a href="phaser/BlurX-class.html">BlurX</a></li>
+      <li><a href="phaser/BlurY-class.html">BlurY</a></li>
+      <li><a href="phaser/BMFont-class.html">BMFont</a></li>
+      <li><a href="phaser/BMFontChar-class.html">BMFontChar</a></li>
+      <li><a href="phaser/Body-class.html">Body</a></li>
+      <li><a href="phaser/BodyDebug-class.html">BodyDebug</a></li>
+      <li><a href="phaser/Bounce-class.html">Bounce</a></li>
+      <li><a href="phaser/Bullet-class.html">Bullet</a></li>
+      <li><a href="phaser/Button-class.html">Button</a></li>
+      <li><a href="phaser/Cache-class.html">Cache</a></li>
+      <li><a href="phaser/CachedRenderTexture-class.html">CachedRenderTexture</a></li>
+      <li><a href="phaser/Camera-class.html">Camera</a></li>
+      <li><a href="phaser/Canvas-class.html">Canvas</a></li>
+      <li><a href="phaser/CausticLight-class.html">CausticLight</a></li>
+      <li><a href="phaser/CheckerWave-class.html">CheckerWave</a></li>
+      <li><a href="phaser/Circle-class.html">Circle</a></li>
+      <li><a href="phaser/Circular-class.html">Circular</a></li>
+      <li><a href="phaser/CollisionGroup-class.html">CollisionGroup</a></li>
+      <li><a href="phaser/Color-class.html">Color</a></li>
+      <li><a href="phaser/ColorBars-class.html">ColorBars</a></li>
+      <li><a href="phaser/ColorComponents-class.html">ColorComponents</a></li>
+      <li><a href="phaser/ColorHarmony-class.html">ColorHarmony</a></li>
+      <li><a href="phaser/ContactMaterial-class.html">ContactMaterial</a></li>
+      <li><a href="phaser/Create-class.html">Create</a></li>
+      <li><a href="phaser/CSS3Filters-class.html">CSS3Filters</a></li>
+      <li><a href="phaser/Cubic-class.html">Cubic</a></li>
+      <li><a href="phaser/CursorKeys-class.html">CursorKeys</a></li>
+      <li><a href="phaser/Debug-class.html">Debug</a></li>
+      <li><a href="phaser/Device-class.html">Device</a></li>
+      <li><a href="phaser/DeviceButton-class.html">DeviceButton</a></li>
+      <li><a href="phaser/DistanceConstraint-class.html">DistanceConstraint</a></li>
+      <li><a href="phaser/DOM-class.html">DOM</a></li>
+      <li><a href="phaser/Elastic-class.html">Elastic</a></li>
+      <li><a href="phaser/Ellipse-class.html">Ellipse</a></li>
+      <li><a href="phaser/Emitter-class.html">Emitter</a></li>
+      <li><a href="phaser/Events-class.html">Events</a></li>
+      <li><a href="phaser/Exponential-class.html">Exponential</a></li>
+      <li><a href="phaser/FaceChoices-class.html">FaceChoices</a></li>
+      <li><a href="phaser/Filter-class.html">Filter</a></li>
+      <li><a href="phaser/Fire-class.html">Fire</a></li>
+      <li><a href="phaser/FixtureList-class.html">FixtureList</a></li>
+      <li><a href="phaser/FlexGrid-class.html">FlexGrid</a></li>
+      <li><a href="phaser/FlexLayer-class.html">FlexLayer</a></li>
+      <li><a href="phaser/Frame-class.html">Frame</a></li>
+      <li><a href="phaser/FrameData-class.html">FrameData</a></li>
+      <li><a href="phaser/Game-class.html">Game</a></li>
+      <li><a href="phaser/GameObjectCreator-class.html">GameObjectCreator</a></li>
+      <li><a href="phaser/GameObjectFactory-class.html">GameObjectFactory</a></li>
+      <li><a href="phaser/Gamepad-class.html">Gamepad</a></li>
+      <li><a href="phaser/GearConstraint-class.html">GearConstraint</a></li>
+      <li><a href="phaser/Graphics-class.html">Graphics</a></li>
+      <li><a href="phaser/Gray-class.html">Gray</a></li>
+      <li><a href="phaser/Group-class.html">Group</a></li>
+      <li><a href="phaser/HueRotate-class.html">HueRotate</a></li>
+      <li><a href="phaser/IGameConfig-class.html">IGameConfig</a></li>
+      <li><a href="phaser/Image-class.html">Image</a></li>
+      <li><a href="phaser/ImageCollection-class.html">ImageCollection</a></li>
+      <li><a href="phaser/Input-class.html">Input</a></li>
+      <li><a href="phaser/InputHandler-class.html">InputHandler</a></li>
+      <li><a href="phaser/InversePointProxy-class.html">InversePointProxy</a></li>
+      <li><a href="phaser/IStateCycle-class.html">IStateCycle</a></li>
+      <li><a href="phaser/Juicy-class.html">Juicy</a></li>
+      <li><a href="phaser/Key-class.html">Key</a></li>
+      <li><a href="phaser/Keyboard-class.html">Keyboard</a></li>
+      <li><a href="phaser/KeyCode-class.html">KeyCode</a></li>
+      <li><a href="phaser/LazerBeam-class.html">LazerBeam</a></li>
+      <li><a href="phaser/LightBeam-class.html">LightBeam</a></li>
+      <li><a href="phaser/Line-class.html">Line</a></li>
+      <li><a href="phaser/Linear-class.html">Linear</a></li>
+      <li><a href="phaser/LinkedList-class.html">LinkedList</a></li>
+      <li><a href="phaser/Loader-class.html">Loader</a></li>
+      <li><a href="phaser/LoaderParser-class.html">LoaderParser</a></li>
+      <li><a href="phaser/LockConstraint-class.html">LockConstraint</a></li>
+      <li><a href="phaser/Marble-class.html">Marble</a></li>
+      <li><a href="phaser/Material-class.html">Material</a></li>
+      <li><a href="phaser/Math-class.html">Math</a></li>
+      <li><a href="phaser/Matrix-class.html">Matrix</a></li>
+      <li><a href="phaser/Mouse-class.html">Mouse</a></li>
+      <li><a href="phaser/MSPointer-class.html">MSPointer</a></li>
+      <li><a href="phaser/Net-class.html">Net</a></li>
+      <li><a href="phaser/Ninja-class.html">Ninja</a></li>
+      <li><a href="phaser/Ninja_Body-class.html">Ninja_Body</a></li>
+      <li><a href="phaser/Ninja_Circle-class.html">Ninja_Circle</a></li>
+      <li><a href="phaser/Ninja_Tile-class.html">Ninja_Tile</a></li>
+      <li><a href="phaser/P2-class.html">P2</a></li>
+      <li><a href="phaser/P2_Body-class.html">P2_Body</a></li>
+      <li><a href="phaser/Particle-class.html">Particle</a></li>
+      <li><a href="phaser/Particles-class.html">Particles</a></li>
+      <li><a href="phaser/Phaser-class.html">Phaser</a></li>
+      <li><a href="phaser/PhaserTextStyle-class.html">PhaserTextStyle</a></li>
+      <li><a href="phaser/Physics-class.html">Physics</a></li>
+      <li><a href="phaser/Pixelate-class.html">Pixelate</a></li>
+      <li><a href="phaser/Plasma-class.html">Plasma</a></li>
+      <li><a href="phaser/Plugin-class.html">Plugin</a></li>
+      <li><a href="phaser/PluginConstructorOf-class.html">PluginConstructorOf</a></li>
+      <li><a href="phaser/PluginManager-class.html">PluginManager</a></li>
+      <li><a href="phaser/Point-class.html">Point</a></li>
+      <li><a href="phaser/Pointer-class.html">Pointer</a></li>
+      <li><a href="phaser/PointerMode-class.html">PointerMode</a></li>
+      <li><a href="phaser/PointProxy-class.html">PointProxy</a></li>
+      <li><a href="phaser/Polygon-class.html">Polygon</a></li>
+      <li><a href="phaser/PrismaticConstraint-class.html">PrismaticConstraint</a></li>
+      <li><a href="phaser/Quadratic-class.html">Quadratic</a></li>
+      <li><a href="phaser/QuadTree-class.html">QuadTree</a></li>
+      <li><a href="phaser/Quartic-class.html">Quartic</a></li>
+      <li><a href="phaser/Quintic-class.html">Quintic</a></li>
+      <li><a href="phaser/RandomDataGenerator-class.html">RandomDataGenerator</a></li>
+      <li><a href="phaser/Rectangle-class.html">Rectangle</a></li>
+      <li><a href="phaser/RenderTexture-class.html">RenderTexture</a></li>
+      <li><a href="phaser/RequestAnimationFrame-class.html">RequestAnimationFrame</a></li>
+      <li><a href="phaser/RetroFont-class.html">RetroFont</a></li>
+      <li><a href="phaser/RevoluteConstraint-class.html">RevoluteConstraint</a></li>
+      <li><a href="phaser/RGBColor-class.html">RGBColor</a></li>
+      <li><a href="phaser/Rope-class.html">Rope</a></li>
+      <li><a href="phaser/RoundedRectangle-class.html">RoundedRectangle</a></li>
+      <li><a href="phaser/SampleFilter-class.html">SampleFilter</a></li>
+      <li><a href="phaser/SamplePlugin-class.html">SamplePlugin</a></li>
+      <li><a href="phaser/SaveCPU-class.html">SaveCPU</a></li>
+      <li><a href="phaser/ScaleManager-class.html">ScaleManager</a></li>
+      <li><a href="phaser/ScreenFlash-class.html">ScreenFlash</a></li>
+      <li><a href="phaser/Signal-class.html">Signal</a></li>
+      <li><a href="phaser/SignalBinding-class.html">SignalBinding</a></li>
+      <li><a href="phaser/SinglePad-class.html">SinglePad</a></li>
+      <li><a href="phaser/Sinusoidal-class.html">Sinusoidal</a></li>
+      <li><a href="phaser/Sound-class.html">Sound</a></li>
+      <li><a href="phaser/SoundManager-class.html">SoundManager</a></li>
+      <li><a href="phaser/Spring-class.html">Spring</a></li>
+      <li><a href="phaser/Sprite-class.html">Sprite</a></li>
+      <li><a href="phaser/SpriteBatch-class.html">SpriteBatch</a></li>
+      <li><a href="phaser/Stage-class.html">Stage</a></li>
+      <li><a href="phaser/State-class.html">State</a></li>
+      <li><a href="phaser/StateManager-class.html">StateManager</a></li>
+      <li><a href="phaser/Text-class.html">Text</a></li>
+      <li><a href="phaser/Tile-class.html">Tile</a></li>
+      <li><a href="phaser/Tilemap-class.html">Tilemap</a></li>
+      <li><a href="phaser/TilemapLayer-class.html">TilemapLayer</a></li>
+      <li><a href="phaser/TilemapLayerGL-class.html">TilemapLayerGL</a></li>
+      <li><a href="phaser/TilemapParser-class.html">TilemapParser</a></li>
+      <li><a href="phaser/TilemapWalker-class.html">TilemapWalker</a></li>
+      <li><a href="phaser/Tileset-class.html">Tileset</a></li>
+      <li><a href="phaser/TileSprite-class.html">TileSprite</a></li>
+      <li><a href="phaser/TileType-class.html">TileType</a></li>
+      <li><a href="phaser/Time-class.html">Time</a></li>
+      <li><a href="phaser/Timer-class.html">Timer</a></li>
+      <li><a href="phaser/TimerEvent-class.html">TimerEvent</a></li>
+      <li><a href="phaser/Touch-class.html">Touch</a></li>
+      <li><a href="phaser/Trail-class.html">Trail</a></li>
+      <li><a href="phaser/Tunnel-class.html">Tunnel</a></li>
+      <li><a href="phaser/Tween-class.html">Tween</a></li>
+      <li><a href="phaser/TweenData-class.html">TweenData</a></li>
+      <li><a href="phaser/TweenManager-class.html">TweenManager</a></li>
+      <li><a href="phaser/Utils-class.html">Utils</a></li>
+      <li><a href="phaser/Video-class.html">Video</a></li>
+      <li><a href="phaser/VirtualJoystick-class.html">VirtualJoystick</a></li>
+      <li><a href="phaser/Weapon-class.html">Weapon</a></li>
+      <li><a href="phaser/Webcam-class.html">Webcam</a></li>
+      <li><a href="phaser/WheelEventProxy-class.html">WheelEventProxy</a></li>
+      <li><a href="phaser/World-class.html">World</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    
+    <section>
+      <dl class="dl-horizontal">
+
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>JS("Phaser.Rope")</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+
+
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="Rope" class="callable">
+          <span class="name"><a href="phaser/Rope/Rope.html">Rope</a></span><span class="signature">(<span class="parameter" id="-param-game"><span class="type-annotation"><a href="phaser/Game-class.html">Game</a></span> <span class="parameter-name">game</span>, </span> <span class="parameter" id="-param-x"><span class="type-annotation">num</span> <span class="parameter-name">x</span>, </span> <span class="parameter" id="-param-y"><span class="type-annotation">num</span> <span class="parameter-name">y</span>, </span> <span class="parameter" id="-param-key"><span class="parameter-name">key</span>, [</span> <span class="parameter" id="-param-frame"><span class="parameter-name">frame</span>, </span> <span class="parameter" id="-param-points"><span class="type-annotation">List&lt;<a href="phaser/Point-class.html">Point</a>&gt;</span> <span class="parameter-name">points</span></span> ])</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Rope.fakeConstructor$" class="callable">
+          <span class="name"><a href="phaser/Rope/Rope.fakeConstructor$.html">Rope.fakeConstructor$</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="alive" class="property">
+          <span class="name"><a href="phaser/Rope/alive.html">alive</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="angle" class="property">
+          <span class="name"><a href="phaser/Rope/angle.html">angle</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="animations" class="property">
+          <span class="name"><a href="phaser/Rope/animations.html">animations</a></span>
+          <span class="signature">&#8594; <a href="phaser/AnimationManager-class.html">AnimationManager</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="autoCull" class="property">
+          <span class="name"><a href="phaser/Rope/autoCull.html">autoCull</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="body" class="property">
+          <span class="name"><a href="phaser/Rope/body.html">body</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="bottom" class="property">
+          <span class="name"><a href="phaser/Rope/bottom.html">bottom</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="cameraOffset" class="property">
+          <span class="name"><a href="phaser/Rope/cameraOffset.html">cameraOffset</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="checkWorldBounds" class="property">
+          <span class="name"><a href="phaser/Rope/checkWorldBounds.html">checkWorldBounds</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="components" class="property">
+          <span class="name"><a href="phaser/Rope/components.html">components</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="cropRect" class="property">
+          <span class="name"><a href="phaser/Rope/cropRect.html">cropRect</a></span>
+          <span class="signature">&#8594; <a href="phaser/Rectangle-class.html">Rectangle</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="customRender" class="property">
+          <span class="name"><a href="phaser/Rope/customRender.html">customRender</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="debug" class="property">
+          <span class="name"><a href="phaser/Rope/debug.html">debug</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="deltaX" class="property">
+          <span class="name"><a href="phaser/Rope/deltaX.html">deltaX</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="deltaY" class="property">
+          <span class="name"><a href="phaser/Rope/deltaY.html">deltaY</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="deltaZ" class="property">
+          <span class="name"><a href="phaser/Rope/deltaZ.html">deltaZ</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="destroyPhase" class="property">
+          <span class="name"><a href="phaser/Rope/destroyPhase.html">destroyPhase</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="events" class="property">
+          <span class="name"><a href="phaser/Rope/events.html">events</a></span>
+          <span class="signature">&#8594; <a href="phaser/Events-class.html">Events</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="exists" class="property">
+          <span class="name"><a href="phaser/Rope/exists.html">exists</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="fixedToCamera" class="property">
+          <span class="name"><a href="phaser/Rope/fixedToCamera.html">fixedToCamera</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="frame" class="property">
+          <span class="name"><a href="phaser/Rope/frame.html">frame</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="frameName" class="property">
+          <span class="name"><a href="phaser/Rope/frameName.html">frameName</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="fresh" class="property">
+          <span class="name"><a href="phaser/Rope/fresh.html">fresh</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="game" class="property">
+          <span class="name"><a href="phaser/Rope/game.html">game</a></span>
+          <span class="signature">&#8594; <a href="phaser/Game-class.html">Game</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="phaser/Rope/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span>
+        </dt>
+        <dd class="inherited">
+          <p>Get a hash code for this object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="inCamera" class="property">
+          <span class="name"><a href="phaser/Rope/inCamera.html">inCamera</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="input" class="property">
+          <span class="name"><a href="phaser/Rope/input.html">input</a></span>
+          <span class="signature">&#8594; <a href="phaser/InputHandler-class.html">InputHandler</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="inputEnabled" class="property">
+          <span class="name"><a href="phaser/Rope/inputEnabled.html">inputEnabled</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="inWorld" class="property">
+          <span class="name"><a href="phaser/Rope/inWorld.html">inWorld</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="key" class="property">
+          <span class="name"><a href="phaser/Rope/key.html">key</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="left" class="property">
+          <span class="name"><a href="phaser/Rope/left.html">left</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="lifespan" class="property">
+          <span class="name"><a href="phaser/Rope/lifespan.html">lifespan</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="name" class="property">
+          <span class="name"><a href="phaser/Rope/name.html">name</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="offsetX" class="property">
+          <span class="name"><a href="phaser/Rope/offsetX.html">offsetX</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="offsetY" class="property">
+          <span class="name"><a href="phaser/Rope/offsetY.html">offsetY</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="outOfBoundsKill" class="property">
+          <span class="name"><a href="phaser/Rope/outOfBoundsKill.html">outOfBoundsKill</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="pendingDestroy" class="property">
+          <span class="name"><a href="phaser/Rope/pendingDestroy.html">pendingDestroy</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="points" class="property">
+          <span class="name"><a href="phaser/Rope/points.html">points</a></span>
+          <span class="signature">&#8594; List&lt;<a href="phaser/Point-class.html">Point</a>&gt;</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="position" class="property">
+          <span class="name"><a href="phaser/Rope/position.html">position</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="previousPosition" class="property">
+          <span class="name"><a href="phaser/Rope/previousPosition.html">previousPosition</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="previousRotation" class="property">
+          <span class="name"><a href="phaser/Rope/previousRotation.html">previousRotation</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="renderOrderID" class="property">
+          <span class="name"><a href="phaser/Rope/renderOrderID.html">renderOrderID</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="right" class="property">
+          <span class="name"><a href="phaser/Rope/right.html">right</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="phaser/Rope/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd class="inherited">
+          <p>A representation of the runtime type of the object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="scaleMax" class="property">
+          <span class="name"><a href="phaser/Rope/scaleMax.html">scaleMax</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="scaleMin" class="property">
+          <span class="name"><a href="phaser/Rope/scaleMin.html">scaleMin</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="segments" class="property">
+          <span class="name"><a href="phaser/Rope/segments.html">segments</a></span>
+          <span class="signature">&#8594; List&lt;<a href="phaser/Rectangle-class.html">Rectangle</a>&gt;</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="smoothed" class="property">
+          <span class="name"><a href="phaser/Rope/smoothed.html">smoothed</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="top" class="property">
+          <span class="name"><a href="phaser/Rope/top.html">top</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="transformCallback" class="property">
+          <span class="name"><a href="phaser/Rope/transformCallback.html">transformCallback</a></span>
+          <span class="signature">&#8594; Function</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="transformCallbackContext" class="property">
+          <span class="name"><a href="phaser/Rope/transformCallbackContext.html">transformCallbackContext</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="type" class="property">
+          <span class="name"><a href="phaser/Rope/type.html">type</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="updateAnimation" class="property">
+          <span class="name"><a href="phaser/Rope/updateAnimation.html">updateAnimation</a></span>
+          <span class="signature">&#8594; Function</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="world" class="property">
+          <span class="name"><a href="phaser/Rope/world.html">world</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="x" class="property">
+          <span class="name"><a href="phaser/Rope/x.html">x</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="y" class="property">
+          <span class="name"><a href="phaser/Rope/y.html">y</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="z" class="property">
+          <span class="name"><a href="phaser/Rope/z.html">z</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="phaser/Rope/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>The equality operator.</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="bringToTop" class="callable">
+          <span class="name"><a href="phaser/Rope/bringToTop.html">bringToTop</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="phaser/Rope-class.html">Rope</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="checkTransform" class="callable">
+          <span class="name"><a href="phaser/Rope/checkTransform.html">checkTransform</a></span><span class="signature">(<wbr><span class="parameter" id="checkTransform-param-wt"><span class="type-annotation"><a href="pixi/Matrix-class.html">Matrix</a></span> <span class="parameter-name">wt</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="crop" class="callable">
+          <span class="name"><a href="phaser/Rope/crop.html">crop</a></span><span class="signature">(<wbr><span class="parameter" id="crop-param-rect"><span class="type-annotation"><a href="phaser/Rectangle-class.html">Rectangle</a></span> <span class="parameter-name">rect</span>, [</span> <span class="parameter" id="crop-param-copy"><span class="type-annotation">bool</span> <span class="parameter-name">copy</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="destroy" class="callable">
+          <span class="name"><a href="phaser/Rope/destroy.html">destroy</a></span><span class="signature">(<wbr>[<span class="parameter" id="destroy-param-destroyChildren"><span class="type-annotation">bool</span> <span class="parameter-name">destroyChildren</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="kill" class="callable">
+          <span class="name"><a href="phaser/Rope/kill.html">kill</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="phaser/Rope-class.html">Rope</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="loadTexture" class="callable">
+          <span class="name"><a href="phaser/Rope/loadTexture.html">loadTexture</a></span><span class="signature">(<wbr><span class="parameter" id="loadTexture-param-key"><span class="parameter-name">key</span>, [</span> <span class="parameter" id="loadTexture-param-frame"><span class="parameter-name">frame</span>, </span> <span class="parameter" id="loadTexture-param-stopAnimation"><span class="type-annotation">bool</span> <span class="parameter-name">stopAnimation</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="moveDown" class="callable">
+          <span class="name"><a href="phaser/Rope/moveDown.html">moveDown</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="phaser/Rope-class.html">Rope</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="moveUp" class="callable">
+          <span class="name"><a href="phaser/Rope/moveUp.html">moveUp</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="phaser/Rope-class.html">Rope</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="phaser/Rope/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Invoked when a non-existent method or property is accessed.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="overlap" class="callable">
+          <span class="name"><a href="phaser/Rope/overlap.html">overlap</a></span><span class="signature">(<wbr><span class="parameter" id="overlap-param-displayObject"><span class="parameter-name">displayObject</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="play" class="callable">
+          <span class="name"><a href="phaser/Rope/play.html">play</a></span><span class="signature">(<wbr><span class="parameter" id="play-param-name"><span class="type-annotation">String</span> <span class="parameter-name">name</span>, [</span> <span class="parameter" id="play-param-frameRate"><span class="type-annotation">num</span> <span class="parameter-name">frameRate</span>, </span> <span class="parameter" id="play-param-loop"><span class="type-annotation">bool</span> <span class="parameter-name">loop</span>, </span> <span class="parameter" id="play-param-killOnComplete"><span class="type-annotation">bool</span> <span class="parameter-name">killOnComplete</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Animation-class.html">Animation</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="postUpdate" class="callable">
+          <span class="name"><a href="phaser/Rope/postUpdate.html">postUpdate</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="preUpdate" class="callable">
+          <span class="name"><a href="phaser/Rope/preUpdate.html">preUpdate</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="reset" class="callable">
+          <span class="name"><a href="phaser/Rope/reset.html">reset</a></span><span class="signature">(<wbr><span class="parameter" id="reset-param-x"><span class="type-annotation">num</span> <span class="parameter-name">x</span>, </span> <span class="parameter" id="reset-param-y"><span class="type-annotation">num</span> <span class="parameter-name">y</span>, [</span> <span class="parameter" id="reset-param-health"><span class="type-annotation">num</span> <span class="parameter-name">health</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Rope-class.html">Rope</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="resetFrame" class="callable">
+          <span class="name"><a href="phaser/Rope/resetFrame.html">resetFrame</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="resizeFrame" class="callable">
+          <span class="name"><a href="phaser/Rope/resizeFrame.html">resizeFrame</a></span><span class="signature">(<wbr><span class="parameter" id="resizeFrame-param-parent"><span class="parameter-name">parent</span>, </span> <span class="parameter" id="resizeFrame-param-width"><span class="type-annotation">num</span> <span class="parameter-name">width</span>, </span> <span class="parameter" id="resizeFrame-param-height"><span class="type-annotation">num</span> <span class="parameter-name">height</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="revive" class="callable">
+          <span class="name"><a href="phaser/Rope/revive.html">revive</a></span><span class="signature">(<wbr>[<span class="parameter" id="revive-param-health"><span class="type-annotation">num</span> <span class="parameter-name">health</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Rope-class.html">Rope</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="sendToBack" class="callable">
+          <span class="name"><a href="phaser/Rope/sendToBack.html">sendToBack</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="phaser/Rope-class.html">Rope</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="setFrame" class="callable">
+          <span class="name"><a href="phaser/Rope/setFrame.html">setFrame</a></span><span class="signature">(<wbr><span class="parameter" id="setFrame-param-frame"><span class="type-annotation"><a href="phaser/Frame-class.html">Frame</a></span> <span class="parameter-name">frame</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="setScaleMinMax" class="callable">
+          <span class="name"><a href="phaser/Rope/setScaleMinMax.html">setScaleMinMax</a></span><span class="signature">(<wbr>[<span class="parameter" id="setScaleMinMax-param-minX"><span class="type-annotation">num</span> <span class="parameter-name">minX</span>, </span> <span class="parameter" id="setScaleMinMax-param-minY"><span class="type-annotation">num</span> <span class="parameter-name">minY</span>, </span> <span class="parameter" id="setScaleMinMax-param-maxX"><span class="type-annotation">num</span> <span class="parameter-name">maxX</span>, </span> <span class="parameter" id="setScaleMinMax-param-maxY"><span class="type-annotation">num</span> <span class="parameter-name">maxY</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="phaser/Rope/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a string representation of this object.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="update" class="callable">
+          <span class="name"><a href="phaser/Rope/update.html">update</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="updateCrop" class="callable">
+          <span class="name"><a href="phaser/Rope/updateCrop.html">updateCrop</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>Rope</h5>
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="phaser/Rope-class.html#constructors">Constructors</a></li>
+      <li><a href="phaser/Rope/Rope.html">Rope</a></li>
+      <li><a href="phaser/Rope/Rope.fakeConstructor$.html">fakeConstructor$</a></li>
+    
+      <li class="section-title">
+        <a href="phaser/Rope-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="phaser/Rope/alive.html">alive</a></li>
+      <li><a href="phaser/Rope/angle.html">angle</a></li>
+      <li><a href="phaser/Rope/animations.html">animations</a></li>
+      <li><a href="phaser/Rope/autoCull.html">autoCull</a></li>
+      <li><a href="phaser/Rope/body.html">body</a></li>
+      <li><a href="phaser/Rope/bottom.html">bottom</a></li>
+      <li><a href="phaser/Rope/cameraOffset.html">cameraOffset</a></li>
+      <li><a href="phaser/Rope/checkWorldBounds.html">checkWorldBounds</a></li>
+      <li><a href="phaser/Rope/components.html">components</a></li>
+      <li><a href="phaser/Rope/cropRect.html">cropRect</a></li>
+      <li><a href="phaser/Rope/customRender.html">customRender</a></li>
+      <li><a href="phaser/Rope/debug.html">debug</a></li>
+      <li><a href="phaser/Rope/deltaX.html">deltaX</a></li>
+      <li><a href="phaser/Rope/deltaY.html">deltaY</a></li>
+      <li><a href="phaser/Rope/deltaZ.html">deltaZ</a></li>
+      <li><a href="phaser/Rope/destroyPhase.html">destroyPhase</a></li>
+      <li><a href="phaser/Rope/events.html">events</a></li>
+      <li><a href="phaser/Rope/exists.html">exists</a></li>
+      <li><a href="phaser/Rope/fixedToCamera.html">fixedToCamera</a></li>
+      <li><a href="phaser/Rope/frame.html">frame</a></li>
+      <li><a href="phaser/Rope/frameName.html">frameName</a></li>
+      <li><a href="phaser/Rope/fresh.html">fresh</a></li>
+      <li><a href="phaser/Rope/game.html">game</a></li>
+      <li class="inherited"><a href="phaser/Rope/hashCode.html">hashCode</a></li>
+      <li><a href="phaser/Rope/inCamera.html">inCamera</a></li>
+      <li><a href="phaser/Rope/input.html">input</a></li>
+      <li><a href="phaser/Rope/inputEnabled.html">inputEnabled</a></li>
+      <li><a href="phaser/Rope/inWorld.html">inWorld</a></li>
+      <li><a href="phaser/Rope/key.html">key</a></li>
+      <li><a href="phaser/Rope/left.html">left</a></li>
+      <li><a href="phaser/Rope/lifespan.html">lifespan</a></li>
+      <li><a href="phaser/Rope/name.html">name</a></li>
+      <li><a href="phaser/Rope/offsetX.html">offsetX</a></li>
+      <li><a href="phaser/Rope/offsetY.html">offsetY</a></li>
+      <li><a href="phaser/Rope/outOfBoundsKill.html">outOfBoundsKill</a></li>
+      <li><a href="phaser/Rope/pendingDestroy.html">pendingDestroy</a></li>
+      <li><a href="phaser/Rope/points.html">points</a></li>
+      <li><a href="phaser/Rope/position.html">position</a></li>
+      <li><a href="phaser/Rope/previousPosition.html">previousPosition</a></li>
+      <li><a href="phaser/Rope/previousRotation.html">previousRotation</a></li>
+      <li><a href="phaser/Rope/renderOrderID.html">renderOrderID</a></li>
+      <li><a href="phaser/Rope/right.html">right</a></li>
+      <li class="inherited"><a href="phaser/Rope/runtimeType.html">runtimeType</a></li>
+      <li><a href="phaser/Rope/scaleMax.html">scaleMax</a></li>
+      <li><a href="phaser/Rope/scaleMin.html">scaleMin</a></li>
+      <li><a href="phaser/Rope/segments.html">segments</a></li>
+      <li><a href="phaser/Rope/smoothed.html">smoothed</a></li>
+      <li><a href="phaser/Rope/top.html">top</a></li>
+      <li><a href="phaser/Rope/transformCallback.html">transformCallback</a></li>
+      <li><a href="phaser/Rope/transformCallbackContext.html">transformCallbackContext</a></li>
+      <li><a href="phaser/Rope/type.html">type</a></li>
+      <li><a href="phaser/Rope/updateAnimation.html">updateAnimation</a></li>
+      <li><a href="phaser/Rope/world.html">world</a></li>
+      <li><a href="phaser/Rope/x.html">x</a></li>
+      <li><a href="phaser/Rope/y.html">y</a></li>
+      <li><a href="phaser/Rope/z.html">z</a></li>
+    
+      <li class="section-title inherited"><a href="phaser/Rope-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="phaser/Rope/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="phaser/Rope-class.html#instance-methods">Methods</a></li>
+      <li><a href="phaser/Rope/bringToTop.html">bringToTop</a></li>
+      <li><a href="phaser/Rope/checkTransform.html">checkTransform</a></li>
+      <li><a href="phaser/Rope/crop.html">crop</a></li>
+      <li><a href="phaser/Rope/destroy.html">destroy</a></li>
+      <li><a href="phaser/Rope/kill.html">kill</a></li>
+      <li><a href="phaser/Rope/loadTexture.html">loadTexture</a></li>
+      <li><a href="phaser/Rope/moveDown.html">moveDown</a></li>
+      <li><a href="phaser/Rope/moveUp.html">moveUp</a></li>
+      <li class="inherited"><a href="phaser/Rope/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a href="phaser/Rope/overlap.html">overlap</a></li>
+      <li><a href="phaser/Rope/play.html">play</a></li>
+      <li><a href="phaser/Rope/postUpdate.html">postUpdate</a></li>
+      <li><a href="phaser/Rope/preUpdate.html">preUpdate</a></li>
+      <li><a href="phaser/Rope/reset.html">reset</a></li>
+      <li><a href="phaser/Rope/resetFrame.html">resetFrame</a></li>
+      <li><a href="phaser/Rope/resizeFrame.html">resizeFrame</a></li>
+      <li><a href="phaser/Rope/revive.html">revive</a></li>
+      <li><a href="phaser/Rope/sendToBack.html">sendToBack</a></li>
+      <li><a href="phaser/Rope/setFrame.html">setFrame</a></li>
+      <li><a href="phaser/Rope/setScaleMinMax.html">setScaleMinMax</a></li>
+      <li class="inherited"><a href="phaser/Rope/toString.html">toString</a></li>
+      <li><a href="phaser/Rope/update.html">update</a></li>
+      <li><a href="phaser/Rope/updateCrop.html">updateCrop</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          phaser 2.6.2-beta+1
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+</body>
+
+</html>

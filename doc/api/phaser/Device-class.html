@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the Device class from the phaser library, for the Dart programming language.">
+  <title>Device class - phaser library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">phaser</a></li>
+            <li><a href="phaser/phaser-library.html">phaser</a></li>
+            <li class="self-crumb">Device</li>
+          </ol>
+          <div class="self-name">Device</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">phaser</a></li>
+          <li><a href="phaser/phaser-library.html">phaser</a></li>
+          <li class="self-crumb">Device</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <span class="kind">class</span> Device
+          </h1>
+        </div>
+        <ul class="subnav">
+          <li><a href="phaser/Device-class.html#static-properties">Static Properties</a></li>
+          <li><a href="phaser/Device-class.html#static-methods">Static Methods</a></li>
+          <li><a href="phaser/Device-class.html#instance-properties">Properties</a></li>
+          <li><a href="phaser/Device-class.html#constructors">Constructors</a></li>
+          <li><a href="phaser/Device-class.html#operators">Operators</a></li>
+          <li><a href="phaser/Device-class.html#instance-methods">Methods</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">phaser</a></h5>
+    <h5><a href="phaser/phaser-library.html">phaser</a></h5>
+
+    <ol>
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#typedefs">Typedefs</a></li>
+      <li><a href="phaser/ResizeCallback.html">ResizeCallback</a></li>
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#properties">Properties</a></li>
+      <li><a href="phaser/Default.html">Default</a></li>
+      <li><a href="phaser/Power0.html">Power0</a></li>
+      <li><a href="phaser/Power1.html">Power1</a></li>
+      <li><a href="phaser/power2.html">power2</a></li>
+      <li><a href="phaser/power3.html">power3</a></li>
+      <li><a href="phaser/power4.html">power4</a></li>
+    
+    
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#classes">Classes</a></li>
+      <li><a href="phaser/AABB-class.html">AABB</a></li>
+      <li><a href="phaser/Animation-class.html">Animation</a></li>
+      <li><a href="phaser/AnimationManager-class.html">AnimationManager</a></li>
+      <li><a href="phaser/AnimationParser-class.html">AnimationParser</a></li>
+      <li><a href="phaser/Arcade-class.html">Arcade</a></li>
+      <li><a href="phaser/ArraySet-class.html">ArraySet</a></li>
+      <li><a href="phaser/ArrayUtils-class.html">ArrayUtils</a></li>
+      <li><a href="phaser/AStar-class.html">AStar</a></li>
+      <li><a href="phaser/AStarNode-class.html">AStarNode</a></li>
+      <li><a href="phaser/AStarPath-class.html">AStarPath</a></li>
+      <li><a href="phaser/AudioSprite-class.html">AudioSprite</a></li>
+      <li><a href="phaser/Back-class.html">Back</a></li>
+      <li><a href="phaser/BinarySerpents-class.html">BinarySerpents</a></li>
+      <li><a href="phaser/BitmapData-class.html">BitmapData</a></li>
+      <li><a href="phaser/BitmapFont-class.html">BitmapFont</a></li>
+      <li><a href="phaser/BitmapText-class.html">BitmapText</a></li>
+      <li><a href="phaser/BlurX-class.html">BlurX</a></li>
+      <li><a href="phaser/BlurY-class.html">BlurY</a></li>
+      <li><a href="phaser/BMFont-class.html">BMFont</a></li>
+      <li><a href="phaser/BMFontChar-class.html">BMFontChar</a></li>
+      <li><a href="phaser/Body-class.html">Body</a></li>
+      <li><a href="phaser/BodyDebug-class.html">BodyDebug</a></li>
+      <li><a href="phaser/Bounce-class.html">Bounce</a></li>
+      <li><a href="phaser/Bullet-class.html">Bullet</a></li>
+      <li><a href="phaser/Button-class.html">Button</a></li>
+      <li><a href="phaser/Cache-class.html">Cache</a></li>
+      <li><a href="phaser/CachedRenderTexture-class.html">CachedRenderTexture</a></li>
+      <li><a href="phaser/Camera-class.html">Camera</a></li>
+      <li><a href="phaser/Canvas-class.html">Canvas</a></li>
+      <li><a href="phaser/CausticLight-class.html">CausticLight</a></li>
+      <li><a href="phaser/CheckerWave-class.html">CheckerWave</a></li>
+      <li><a href="phaser/Circle-class.html">Circle</a></li>
+      <li><a href="phaser/Circular-class.html">Circular</a></li>
+      <li><a href="phaser/CollisionGroup-class.html">CollisionGroup</a></li>
+      <li><a href="phaser/Color-class.html">Color</a></li>
+      <li><a href="phaser/ColorBars-class.html">ColorBars</a></li>
+      <li><a href="phaser/ColorComponents-class.html">ColorComponents</a></li>
+      <li><a href="phaser/ColorHarmony-class.html">ColorHarmony</a></li>
+      <li><a href="phaser/ContactMaterial-class.html">ContactMaterial</a></li>
+      <li><a href="phaser/Create-class.html">Create</a></li>
+      <li><a href="phaser/CSS3Filters-class.html">CSS3Filters</a></li>
+      <li><a href="phaser/Cubic-class.html">Cubic</a></li>
+      <li><a href="phaser/CursorKeys-class.html">CursorKeys</a></li>
+      <li><a href="phaser/Debug-class.html">Debug</a></li>
+      <li><a href="phaser/Device-class.html">Device</a></li>
+      <li><a href="phaser/DeviceButton-class.html">DeviceButton</a></li>
+      <li><a href="phaser/DistanceConstraint-class.html">DistanceConstraint</a></li>
+      <li><a href="phaser/DOM-class.html">DOM</a></li>
+      <li><a href="phaser/Elastic-class.html">Elastic</a></li>
+      <li><a href="phaser/Ellipse-class.html">Ellipse</a></li>
+      <li><a href="phaser/Emitter-class.html">Emitter</a></li>
+      <li><a href="phaser/Events-class.html">Events</a></li>
+      <li><a href="phaser/Exponential-class.html">Exponential</a></li>
+      <li><a href="phaser/FaceChoices-class.html">FaceChoices</a></li>
+      <li><a href="phaser/Filter-class.html">Filter</a></li>
+      <li><a href="phaser/Fire-class.html">Fire</a></li>
+      <li><a href="phaser/FixtureList-class.html">FixtureList</a></li>
+      <li><a href="phaser/FlexGrid-class.html">FlexGrid</a></li>
+      <li><a href="phaser/FlexLayer-class.html">FlexLayer</a></li>
+      <li><a href="phaser/Frame-class.html">Frame</a></li>
+      <li><a href="phaser/FrameData-class.html">FrameData</a></li>
+      <li><a href="phaser/Game-class.html">Game</a></li>
+      <li><a href="phaser/GameObjectCreator-class.html">GameObjectCreator</a></li>
+      <li><a href="phaser/GameObjectFactory-class.html">GameObjectFactory</a></li>
+      <li><a href="phaser/Gamepad-class.html">Gamepad</a></li>
+      <li><a href="phaser/GearConstraint-class.html">GearConstraint</a></li>
+      <li><a href="phaser/Graphics-class.html">Graphics</a></li>
+      <li><a href="phaser/Gray-class.html">Gray</a></li>
+      <li><a href="phaser/Group-class.html">Group</a></li>
+      <li><a href="phaser/HueRotate-class.html">HueRotate</a></li>
+      <li><a href="phaser/IGameConfig-class.html">IGameConfig</a></li>
+      <li><a href="phaser/Image-class.html">Image</a></li>
+      <li><a href="phaser/ImageCollection-class.html">ImageCollection</a></li>
+      <li><a href="phaser/Input-class.html">Input</a></li>
+      <li><a href="phaser/InputHandler-class.html">InputHandler</a></li>
+      <li><a href="phaser/InversePointProxy-class.html">InversePointProxy</a></li>
+      <li><a href="phaser/IStateCycle-class.html">IStateCycle</a></li>
+      <li><a href="phaser/Juicy-class.html">Juicy</a></li>
+      <li><a href="phaser/Key-class.html">Key</a></li>
+      <li><a href="phaser/Keyboard-class.html">Keyboard</a></li>
+      <li><a href="phaser/KeyCode-class.html">KeyCode</a></li>
+      <li><a href="phaser/LazerBeam-class.html">LazerBeam</a></li>
+      <li><a href="phaser/LightBeam-class.html">LightBeam</a></li>
+      <li><a href="phaser/Line-class.html">Line</a></li>
+      <li><a href="phaser/Linear-class.html">Linear</a></li>
+      <li><a href="phaser/LinkedList-class.html">LinkedList</a></li>
+      <li><a href="phaser/Loader-class.html">Loader</a></li>
+      <li><a href="phaser/LoaderParser-class.html">LoaderParser</a></li>
+      <li><a href="phaser/LockConstraint-class.html">LockConstraint</a></li>
+      <li><a href="phaser/Marble-class.html">Marble</a></li>
+      <li><a href="phaser/Material-class.html">Material</a></li>
+      <li><a href="phaser/Math-class.html">Math</a></li>
+      <li><a href="phaser/Matrix-class.html">Matrix</a></li>
+      <li><a href="phaser/Mouse-class.html">Mouse</a></li>
+      <li><a href="phaser/MSPointer-class.html">MSPointer</a></li>
+      <li><a href="phaser/Net-class.html">Net</a></li>
+      <li><a href="phaser/Ninja-class.html">Ninja</a></li>
+      <li><a href="phaser/Ninja_Body-class.html">Ninja_Body</a></li>
+      <li><a href="phaser/Ninja_Circle-class.html">Ninja_Circle</a></li>
+      <li><a href="phaser/Ninja_Tile-class.html">Ninja_Tile</a></li>
+      <li><a href="phaser/P2-class.html">P2</a></li>
+      <li><a href="phaser/P2_Body-class.html">P2_Body</a></li>
+      <li><a href="phaser/Particle-class.html">Particle</a></li>
+      <li><a href="phaser/Particles-class.html">Particles</a></li>
+      <li><a href="phaser/Phaser-class.html">Phaser</a></li>
+      <li><a href="phaser/PhaserTextStyle-class.html">PhaserTextStyle</a></li>
+      <li><a href="phaser/Physics-class.html">Physics</a></li>
+      <li><a href="phaser/Pixelate-class.html">Pixelate</a></li>
+      <li><a href="phaser/Plasma-class.html">Plasma</a></li>
+      <li><a href="phaser/Plugin-class.html">Plugin</a></li>
+      <li><a href="phaser/PluginConstructorOf-class.html">PluginConstructorOf</a></li>
+      <li><a href="phaser/PluginManager-class.html">PluginManager</a></li>
+      <li><a href="phaser/Point-class.html">Point</a></li>
+      <li><a href="phaser/Pointer-class.html">Pointer</a></li>
+      <li><a href="phaser/PointerMode-class.html">PointerMode</a></li>
+      <li><a href="phaser/PointProxy-class.html">PointProxy</a></li>
+      <li><a href="phaser/Polygon-class.html">Polygon</a></li>
+      <li><a href="phaser/PrismaticConstraint-class.html">PrismaticConstraint</a></li>
+      <li><a href="phaser/Quadratic-class.html">Quadratic</a></li>
+      <li><a href="phaser/QuadTree-class.html">QuadTree</a></li>
+      <li><a href="phaser/Quartic-class.html">Quartic</a></li>
+      <li><a href="phaser/Quintic-class.html">Quintic</a></li>
+      <li><a href="phaser/RandomDataGenerator-class.html">RandomDataGenerator</a></li>
+      <li><a href="phaser/Rectangle-class.html">Rectangle</a></li>
+      <li><a href="phaser/RenderTexture-class.html">RenderTexture</a></li>
+      <li><a href="phaser/RequestAnimationFrame-class.html">RequestAnimationFrame</a></li>
+      <li><a href="phaser/RetroFont-class.html">RetroFont</a></li>
+      <li><a href="phaser/RevoluteConstraint-class.html">RevoluteConstraint</a></li>
+      <li><a href="phaser/RGBColor-class.html">RGBColor</a></li>
+      <li><a href="phaser/Rope-class.html">Rope</a></li>
+      <li><a href="phaser/RoundedRectangle-class.html">RoundedRectangle</a></li>
+      <li><a href="phaser/SampleFilter-class.html">SampleFilter</a></li>
+      <li><a href="phaser/SamplePlugin-class.html">SamplePlugin</a></li>
+      <li><a href="phaser/SaveCPU-class.html">SaveCPU</a></li>
+      <li><a href="phaser/ScaleManager-class.html">ScaleManager</a></li>
+      <li><a href="phaser/ScreenFlash-class.html">ScreenFlash</a></li>
+      <li><a href="phaser/Signal-class.html">Signal</a></li>
+      <li><a href="phaser/SignalBinding-class.html">SignalBinding</a></li>
+      <li><a href="phaser/SinglePad-class.html">SinglePad</a></li>
+      <li><a href="phaser/Sinusoidal-class.html">Sinusoidal</a></li>
+      <li><a href="phaser/Sound-class.html">Sound</a></li>
+      <li><a href="phaser/SoundManager-class.html">SoundManager</a></li>
+      <li><a href="phaser/Spring-class.html">Spring</a></li>
+      <li><a href="phaser/Sprite-class.html">Sprite</a></li>
+      <li><a href="phaser/SpriteBatch-class.html">SpriteBatch</a></li>
+      <li><a href="phaser/Stage-class.html">Stage</a></li>
+      <li><a href="phaser/State-class.html">State</a></li>
+      <li><a href="phaser/StateManager-class.html">StateManager</a></li>
+      <li><a href="phaser/Text-class.html">Text</a></li>
+      <li><a href="phaser/Tile-class.html">Tile</a></li>
+      <li><a href="phaser/Tilemap-class.html">Tilemap</a></li>
+      <li><a href="phaser/TilemapLayer-class.html">TilemapLayer</a></li>
+      <li><a href="phaser/TilemapLayerGL-class.html">TilemapLayerGL</a></li>
+      <li><a href="phaser/TilemapParser-class.html">TilemapParser</a></li>
+      <li><a href="phaser/TilemapWalker-class.html">TilemapWalker</a></li>
+      <li><a href="phaser/Tileset-class.html">Tileset</a></li>
+      <li><a href="phaser/TileSprite-class.html">TileSprite</a></li>
+      <li><a href="phaser/TileType-class.html">TileType</a></li>
+      <li><a href="phaser/Time-class.html">Time</a></li>
+      <li><a href="phaser/Timer-class.html">Timer</a></li>
+      <li><a href="phaser/TimerEvent-class.html">TimerEvent</a></li>
+      <li><a href="phaser/Touch-class.html">Touch</a></li>
+      <li><a href="phaser/Trail-class.html">Trail</a></li>
+      <li><a href="phaser/Tunnel-class.html">Tunnel</a></li>
+      <li><a href="phaser/Tween-class.html">Tween</a></li>
+      <li><a href="phaser/TweenData-class.html">TweenData</a></li>
+      <li><a href="phaser/TweenManager-class.html">TweenManager</a></li>
+      <li><a href="phaser/Utils-class.html">Utils</a></li>
+      <li><a href="phaser/Video-class.html">Video</a></li>
+      <li><a href="phaser/VirtualJoystick-class.html">VirtualJoystick</a></li>
+      <li><a href="phaser/Weapon-class.html">Weapon</a></li>
+      <li><a href="phaser/Webcam-class.html">Webcam</a></li>
+      <li><a href="phaser/WheelEventProxy-class.html">WheelEventProxy</a></li>
+      <li><a href="phaser/World-class.html">World</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    
+    <section>
+      <dl class="dl-horizontal">
+
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>JS("Phaser.Device")</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="static-properties">
+      <h2>Static Properties</h2>
+
+      <dl class="properties">
+        <dt id="LITTLE_ENDIAN" class="property">
+          <span class="name"><a href="phaser/Device/LITTLE_ENDIAN.html">LITTLE_ENDIAN</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onInitialized" class="property">
+          <span class="name"><a href="phaser/Device/onInitialized.html">onInitialized</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="whenReady" class="property">
+          <span class="name"><a href="phaser/Device/whenReady.html">whenReady</a></span>
+          <span class="signature">&#8594; VoidFunc2Opt1</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="static-methods">
+      <h2>Static Methods</h2>
+      <dl class="callables">
+        <dt id="canPlayAudio" class="callable">
+          <span class="name"><a href="phaser/Device/canPlayAudio.html">canPlayAudio</a></span><span class="signature">(<wbr><span class="parameter" id="canPlayAudio-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="canPlayVideo" class="callable">
+          <span class="name"><a href="phaser/Device/canPlayVideo.html">canPlayVideo</a></span><span class="signature">(<wbr><span class="parameter" id="canPlayVideo-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="checkFullScreenSupport" class="callable">
+          <span class="name"><a href="phaser/Device/checkFullScreenSupport.html">checkFullScreenSupport</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="isAndroidStockBrowser" class="callable">
+          <span class="name"><a href="phaser/Device/isAndroidStockBrowser.html">isAndroidStockBrowser</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="isConsoleOpen" class="callable">
+          <span class="name"><a href="phaser/Device/isConsoleOpen.html">isConsoleOpen</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="Device.fakeConstructor$" class="callable">
+          <span class="name"><a href="phaser/Device/Device.fakeConstructor$.html">Device.fakeConstructor$</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="android" class="property">
+          <span class="name"><a href="phaser/Device/android.html">android</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="arora" class="property">
+          <span class="name"><a href="phaser/Device/arora.html">arora</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="audioData" class="property">
+          <span class="name"><a href="phaser/Device/audioData.html">audioData</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="cancelFullScreen" class="property">
+          <span class="name"><a href="phaser/Device/cancelFullScreen.html">cancelFullScreen</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="canvas" class="property">
+          <span class="name"><a href="phaser/Device/canvas.html">canvas</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="chrome" class="property">
+          <span class="name"><a href="phaser/Device/chrome.html">chrome</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="chromeOS" class="property">
+          <span class="name"><a href="phaser/Device/chromeOS.html">chromeOS</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="chromeVersion" class="property">
+          <span class="name"><a href="phaser/Device/chromeVersion.html">chromeVersion</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="cocoonJS" class="property">
+          <span class="name"><a href="phaser/Device/cocoonJS.html">cocoonJS</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="cocoonJSApp" class="property">
+          <span class="name"><a href="phaser/Device/cocoonJSApp.html">cocoonJSApp</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="cordova" class="property">
+          <span class="name"><a href="phaser/Device/cordova.html">cordova</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="crosswalk" class="property">
+          <span class="name"><a href="phaser/Device/crosswalk.html">crosswalk</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="css3D" class="property">
+          <span class="name"><a href="phaser/Device/css3D.html">css3D</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="desktop" class="property">
+          <span class="name"><a href="phaser/Device/desktop.html">desktop</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="deviceReadyAt" class="property">
+          <span class="name"><a href="phaser/Device/deviceReadyAt.html">deviceReadyAt</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="ejecta" class="property">
+          <span class="name"><a href="phaser/Device/ejecta.html">ejecta</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="electron" class="property">
+          <span class="name"><a href="phaser/Device/electron.html">electron</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="epiphany" class="property">
+          <span class="name"><a href="phaser/Device/epiphany.html">epiphany</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="file" class="property">
+          <span class="name"><a href="phaser/Device/file.html">file</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="fileSystem" class="property">
+          <span class="name"><a href="phaser/Device/fileSystem.html">fileSystem</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="firefox" class="property">
+          <span class="name"><a href="phaser/Device/firefox.html">firefox</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="firefoxVersion" class="property">
+          <span class="name"><a href="phaser/Device/firefoxVersion.html">firefoxVersion</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="fullScreen" class="property">
+          <span class="name"><a href="phaser/Device/fullScreen.html">fullScreen</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="fullScreenKeyboard" class="property">
+          <span class="name"><a href="phaser/Device/fullScreenKeyboard.html">fullScreenKeyboard</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="game" class="property">
+          <span class="name"><a href="phaser/Device/game.html">game</a></span>
+          <span class="signature">&#8594; <a href="phaser/Game-class.html">Game</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="getUserMedia" class="property">
+          <span class="name"><a href="phaser/Device/getUserMedia.html">getUserMedia</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="h264Video" class="property">
+          <span class="name"><a href="phaser/Device/h264Video.html">h264Video</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="phaser/Device/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span>
+        </dt>
+        <dd class="inherited">
+          <p>Get a hash code for this object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="hlsVideo" class="property">
+          <span class="name"><a href="phaser/Device/hlsVideo.html">hlsVideo</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="ie" class="property">
+          <span class="name"><a href="phaser/Device/ie.html">ie</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="ieVersion" class="property">
+          <span class="name"><a href="phaser/Device/ieVersion.html">ieVersion</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="initialized" class="property">
+          <span class="name"><a href="phaser/Device/initialized.html">initialized</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="iOS" class="property">
+          <span class="name"><a href="phaser/Device/iOS.html">iOS</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="iOSVersion" class="property">
+          <span class="name"><a href="phaser/Device/iOSVersion.html">iOSVersion</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="iPad" class="property">
+          <span class="name"><a href="phaser/Device/iPad.html">iPad</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="iPhone" class="property">
+          <span class="name"><a href="phaser/Device/iPhone.html">iPhone</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="iPhone4" class="property">
+          <span class="name"><a href="phaser/Device/iPhone4.html">iPhone4</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="kindle" class="property">
+          <span class="name"><a href="phaser/Device/kindle.html">kindle</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="linux" class="property">
+          <span class="name"><a href="phaser/Device/linux.html">linux</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="littleEndian" class="property">
+          <span class="name"><a href="phaser/Device/littleEndian.html">littleEndian</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="localStorage" class="property">
+          <span class="name"><a href="phaser/Device/localStorage.html">localStorage</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="m4a" class="property">
+          <span class="name"><a href="phaser/Device/m4a.html">m4a</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="macOS" class="property">
+          <span class="name"><a href="phaser/Device/macOS.html">macOS</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="midori" class="property">
+          <span class="name"><a href="phaser/Device/midori.html">midori</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="mobileSafari" class="property">
+          <span class="name"><a href="phaser/Device/mobileSafari.html">mobileSafari</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="mp3" class="property">
+          <span class="name"><a href="phaser/Device/mp3.html">mp3</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="mp4Video" class="property">
+          <span class="name"><a href="phaser/Device/mp4Video.html">mp4Video</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="mspointer" class="property">
+          <span class="name"><a href="phaser/Device/mspointer.html">mspointer</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="node" class="property">
+          <span class="name"><a href="phaser/Device/node.html">node</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="nodeWebkit" class="property">
+          <span class="name"><a href="phaser/Device/nodeWebkit.html">nodeWebkit</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="ogg" class="property">
+          <span class="name"><a href="phaser/Device/ogg.html">ogg</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="oggVideo" class="property">
+          <span class="name"><a href="phaser/Device/oggVideo.html">oggVideo</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="opera" class="property">
+          <span class="name"><a href="phaser/Device/opera.html">opera</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="opus" class="property">
+          <span class="name"><a href="phaser/Device/opus.html">opus</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="pixelRatio" class="property">
+          <span class="name"><a href="phaser/Device/pixelRatio.html">pixelRatio</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="pointerLock" class="property">
+          <span class="name"><a href="phaser/Device/pointerLock.html">pointerLock</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="quirksMode" class="property">
+          <span class="name"><a href="phaser/Device/quirksMode.html">quirksMode</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="requestFullScreen" class="property">
+          <span class="name"><a href="phaser/Device/requestFullScreen.html">requestFullScreen</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="phaser/Device/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd class="inherited">
+          <p>A representation of the runtime type of the object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="safari" class="property">
+          <span class="name"><a href="phaser/Device/safari.html">safari</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="silk" class="property">
+          <span class="name"><a href="phaser/Device/silk.html">silk</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="support32bit" class="property">
+          <span class="name"><a href="phaser/Device/support32bit.html">support32bit</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="touch" class="property">
+          <span class="name"><a href="phaser/Device/touch.html">touch</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="trident" class="property">
+          <span class="name"><a href="phaser/Device/trident.html">trident</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="tridentVersion" class="property">
+          <span class="name"><a href="phaser/Device/tridentVersion.html">tridentVersion</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="typedArray" class="property">
+          <span class="name"><a href="phaser/Device/typedArray.html">typedArray</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="vibration" class="property">
+          <span class="name"><a href="phaser/Device/vibration.html">vibration</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="vita" class="property">
+          <span class="name"><a href="phaser/Device/vita.html">vita</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="wav" class="property">
+          <span class="name"><a href="phaser/Device/wav.html">wav</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="webApp" class="property">
+          <span class="name"><a href="phaser/Device/webApp.html">webApp</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="webAudio" class="property">
+          <span class="name"><a href="phaser/Device/webAudio.html">webAudio</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="webGL" class="property">
+          <span class="name"><a href="phaser/Device/webGL.html">webGL</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="webm" class="property">
+          <span class="name"><a href="phaser/Device/webm.html">webm</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="webmVideo" class="property">
+          <span class="name"><a href="phaser/Device/webmVideo.html">webmVideo</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="wheelEvent" class="property">
+          <span class="name"><a href="phaser/Device/wheelEvent.html">wheelEvent</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="windows" class="property">
+          <span class="name"><a href="phaser/Device/windows.html">windows</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="windowsPhone" class="property">
+          <span class="name"><a href="phaser/Device/windowsPhone.html">windowsPhone</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="worker" class="property">
+          <span class="name"><a href="phaser/Device/worker.html">worker</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="wp9Video" class="property">
+          <span class="name"><a href="phaser/Device/wp9Video.html">wp9Video</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="phaser/Device/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>The equality operator.</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="phaser/Device/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Invoked when a non-existent method or property is accessed.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="phaser/Device/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a string representation of this object.</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>Device</h5>
+    <ol>
+    
+      <li class="section-title"><a href="phaser/Device-class.html#static-properties">Static properties</a></li>
+      <li><a href="phaser/Device/LITTLE_ENDIAN.html">LITTLE_ENDIAN</a></li>
+      <li><a href="phaser/Device/onInitialized.html">onInitialized</a></li>
+      <li><a href="phaser/Device/whenReady.html">whenReady</a></li>
+    
+      <li class="section-title"><a href="phaser/Device-class.html#static-methods">Static methods</a></li>
+      <li><a href="phaser/Device/canPlayAudio.html">canPlayAudio</a></li>
+      <li><a href="phaser/Device/canPlayVideo.html">canPlayVideo</a></li>
+      <li><a href="phaser/Device/checkFullScreenSupport.html">checkFullScreenSupport</a></li>
+      <li><a href="phaser/Device/isAndroidStockBrowser.html">isAndroidStockBrowser</a></li>
+      <li><a href="phaser/Device/isConsoleOpen.html">isConsoleOpen</a></li>
+    
+      <li class="section-title"><a href="phaser/Device-class.html#constructors">Constructors</a></li>
+      <li><a href="phaser/Device/Device.fakeConstructor$.html">fakeConstructor$</a></li>
+    
+      <li class="section-title">
+        <a href="phaser/Device-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="phaser/Device/android.html">android</a></li>
+      <li><a href="phaser/Device/arora.html">arora</a></li>
+      <li><a href="phaser/Device/audioData.html">audioData</a></li>
+      <li><a href="phaser/Device/cancelFullScreen.html">cancelFullScreen</a></li>
+      <li><a href="phaser/Device/canvas.html">canvas</a></li>
+      <li><a href="phaser/Device/chrome.html">chrome</a></li>
+      <li><a href="phaser/Device/chromeOS.html">chromeOS</a></li>
+      <li><a href="phaser/Device/chromeVersion.html">chromeVersion</a></li>
+      <li><a href="phaser/Device/cocoonJS.html">cocoonJS</a></li>
+      <li><a href="phaser/Device/cocoonJSApp.html">cocoonJSApp</a></li>
+      <li><a href="phaser/Device/cordova.html">cordova</a></li>
+      <li><a href="phaser/Device/crosswalk.html">crosswalk</a></li>
+      <li><a href="phaser/Device/css3D.html">css3D</a></li>
+      <li><a href="phaser/Device/desktop.html">desktop</a></li>
+      <li><a href="phaser/Device/deviceReadyAt.html">deviceReadyAt</a></li>
+      <li><a href="phaser/Device/ejecta.html">ejecta</a></li>
+      <li><a href="phaser/Device/electron.html">electron</a></li>
+      <li><a href="phaser/Device/epiphany.html">epiphany</a></li>
+      <li><a href="phaser/Device/file.html">file</a></li>
+      <li><a href="phaser/Device/fileSystem.html">fileSystem</a></li>
+      <li><a href="phaser/Device/firefox.html">firefox</a></li>
+      <li><a href="phaser/Device/firefoxVersion.html">firefoxVersion</a></li>
+      <li><a href="phaser/Device/fullScreen.html">fullScreen</a></li>
+      <li><a href="phaser/Device/fullScreenKeyboard.html">fullScreenKeyboard</a></li>
+      <li><a href="phaser/Device/game.html">game</a></li>
+      <li><a href="phaser/Device/getUserMedia.html">getUserMedia</a></li>
+      <li><a href="phaser/Device/h264Video.html">h264Video</a></li>
+      <li class="inherited"><a href="phaser/Device/hashCode.html">hashCode</a></li>
+      <li><a href="phaser/Device/hlsVideo.html">hlsVideo</a></li>
+      <li><a href="phaser/Device/ie.html">ie</a></li>
+      <li><a href="phaser/Device/ieVersion.html">ieVersion</a></li>
+      <li><a href="phaser/Device/initialized.html">initialized</a></li>
+      <li><a href="phaser/Device/iOS.html">iOS</a></li>
+      <li><a href="phaser/Device/iOSVersion.html">iOSVersion</a></li>
+      <li><a href="phaser/Device/iPad.html">iPad</a></li>
+      <li><a href="phaser/Device/iPhone.html">iPhone</a></li>
+      <li><a href="phaser/Device/iPhone4.html">iPhone4</a></li>
+      <li><a href="phaser/Device/kindle.html">kindle</a></li>
+      <li><a href="phaser/Device/linux.html">linux</a></li>
+      <li><a href="phaser/Device/littleEndian.html">littleEndian</a></li>
+      <li><a href="phaser/Device/localStorage.html">localStorage</a></li>
+      <li><a href="phaser/Device/m4a.html">m4a</a></li>
+      <li><a href="phaser/Device/macOS.html">macOS</a></li>
+      <li><a href="phaser/Device/midori.html">midori</a></li>
+      <li><a href="phaser/Device/mobileSafari.html">mobileSafari</a></li>
+      <li><a href="phaser/Device/mp3.html">mp3</a></li>
+      <li><a href="phaser/Device/mp4Video.html">mp4Video</a></li>
+      <li><a href="phaser/Device/mspointer.html">mspointer</a></li>
+      <li><a href="phaser/Device/node.html">node</a></li>
+      <li><a href="phaser/Device/nodeWebkit.html">nodeWebkit</a></li>
+      <li><a href="phaser/Device/ogg.html">ogg</a></li>
+      <li><a href="phaser/Device/oggVideo.html">oggVideo</a></li>
+      <li><a href="phaser/Device/opera.html">opera</a></li>
+      <li><a href="phaser/Device/opus.html">opus</a></li>
+      <li><a href="phaser/Device/pixelRatio.html">pixelRatio</a></li>
+      <li><a href="phaser/Device/pointerLock.html">pointerLock</a></li>
+      <li><a href="phaser/Device/quirksMode.html">quirksMode</a></li>
+      <li><a href="phaser/Device/requestFullScreen.html">requestFullScreen</a></li>
+      <li class="inherited"><a href="phaser/Device/runtimeType.html">runtimeType</a></li>
+      <li><a href="phaser/Device/safari.html">safari</a></li>
+      <li><a href="phaser/Device/silk.html">silk</a></li>
+      <li><a href="phaser/Device/support32bit.html">support32bit</a></li>
+      <li><a href="phaser/Device/touch.html">touch</a></li>
+      <li><a href="phaser/Device/trident.html">trident</a></li>
+      <li><a href="phaser/Device/tridentVersion.html">tridentVersion</a></li>
+      <li><a href="phaser/Device/typedArray.html">typedArray</a></li>
+      <li><a href="phaser/Device/vibration.html">vibration</a></li>
+      <li><a href="phaser/Device/vita.html">vita</a></li>
+      <li><a href="phaser/Device/wav.html">wav</a></li>
+      <li><a href="phaser/Device/webApp.html">webApp</a></li>
+      <li><a href="phaser/Device/webAudio.html">webAudio</a></li>
+      <li><a href="phaser/Device/webGL.html">webGL</a></li>
+      <li><a href="phaser/Device/webm.html">webm</a></li>
+      <li><a href="phaser/Device/webmVideo.html">webmVideo</a></li>
+      <li><a href="phaser/Device/wheelEvent.html">wheelEvent</a></li>
+      <li><a href="phaser/Device/windows.html">windows</a></li>
+      <li><a href="phaser/Device/windowsPhone.html">windowsPhone</a></li>
+      <li><a href="phaser/Device/worker.html">worker</a></li>
+      <li><a href="phaser/Device/wp9Video.html">wp9Video</a></li>
+    
+      <li class="section-title inherited"><a href="phaser/Device-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="phaser/Device/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title inherited"><a href="phaser/Device-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"><a href="phaser/Device/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="phaser/Device/toString.html">toString</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          phaser 2.6.2-beta+1
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+</body>
+
+</html>

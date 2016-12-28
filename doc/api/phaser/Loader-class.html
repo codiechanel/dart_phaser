@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the Loader class from the phaser library, for the Dart programming language.">
+  <title>Loader class - phaser library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">phaser</a></li>
+            <li><a href="phaser/phaser-library.html">phaser</a></li>
+            <li class="self-crumb">Loader</li>
+          </ol>
+          <div class="self-name">Loader</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">phaser</a></li>
+          <li><a href="phaser/phaser-library.html">phaser</a></li>
+          <li class="self-crumb">Loader</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <span class="kind">class</span> Loader
+          </h1>
+        </div>
+        <ul class="subnav">
+          <li><a href="phaser/Loader-class.html#static-properties">Static Properties</a></li>
+          <li><a href="phaser/Loader-class.html#instance-properties">Properties</a></li>
+          <li><a href="phaser/Loader-class.html#constructors">Constructors</a></li>
+          <li><a href="phaser/Loader-class.html#operators">Operators</a></li>
+          <li><a href="phaser/Loader-class.html#instance-methods">Methods</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">phaser</a></h5>
+    <h5><a href="phaser/phaser-library.html">phaser</a></h5>
+
+    <ol>
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#typedefs">Typedefs</a></li>
+      <li><a href="phaser/ResizeCallback.html">ResizeCallback</a></li>
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#properties">Properties</a></li>
+      <li><a href="phaser/Default.html">Default</a></li>
+      <li><a href="phaser/Power0.html">Power0</a></li>
+      <li><a href="phaser/Power1.html">Power1</a></li>
+      <li><a href="phaser/power2.html">power2</a></li>
+      <li><a href="phaser/power3.html">power3</a></li>
+      <li><a href="phaser/power4.html">power4</a></li>
+    
+    
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#classes">Classes</a></li>
+      <li><a href="phaser/AABB-class.html">AABB</a></li>
+      <li><a href="phaser/Animation-class.html">Animation</a></li>
+      <li><a href="phaser/AnimationManager-class.html">AnimationManager</a></li>
+      <li><a href="phaser/AnimationParser-class.html">AnimationParser</a></li>
+      <li><a href="phaser/Arcade-class.html">Arcade</a></li>
+      <li><a href="phaser/ArraySet-class.html">ArraySet</a></li>
+      <li><a href="phaser/ArrayUtils-class.html">ArrayUtils</a></li>
+      <li><a href="phaser/AStar-class.html">AStar</a></li>
+      <li><a href="phaser/AStarNode-class.html">AStarNode</a></li>
+      <li><a href="phaser/AStarPath-class.html">AStarPath</a></li>
+      <li><a href="phaser/AudioSprite-class.html">AudioSprite</a></li>
+      <li><a href="phaser/Back-class.html">Back</a></li>
+      <li><a href="phaser/BinarySerpents-class.html">BinarySerpents</a></li>
+      <li><a href="phaser/BitmapData-class.html">BitmapData</a></li>
+      <li><a href="phaser/BitmapFont-class.html">BitmapFont</a></li>
+      <li><a href="phaser/BitmapText-class.html">BitmapText</a></li>
+      <li><a href="phaser/BlurX-class.html">BlurX</a></li>
+      <li><a href="phaser/BlurY-class.html">BlurY</a></li>
+      <li><a href="phaser/BMFont-class.html">BMFont</a></li>
+      <li><a href="phaser/BMFontChar-class.html">BMFontChar</a></li>
+      <li><a href="phaser/Body-class.html">Body</a></li>
+      <li><a href="phaser/BodyDebug-class.html">BodyDebug</a></li>
+      <li><a href="phaser/Bounce-class.html">Bounce</a></li>
+      <li><a href="phaser/Bullet-class.html">Bullet</a></li>
+      <li><a href="phaser/Button-class.html">Button</a></li>
+      <li><a href="phaser/Cache-class.html">Cache</a></li>
+      <li><a href="phaser/CachedRenderTexture-class.html">CachedRenderTexture</a></li>
+      <li><a href="phaser/Camera-class.html">Camera</a></li>
+      <li><a href="phaser/Canvas-class.html">Canvas</a></li>
+      <li><a href="phaser/CausticLight-class.html">CausticLight</a></li>
+      <li><a href="phaser/CheckerWave-class.html">CheckerWave</a></li>
+      <li><a href="phaser/Circle-class.html">Circle</a></li>
+      <li><a href="phaser/Circular-class.html">Circular</a></li>
+      <li><a href="phaser/CollisionGroup-class.html">CollisionGroup</a></li>
+      <li><a href="phaser/Color-class.html">Color</a></li>
+      <li><a href="phaser/ColorBars-class.html">ColorBars</a></li>
+      <li><a href="phaser/ColorComponents-class.html">ColorComponents</a></li>
+      <li><a href="phaser/ColorHarmony-class.html">ColorHarmony</a></li>
+      <li><a href="phaser/ContactMaterial-class.html">ContactMaterial</a></li>
+      <li><a href="phaser/Create-class.html">Create</a></li>
+      <li><a href="phaser/CSS3Filters-class.html">CSS3Filters</a></li>
+      <li><a href="phaser/Cubic-class.html">Cubic</a></li>
+      <li><a href="phaser/CursorKeys-class.html">CursorKeys</a></li>
+      <li><a href="phaser/Debug-class.html">Debug</a></li>
+      <li><a href="phaser/Device-class.html">Device</a></li>
+      <li><a href="phaser/DeviceButton-class.html">DeviceButton</a></li>
+      <li><a href="phaser/DistanceConstraint-class.html">DistanceConstraint</a></li>
+      <li><a href="phaser/DOM-class.html">DOM</a></li>
+      <li><a href="phaser/Elastic-class.html">Elastic</a></li>
+      <li><a href="phaser/Ellipse-class.html">Ellipse</a></li>
+      <li><a href="phaser/Emitter-class.html">Emitter</a></li>
+      <li><a href="phaser/Events-class.html">Events</a></li>
+      <li><a href="phaser/Exponential-class.html">Exponential</a></li>
+      <li><a href="phaser/FaceChoices-class.html">FaceChoices</a></li>
+      <li><a href="phaser/Filter-class.html">Filter</a></li>
+      <li><a href="phaser/Fire-class.html">Fire</a></li>
+      <li><a href="phaser/FixtureList-class.html">FixtureList</a></li>
+      <li><a href="phaser/FlexGrid-class.html">FlexGrid</a></li>
+      <li><a href="phaser/FlexLayer-class.html">FlexLayer</a></li>
+      <li><a href="phaser/Frame-class.html">Frame</a></li>
+      <li><a href="phaser/FrameData-class.html">FrameData</a></li>
+      <li><a href="phaser/Game-class.html">Game</a></li>
+      <li><a href="phaser/GameObjectCreator-class.html">GameObjectCreator</a></li>
+      <li><a href="phaser/GameObjectFactory-class.html">GameObjectFactory</a></li>
+      <li><a href="phaser/Gamepad-class.html">Gamepad</a></li>
+      <li><a href="phaser/GearConstraint-class.html">GearConstraint</a></li>
+      <li><a href="phaser/Graphics-class.html">Graphics</a></li>
+      <li><a href="phaser/Gray-class.html">Gray</a></li>
+      <li><a href="phaser/Group-class.html">Group</a></li>
+      <li><a href="phaser/HueRotate-class.html">HueRotate</a></li>
+      <li><a href="phaser/IGameConfig-class.html">IGameConfig</a></li>
+      <li><a href="phaser/Image-class.html">Image</a></li>
+      <li><a href="phaser/ImageCollection-class.html">ImageCollection</a></li>
+      <li><a href="phaser/Input-class.html">Input</a></li>
+      <li><a href="phaser/InputHandler-class.html">InputHandler</a></li>
+      <li><a href="phaser/InversePointProxy-class.html">InversePointProxy</a></li>
+      <li><a href="phaser/IStateCycle-class.html">IStateCycle</a></li>
+      <li><a href="phaser/Juicy-class.html">Juicy</a></li>
+      <li><a href="phaser/Key-class.html">Key</a></li>
+      <li><a href="phaser/Keyboard-class.html">Keyboard</a></li>
+      <li><a href="phaser/KeyCode-class.html">KeyCode</a></li>
+      <li><a href="phaser/LazerBeam-class.html">LazerBeam</a></li>
+      <li><a href="phaser/LightBeam-class.html">LightBeam</a></li>
+      <li><a href="phaser/Line-class.html">Line</a></li>
+      <li><a href="phaser/Linear-class.html">Linear</a></li>
+      <li><a href="phaser/LinkedList-class.html">LinkedList</a></li>
+      <li><a href="phaser/Loader-class.html">Loader</a></li>
+      <li><a href="phaser/LoaderParser-class.html">LoaderParser</a></li>
+      <li><a href="phaser/LockConstraint-class.html">LockConstraint</a></li>
+      <li><a href="phaser/Marble-class.html">Marble</a></li>
+      <li><a href="phaser/Material-class.html">Material</a></li>
+      <li><a href="phaser/Math-class.html">Math</a></li>
+      <li><a href="phaser/Matrix-class.html">Matrix</a></li>
+      <li><a href="phaser/Mouse-class.html">Mouse</a></li>
+      <li><a href="phaser/MSPointer-class.html">MSPointer</a></li>
+      <li><a href="phaser/Net-class.html">Net</a></li>
+      <li><a href="phaser/Ninja-class.html">Ninja</a></li>
+      <li><a href="phaser/Ninja_Body-class.html">Ninja_Body</a></li>
+      <li><a href="phaser/Ninja_Circle-class.html">Ninja_Circle</a></li>
+      <li><a href="phaser/Ninja_Tile-class.html">Ninja_Tile</a></li>
+      <li><a href="phaser/P2-class.html">P2</a></li>
+      <li><a href="phaser/P2_Body-class.html">P2_Body</a></li>
+      <li><a href="phaser/Particle-class.html">Particle</a></li>
+      <li><a href="phaser/Particles-class.html">Particles</a></li>
+      <li><a href="phaser/Phaser-class.html">Phaser</a></li>
+      <li><a href="phaser/PhaserTextStyle-class.html">PhaserTextStyle</a></li>
+      <li><a href="phaser/Physics-class.html">Physics</a></li>
+      <li><a href="phaser/Pixelate-class.html">Pixelate</a></li>
+      <li><a href="phaser/Plasma-class.html">Plasma</a></li>
+      <li><a href="phaser/Plugin-class.html">Plugin</a></li>
+      <li><a href="phaser/PluginConstructorOf-class.html">PluginConstructorOf</a></li>
+      <li><a href="phaser/PluginManager-class.html">PluginManager</a></li>
+      <li><a href="phaser/Point-class.html">Point</a></li>
+      <li><a href="phaser/Pointer-class.html">Pointer</a></li>
+      <li><a href="phaser/PointerMode-class.html">PointerMode</a></li>
+      <li><a href="phaser/PointProxy-class.html">PointProxy</a></li>
+      <li><a href="phaser/Polygon-class.html">Polygon</a></li>
+      <li><a href="phaser/PrismaticConstraint-class.html">PrismaticConstraint</a></li>
+      <li><a href="phaser/Quadratic-class.html">Quadratic</a></li>
+      <li><a href="phaser/QuadTree-class.html">QuadTree</a></li>
+      <li><a href="phaser/Quartic-class.html">Quartic</a></li>
+      <li><a href="phaser/Quintic-class.html">Quintic</a></li>
+      <li><a href="phaser/RandomDataGenerator-class.html">RandomDataGenerator</a></li>
+      <li><a href="phaser/Rectangle-class.html">Rectangle</a></li>
+      <li><a href="phaser/RenderTexture-class.html">RenderTexture</a></li>
+      <li><a href="phaser/RequestAnimationFrame-class.html">RequestAnimationFrame</a></li>
+      <li><a href="phaser/RetroFont-class.html">RetroFont</a></li>
+      <li><a href="phaser/RevoluteConstraint-class.html">RevoluteConstraint</a></li>
+      <li><a href="phaser/RGBColor-class.html">RGBColor</a></li>
+      <li><a href="phaser/Rope-class.html">Rope</a></li>
+      <li><a href="phaser/RoundedRectangle-class.html">RoundedRectangle</a></li>
+      <li><a href="phaser/SampleFilter-class.html">SampleFilter</a></li>
+      <li><a href="phaser/SamplePlugin-class.html">SamplePlugin</a></li>
+      <li><a href="phaser/SaveCPU-class.html">SaveCPU</a></li>
+      <li><a href="phaser/ScaleManager-class.html">ScaleManager</a></li>
+      <li><a href="phaser/ScreenFlash-class.html">ScreenFlash</a></li>
+      <li><a href="phaser/Signal-class.html">Signal</a></li>
+      <li><a href="phaser/SignalBinding-class.html">SignalBinding</a></li>
+      <li><a href="phaser/SinglePad-class.html">SinglePad</a></li>
+      <li><a href="phaser/Sinusoidal-class.html">Sinusoidal</a></li>
+      <li><a href="phaser/Sound-class.html">Sound</a></li>
+      <li><a href="phaser/SoundManager-class.html">SoundManager</a></li>
+      <li><a href="phaser/Spring-class.html">Spring</a></li>
+      <li><a href="phaser/Sprite-class.html">Sprite</a></li>
+      <li><a href="phaser/SpriteBatch-class.html">SpriteBatch</a></li>
+      <li><a href="phaser/Stage-class.html">Stage</a></li>
+      <li><a href="phaser/State-class.html">State</a></li>
+      <li><a href="phaser/StateManager-class.html">StateManager</a></li>
+      <li><a href="phaser/Text-class.html">Text</a></li>
+      <li><a href="phaser/Tile-class.html">Tile</a></li>
+      <li><a href="phaser/Tilemap-class.html">Tilemap</a></li>
+      <li><a href="phaser/TilemapLayer-class.html">TilemapLayer</a></li>
+      <li><a href="phaser/TilemapLayerGL-class.html">TilemapLayerGL</a></li>
+      <li><a href="phaser/TilemapParser-class.html">TilemapParser</a></li>
+      <li><a href="phaser/TilemapWalker-class.html">TilemapWalker</a></li>
+      <li><a href="phaser/Tileset-class.html">Tileset</a></li>
+      <li><a href="phaser/TileSprite-class.html">TileSprite</a></li>
+      <li><a href="phaser/TileType-class.html">TileType</a></li>
+      <li><a href="phaser/Time-class.html">Time</a></li>
+      <li><a href="phaser/Timer-class.html">Timer</a></li>
+      <li><a href="phaser/TimerEvent-class.html">TimerEvent</a></li>
+      <li><a href="phaser/Touch-class.html">Touch</a></li>
+      <li><a href="phaser/Trail-class.html">Trail</a></li>
+      <li><a href="phaser/Tunnel-class.html">Tunnel</a></li>
+      <li><a href="phaser/Tween-class.html">Tween</a></li>
+      <li><a href="phaser/TweenData-class.html">TweenData</a></li>
+      <li><a href="phaser/TweenManager-class.html">TweenManager</a></li>
+      <li><a href="phaser/Utils-class.html">Utils</a></li>
+      <li><a href="phaser/Video-class.html">Video</a></li>
+      <li><a href="phaser/VirtualJoystick-class.html">VirtualJoystick</a></li>
+      <li><a href="phaser/Weapon-class.html">Weapon</a></li>
+      <li><a href="phaser/Webcam-class.html">Webcam</a></li>
+      <li><a href="phaser/WheelEventProxy-class.html">WheelEventProxy</a></li>
+      <li><a href="phaser/World-class.html">World</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    
+    <section>
+      <dl class="dl-horizontal">
+
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>JS("Phaser.Loader")</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="static-properties">
+      <h2>Static Properties</h2>
+
+      <dl class="properties">
+        <dt id="PHYSICS_LIME_CORONA_JSON" class="property">
+          <span class="name"><a href="phaser/Loader/PHYSICS_LIME_CORONA_JSON.html">PHYSICS_LIME_CORONA_JSON</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="PHYSICS_PHASER_JSON" class="property">
+          <span class="name"><a href="phaser/Loader/PHYSICS_PHASER_JSON.html">PHYSICS_PHASER_JSON</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="TEXTURE_ATLAS_JSON_ARRAY" class="property">
+          <span class="name"><a href="phaser/Loader/TEXTURE_ATLAS_JSON_ARRAY.html">TEXTURE_ATLAS_JSON_ARRAY</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="TEXTURE_ATLAS_JSON_HASH" class="property">
+          <span class="name"><a href="phaser/Loader/TEXTURE_ATLAS_JSON_HASH.html">TEXTURE_ATLAS_JSON_HASH</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="TEXTURE_ATLAS_JSON_PYXEL" class="property">
+          <span class="name"><a href="phaser/Loader/TEXTURE_ATLAS_JSON_PYXEL.html">TEXTURE_ATLAS_JSON_PYXEL</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="TEXTURE_ATLAS_XML_STARLING" class="property">
+          <span class="name"><a href="phaser/Loader/TEXTURE_ATLAS_XML_STARLING.html">TEXTURE_ATLAS_XML_STARLING</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+      </dl>
+    </section>
+
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="Loader" class="callable">
+          <span class="name"><a href="phaser/Loader/Loader.html">Loader</a></span><span class="signature">(<span class="parameter" id="-param-game"><span class="type-annotation"><a href="phaser/Game-class.html">Game</a></span> <span class="parameter-name">game</span></span>)</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Loader.fakeConstructor$" class="callable">
+          <span class="name"><a href="phaser/Loader/Loader.fakeConstructor$.html">Loader.fakeConstructor$</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="baseURL" class="property">
+          <span class="name"><a href="phaser/Loader/baseURL.html">baseURL</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="cache" class="property">
+          <span class="name"><a href="phaser/Loader/cache.html">cache</a></span>
+          <span class="signature">&#8594; <a href="phaser/Cache-class.html">Cache</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="crossOrigin" class="property">
+          <span class="name"><a href="phaser/Loader/crossOrigin.html">crossOrigin</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="enableParallel" class="property">
+          <span class="name"><a href="phaser/Loader/enableParallel.html">enableParallel</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="game" class="property">
+          <span class="name"><a href="phaser/Loader/game.html">game</a></span>
+          <span class="signature">&#8594; <a href="phaser/Game-class.html">Game</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="phaser/Loader/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span>
+        </dt>
+        <dd class="inherited">
+          <p>Get a hash code for this object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="hasLoaded" class="property">
+          <span class="name"><a href="phaser/Loader/hasLoaded.html">hasLoaded</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="isLoading" class="property">
+          <span class="name"><a href="phaser/Loader/isLoading.html">isLoading</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="maxParallelDownloads" class="property">
+          <span class="name"><a href="phaser/Loader/maxParallelDownloads.html">maxParallelDownloads</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onFileComplete" class="property">
+          <span class="name"><a href="phaser/Loader/onFileComplete.html">onFileComplete</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onFileError" class="property">
+          <span class="name"><a href="phaser/Loader/onFileError.html">onFileError</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onFileStart" class="property">
+          <span class="name"><a href="phaser/Loader/onFileStart.html">onFileStart</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onLoadComplete" class="property">
+          <span class="name"><a href="phaser/Loader/onLoadComplete.html">onLoadComplete</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onLoadStart" class="property">
+          <span class="name"><a href="phaser/Loader/onLoadStart.html">onLoadStart</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onPackComplete" class="property">
+          <span class="name"><a href="phaser/Loader/onPackComplete.html">onPackComplete</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="path" class="property">
+          <span class="name"><a href="phaser/Loader/path.html">path</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="preloadSprite" class="property">
+          <span class="name"><a href="phaser/Loader/preloadSprite.html">preloadSprite</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="progress" class="property">
+          <span class="name"><a href="phaser/Loader/progress.html">progress</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="progressFloat" class="property">
+          <span class="name"><a href="phaser/Loader/progressFloat.html">progressFloat</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="resetLocked" class="property">
+          <span class="name"><a href="phaser/Loader/resetLocked.html">resetLocked</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="phaser/Loader/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd class="inherited">
+          <p>A representation of the runtime type of the object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="useXDomainRequest" class="property">
+          <span class="name"><a href="phaser/Loader/useXDomainRequest.html">useXDomainRequest</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="phaser/Loader/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>The equality operator.</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="addSyncPoint" class="callable">
+          <span class="name"><a href="phaser/Loader/addSyncPoint.html">addSyncPoint</a></span><span class="signature">(<wbr><span class="parameter" id="addSyncPoint-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span>, </span> <span class="parameter" id="addSyncPoint-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span></span>)
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="addToFileList" class="callable">
+          <span class="name"><a href="phaser/Loader/addToFileList.html">addToFileList</a></span><span class="signature">(<wbr><span class="parameter" id="addToFileList-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span>, </span> <span class="parameter" id="addToFileList-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="addToFileList-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="addToFileList-param-properties"><span class="parameter-name">properties</span>, </span> <span class="parameter" id="addToFileList-param-overwrite"><span class="type-annotation">bool</span> <span class="parameter-name">overwrite</span>, </span> <span class="parameter" id="addToFileList-param-extension"><span class="type-annotation">String</span> <span class="parameter-name">extension</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="asyncComplete" class="callable">
+          <span class="name"><a href="phaser/Loader/asyncComplete.html">asyncComplete</a></span><span class="signature">(<wbr><span class="parameter" id="asyncComplete-param-file"><span class="parameter-name">file</span>, [</span> <span class="parameter" id="asyncComplete-param-errorMessage"><span class="type-annotation">String</span> <span class="parameter-name">errorMessage</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="atlas" class="callable">
+          <span class="name"><a href="phaser/Loader/atlas.html">atlas</a></span><span class="signature">(<wbr><span class="parameter" id="atlas-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="atlas-param-textureURL"><span class="type-annotation">String</span> <span class="parameter-name">textureURL</span>, </span> <span class="parameter" id="atlas-param-atlasURL"><span class="type-annotation">String</span> <span class="parameter-name">atlasURL</span>, </span> <span class="parameter" id="atlas-param-atlasData"><span class="parameter-name">atlasData</span>, </span> <span class="parameter" id="atlas-param-format"><span class="type-annotation">num</span> <span class="parameter-name">format</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="atlasJSONArray" class="callable">
+          <span class="name"><a href="phaser/Loader/atlasJSONArray.html">atlasJSONArray</a></span><span class="signature">(<wbr><span class="parameter" id="atlasJSONArray-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="atlasJSONArray-param-textureURL"><span class="type-annotation">String</span> <span class="parameter-name">textureURL</span>, </span> <span class="parameter" id="atlasJSONArray-param-atlasURL"><span class="type-annotation">String</span> <span class="parameter-name">atlasURL</span>, </span> <span class="parameter" id="atlasJSONArray-param-atlasData"><span class="parameter-name">atlasData</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="atlasJSONHash" class="callable">
+          <span class="name"><a href="phaser/Loader/atlasJSONHash.html">atlasJSONHash</a></span><span class="signature">(<wbr><span class="parameter" id="atlasJSONHash-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="atlasJSONHash-param-textureURL"><span class="type-annotation">String</span> <span class="parameter-name">textureURL</span>, </span> <span class="parameter" id="atlasJSONHash-param-atlasURL"><span class="type-annotation">String</span> <span class="parameter-name">atlasURL</span>, </span> <span class="parameter" id="atlasJSONHash-param-atlasData"><span class="parameter-name">atlasData</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="atlasXML" class="callable">
+          <span class="name"><a href="phaser/Loader/atlasXML.html">atlasXML</a></span><span class="signature">(<wbr><span class="parameter" id="atlasXML-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="atlasXML-param-textureURL"><span class="type-annotation">String</span> <span class="parameter-name">textureURL</span>, </span> <span class="parameter" id="atlasXML-param-atlasURL"><span class="type-annotation">String</span> <span class="parameter-name">atlasURL</span>, </span> <span class="parameter" id="atlasXML-param-atlasData"><span class="parameter-name">atlasData</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="audio" class="callable">
+          <span class="name"><a href="phaser/Loader/audio.html">audio</a></span><span class="signature">(<wbr><span class="parameter" id="audio-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="audio-param-urls"><span class="parameter-name">urls</span>, [</span> <span class="parameter" id="audio-param-autoDecode"><span class="type-annotation">bool</span> <span class="parameter-name">autoDecode</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="audiosprite" class="callable">
+          <span class="name"><a href="phaser/Loader/audiosprite.html">audiosprite</a></span><span class="signature">(<wbr><span class="parameter" id="audiosprite-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="audiosprite-param-urls"><span class="type-annotation">List&lt;String&gt;</span> <span class="parameter-name">urls</span>, [</span> <span class="parameter" id="audiosprite-param-jsonURL"><span class="type-annotation">String</span> <span class="parameter-name">jsonURL</span>, </span> <span class="parameter" id="audiosprite-param-jsonData"><span class="parameter-name">jsonData</span>, </span> <span class="parameter" id="audiosprite-param-autoDecode"><span class="type-annotation">bool</span> <span class="parameter-name">autoDecode</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="binary" class="callable">
+          <span class="name"><a href="phaser/Loader/binary.html">binary</a></span><span class="signature">(<wbr><span class="parameter" id="binary-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="binary-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="binary-param-callback"><span class="type-annotation">Function</span> <span class="parameter-name">callback</span>, </span> <span class="parameter" id="binary-param-callbackContext"><span class="parameter-name">callbackContext</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="bitmapFont" class="callable">
+          <span class="name"><a href="phaser/Loader/bitmapFont.html">bitmapFont</a></span><span class="signature">(<wbr><span class="parameter" id="bitmapFont-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="bitmapFont-param-textureURL"><span class="type-annotation">String</span> <span class="parameter-name">textureURL</span>, </span> <span class="parameter" id="bitmapFont-param-atlasURL"><span class="type-annotation">String</span> <span class="parameter-name">atlasURL</span>, </span> <span class="parameter" id="bitmapFont-param-atlasData"><span class="parameter-name">atlasData</span>, </span> <span class="parameter" id="bitmapFont-param-xSpacing"><span class="type-annotation">num</span> <span class="parameter-name">xSpacing</span>, </span> <span class="parameter" id="bitmapFont-param-ySpacing"><span class="type-annotation">num</span> <span class="parameter-name">ySpacing</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="checkKeyExists" class="callable">
+          <span class="name"><a href="phaser/Loader/checkKeyExists.html">checkKeyExists</a></span><span class="signature">(<wbr><span class="parameter" id="checkKeyExists-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span>, </span> <span class="parameter" id="checkKeyExists-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="csvLoadComplete" class="callable">
+          <span class="name"><a href="phaser/Loader/csvLoadComplete.html">csvLoadComplete</a></span><span class="signature">(<wbr><span class="parameter" id="csvLoadComplete-param-file"><span class="parameter-name">file</span>, </span> <span class="parameter" id="csvLoadComplete-param-xhr"><span class="type-annotation">HttpRequest</span> <span class="parameter-name">xhr</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="fileComplete" class="callable">
+          <span class="name"><a href="phaser/Loader/fileComplete.html">fileComplete</a></span><span class="signature">(<wbr><span class="parameter" id="fileComplete-param-file"><span class="parameter-name">file</span>, </span> <span class="parameter" id="fileComplete-param-xhr"><span class="type-annotation">HttpRequest</span> <span class="parameter-name">xhr</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="fileError" class="callable">
+          <span class="name"><a href="phaser/Loader/fileError.html">fileError</a></span><span class="signature">(<wbr><span class="parameter" id="fileError-param-file"><span class="parameter-name">file</span>, </span> <span class="parameter" id="fileError-param-xhr"><span class="type-annotation">HttpRequest</span> <span class="parameter-name">xhr</span>, </span> <span class="parameter" id="fileError-param-reason"><span class="type-annotation">String</span> <span class="parameter-name">reason</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="finishedLoading" class="callable">
+          <span class="name"><a href="phaser/Loader/finishedLoading.html">finishedLoading</a></span><span class="signature">(<wbr>[<span class="parameter" id="finishedLoading-param-abnormal"><span class="type-annotation">bool</span> <span class="parameter-name">abnormal</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="getAsset" class="callable">
+          <span class="name"><a href="phaser/Loader/getAsset.html">getAsset</a></span><span class="signature">(<wbr><span class="parameter" id="getAsset-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span>, </span> <span class="parameter" id="getAsset-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="getAssetIndex" class="callable">
+          <span class="name"><a href="phaser/Loader/getAssetIndex.html">getAssetIndex</a></span><span class="signature">(<wbr><span class="parameter" id="getAssetIndex-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span>, </span> <span class="parameter" id="getAssetIndex-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span></span>)
+            <span class="returntype parameter">&#8594; num</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="getAudioURL" class="callable">
+          <span class="name"><a href="phaser/Loader/getAudioURL.html">getAudioURL</a></span><span class="signature">(<wbr><span class="parameter" id="getAudioURL-param-urls"><span class="type-annotation">List</span> <span class="parameter-name">urls</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="image" class="callable">
+          <span class="name"><a href="phaser/Loader/image.html">image</a></span><span class="signature">(<wbr><span class="parameter" id="image-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="image-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="image-param-overwrite"><span class="type-annotation">bool</span> <span class="parameter-name">overwrite</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="images" class="callable">
+          <span class="name"><a href="phaser/Loader/images.html">images</a></span><span class="signature">(<wbr><span class="parameter" id="images-param-keys"><span class="type-annotation">List&lt;String&gt;</span> <span class="parameter-name">keys</span>, [</span> <span class="parameter" id="images-param-urls"><span class="type-annotation">List&lt;String&gt;</span> <span class="parameter-name">urls</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="json" class="callable">
+          <span class="name"><a href="phaser/Loader/json.html">json</a></span><span class="signature">(<wbr><span class="parameter" id="json-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="json-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="json-param-overwrite"><span class="type-annotation">bool</span> <span class="parameter-name">overwrite</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="jsonLoadComplete" class="callable">
+          <span class="name"><a href="phaser/Loader/jsonLoadComplete.html">jsonLoadComplete</a></span><span class="signature">(<wbr><span class="parameter" id="jsonLoadComplete-param-file"><span class="parameter-name">file</span>, </span> <span class="parameter" id="jsonLoadComplete-param-xhr"><span class="type-annotation">HttpRequest</span> <span class="parameter-name">xhr</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="loadAudioTag" class="callable">
+          <span class="name"><a href="phaser/Loader/loadAudioTag.html">loadAudioTag</a></span><span class="signature">(<wbr><span class="parameter" id="loadAudioTag-param-file"><span class="parameter-name">file</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="loadFile" class="callable">
+          <span class="name"><a href="phaser/Loader/loadFile.html">loadFile</a></span><span class="signature">(<wbr><span class="parameter" id="loadFile-param-file"><span class="parameter-name">file</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="loadImageTag" class="callable">
+          <span class="name"><a href="phaser/Loader/loadImageTag.html">loadImageTag</a></span><span class="signature">(<wbr><span class="parameter" id="loadImageTag-param-file"><span class="parameter-name">file</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="phaser/Loader/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Invoked when a non-existent method or property is accessed.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="pack" class="callable">
+          <span class="name"><a href="phaser/Loader/pack.html">pack</a></span><span class="signature">(<wbr><span class="parameter" id="pack-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="pack-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="pack-param-data"><span class="parameter-name">data</span>, </span> <span class="parameter" id="pack-param-callbackContext"><span class="parameter-name">callbackContext</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="parseXml" class="callable">
+          <span class="name"><a href="phaser/Loader/parseXml.html">parseXml</a></span><span class="signature">(<wbr><span class="parameter" id="parseXml-param-data"><span class="type-annotation">String</span> <span class="parameter-name">data</span></span>)
+            <span class="returntype parameter">&#8594; XmlDocument</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="physics" class="callable">
+          <span class="name"><a href="phaser/Loader/physics.html">physics</a></span><span class="signature">(<wbr><span class="parameter" id="physics-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="physics-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="physics-param-data"><span class="parameter-name">data</span>, </span> <span class="parameter" id="physics-param-format"><span class="type-annotation">String</span> <span class="parameter-name">format</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="processLoadQueue" class="callable">
+          <span class="name"><a href="phaser/Loader/processLoadQueue.html">processLoadQueue</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="processPack" class="callable">
+          <span class="name"><a href="phaser/Loader/processPack.html">processPack</a></span><span class="signature">(<wbr><span class="parameter" id="processPack-param-pack"><span class="parameter-name">pack</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="removeAll" class="callable">
+          <span class="name"><a href="phaser/Loader/removeAll.html">removeAll</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="removeFile" class="callable">
+          <span class="name"><a href="phaser/Loader/removeFile.html">removeFile</a></span><span class="signature">(<wbr><span class="parameter" id="removeFile-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span>, </span> <span class="parameter" id="removeFile-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="replaceInFileList" class="callable">
+          <span class="name"><a href="phaser/Loader/replaceInFileList.html">replaceInFileList</a></span><span class="signature">(<wbr><span class="parameter" id="replaceInFileList-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span>, </span> <span class="parameter" id="replaceInFileList-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="replaceInFileList-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="replaceInFileList-param-properties"><span class="parameter-name">properties</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="reset" class="callable">
+          <span class="name"><a href="phaser/Loader/reset.html">reset</a></span><span class="signature">(<wbr>[<span class="parameter" id="reset-param-hard"><span class="type-annotation">bool</span> <span class="parameter-name">hard</span>, </span> <span class="parameter" id="reset-param-clearEvents"><span class="type-annotation">bool</span> <span class="parameter-name">clearEvents</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="resize" class="callable">
+          <span class="name"><a href="phaser/Loader/resize.html">resize</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="script" class="callable">
+          <span class="name"><a href="phaser/Loader/script.html">script</a></span><span class="signature">(<wbr><span class="parameter" id="script-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="script-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="script-param-callback"><span class="type-annotation">Function</span> <span class="parameter-name">callback</span>, </span> <span class="parameter" id="script-param-callbackContext"><span class="parameter-name">callbackContext</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="setPreloadSprite" class="callable">
+          <span class="name"><a href="phaser/Loader/setPreloadSprite.html">setPreloadSprite</a></span><span class="signature">(<wbr><span class="parameter" id="setPreloadSprite-param-sprite"><span class="parameter-name">sprite</span>, [</span> <span class="parameter" id="setPreloadSprite-param-direction"><span class="type-annotation">num</span> <span class="parameter-name">direction</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="shader" class="callable">
+          <span class="name"><a href="phaser/Loader/shader.html">shader</a></span><span class="signature">(<wbr><span class="parameter" id="shader-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="shader-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="shader-param-overwrite"><span class="type-annotation">bool</span> <span class="parameter-name">overwrite</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="spritesheet" class="callable">
+          <span class="name"><a href="phaser/Loader/spritesheet.html">spritesheet</a></span><span class="signature">(<wbr><span class="parameter" id="spritesheet-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="spritesheet-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="spritesheet-param-frameWidth"><span class="type-annotation">num</span> <span class="parameter-name">frameWidth</span>, </span> <span class="parameter" id="spritesheet-param-frameHeight"><span class="type-annotation">num</span> <span class="parameter-name">frameHeight</span>, [</span> <span class="parameter" id="spritesheet-param-frameMax"><span class="type-annotation">num</span> <span class="parameter-name">frameMax</span>, </span> <span class="parameter" id="spritesheet-param-margin"><span class="type-annotation">num</span> <span class="parameter-name">margin</span>, </span> <span class="parameter" id="spritesheet-param-spacing"><span class="type-annotation">num</span> <span class="parameter-name">spacing</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="start" class="callable">
+          <span class="name"><a href="phaser/Loader/start.html">start</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="text" class="callable">
+          <span class="name"><a href="phaser/Loader/text.html">text</a></span><span class="signature">(<wbr><span class="parameter" id="text-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="text-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="text-param-overwrite"><span class="type-annotation">bool</span> <span class="parameter-name">overwrite</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="tilemap" class="callable">
+          <span class="name"><a href="phaser/Loader/tilemap.html">tilemap</a></span><span class="signature">(<wbr><span class="parameter" id="tilemap-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="tilemap-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="tilemap-param-data"><span class="parameter-name">data</span>, </span> <span class="parameter" id="tilemap-param-format"><span class="type-annotation">num</span> <span class="parameter-name">format</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="phaser/Loader/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a string representation of this object.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="totalLoadedFiles" class="callable">
+          <span class="name"><a href="phaser/Loader/totalLoadedFiles.html">totalLoadedFiles</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; num</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="totalLoadedPacks" class="callable">
+          <span class="name"><a href="phaser/Loader/totalLoadedPacks.html">totalLoadedPacks</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; num</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="totalQueuedFiles" class="callable">
+          <span class="name"><a href="phaser/Loader/totalQueuedFiles.html">totalQueuedFiles</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; num</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="totalQueuedPacks" class="callable">
+          <span class="name"><a href="phaser/Loader/totalQueuedPacks.html">totalQueuedPacks</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; num</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="transformUrl" class="callable">
+          <span class="name"><a href="phaser/Loader/transformUrl.html">transformUrl</a></span><span class="signature">(<wbr><span class="parameter" id="transformUrl-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, [</span> <span class="parameter" id="transformUrl-param-file"><span class="parameter-name">file</span></span> ])
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="updateProgress" class="callable">
+          <span class="name"><a href="phaser/Loader/updateProgress.html">updateProgress</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="video" class="callable">
+          <span class="name"><a href="phaser/Loader/video.html">video</a></span><span class="signature">(<wbr><span class="parameter" id="video-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="video-param-urls"><span class="parameter-name">urls</span>, [</span> <span class="parameter" id="video-param-loadEvent"><span class="type-annotation">String</span> <span class="parameter-name">loadEvent</span>, </span> <span class="parameter" id="video-param-asBlob"><span class="type-annotation">bool</span> <span class="parameter-name">asBlob</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="withSyncPoint" class="callable">
+          <span class="name"><a href="phaser/Loader/withSyncPoint.html">withSyncPoint</a></span><span class="signature">(<wbr><span class="parameter" id="withSyncPoint-param-callback"><span class="type-annotation">Function</span> <span class="parameter-name">callback</span>, [</span> <span class="parameter" id="withSyncPoint-param-callbackContext"><span class="parameter-name">callbackContext</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="xhrLoad" class="callable">
+          <span class="name"><a href="phaser/Loader/xhrLoad.html">xhrLoad</a></span><span class="signature">(<wbr><span class="parameter" id="xhrLoad-param-file"><span class="parameter-name">file</span>, </span> <span class="parameter" id="xhrLoad-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="xhrLoad-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span>, </span> <span class="parameter" id="xhrLoad-param-onload"><span class="type-annotation">Function</span> <span class="parameter-name">onload</span>, [</span> <span class="parameter" id="xhrLoad-param-onerror"><span class="type-annotation">Function</span> <span class="parameter-name">onerror</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="xhrLoadWithXDR" class="callable">
+          <span class="name"><a href="phaser/Loader/xhrLoadWithXDR.html">xhrLoadWithXDR</a></span><span class="signature">(<wbr><span class="parameter" id="xhrLoadWithXDR-param-file"><span class="parameter-name">file</span>, </span> <span class="parameter" id="xhrLoadWithXDR-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="xhrLoadWithXDR-param-type"><span class="type-annotation">String</span> <span class="parameter-name">type</span>, </span> <span class="parameter" id="xhrLoadWithXDR-param-onload"><span class="type-annotation">Function</span> <span class="parameter-name">onload</span>, [</span> <span class="parameter" id="xhrLoadWithXDR-param-onerror"><span class="type-annotation">Function</span> <span class="parameter-name">onerror</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="xml" class="callable">
+          <span class="name"><a href="phaser/Loader/xml.html">xml</a></span><span class="signature">(<wbr><span class="parameter" id="xml-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, [</span> <span class="parameter" id="xml-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="xml-param-overwrite"><span class="type-annotation">bool</span> <span class="parameter-name">overwrite</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="xmlLoadComplete" class="callable">
+          <span class="name"><a href="phaser/Loader/xmlLoadComplete.html">xmlLoadComplete</a></span><span class="signature">(<wbr><span class="parameter" id="xmlLoadComplete-param-file"><span class="parameter-name">file</span>, </span> <span class="parameter" id="xmlLoadComplete-param-xhr"><span class="type-annotation">HttpRequest</span> <span class="parameter-name">xhr</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>Loader</h5>
+    <ol>
+    
+      <li class="section-title"><a href="phaser/Loader-class.html#static-properties">Static properties</a></li>
+      <li><a href="phaser/Loader/PHYSICS_LIME_CORONA_JSON.html">PHYSICS_LIME_CORONA_JSON</a></li>
+      <li><a href="phaser/Loader/PHYSICS_PHASER_JSON.html">PHYSICS_PHASER_JSON</a></li>
+      <li><a href="phaser/Loader/TEXTURE_ATLAS_JSON_ARRAY.html">TEXTURE_ATLAS_JSON_ARRAY</a></li>
+      <li><a href="phaser/Loader/TEXTURE_ATLAS_JSON_HASH.html">TEXTURE_ATLAS_JSON_HASH</a></li>
+      <li><a href="phaser/Loader/TEXTURE_ATLAS_JSON_PYXEL.html">TEXTURE_ATLAS_JSON_PYXEL</a></li>
+      <li><a href="phaser/Loader/TEXTURE_ATLAS_XML_STARLING.html">TEXTURE_ATLAS_XML_STARLING</a></li>
+    
+    
+      <li class="section-title"><a href="phaser/Loader-class.html#constructors">Constructors</a></li>
+      <li><a href="phaser/Loader/Loader.html">Loader</a></li>
+      <li><a href="phaser/Loader/Loader.fakeConstructor$.html">fakeConstructor$</a></li>
+    
+      <li class="section-title">
+        <a href="phaser/Loader-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="phaser/Loader/baseURL.html">baseURL</a></li>
+      <li><a href="phaser/Loader/cache.html">cache</a></li>
+      <li><a href="phaser/Loader/crossOrigin.html">crossOrigin</a></li>
+      <li><a href="phaser/Loader/enableParallel.html">enableParallel</a></li>
+      <li><a href="phaser/Loader/game.html">game</a></li>
+      <li class="inherited"><a href="phaser/Loader/hashCode.html">hashCode</a></li>
+      <li><a href="phaser/Loader/hasLoaded.html">hasLoaded</a></li>
+      <li><a href="phaser/Loader/isLoading.html">isLoading</a></li>
+      <li><a href="phaser/Loader/maxParallelDownloads.html">maxParallelDownloads</a></li>
+      <li><a href="phaser/Loader/onFileComplete.html">onFileComplete</a></li>
+      <li><a href="phaser/Loader/onFileError.html">onFileError</a></li>
+      <li><a href="phaser/Loader/onFileStart.html">onFileStart</a></li>
+      <li><a href="phaser/Loader/onLoadComplete.html">onLoadComplete</a></li>
+      <li><a href="phaser/Loader/onLoadStart.html">onLoadStart</a></li>
+      <li><a href="phaser/Loader/onPackComplete.html">onPackComplete</a></li>
+      <li><a href="phaser/Loader/path.html">path</a></li>
+      <li><a href="phaser/Loader/preloadSprite.html">preloadSprite</a></li>
+      <li><a href="phaser/Loader/progress.html">progress</a></li>
+      <li><a href="phaser/Loader/progressFloat.html">progressFloat</a></li>
+      <li><a href="phaser/Loader/resetLocked.html">resetLocked</a></li>
+      <li class="inherited"><a href="phaser/Loader/runtimeType.html">runtimeType</a></li>
+      <li><a href="phaser/Loader/useXDomainRequest.html">useXDomainRequest</a></li>
+    
+      <li class="section-title inherited"><a href="phaser/Loader-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="phaser/Loader/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="phaser/Loader-class.html#instance-methods">Methods</a></li>
+      <li><a href="phaser/Loader/addSyncPoint.html">addSyncPoint</a></li>
+      <li><a href="phaser/Loader/addToFileList.html">addToFileList</a></li>
+      <li><a href="phaser/Loader/asyncComplete.html">asyncComplete</a></li>
+      <li><a href="phaser/Loader/atlas.html">atlas</a></li>
+      <li><a href="phaser/Loader/atlasJSONArray.html">atlasJSONArray</a></li>
+      <li><a href="phaser/Loader/atlasJSONHash.html">atlasJSONHash</a></li>
+      <li><a href="phaser/Loader/atlasXML.html">atlasXML</a></li>
+      <li><a href="phaser/Loader/audio.html">audio</a></li>
+      <li><a href="phaser/Loader/audiosprite.html">audiosprite</a></li>
+      <li><a href="phaser/Loader/binary.html">binary</a></li>
+      <li><a href="phaser/Loader/bitmapFont.html">bitmapFont</a></li>
+      <li><a href="phaser/Loader/checkKeyExists.html">checkKeyExists</a></li>
+      <li><a href="phaser/Loader/csvLoadComplete.html">csvLoadComplete</a></li>
+      <li><a href="phaser/Loader/fileComplete.html">fileComplete</a></li>
+      <li><a href="phaser/Loader/fileError.html">fileError</a></li>
+      <li><a href="phaser/Loader/finishedLoading.html">finishedLoading</a></li>
+      <li><a href="phaser/Loader/getAsset.html">getAsset</a></li>
+      <li><a href="phaser/Loader/getAssetIndex.html">getAssetIndex</a></li>
+      <li><a href="phaser/Loader/getAudioURL.html">getAudioURL</a></li>
+      <li><a href="phaser/Loader/image.html">image</a></li>
+      <li><a href="phaser/Loader/images.html">images</a></li>
+      <li><a href="phaser/Loader/json.html">json</a></li>
+      <li><a href="phaser/Loader/jsonLoadComplete.html">jsonLoadComplete</a></li>
+      <li><a href="phaser/Loader/loadAudioTag.html">loadAudioTag</a></li>
+      <li><a href="phaser/Loader/loadFile.html">loadFile</a></li>
+      <li><a href="phaser/Loader/loadImageTag.html">loadImageTag</a></li>
+      <li class="inherited"><a href="phaser/Loader/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a href="phaser/Loader/pack.html">pack</a></li>
+      <li><a href="phaser/Loader/parseXml.html">parseXml</a></li>
+      <li><a href="phaser/Loader/physics.html">physics</a></li>
+      <li><a href="phaser/Loader/processLoadQueue.html">processLoadQueue</a></li>
+      <li><a href="phaser/Loader/processPack.html">processPack</a></li>
+      <li><a href="phaser/Loader/removeAll.html">removeAll</a></li>
+      <li><a href="phaser/Loader/removeFile.html">removeFile</a></li>
+      <li><a href="phaser/Loader/replaceInFileList.html">replaceInFileList</a></li>
+      <li><a href="phaser/Loader/reset.html">reset</a></li>
+      <li><a href="phaser/Loader/resize.html">resize</a></li>
+      <li><a href="phaser/Loader/script.html">script</a></li>
+      <li><a href="phaser/Loader/setPreloadSprite.html">setPreloadSprite</a></li>
+      <li><a href="phaser/Loader/shader.html">shader</a></li>
+      <li><a href="phaser/Loader/spritesheet.html">spritesheet</a></li>
+      <li><a href="phaser/Loader/start.html">start</a></li>
+      <li><a href="phaser/Loader/text.html">text</a></li>
+      <li><a href="phaser/Loader/tilemap.html">tilemap</a></li>
+      <li class="inherited"><a href="phaser/Loader/toString.html">toString</a></li>
+      <li><a href="phaser/Loader/totalLoadedFiles.html">totalLoadedFiles</a></li>
+      <li><a href="phaser/Loader/totalLoadedPacks.html">totalLoadedPacks</a></li>
+      <li><a href="phaser/Loader/totalQueuedFiles.html">totalQueuedFiles</a></li>
+      <li><a href="phaser/Loader/totalQueuedPacks.html">totalQueuedPacks</a></li>
+      <li><a href="phaser/Loader/transformUrl.html">transformUrl</a></li>
+      <li><a href="phaser/Loader/updateProgress.html">updateProgress</a></li>
+      <li><a href="phaser/Loader/video.html">video</a></li>
+      <li><a href="phaser/Loader/withSyncPoint.html">withSyncPoint</a></li>
+      <li><a href="phaser/Loader/xhrLoad.html">xhrLoad</a></li>
+      <li><a href="phaser/Loader/xhrLoadWithXDR.html">xhrLoadWithXDR</a></li>
+      <li><a href="phaser/Loader/xml.html">xml</a></li>
+      <li><a href="phaser/Loader/xmlLoadComplete.html">xmlLoadComplete</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          phaser 2.6.2-beta+1
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+</body>
+
+</html>

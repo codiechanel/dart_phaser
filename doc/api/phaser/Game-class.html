@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the Game class from the phaser library, for the Dart programming language.">
+  <title>Game class - phaser library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">phaser</a></li>
+            <li><a href="phaser/phaser-library.html">phaser</a></li>
+            <li class="self-crumb">Game</li>
+          </ol>
+          <div class="self-name">Game</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">phaser</a></li>
+          <li><a href="phaser/phaser-library.html">phaser</a></li>
+          <li class="self-crumb">Game</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <span class="kind">class</span> Game
+          </h1>
+        </div>
+        <ul class="subnav">
+          <li><a href="phaser/Game-class.html#instance-properties">Properties</a></li>
+          <li><a href="phaser/Game-class.html#constructors">Constructors</a></li>
+          <li><a href="phaser/Game-class.html#operators">Operators</a></li>
+          <li><a href="phaser/Game-class.html#instance-methods">Methods</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">phaser</a></h5>
+    <h5><a href="phaser/phaser-library.html">phaser</a></h5>
+
+    <ol>
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#typedefs">Typedefs</a></li>
+      <li><a href="phaser/ResizeCallback.html">ResizeCallback</a></li>
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#properties">Properties</a></li>
+      <li><a href="phaser/Default.html">Default</a></li>
+      <li><a href="phaser/Power0.html">Power0</a></li>
+      <li><a href="phaser/Power1.html">Power1</a></li>
+      <li><a href="phaser/power2.html">power2</a></li>
+      <li><a href="phaser/power3.html">power3</a></li>
+      <li><a href="phaser/power4.html">power4</a></li>
+    
+    
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#classes">Classes</a></li>
+      <li><a href="phaser/AABB-class.html">AABB</a></li>
+      <li><a href="phaser/Animation-class.html">Animation</a></li>
+      <li><a href="phaser/AnimationManager-class.html">AnimationManager</a></li>
+      <li><a href="phaser/AnimationParser-class.html">AnimationParser</a></li>
+      <li><a href="phaser/Arcade-class.html">Arcade</a></li>
+      <li><a href="phaser/ArraySet-class.html">ArraySet</a></li>
+      <li><a href="phaser/ArrayUtils-class.html">ArrayUtils</a></li>
+      <li><a href="phaser/AStar-class.html">AStar</a></li>
+      <li><a href="phaser/AStarNode-class.html">AStarNode</a></li>
+      <li><a href="phaser/AStarPath-class.html">AStarPath</a></li>
+      <li><a href="phaser/AudioSprite-class.html">AudioSprite</a></li>
+      <li><a href="phaser/Back-class.html">Back</a></li>
+      <li><a href="phaser/BinarySerpents-class.html">BinarySerpents</a></li>
+      <li><a href="phaser/BitmapData-class.html">BitmapData</a></li>
+      <li><a href="phaser/BitmapFont-class.html">BitmapFont</a></li>
+      <li><a href="phaser/BitmapText-class.html">BitmapText</a></li>
+      <li><a href="phaser/BlurX-class.html">BlurX</a></li>
+      <li><a href="phaser/BlurY-class.html">BlurY</a></li>
+      <li><a href="phaser/BMFont-class.html">BMFont</a></li>
+      <li><a href="phaser/BMFontChar-class.html">BMFontChar</a></li>
+      <li><a href="phaser/Body-class.html">Body</a></li>
+      <li><a href="phaser/BodyDebug-class.html">BodyDebug</a></li>
+      <li><a href="phaser/Bounce-class.html">Bounce</a></li>
+      <li><a href="phaser/Bullet-class.html">Bullet</a></li>
+      <li><a href="phaser/Button-class.html">Button</a></li>
+      <li><a href="phaser/Cache-class.html">Cache</a></li>
+      <li><a href="phaser/CachedRenderTexture-class.html">CachedRenderTexture</a></li>
+      <li><a href="phaser/Camera-class.html">Camera</a></li>
+      <li><a href="phaser/Canvas-class.html">Canvas</a></li>
+      <li><a href="phaser/CausticLight-class.html">CausticLight</a></li>
+      <li><a href="phaser/CheckerWave-class.html">CheckerWave</a></li>
+      <li><a href="phaser/Circle-class.html">Circle</a></li>
+      <li><a href="phaser/Circular-class.html">Circular</a></li>
+      <li><a href="phaser/CollisionGroup-class.html">CollisionGroup</a></li>
+      <li><a href="phaser/Color-class.html">Color</a></li>
+      <li><a href="phaser/ColorBars-class.html">ColorBars</a></li>
+      <li><a href="phaser/ColorComponents-class.html">ColorComponents</a></li>
+      <li><a href="phaser/ColorHarmony-class.html">ColorHarmony</a></li>
+      <li><a href="phaser/ContactMaterial-class.html">ContactMaterial</a></li>
+      <li><a href="phaser/Create-class.html">Create</a></li>
+      <li><a href="phaser/CSS3Filters-class.html">CSS3Filters</a></li>
+      <li><a href="phaser/Cubic-class.html">Cubic</a></li>
+      <li><a href="phaser/CursorKeys-class.html">CursorKeys</a></li>
+      <li><a href="phaser/Debug-class.html">Debug</a></li>
+      <li><a href="phaser/Device-class.html">Device</a></li>
+      <li><a href="phaser/DeviceButton-class.html">DeviceButton</a></li>
+      <li><a href="phaser/DistanceConstraint-class.html">DistanceConstraint</a></li>
+      <li><a href="phaser/DOM-class.html">DOM</a></li>
+      <li><a href="phaser/Elastic-class.html">Elastic</a></li>
+      <li><a href="phaser/Ellipse-class.html">Ellipse</a></li>
+      <li><a href="phaser/Emitter-class.html">Emitter</a></li>
+      <li><a href="phaser/Events-class.html">Events</a></li>
+      <li><a href="phaser/Exponential-class.html">Exponential</a></li>
+      <li><a href="phaser/FaceChoices-class.html">FaceChoices</a></li>
+      <li><a href="phaser/Filter-class.html">Filter</a></li>
+      <li><a href="phaser/Fire-class.html">Fire</a></li>
+      <li><a href="phaser/FixtureList-class.html">FixtureList</a></li>
+      <li><a href="phaser/FlexGrid-class.html">FlexGrid</a></li>
+      <li><a href="phaser/FlexLayer-class.html">FlexLayer</a></li>
+      <li><a href="phaser/Frame-class.html">Frame</a></li>
+      <li><a href="phaser/FrameData-class.html">FrameData</a></li>
+      <li><a href="phaser/Game-class.html">Game</a></li>
+      <li><a href="phaser/GameObjectCreator-class.html">GameObjectCreator</a></li>
+      <li><a href="phaser/GameObjectFactory-class.html">GameObjectFactory</a></li>
+      <li><a href="phaser/Gamepad-class.html">Gamepad</a></li>
+      <li><a href="phaser/GearConstraint-class.html">GearConstraint</a></li>
+      <li><a href="phaser/Graphics-class.html">Graphics</a></li>
+      <li><a href="phaser/Gray-class.html">Gray</a></li>
+      <li><a href="phaser/Group-class.html">Group</a></li>
+      <li><a href="phaser/HueRotate-class.html">HueRotate</a></li>
+      <li><a href="phaser/IGameConfig-class.html">IGameConfig</a></li>
+      <li><a href="phaser/Image-class.html">Image</a></li>
+      <li><a href="phaser/ImageCollection-class.html">ImageCollection</a></li>
+      <li><a href="phaser/Input-class.html">Input</a></li>
+      <li><a href="phaser/InputHandler-class.html">InputHandler</a></li>
+      <li><a href="phaser/InversePointProxy-class.html">InversePointProxy</a></li>
+      <li><a href="phaser/IStateCycle-class.html">IStateCycle</a></li>
+      <li><a href="phaser/Juicy-class.html">Juicy</a></li>
+      <li><a href="phaser/Key-class.html">Key</a></li>
+      <li><a href="phaser/Keyboard-class.html">Keyboard</a></li>
+      <li><a href="phaser/KeyCode-class.html">KeyCode</a></li>
+      <li><a href="phaser/LazerBeam-class.html">LazerBeam</a></li>
+      <li><a href="phaser/LightBeam-class.html">LightBeam</a></li>
+      <li><a href="phaser/Line-class.html">Line</a></li>
+      <li><a href="phaser/Linear-class.html">Linear</a></li>
+      <li><a href="phaser/LinkedList-class.html">LinkedList</a></li>
+      <li><a href="phaser/Loader-class.html">Loader</a></li>
+      <li><a href="phaser/LoaderParser-class.html">LoaderParser</a></li>
+      <li><a href="phaser/LockConstraint-class.html">LockConstraint</a></li>
+      <li><a href="phaser/Marble-class.html">Marble</a></li>
+      <li><a href="phaser/Material-class.html">Material</a></li>
+      <li><a href="phaser/Math-class.html">Math</a></li>
+      <li><a href="phaser/Matrix-class.html">Matrix</a></li>
+      <li><a href="phaser/Mouse-class.html">Mouse</a></li>
+      <li><a href="phaser/MSPointer-class.html">MSPointer</a></li>
+      <li><a href="phaser/Net-class.html">Net</a></li>
+      <li><a href="phaser/Ninja-class.html">Ninja</a></li>
+      <li><a href="phaser/Ninja_Body-class.html">Ninja_Body</a></li>
+      <li><a href="phaser/Ninja_Circle-class.html">Ninja_Circle</a></li>
+      <li><a href="phaser/Ninja_Tile-class.html">Ninja_Tile</a></li>
+      <li><a href="phaser/P2-class.html">P2</a></li>
+      <li><a href="phaser/P2_Body-class.html">P2_Body</a></li>
+      <li><a href="phaser/Particle-class.html">Particle</a></li>
+      <li><a href="phaser/Particles-class.html">Particles</a></li>
+      <li><a href="phaser/Phaser-class.html">Phaser</a></li>
+      <li><a href="phaser/PhaserTextStyle-class.html">PhaserTextStyle</a></li>
+      <li><a href="phaser/Physics-class.html">Physics</a></li>
+      <li><a href="phaser/Pixelate-class.html">Pixelate</a></li>
+      <li><a href="phaser/Plasma-class.html">Plasma</a></li>
+      <li><a href="phaser/Plugin-class.html">Plugin</a></li>
+      <li><a href="phaser/PluginConstructorOf-class.html">PluginConstructorOf</a></li>
+      <li><a href="phaser/PluginManager-class.html">PluginManager</a></li>
+      <li><a href="phaser/Point-class.html">Point</a></li>
+      <li><a href="phaser/Pointer-class.html">Pointer</a></li>
+      <li><a href="phaser/PointerMode-class.html">PointerMode</a></li>
+      <li><a href="phaser/PointProxy-class.html">PointProxy</a></li>
+      <li><a href="phaser/Polygon-class.html">Polygon</a></li>
+      <li><a href="phaser/PrismaticConstraint-class.html">PrismaticConstraint</a></li>
+      <li><a href="phaser/Quadratic-class.html">Quadratic</a></li>
+      <li><a href="phaser/QuadTree-class.html">QuadTree</a></li>
+      <li><a href="phaser/Quartic-class.html">Quartic</a></li>
+      <li><a href="phaser/Quintic-class.html">Quintic</a></li>
+      <li><a href="phaser/RandomDataGenerator-class.html">RandomDataGenerator</a></li>
+      <li><a href="phaser/Rectangle-class.html">Rectangle</a></li>
+      <li><a href="phaser/RenderTexture-class.html">RenderTexture</a></li>
+      <li><a href="phaser/RequestAnimationFrame-class.html">RequestAnimationFrame</a></li>
+      <li><a href="phaser/RetroFont-class.html">RetroFont</a></li>
+      <li><a href="phaser/RevoluteConstraint-class.html">RevoluteConstraint</a></li>
+      <li><a href="phaser/RGBColor-class.html">RGBColor</a></li>
+      <li><a href="phaser/Rope-class.html">Rope</a></li>
+      <li><a href="phaser/RoundedRectangle-class.html">RoundedRectangle</a></li>
+      <li><a href="phaser/SampleFilter-class.html">SampleFilter</a></li>
+      <li><a href="phaser/SamplePlugin-class.html">SamplePlugin</a></li>
+      <li><a href="phaser/SaveCPU-class.html">SaveCPU</a></li>
+      <li><a href="phaser/ScaleManager-class.html">ScaleManager</a></li>
+      <li><a href="phaser/ScreenFlash-class.html">ScreenFlash</a></li>
+      <li><a href="phaser/Signal-class.html">Signal</a></li>
+      <li><a href="phaser/SignalBinding-class.html">SignalBinding</a></li>
+      <li><a href="phaser/SinglePad-class.html">SinglePad</a></li>
+      <li><a href="phaser/Sinusoidal-class.html">Sinusoidal</a></li>
+      <li><a href="phaser/Sound-class.html">Sound</a></li>
+      <li><a href="phaser/SoundManager-class.html">SoundManager</a></li>
+      <li><a href="phaser/Spring-class.html">Spring</a></li>
+      <li><a href="phaser/Sprite-class.html">Sprite</a></li>
+      <li><a href="phaser/SpriteBatch-class.html">SpriteBatch</a></li>
+      <li><a href="phaser/Stage-class.html">Stage</a></li>
+      <li><a href="phaser/State-class.html">State</a></li>
+      <li><a href="phaser/StateManager-class.html">StateManager</a></li>
+      <li><a href="phaser/Text-class.html">Text</a></li>
+      <li><a href="phaser/Tile-class.html">Tile</a></li>
+      <li><a href="phaser/Tilemap-class.html">Tilemap</a></li>
+      <li><a href="phaser/TilemapLayer-class.html">TilemapLayer</a></li>
+      <li><a href="phaser/TilemapLayerGL-class.html">TilemapLayerGL</a></li>
+      <li><a href="phaser/TilemapParser-class.html">TilemapParser</a></li>
+      <li><a href="phaser/TilemapWalker-class.html">TilemapWalker</a></li>
+      <li><a href="phaser/Tileset-class.html">Tileset</a></li>
+      <li><a href="phaser/TileSprite-class.html">TileSprite</a></li>
+      <li><a href="phaser/TileType-class.html">TileType</a></li>
+      <li><a href="phaser/Time-class.html">Time</a></li>
+      <li><a href="phaser/Timer-class.html">Timer</a></li>
+      <li><a href="phaser/TimerEvent-class.html">TimerEvent</a></li>
+      <li><a href="phaser/Touch-class.html">Touch</a></li>
+      <li><a href="phaser/Trail-class.html">Trail</a></li>
+      <li><a href="phaser/Tunnel-class.html">Tunnel</a></li>
+      <li><a href="phaser/Tween-class.html">Tween</a></li>
+      <li><a href="phaser/TweenData-class.html">TweenData</a></li>
+      <li><a href="phaser/TweenManager-class.html">TweenManager</a></li>
+      <li><a href="phaser/Utils-class.html">Utils</a></li>
+      <li><a href="phaser/Video-class.html">Video</a></li>
+      <li><a href="phaser/VirtualJoystick-class.html">VirtualJoystick</a></li>
+      <li><a href="phaser/Weapon-class.html">Weapon</a></li>
+      <li><a href="phaser/Webcam-class.html">Webcam</a></li>
+      <li><a href="phaser/WheelEventProxy-class.html">WheelEventProxy</a></li>
+      <li><a href="phaser/World-class.html">World</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    
+    <section>
+      <dl class="dl-horizontal">
+
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>JS("Phaser.Game")</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+
+
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="Game" class="callable">
+          <span class="name"><a href="phaser/Game/Game.html">Game</a></span><span class="signature">([<span class="parameter" id="-param-width_config"><span class="parameter-name">width_config</span>, </span> <span class="parameter" id="-param-height"><span class="parameter-name">height</span>, </span> <span class="parameter" id="-param-renderer"><span class="type-annotation">num</span> <span class="parameter-name">renderer</span>, </span> <span class="parameter" id="-param-parent"><span class="parameter-name">parent</span>, </span> <span class="parameter" id="-param-state"><span class="parameter-name">state</span>, </span> <span class="parameter" id="-param-transparent"><span class="type-annotation">bool</span> <span class="parameter-name">transparent</span>, </span> <span class="parameter" id="-param-antialias"><span class="type-annotation">bool</span> <span class="parameter-name">antialias</span>, </span> <span class="parameter" id="-param-physicsConfig"><span class="parameter-name">physicsConfig</span></span> ])</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="Game.fakeConstructor$" class="callable">
+          <span class="name"><a href="phaser/Game/Game.fakeConstructor$.html">Game.fakeConstructor$</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="add" class="property">
+          <span class="name"><a href="phaser/Game/add.html">add</a></span>
+          <span class="signature">&#8594; <a href="phaser/GameObjectFactory-class.html">GameObjectFactory</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="antialias" class="property">
+          <span class="name"><a href="phaser/Game/antialias.html">antialias</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="cache" class="property">
+          <span class="name"><a href="phaser/Game/cache.html">cache</a></span>
+          <span class="signature">&#8594; <a href="phaser/Cache-class.html">Cache</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="camera" class="property">
+          <span class="name"><a href="phaser/Game/camera.html">camera</a></span>
+          <span class="signature">&#8594; <a href="phaser/Camera-class.html">Camera</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="canvas" class="property">
+          <span class="name"><a href="phaser/Game/canvas.html">canvas</a></span>
+          <span class="signature">&#8594; CanvasElement</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="clearBeforeRender" class="property">
+          <span class="name"><a href="phaser/Game/clearBeforeRender.html">clearBeforeRender</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="config" class="property">
+          <span class="name"><a href="phaser/Game/config.html">config</a></span>
+          <span class="signature">&#8594; <a href="phaser/IGameConfig-class.html">IGameConfig</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="context" class="property">
+          <span class="name"><a href="phaser/Game/context.html">context</a></span>
+          <span class="signature">&#8594; CanvasRenderingContext2D</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="count" class="property">
+          <span class="name"><a href="phaser/Game/count.html">count</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="create" class="property">
+          <span class="name"><a href="phaser/Game/create.html">create</a></span>
+          <span class="signature">&#8594; <a href="phaser/Create-class.html">Create</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="currentUpdateID" class="property">
+          <span class="name"><a href="phaser/Game/currentUpdateID.html">currentUpdateID</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="debug" class="property">
+          <span class="name"><a href="phaser/Game/debug.html">debug</a></span>
+          <span class="signature">&#8594; <a href="phaser/Debug-class.html">Debug</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="device" class="property">
+          <span class="name"><a href="phaser/Game/device.html">device</a></span>
+          <span class="signature">&#8594; <a href="phaser/Device-class.html">Device</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="forceSingleUpdate" class="property">
+          <span class="name"><a href="phaser/Game/forceSingleUpdate.html">forceSingleUpdate</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="fpsProblemNotifier" class="property">
+          <span class="name"><a href="phaser/Game/fpsProblemNotifier.html">fpsProblemNotifier</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="phaser/Game/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span>
+        </dt>
+        <dd class="inherited">
+          <p>Get a hash code for this object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="height" class="property">
+          <span class="name"><a href="phaser/Game/height.html">height</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="id" class="property">
+          <span class="name"><a href="phaser/Game/id.html">id</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="input" class="property">
+          <span class="name"><a href="phaser/Game/input.html">input</a></span>
+          <span class="signature">&#8594; <a href="phaser/Input-class.html">Input</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="isBooted" class="property">
+          <span class="name"><a href="phaser/Game/isBooted.html">isBooted</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="isRunning" class="property">
+          <span class="name"><a href="phaser/Game/isRunning.html">isRunning</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="load" class="property">
+          <span class="name"><a href="phaser/Game/load.html">load</a></span>
+          <span class="signature">&#8594; <a href="phaser/Loader-class.html">Loader</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="lockRender" class="property">
+          <span class="name"><a href="phaser/Game/lockRender.html">lockRender</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="make" class="property">
+          <span class="name"><a href="phaser/Game/make.html">make</a></span>
+          <span class="signature">&#8594; <a href="phaser/GameObjectCreator-class.html">GameObjectCreator</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="math" class="property">
+          <span class="name"><a href="phaser/Game/math.html">math</a></span>
+          <span class="signature">&#8594; <a href="phaser/Math-class.html">Math</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="net" class="property">
+          <span class="name"><a href="phaser/Game/net.html">net</a></span>
+          <span class="signature">&#8594; <a href="phaser/Net-class.html">Net</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onBlur" class="property">
+          <span class="name"><a href="phaser/Game/onBlur.html">onBlur</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onFocus" class="property">
+          <span class="name"><a href="phaser/Game/onFocus.html">onFocus</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onPause" class="property">
+          <span class="name"><a href="phaser/Game/onPause.html">onPause</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="onResume" class="property">
+          <span class="name"><a href="phaser/Game/onResume.html">onResume</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="parent" class="property">
+          <span class="name"><a href="phaser/Game/parent.html">parent</a></span>
+          <span class="signature">&#8594; HtmlElement</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="particles" class="property">
+          <span class="name"><a href="phaser/Game/particles.html">particles</a></span>
+          <span class="signature">&#8594; <a href="phaser/Particles-class.html">Particles</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="paused" class="property">
+          <span class="name"><a href="phaser/Game/paused.html">paused</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="pendingStep" class="property">
+          <span class="name"><a href="phaser/Game/pendingStep.html">pendingStep</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="physics" class="property">
+          <span class="name"><a href="phaser/Game/physics.html">physics</a></span>
+          <span class="signature">&#8594; <a href="phaser/Physics-class.html">Physics</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="physicsConfig" class="property">
+          <span class="name"><a href="phaser/Game/physicsConfig.html">physicsConfig</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="plugins" class="property">
+          <span class="name"><a href="phaser/Game/plugins.html">plugins</a></span>
+          <span class="signature">&#8594; <a href="phaser/PluginManager-class.html">PluginManager</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="preserveDrawingBuffer" class="property">
+          <span class="name"><a href="phaser/Game/preserveDrawingBuffer.html">preserveDrawingBuffer</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="raf" class="property">
+          <span class="name"><a href="phaser/Game/raf.html">raf</a></span>
+          <span class="signature">&#8594; <a href="phaser/RequestAnimationFrame-class.html">RequestAnimationFrame</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="renderer" class="property">
+          <span class="name"><a href="phaser/Game/renderer.html">renderer</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="renderType" class="property">
+          <span class="name"><a href="phaser/Game/renderType.html">renderType</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="resolution" class="property">
+          <span class="name"><a href="phaser/Game/resolution.html">resolution</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="rnd" class="property">
+          <span class="name"><a href="phaser/Game/rnd.html">rnd</a></span>
+          <span class="signature">&#8594; <a href="phaser/RandomDataGenerator-class.html">RandomDataGenerator</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="phaser/Game/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd class="inherited">
+          <p>A representation of the runtime type of the object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="scale" class="property">
+          <span class="name"><a href="phaser/Game/scale.html">scale</a></span>
+          <span class="signature">&#8594; <a href="phaser/ScaleManager-class.html">ScaleManager</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="scratch" class="property">
+          <span class="name"><a href="phaser/Game/scratch.html">scratch</a></span>
+          <span class="signature">&#8594; <a href="phaser/BitmapData-class.html">BitmapData</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="sound" class="property">
+          <span class="name"><a href="phaser/Game/sound.html">sound</a></span>
+          <span class="signature">&#8594; <a href="phaser/SoundManager-class.html">SoundManager</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="stage" class="property">
+          <span class="name"><a href="phaser/Game/stage.html">stage</a></span>
+          <span class="signature">&#8594; <a href="phaser/Stage-class.html">Stage</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="state" class="property">
+          <span class="name"><a href="phaser/Game/state.html">state</a></span>
+          <span class="signature">&#8594; <a href="phaser/StateManager-class.html">StateManager</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="stepCount" class="property">
+          <span class="name"><a href="phaser/Game/stepCount.html">stepCount</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="stepping" class="property">
+          <span class="name"><a href="phaser/Game/stepping.html">stepping</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="time" class="property">
+          <span class="name"><a href="phaser/Game/time.html">time</a></span>
+          <span class="signature">&#8594; <a href="phaser/Time-class.html">Time</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="transparent" class="property">
+          <span class="name"><a href="phaser/Game/transparent.html">transparent</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="tweens" class="property">
+          <span class="name"><a href="phaser/Game/tweens.html">tweens</a></span>
+          <span class="signature">&#8594; <a href="phaser/TweenManager-class.html">TweenManager</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="updatesThisFrame" class="property">
+          <span class="name"><a href="phaser/Game/updatesThisFrame.html">updatesThisFrame</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="width" class="property">
+          <span class="name"><a href="phaser/Game/width.html">width</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="world" class="property">
+          <span class="name"><a href="phaser/Game/world.html">world</a></span>
+          <span class="signature">&#8594; <a href="phaser/World-class.html">World</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="phaser/Game/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>The equality operator.</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="boot" class="callable">
+          <span class="name"><a href="phaser/Game/boot.html">boot</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="destroy" class="callable">
+          <span class="name"><a href="phaser/Game/destroy.html">destroy</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="disableStep" class="callable">
+          <span class="name"><a href="phaser/Game/disableStep.html">disableStep</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="enableStep" class="callable">
+          <span class="name"><a href="phaser/Game/enableStep.html">enableStep</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="focusGain" class="callable">
+          <span class="name"><a href="phaser/Game/focusGain.html">focusGain</a></span><span class="signature">(<wbr><span class="parameter" id="focusGain-param-event"><span class="parameter-name">event</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="focusLoss" class="callable">
+          <span class="name"><a href="phaser/Game/focusLoss.html">focusLoss</a></span><span class="signature">(<wbr><span class="parameter" id="focusLoss-param-event"><span class="parameter-name">event</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="gamePaused" class="callable">
+          <span class="name"><a href="phaser/Game/gamePaused.html">gamePaused</a></span><span class="signature">(<wbr><span class="parameter" id="gamePaused-param-event"><span class="parameter-name">event</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="gameResumed" class="callable">
+          <span class="name"><a href="phaser/Game/gameResumed.html">gameResumed</a></span><span class="signature">(<wbr><span class="parameter" id="gameResumed-param-event"><span class="parameter-name">event</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="phaser/Game/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Invoked when a non-existent method or property is accessed.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="parseConfig" class="callable">
+          <span class="name"><a href="phaser/Game/parseConfig.html">parseConfig</a></span><span class="signature">(<wbr><span class="parameter" id="parseConfig-param-config"><span class="parameter-name">config</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="removeFromDOM" class="callable">
+          <span class="name"><a href="phaser/Game/removeFromDOM.html">removeFromDOM</a></span><span class="signature">(<wbr><span class="parameter" id="removeFromDOM-param-canvas"><span class="type-annotation">CanvasElement</span> <span class="parameter-name">canvas</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="setUpRenderer" class="callable">
+          <span class="name"><a href="phaser/Game/setUpRenderer.html">setUpRenderer</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="showDebugHeader" class="callable">
+          <span class="name"><a href="phaser/Game/showDebugHeader.html">showDebugHeader</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="step" class="callable">
+          <span class="name"><a href="phaser/Game/step.html">step</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="phaser/Game/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a string representation of this object.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="update" class="callable">
+          <span class="name"><a href="phaser/Game/update.html">update</a></span><span class="signature">(<wbr><span class="parameter" id="update-param-time"><span class="type-annotation">num</span> <span class="parameter-name">time</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="updateLogic" class="callable">
+          <span class="name"><a href="phaser/Game/updateLogic.html">updateLogic</a></span><span class="signature">(<wbr><span class="parameter" id="updateLogic-param-timeStep"><span class="type-annotation">num</span> <span class="parameter-name">timeStep</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="updateRender" class="callable">
+          <span class="name"><a href="phaser/Game/updateRender.html">updateRender</a></span><span class="signature">(<wbr><span class="parameter" id="updateRender-param-timeStep"><span class="type-annotation">num</span> <span class="parameter-name">timeStep</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>Game</h5>
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="phaser/Game-class.html#constructors">Constructors</a></li>
+      <li><a href="phaser/Game/Game.html">Game</a></li>
+      <li><a href="phaser/Game/Game.fakeConstructor$.html">fakeConstructor$</a></li>
+    
+      <li class="section-title">
+        <a href="phaser/Game-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="phaser/Game/add.html">add</a></li>
+      <li><a href="phaser/Game/antialias.html">antialias</a></li>
+      <li><a href="phaser/Game/cache.html">cache</a></li>
+      <li><a href="phaser/Game/camera.html">camera</a></li>
+      <li><a href="phaser/Game/canvas.html">canvas</a></li>
+      <li><a href="phaser/Game/clearBeforeRender.html">clearBeforeRender</a></li>
+      <li><a href="phaser/Game/config.html">config</a></li>
+      <li><a href="phaser/Game/context.html">context</a></li>
+      <li><a href="phaser/Game/count.html">count</a></li>
+      <li><a href="phaser/Game/create.html">create</a></li>
+      <li><a href="phaser/Game/currentUpdateID.html">currentUpdateID</a></li>
+      <li><a href="phaser/Game/debug.html">debug</a></li>
+      <li><a href="phaser/Game/device.html">device</a></li>
+      <li><a href="phaser/Game/forceSingleUpdate.html">forceSingleUpdate</a></li>
+      <li><a href="phaser/Game/fpsProblemNotifier.html">fpsProblemNotifier</a></li>
+      <li class="inherited"><a href="phaser/Game/hashCode.html">hashCode</a></li>
+      <li><a href="phaser/Game/height.html">height</a></li>
+      <li><a href="phaser/Game/id.html">id</a></li>
+      <li><a href="phaser/Game/input.html">input</a></li>
+      <li><a href="phaser/Game/isBooted.html">isBooted</a></li>
+      <li><a href="phaser/Game/isRunning.html">isRunning</a></li>
+      <li><a href="phaser/Game/load.html">load</a></li>
+      <li><a href="phaser/Game/lockRender.html">lockRender</a></li>
+      <li><a href="phaser/Game/make.html">make</a></li>
+      <li><a href="phaser/Game/math.html">math</a></li>
+      <li><a href="phaser/Game/net.html">net</a></li>
+      <li><a href="phaser/Game/onBlur.html">onBlur</a></li>
+      <li><a href="phaser/Game/onFocus.html">onFocus</a></li>
+      <li><a href="phaser/Game/onPause.html">onPause</a></li>
+      <li><a href="phaser/Game/onResume.html">onResume</a></li>
+      <li><a href="phaser/Game/parent.html">parent</a></li>
+      <li><a href="phaser/Game/particles.html">particles</a></li>
+      <li><a href="phaser/Game/paused.html">paused</a></li>
+      <li><a href="phaser/Game/pendingStep.html">pendingStep</a></li>
+      <li><a href="phaser/Game/physics.html">physics</a></li>
+      <li><a href="phaser/Game/physicsConfig.html">physicsConfig</a></li>
+      <li><a href="phaser/Game/plugins.html">plugins</a></li>
+      <li><a href="phaser/Game/preserveDrawingBuffer.html">preserveDrawingBuffer</a></li>
+      <li><a href="phaser/Game/raf.html">raf</a></li>
+      <li><a href="phaser/Game/renderer.html">renderer</a></li>
+      <li><a href="phaser/Game/renderType.html">renderType</a></li>
+      <li><a href="phaser/Game/resolution.html">resolution</a></li>
+      <li><a href="phaser/Game/rnd.html">rnd</a></li>
+      <li class="inherited"><a href="phaser/Game/runtimeType.html">runtimeType</a></li>
+      <li><a href="phaser/Game/scale.html">scale</a></li>
+      <li><a href="phaser/Game/scratch.html">scratch</a></li>
+      <li><a href="phaser/Game/sound.html">sound</a></li>
+      <li><a href="phaser/Game/stage.html">stage</a></li>
+      <li><a href="phaser/Game/state.html">state</a></li>
+      <li><a href="phaser/Game/stepCount.html">stepCount</a></li>
+      <li><a href="phaser/Game/stepping.html">stepping</a></li>
+      <li><a href="phaser/Game/time.html">time</a></li>
+      <li><a href="phaser/Game/transparent.html">transparent</a></li>
+      <li><a href="phaser/Game/tweens.html">tweens</a></li>
+      <li><a href="phaser/Game/updatesThisFrame.html">updatesThisFrame</a></li>
+      <li><a href="phaser/Game/width.html">width</a></li>
+      <li><a href="phaser/Game/world.html">world</a></li>
+    
+      <li class="section-title inherited"><a href="phaser/Game-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="phaser/Game/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="phaser/Game-class.html#instance-methods">Methods</a></li>
+      <li><a href="phaser/Game/boot.html">boot</a></li>
+      <li><a href="phaser/Game/destroy.html">destroy</a></li>
+      <li><a href="phaser/Game/disableStep.html">disableStep</a></li>
+      <li><a href="phaser/Game/enableStep.html">enableStep</a></li>
+      <li><a href="phaser/Game/focusGain.html">focusGain</a></li>
+      <li><a href="phaser/Game/focusLoss.html">focusLoss</a></li>
+      <li><a href="phaser/Game/gamePaused.html">gamePaused</a></li>
+      <li><a href="phaser/Game/gameResumed.html">gameResumed</a></li>
+      <li class="inherited"><a href="phaser/Game/noSuchMethod.html">noSuchMethod</a></li>
+      <li><a href="phaser/Game/parseConfig.html">parseConfig</a></li>
+      <li><a href="phaser/Game/removeFromDOM.html">removeFromDOM</a></li>
+      <li><a href="phaser/Game/setUpRenderer.html">setUpRenderer</a></li>
+      <li><a href="phaser/Game/showDebugHeader.html">showDebugHeader</a></li>
+      <li><a href="phaser/Game/step.html">step</a></li>
+      <li class="inherited"><a href="phaser/Game/toString.html">toString</a></li>
+      <li><a href="phaser/Game/update.html">update</a></li>
+      <li><a href="phaser/Game/updateLogic.html">updateLogic</a></li>
+      <li><a href="phaser/Game/updateRender.html">updateRender</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          phaser 2.6.2-beta+1
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+</body>
+
+</html>

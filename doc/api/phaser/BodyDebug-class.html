@@ -1,0 +1,2201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the BodyDebug class from the phaser library, for the Dart programming language.">
+  <title>BodyDebug class - phaser library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">phaser</a></li>
+            <li><a href="phaser/phaser-library.html">phaser</a></li>
+            <li class="self-crumb">BodyDebug</li>
+          </ol>
+          <div class="self-name">BodyDebug</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">phaser</a></li>
+          <li><a href="phaser/phaser-library.html">phaser</a></li>
+          <li class="self-crumb">BodyDebug</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <span class="kind">class</span> BodyDebug
+          </h1>
+        </div>
+        <ul class="subnav">
+          <li><a href="phaser/BodyDebug-class.html#instance-properties">Properties</a></li>
+          <li><a href="phaser/BodyDebug-class.html#constructors">Constructors</a></li>
+          <li><a href="phaser/BodyDebug-class.html#operators">Operators</a></li>
+          <li><a href="phaser/BodyDebug-class.html#instance-methods">Methods</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">phaser</a></h5>
+    <h5><a href="phaser/phaser-library.html">phaser</a></h5>
+
+    <ol>
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#typedefs">Typedefs</a></li>
+      <li><a href="phaser/ResizeCallback.html">ResizeCallback</a></li>
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#properties">Properties</a></li>
+      <li><a href="phaser/Default.html">Default</a></li>
+      <li><a href="phaser/Power0.html">Power0</a></li>
+      <li><a href="phaser/Power1.html">Power1</a></li>
+      <li><a href="phaser/power2.html">power2</a></li>
+      <li><a href="phaser/power3.html">power3</a></li>
+      <li><a href="phaser/power4.html">power4</a></li>
+    
+    
+    
+      <li class="section-title"><a href="phaser/phaser-library.html#classes">Classes</a></li>
+      <li><a href="phaser/AABB-class.html">AABB</a></li>
+      <li><a href="phaser/Animation-class.html">Animation</a></li>
+      <li><a href="phaser/AnimationManager-class.html">AnimationManager</a></li>
+      <li><a href="phaser/AnimationParser-class.html">AnimationParser</a></li>
+      <li><a href="phaser/Arcade-class.html">Arcade</a></li>
+      <li><a href="phaser/ArraySet-class.html">ArraySet</a></li>
+      <li><a href="phaser/ArrayUtils-class.html">ArrayUtils</a></li>
+      <li><a href="phaser/AStar-class.html">AStar</a></li>
+      <li><a href="phaser/AStarNode-class.html">AStarNode</a></li>
+      <li><a href="phaser/AStarPath-class.html">AStarPath</a></li>
+      <li><a href="phaser/AudioSprite-class.html">AudioSprite</a></li>
+      <li><a href="phaser/Back-class.html">Back</a></li>
+      <li><a href="phaser/BinarySerpents-class.html">BinarySerpents</a></li>
+      <li><a href="phaser/BitmapData-class.html">BitmapData</a></li>
+      <li><a href="phaser/BitmapFont-class.html">BitmapFont</a></li>
+      <li><a href="phaser/BitmapText-class.html">BitmapText</a></li>
+      <li><a href="phaser/BlurX-class.html">BlurX</a></li>
+      <li><a href="phaser/BlurY-class.html">BlurY</a></li>
+      <li><a href="phaser/BMFont-class.html">BMFont</a></li>
+      <li><a href="phaser/BMFontChar-class.html">BMFontChar</a></li>
+      <li><a href="phaser/Body-class.html">Body</a></li>
+      <li><a href="phaser/BodyDebug-class.html">BodyDebug</a></li>
+      <li><a href="phaser/Bounce-class.html">Bounce</a></li>
+      <li><a href="phaser/Bullet-class.html">Bullet</a></li>
+      <li><a href="phaser/Button-class.html">Button</a></li>
+      <li><a href="phaser/Cache-class.html">Cache</a></li>
+      <li><a href="phaser/CachedRenderTexture-class.html">CachedRenderTexture</a></li>
+      <li><a href="phaser/Camera-class.html">Camera</a></li>
+      <li><a href="phaser/Canvas-class.html">Canvas</a></li>
+      <li><a href="phaser/CausticLight-class.html">CausticLight</a></li>
+      <li><a href="phaser/CheckerWave-class.html">CheckerWave</a></li>
+      <li><a href="phaser/Circle-class.html">Circle</a></li>
+      <li><a href="phaser/Circular-class.html">Circular</a></li>
+      <li><a href="phaser/CollisionGroup-class.html">CollisionGroup</a></li>
+      <li><a href="phaser/Color-class.html">Color</a></li>
+      <li><a href="phaser/ColorBars-class.html">ColorBars</a></li>
+      <li><a href="phaser/ColorComponents-class.html">ColorComponents</a></li>
+      <li><a href="phaser/ColorHarmony-class.html">ColorHarmony</a></li>
+      <li><a href="phaser/ContactMaterial-class.html">ContactMaterial</a></li>
+      <li><a href="phaser/Create-class.html">Create</a></li>
+      <li><a href="phaser/CSS3Filters-class.html">CSS3Filters</a></li>
+      <li><a href="phaser/Cubic-class.html">Cubic</a></li>
+      <li><a href="phaser/CursorKeys-class.html">CursorKeys</a></li>
+      <li><a href="phaser/Debug-class.html">Debug</a></li>
+      <li><a href="phaser/Device-class.html">Device</a></li>
+      <li><a href="phaser/DeviceButton-class.html">DeviceButton</a></li>
+      <li><a href="phaser/DistanceConstraint-class.html">DistanceConstraint</a></li>
+      <li><a href="phaser/DOM-class.html">DOM</a></li>
+      <li><a href="phaser/Elastic-class.html">Elastic</a></li>
+      <li><a href="phaser/Ellipse-class.html">Ellipse</a></li>
+      <li><a href="phaser/Emitter-class.html">Emitter</a></li>
+      <li><a href="phaser/Events-class.html">Events</a></li>
+      <li><a href="phaser/Exponential-class.html">Exponential</a></li>
+      <li><a href="phaser/FaceChoices-class.html">FaceChoices</a></li>
+      <li><a href="phaser/Filter-class.html">Filter</a></li>
+      <li><a href="phaser/Fire-class.html">Fire</a></li>
+      <li><a href="phaser/FixtureList-class.html">FixtureList</a></li>
+      <li><a href="phaser/FlexGrid-class.html">FlexGrid</a></li>
+      <li><a href="phaser/FlexLayer-class.html">FlexLayer</a></li>
+      <li><a href="phaser/Frame-class.html">Frame</a></li>
+      <li><a href="phaser/FrameData-class.html">FrameData</a></li>
+      <li><a href="phaser/Game-class.html">Game</a></li>
+      <li><a href="phaser/GameObjectCreator-class.html">GameObjectCreator</a></li>
+      <li><a href="phaser/GameObjectFactory-class.html">GameObjectFactory</a></li>
+      <li><a href="phaser/Gamepad-class.html">Gamepad</a></li>
+      <li><a href="phaser/GearConstraint-class.html">GearConstraint</a></li>
+      <li><a href="phaser/Graphics-class.html">Graphics</a></li>
+      <li><a href="phaser/Gray-class.html">Gray</a></li>
+      <li><a href="phaser/Group-class.html">Group</a></li>
+      <li><a href="phaser/HueRotate-class.html">HueRotate</a></li>
+      <li><a href="phaser/IGameConfig-class.html">IGameConfig</a></li>
+      <li><a href="phaser/Image-class.html">Image</a></li>
+      <li><a href="phaser/ImageCollection-class.html">ImageCollection</a></li>
+      <li><a href="phaser/Input-class.html">Input</a></li>
+      <li><a href="phaser/InputHandler-class.html">InputHandler</a></li>
+      <li><a href="phaser/InversePointProxy-class.html">InversePointProxy</a></li>
+      <li><a href="phaser/IStateCycle-class.html">IStateCycle</a></li>
+      <li><a href="phaser/Juicy-class.html">Juicy</a></li>
+      <li><a href="phaser/Key-class.html">Key</a></li>
+      <li><a href="phaser/Keyboard-class.html">Keyboard</a></li>
+      <li><a href="phaser/KeyCode-class.html">KeyCode</a></li>
+      <li><a href="phaser/LazerBeam-class.html">LazerBeam</a></li>
+      <li><a href="phaser/LightBeam-class.html">LightBeam</a></li>
+      <li><a href="phaser/Line-class.html">Line</a></li>
+      <li><a href="phaser/Linear-class.html">Linear</a></li>
+      <li><a href="phaser/LinkedList-class.html">LinkedList</a></li>
+      <li><a href="phaser/Loader-class.html">Loader</a></li>
+      <li><a href="phaser/LoaderParser-class.html">LoaderParser</a></li>
+      <li><a href="phaser/LockConstraint-class.html">LockConstraint</a></li>
+      <li><a href="phaser/Marble-class.html">Marble</a></li>
+      <li><a href="phaser/Material-class.html">Material</a></li>
+      <li><a href="phaser/Math-class.html">Math</a></li>
+      <li><a href="phaser/Matrix-class.html">Matrix</a></li>
+      <li><a href="phaser/Mouse-class.html">Mouse</a></li>
+      <li><a href="phaser/MSPointer-class.html">MSPointer</a></li>
+      <li><a href="phaser/Net-class.html">Net</a></li>
+      <li><a href="phaser/Ninja-class.html">Ninja</a></li>
+      <li><a href="phaser/Ninja_Body-class.html">Ninja_Body</a></li>
+      <li><a href="phaser/Ninja_Circle-class.html">Ninja_Circle</a></li>
+      <li><a href="phaser/Ninja_Tile-class.html">Ninja_Tile</a></li>
+      <li><a href="phaser/P2-class.html">P2</a></li>
+      <li><a href="phaser/P2_Body-class.html">P2_Body</a></li>
+      <li><a href="phaser/Particle-class.html">Particle</a></li>
+      <li><a href="phaser/Particles-class.html">Particles</a></li>
+      <li><a href="phaser/Phaser-class.html">Phaser</a></li>
+      <li><a href="phaser/PhaserTextStyle-class.html">PhaserTextStyle</a></li>
+      <li><a href="phaser/Physics-class.html">Physics</a></li>
+      <li><a href="phaser/Pixelate-class.html">Pixelate</a></li>
+      <li><a href="phaser/Plasma-class.html">Plasma</a></li>
+      <li><a href="phaser/Plugin-class.html">Plugin</a></li>
+      <li><a href="phaser/PluginConstructorOf-class.html">PluginConstructorOf</a></li>
+      <li><a href="phaser/PluginManager-class.html">PluginManager</a></li>
+      <li><a href="phaser/Point-class.html">Point</a></li>
+      <li><a href="phaser/Pointer-class.html">Pointer</a></li>
+      <li><a href="phaser/PointerMode-class.html">PointerMode</a></li>
+      <li><a href="phaser/PointProxy-class.html">PointProxy</a></li>
+      <li><a href="phaser/Polygon-class.html">Polygon</a></li>
+      <li><a href="phaser/PrismaticConstraint-class.html">PrismaticConstraint</a></li>
+      <li><a href="phaser/Quadratic-class.html">Quadratic</a></li>
+      <li><a href="phaser/QuadTree-class.html">QuadTree</a></li>
+      <li><a href="phaser/Quartic-class.html">Quartic</a></li>
+      <li><a href="phaser/Quintic-class.html">Quintic</a></li>
+      <li><a href="phaser/RandomDataGenerator-class.html">RandomDataGenerator</a></li>
+      <li><a href="phaser/Rectangle-class.html">Rectangle</a></li>
+      <li><a href="phaser/RenderTexture-class.html">RenderTexture</a></li>
+      <li><a href="phaser/RequestAnimationFrame-class.html">RequestAnimationFrame</a></li>
+      <li><a href="phaser/RetroFont-class.html">RetroFont</a></li>
+      <li><a href="phaser/RevoluteConstraint-class.html">RevoluteConstraint</a></li>
+      <li><a href="phaser/RGBColor-class.html">RGBColor</a></li>
+      <li><a href="phaser/Rope-class.html">Rope</a></li>
+      <li><a href="phaser/RoundedRectangle-class.html">RoundedRectangle</a></li>
+      <li><a href="phaser/SampleFilter-class.html">SampleFilter</a></li>
+      <li><a href="phaser/SamplePlugin-class.html">SamplePlugin</a></li>
+      <li><a href="phaser/SaveCPU-class.html">SaveCPU</a></li>
+      <li><a href="phaser/ScaleManager-class.html">ScaleManager</a></li>
+      <li><a href="phaser/ScreenFlash-class.html">ScreenFlash</a></li>
+      <li><a href="phaser/Signal-class.html">Signal</a></li>
+      <li><a href="phaser/SignalBinding-class.html">SignalBinding</a></li>
+      <li><a href="phaser/SinglePad-class.html">SinglePad</a></li>
+      <li><a href="phaser/Sinusoidal-class.html">Sinusoidal</a></li>
+      <li><a href="phaser/Sound-class.html">Sound</a></li>
+      <li><a href="phaser/SoundManager-class.html">SoundManager</a></li>
+      <li><a href="phaser/Spring-class.html">Spring</a></li>
+      <li><a href="phaser/Sprite-class.html">Sprite</a></li>
+      <li><a href="phaser/SpriteBatch-class.html">SpriteBatch</a></li>
+      <li><a href="phaser/Stage-class.html">Stage</a></li>
+      <li><a href="phaser/State-class.html">State</a></li>
+      <li><a href="phaser/StateManager-class.html">StateManager</a></li>
+      <li><a href="phaser/Text-class.html">Text</a></li>
+      <li><a href="phaser/Tile-class.html">Tile</a></li>
+      <li><a href="phaser/Tilemap-class.html">Tilemap</a></li>
+      <li><a href="phaser/TilemapLayer-class.html">TilemapLayer</a></li>
+      <li><a href="phaser/TilemapLayerGL-class.html">TilemapLayerGL</a></li>
+      <li><a href="phaser/TilemapParser-class.html">TilemapParser</a></li>
+      <li><a href="phaser/TilemapWalker-class.html">TilemapWalker</a></li>
+      <li><a href="phaser/Tileset-class.html">Tileset</a></li>
+      <li><a href="phaser/TileSprite-class.html">TileSprite</a></li>
+      <li><a href="phaser/TileType-class.html">TileType</a></li>
+      <li><a href="phaser/Time-class.html">Time</a></li>
+      <li><a href="phaser/Timer-class.html">Timer</a></li>
+      <li><a href="phaser/TimerEvent-class.html">TimerEvent</a></li>
+      <li><a href="phaser/Touch-class.html">Touch</a></li>
+      <li><a href="phaser/Trail-class.html">Trail</a></li>
+      <li><a href="phaser/Tunnel-class.html">Tunnel</a></li>
+      <li><a href="phaser/Tween-class.html">Tween</a></li>
+      <li><a href="phaser/TweenData-class.html">TweenData</a></li>
+      <li><a href="phaser/TweenManager-class.html">TweenManager</a></li>
+      <li><a href="phaser/Utils-class.html">Utils</a></li>
+      <li><a href="phaser/Video-class.html">Video</a></li>
+      <li><a href="phaser/VirtualJoystick-class.html">VirtualJoystick</a></li>
+      <li><a href="phaser/Weapon-class.html">Weapon</a></li>
+      <li><a href="phaser/Webcam-class.html">Webcam</a></li>
+      <li><a href="phaser/WheelEventProxy-class.html">WheelEventProxy</a></li>
+      <li><a href="phaser/World-class.html">World</a></li>
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    
+    <section>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li>Object</li>
+          <li><a href="pixi/DisplayObject-class.html">DisplayObject</a></li>
+          <li><a href="pixi/DisplayObjectContainer-class.html">DisplayObjectContainer</a></li>
+          <li><a href="phaser/Group-class.html">Group</a></li>
+          <li>BodyDebug</li>
+        </ul></dd>
+
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>JS("Phaser.Physics.P2.BodyDebug")</li>
+        </ul></dd>
+      </dl>
+    </section>
+
+
+
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="BodyDebug" class="callable">
+          <span class="name"><a href="phaser/BodyDebug/BodyDebug.html">BodyDebug</a></span><span class="signature">(<span class="parameter" id="-param-game"><span class="type-annotation"><a href="phaser/Game-class.html">Game</a></span> <span class="parameter-name">game</span>, </span> <span class="parameter" id="-param-body"><span class="type-annotation"><a href="phaser/P2_Body-class.html">P2_Body</a></span> <span class="parameter-name">body</span>, </span> <span class="parameter" id="-param-settings"><span class="parameter-name">settings</span></span>)</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="BodyDebug.fakeConstructor$" class="callable">
+          <span class="name"><a href="phaser/BodyDebug/BodyDebug.fakeConstructor$.html">BodyDebug.fakeConstructor$</a></span><span class="signature">()</span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="alive" class="property inherited">
+          <span class="name"><a href="phaser/Group/alive.html">alive</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="alpha" class="property inherited">
+          <span class="name"><a href="phaser/Group/alpha.html">alpha</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="angle" class="property inherited">
+          <span class="name"><a href="phaser/Group/angle.html">angle</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="body" class="property">
+          <span class="name"><a href="phaser/BodyDebug/body.html">body</a></span>
+          <span class="signature">&#8594; <a href="phaser/P2_Body-class.html">P2_Body</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="bottom" class="property inherited">
+          <span class="name"><a href="phaser/Group/bottom.html">bottom</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="buttonMode" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/buttonMode.html">buttonMode</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="cacheAsBitmap" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/cacheAsBitmap.html">cacheAsBitmap</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="cameraOffset" class="property inherited">
+          <span class="name"><a href="phaser/Group/cameraOffset.html">cameraOffset</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="canvas" class="property">
+          <span class="name"><a href="phaser/BodyDebug/canvas.html">canvas</a></span>
+          <span class="signature">&#8594; <a href="phaser/Graphics-class.html">Graphics</a></span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="centerX" class="property inherited">
+          <span class="name"><a href="phaser/Group/centerX.html">centerX</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="centerY" class="property inherited">
+          <span class="name"><a href="phaser/Group/centerY.html">centerY</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="children" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/children.html">children</a></span>
+          <span class="signature">&#8594; List&lt;<a href="pixi/DisplayObject-class.html">DisplayObject</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="classType" class="property inherited">
+          <span class="name"><a href="phaser/Group/classType.html">classType</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="cursor" class="property inherited">
+          <span class="name"><a href="phaser/Group/cursor.html">cursor</a></span>
+          <span class="signature">&#8594; dynamic</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="cursorIndex" class="property inherited">
+          <span class="name"><a href="phaser/Group/cursorIndex.html">cursorIndex</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="defaultCursor" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/defaultCursor.html">defaultCursor</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="enableBody" class="property inherited">
+          <span class="name"><a href="phaser/Group/enableBody.html">enableBody</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="enableBodyDebug" class="property inherited">
+          <span class="name"><a href="phaser/Group/enableBodyDebug.html">enableBodyDebug</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="exists" class="property inherited">
+          <span class="name"><a href="phaser/Group/exists.html">exists</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="filterArea" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/filterArea.html">filterArea</a></span>
+          <span class="signature">&#8594; <a href="pixi/Rectangle-class.html">Rectangle</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="filters" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/filters.html">filters</a></span>
+          <span class="signature">&#8594; List&lt;<a href="pixi/AbstractFilter-class.html">AbstractFilter</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="fixedToCamera" class="property inherited">
+          <span class="name"><a href="phaser/Group/fixedToCamera.html">fixedToCamera</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="game" class="property inherited">
+          <span class="name"><a href="phaser/Group/game.html">game</a></span>
+          <span class="signature">&#8594; <a href="phaser/Game-class.html">Game</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="hash" class="property inherited">
+          <span class="name"><a href="phaser/Group/hash.html">hash</a></span>
+          <span class="signature">&#8594; List&lt;<a href="pixi/DisplayObject-class.html">DisplayObject</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="phaser/BodyDebug/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span>
+        </dt>
+        <dd class="inherited">
+          <p>Get a hash code for this object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="height" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/height.html">height</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="hitArea" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/hitArea.html">hitArea</a></span>
+          <span class="signature">&#8594; <a href="pixi/HitArea-class.html">HitArea</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="ignoreChildInput" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/ignoreChildInput.html">ignoreChildInput</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="ignoreDestroy" class="property inherited">
+          <span class="name"><a href="phaser/Group/ignoreDestroy.html">ignoreDestroy</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="inputEnableChildren" class="property inherited">
+          <span class="name"><a href="phaser/Group/inputEnableChildren.html">inputEnableChildren</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="interactive" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/interactive.html">interactive</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="left" class="property inherited">
+          <span class="name"><a href="phaser/Group/left.html">left</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="length" class="property inherited">
+          <span class="name"><a href="phaser/Group/length.html">length</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="mask" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/mask.html">mask</a></span>
+          <span class="signature">&#8594; <a href="pixi/Graphics-class.html">Graphics</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="name" class="property inherited">
+          <span class="name"><a href="phaser/Group/name.html">name</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="onChildInputDown" class="property inherited">
+          <span class="name"><a href="phaser/Group/onChildInputDown.html">onChildInputDown</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="onChildInputOut" class="property inherited">
+          <span class="name"><a href="phaser/Group/onChildInputOut.html">onChildInputOut</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="onChildInputOver" class="property inherited">
+          <span class="name"><a href="phaser/Group/onChildInputOver.html">onChildInputOver</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="onChildInputUp" class="property inherited">
+          <span class="name"><a href="phaser/Group/onChildInputUp.html">onChildInputUp</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="onDestroy" class="property inherited">
+          <span class="name"><a href="phaser/Group/onDestroy.html">onDestroy</a></span>
+          <span class="signature">&#8594; <a href="phaser/Signal-class.html">Signal</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="parent" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/parent.html">parent</a></span>
+          <span class="signature">&#8594; <a href="pixi/DisplayObjectContainer-class.html">DisplayObjectContainer</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="pendingDestroy" class="property inherited">
+          <span class="name"><a href="phaser/Group/pendingDestroy.html">pendingDestroy</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="physicsBodyType" class="property inherited">
+          <span class="name"><a href="phaser/Group/physicsBodyType.html">physicsBodyType</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="physicsSortDirection" class="property inherited">
+          <span class="name"><a href="phaser/Group/physicsSortDirection.html">physicsSortDirection</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="physicsType" class="property inherited">
+          <span class="name"><a href="phaser/Group/physicsType.html">physicsType</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="pivot" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/pivot.html">pivot</a></span>
+          <span class="signature">&#8594; <a href="pixi/Point-class.html">Point</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="position" class="property inherited">
+          <span class="name"><a href="phaser/Group/position.html">position</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="ppu" class="property">
+          <span class="name"><a href="phaser/BodyDebug/ppu.html">ppu</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd>
+          <p></p>
+          <div class="features">
+    read / write
+  </div>
+</dd>
+        <dt id="renderable" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/renderable.html">renderable</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="right" class="property inherited">
+          <span class="name"><a href="phaser/Group/right.html">right</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="rotation" class="property inherited">
+          <span class="name"><a href="phaser/Group/rotation.html">rotation</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="phaser/BodyDebug/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd class="inherited">
+          <p>A representation of the runtime type of the object.</p>
+          <div class="features">
+    read-only, inherited
+  </div>
+</dd>
+        <dt id="scale" class="property inherited">
+          <span class="name"><a href="phaser/Group/scale.html">scale</a></span>
+          <span class="signature">&#8594; <a href="phaser/Point-class.html">Point</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="stage" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/stage.html">stage</a></span>
+          <span class="signature">&#8594; <a href="pixi/DisplayObjectContainer-class.html">DisplayObjectContainer</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="top" class="property inherited">
+          <span class="name"><a href="phaser/Group/top.html">top</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="total" class="property inherited">
+          <span class="name"><a href="phaser/Group/total.html">total</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="type" class="property inherited">
+          <span class="name"><a href="phaser/Group/type.html">type</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="visible" class="property inherited">
+          <span class="name"><a href="phaser/Group/visible.html">visible</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="width" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/width.html">width</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="worldAlpha" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/worldAlpha.html">worldAlpha</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="worldPosition" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/worldPosition.html">worldPosition</a></span>
+          <span class="signature">&#8594; <a href="pixi/Point-class.html">Point</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="worldRotation" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/worldRotation.html">worldRotation</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="worldScale" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/worldScale.html">worldScale</a></span>
+          <span class="signature">&#8594; <a href="pixi/Point-class.html">Point</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="worldTransform" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/worldTransform.html">worldTransform</a></span>
+          <span class="signature">&#8594; <a href="pixi/Matrix-class.html">Matrix</a></span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="worldVisible" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/worldVisible.html">worldVisible</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="x" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/x.html">x</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="y" class="property inherited">
+          <span class="name"><a href="pixi/DisplayObject/y.html">y</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+        <dt id="z" class="property inherited">
+          <span class="name"><a href="phaser/Group/z.html">z</a></span>
+          <span class="signature">&#8594; num</span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">
+    read / write, inherited
+  </div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="phaser/BodyDebug/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>The equality operator.</p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="add" class="callable inherited">
+          <span class="name"><a href="phaser/Group/add.html">add</a></span><span class="signature">(<wbr><span class="parameter" id="add-param-child"><span class="parameter-name">child</span>, [</span> <span class="parameter" id="add-param-silent"><span class="type-annotation">bool</span> <span class="parameter-name">silent</span>, </span> <span class="parameter" id="add-param-index"><span class="type-annotation">num</span> <span class="parameter-name">index</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="addAll" class="callable inherited">
+          <span class="name"><a href="phaser/Group/addAll.html">addAll</a></span><span class="signature">(<wbr><span class="parameter" id="addAll-param-property"><span class="type-annotation">String</span> <span class="parameter-name">property</span>, </span> <span class="parameter" id="addAll-param-amount"><span class="type-annotation">num</span> <span class="parameter-name">amount</span>, </span> <span class="parameter" id="addAll-param-checkAlive"><span class="type-annotation">bool</span> <span class="parameter-name">checkAlive</span>, </span> <span class="parameter" id="addAll-param-checkVisible"><span class="type-annotation">bool</span> <span class="parameter-name">checkVisible</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="addAt" class="callable inherited">
+          <span class="name"><a href="phaser/Group/addAt.html">addAt</a></span><span class="signature">(<wbr><span class="parameter" id="addAt-param-child"><span class="parameter-name">child</span>, </span> <span class="parameter" id="addAt-param-index"><span class="type-annotation">num</span> <span class="parameter-name">index</span>, [</span> <span class="parameter" id="addAt-param-silent"><span class="type-annotation">bool</span> <span class="parameter-name">silent</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="addChild" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/addChild.html">addChild</a></span><span class="signature">(<wbr><span class="parameter" id="addChild-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; <a href="pixi/DisplayObject-class.html">DisplayObject</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="addChildAt" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/addChildAt.html">addChildAt</a></span><span class="signature">(<wbr><span class="parameter" id="addChildAt-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span>, </span> <span class="parameter" id="addChildAt-param-index"><span class="type-annotation">num</span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; <a href="pixi/DisplayObject-class.html">DisplayObject</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="addMultiple" class="callable inherited">
+          <span class="name"><a href="phaser/Group/addMultiple.html">addMultiple</a></span><span class="signature">(<wbr><span class="parameter" id="addMultiple-param-children"><span class="type-annotation">List</span> <span class="parameter-name">children</span>, [</span> <span class="parameter" id="addMultiple-param-silent"><span class="type-annotation">bool</span> <span class="parameter-name">silent</span></span> ])
+            <span class="returntype parameter">&#8594; List</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="addToHash" class="callable inherited">
+          <span class="name"><a href="phaser/Group/addToHash.html">addToHash</a></span><span class="signature">(<wbr><span class="parameter" id="addToHash-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="align" class="callable inherited">
+          <span class="name"><a href="phaser/Group/align.html">align</a></span><span class="signature">(<wbr><span class="parameter" id="align-param-width"><span class="type-annotation">num</span> <span class="parameter-name">width</span>, </span> <span class="parameter" id="align-param-height"><span class="type-annotation">num</span> <span class="parameter-name">height</span>, </span> <span class="parameter" id="align-param-cellWidth"><span class="type-annotation">num</span> <span class="parameter-name">cellWidth</span>, </span> <span class="parameter" id="align-param-cellHeight"><span class="type-annotation">num</span> <span class="parameter-name">cellHeight</span>, [</span> <span class="parameter" id="align-param-position"><span class="type-annotation">num</span> <span class="parameter-name">position</span>, </span> <span class="parameter" id="align-param-offset"><span class="type-annotation">num</span> <span class="parameter-name">offset</span></span> ])
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="alignIn" class="callable inherited">
+          <span class="name"><a href="phaser/Group/alignIn.html">alignIn</a></span><span class="signature">(<wbr><span class="parameter" id="alignIn-param-container"><span class="parameter-name">container</span>, [</span> <span class="parameter" id="alignIn-param-position"><span class="type-annotation">num</span> <span class="parameter-name">position</span>, </span> <span class="parameter" id="alignIn-param-offsetX"><span class="type-annotation">num</span> <span class="parameter-name">offsetX</span>, </span> <span class="parameter" id="alignIn-param-offsetY"><span class="type-annotation">num</span> <span class="parameter-name">offsetY</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Group-class.html">Group</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="alignTo" class="callable inherited">
+          <span class="name"><a href="phaser/Group/alignTo.html">alignTo</a></span><span class="signature">(<wbr><span class="parameter" id="alignTo-param-container"><span class="parameter-name">container</span>, [</span> <span class="parameter" id="alignTo-param-position"><span class="type-annotation">num</span> <span class="parameter-name">position</span>, </span> <span class="parameter" id="alignTo-param-offsetX"><span class="type-annotation">num</span> <span class="parameter-name">offsetX</span>, </span> <span class="parameter" id="alignTo-param-offsetY"><span class="type-annotation">num</span> <span class="parameter-name">offsetY</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Group-class.html">Group</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="bringToTop" class="callable inherited">
+          <span class="name"><a href="phaser/Group/bringToTop.html">bringToTop</a></span><span class="signature">(<wbr><span class="parameter" id="bringToTop-param-child"><span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="callAll" class="callable inherited">
+          <span class="name"><a href="phaser/Group/callAll.html">callAll</a></span><span class="signature">(<wbr><span class="parameter" id="callAll-param-method"><span class="type-annotation">String</span> <span class="parameter-name">method</span>, </span> <span class="parameter" id="callAll-param-context"><span class="parameter-name">context</span>, [</span> <span class="parameter" id="callAll-param-parameters1"><span class="parameter-name">parameters1</span>, </span> <span class="parameter" id="callAll-param-parameters2"><span class="parameter-name">parameters2</span>, </span> <span class="parameter" id="callAll-param-parameters3"><span class="parameter-name">parameters3</span>, </span> <span class="parameter" id="callAll-param-parameters4"><span class="parameter-name">parameters4</span>, </span> <span class="parameter" id="callAll-param-parameters5"><span class="parameter-name">parameters5</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="callAllExists" class="callable inherited">
+          <span class="name"><a href="phaser/Group/callAllExists.html">callAllExists</a></span><span class="signature">(<wbr><span class="parameter" id="callAllExists-param-callback"><span class="type-annotation">String</span> <span class="parameter-name">callback</span>, </span> <span class="parameter" id="callAllExists-param-existsValue"><span class="type-annotation">bool</span> <span class="parameter-name">existsValue</span>, [</span> <span class="parameter" id="callAllExists-param-parameters1"><span class="parameter-name">parameters1</span>, </span> <span class="parameter" id="callAllExists-param-parameters2"><span class="parameter-name">parameters2</span>, </span> <span class="parameter" id="callAllExists-param-parameters3"><span class="parameter-name">parameters3</span>, </span> <span class="parameter" id="callAllExists-param-parameters4"><span class="parameter-name">parameters4</span>, </span> <span class="parameter" id="callAllExists-param-parameters5"><span class="parameter-name">parameters5</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="callbackFromArray" class="callable inherited">
+          <span class="name"><a href="phaser/Group/callbackFromArray.html">callbackFromArray</a></span><span class="signature">(<wbr><span class="parameter" id="callbackFromArray-param-child"><span class="parameter-name">child</span>, </span> <span class="parameter" id="callbackFromArray-param-callback"><span class="type-annotation">Function</span> <span class="parameter-name">callback</span>, </span> <span class="parameter" id="callbackFromArray-param-length"><span class="type-annotation">num</span> <span class="parameter-name">length</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="checkAll" class="callable inherited">
+          <span class="name"><a href="phaser/Group/checkAll.html">checkAll</a></span><span class="signature">(<wbr><span class="parameter" id="checkAll-param-key"><span class="type-annotation">List&lt;String&gt;</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="checkAll-param-value"><span class="parameter-name">value</span>, [</span> <span class="parameter" id="checkAll-param-checkAlive"><span class="type-annotation">bool</span> <span class="parameter-name">checkAlive</span>, </span> <span class="parameter" id="checkAll-param-checkVisible"><span class="type-annotation">bool</span> <span class="parameter-name">checkVisible</span>, </span> <span class="parameter" id="checkAll-param-force"><span class="type-annotation">bool</span> <span class="parameter-name">force</span></span> ])
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="checkProperty" class="callable inherited">
+          <span class="name"><a href="phaser/Group/checkProperty.html">checkProperty</a></span><span class="signature">(<wbr><span class="parameter" id="checkProperty-param-child"><span class="parameter-name">child</span>, </span> <span class="parameter" id="checkProperty-param-key"><span class="type-annotation">List&lt;String&gt;</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="checkProperty-param-value"><span class="parameter-name">value</span>, [</span> <span class="parameter" id="checkProperty-param-force"><span class="type-annotation">bool</span> <span class="parameter-name">force</span></span> ])
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="click" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/click.html">click</a></span><span class="signature">(<wbr><span class="parameter" id="click-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="contains" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/contains.html">contains</a></span><span class="signature">(<wbr><span class="parameter" id="contains-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="countDead" class="callable inherited">
+          <span class="name"><a href="phaser/Group/countDead.html">countDead</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; num</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="countLiving" class="callable inherited">
+          <span class="name"><a href="phaser/Group/countLiving.html">countLiving</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; num</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="create" class="callable inherited">
+          <span class="name"><a href="phaser/Group/create.html">create</a></span><span class="signature">(<wbr><span class="parameter" id="create-param-x"><span class="type-annotation">num</span> <span class="parameter-name">x</span>, </span> <span class="parameter" id="create-param-y"><span class="type-annotation">num</span> <span class="parameter-name">y</span>, [</span> <span class="parameter" id="create-param-key"><span class="parameter-name">key</span>, </span> <span class="parameter" id="create-param-frame"><span class="parameter-name">frame</span>, </span> <span class="parameter" id="create-param-exists"><span class="type-annotation">bool</span> <span class="parameter-name">exists</span>, </span> <span class="parameter" id="create-param-index"><span class="type-annotation">num</span> <span class="parameter-name">index</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="createMultiple" class="callable inherited">
+          <span class="name"><a href="phaser/Group/createMultiple.html">createMultiple</a></span><span class="signature">(<wbr><span class="parameter" id="createMultiple-param-quantity"><span class="type-annotation">num</span> <span class="parameter-name">quantity</span>, </span> <span class="parameter" id="createMultiple-param-key"><span class="parameter-name">key</span>, [</span> <span class="parameter" id="createMultiple-param-frame"><span class="parameter-name">frame</span>, </span> <span class="parameter" id="createMultiple-param-exists"><span class="type-annotation">bool</span> <span class="parameter-name">exists</span></span> ])
+            <span class="returntype parameter">&#8594; List</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="customSort" class="callable inherited">
+          <span class="name"><a href="phaser/Group/customSort.html">customSort</a></span><span class="signature">(<wbr><span class="parameter" id="customSort-param-sortHandler"><span class="type-annotation">Function</span> <span class="parameter-name">sortHandler</span>, [</span> <span class="parameter" id="customSort-param-context"><span class="parameter-name">context</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="destroy" class="callable inherited">
+          <span class="name"><a href="phaser/Group/destroy.html">destroy</a></span><span class="signature">(<wbr>[<span class="parameter" id="destroy-param-destroyChildren"><span class="type-annotation">bool</span> <span class="parameter-name">destroyChildren</span>, </span> <span class="parameter" id="destroy-param-soft"><span class="type-annotation">bool</span> <span class="parameter-name">soft</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="displayObjectUpdateTransform" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/displayObjectUpdateTransform.html">displayObjectUpdateTransform</a></span><span class="signature">(<wbr>[<span class="parameter" id="displayObjectUpdateTransform-param-parent"><span class="type-annotation"><a href="pixi/DisplayObjectContainer-class.html">DisplayObjectContainer</a></span> <span class="parameter-name">parent</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="divideAll" class="callable inherited">
+          <span class="name"><a href="phaser/Group/divideAll.html">divideAll</a></span><span class="signature">(<wbr><span class="parameter" id="divideAll-param-property"><span class="type-annotation">String</span> <span class="parameter-name">property</span>, </span> <span class="parameter" id="divideAll-param-amount"><span class="type-annotation">num</span> <span class="parameter-name">amount</span>, [</span> <span class="parameter" id="divideAll-param-checkAlive"><span class="type-annotation">bool</span> <span class="parameter-name">checkAlive</span>, </span> <span class="parameter" id="divideAll-param-checkVisible"><span class="type-annotation">bool</span> <span class="parameter-name">checkVisible</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="draw" class="callable">
+          <span class="name"><a href="phaser/BodyDebug/draw.html">draw</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="filter" class="callable inherited">
+          <span class="name"><a href="phaser/Group/filter.html">filter</a></span><span class="signature">(<wbr><span class="parameter" id="filter-param-predicate"><span class="type-annotation">Function</span> <span class="parameter-name">predicate</span>, [</span> <span class="parameter" id="filter-param-checkExists"><span class="type-annotation">bool</span> <span class="parameter-name">checkExists</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/ArraySet-class.html">ArraySet</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="forEach" class="callable inherited">
+          <span class="name"><a href="phaser/Group/forEach.html">forEach</a></span><span class="signature">(<wbr><span class="parameter" id="forEach-param-callback"><span class="type-annotation">Function</span> <span class="parameter-name">callback</span>, </span> <span class="parameter" id="forEach-param-callbackContext"><span class="parameter-name">callbackContext</span>, [</span> <span class="parameter" id="forEach-param-checkExists"><span class="type-annotation">bool</span> <span class="parameter-name">checkExists</span>, </span> <span class="parameter" id="forEach-param-args1"><span class="parameter-name">args1</span>, </span> <span class="parameter" id="forEach-param-args2"><span class="parameter-name">args2</span>, </span> <span class="parameter" id="forEach-param-args3"><span class="parameter-name">args3</span>, </span> <span class="parameter" id="forEach-param-args4"><span class="parameter-name">args4</span>, </span> <span class="parameter" id="forEach-param-args5"><span class="parameter-name">args5</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="forEachAlive" class="callable inherited">
+          <span class="name"><a href="phaser/Group/forEachAlive.html">forEachAlive</a></span><span class="signature">(<wbr><span class="parameter" id="forEachAlive-param-callback"><span class="type-annotation">Function</span> <span class="parameter-name">callback</span>, </span> <span class="parameter" id="forEachAlive-param-callbackContext"><span class="parameter-name">callbackContext</span>, [</span> <span class="parameter" id="forEachAlive-param-args1"><span class="parameter-name">args1</span>, </span> <span class="parameter" id="forEachAlive-param-args2"><span class="parameter-name">args2</span>, </span> <span class="parameter" id="forEachAlive-param-args3"><span class="parameter-name">args3</span>, </span> <span class="parameter" id="forEachAlive-param-args4"><span class="parameter-name">args4</span>, </span> <span class="parameter" id="forEachAlive-param-args5"><span class="parameter-name">args5</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="forEachDead" class="callable inherited">
+          <span class="name"><a href="phaser/Group/forEachDead.html">forEachDead</a></span><span class="signature">(<wbr><span class="parameter" id="forEachDead-param-callback"><span class="type-annotation">Function</span> <span class="parameter-name">callback</span>, </span> <span class="parameter" id="forEachDead-param-callbackContext"><span class="parameter-name">callbackContext</span>, [</span> <span class="parameter" id="forEachDead-param-args1"><span class="parameter-name">args1</span>, </span> <span class="parameter" id="forEachDead-param-args2"><span class="parameter-name">args2</span>, </span> <span class="parameter" id="forEachDead-param-args3"><span class="parameter-name">args3</span>, </span> <span class="parameter" id="forEachDead-param-args4"><span class="parameter-name">args4</span>, </span> <span class="parameter" id="forEachDead-param-args5"><span class="parameter-name">args5</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="forEachExists" class="callable inherited">
+          <span class="name"><a href="phaser/Group/forEachExists.html">forEachExists</a></span><span class="signature">(<wbr><span class="parameter" id="forEachExists-param-callback"><span class="type-annotation">Function</span> <span class="parameter-name">callback</span>, </span> <span class="parameter" id="forEachExists-param-callbackContext"><span class="parameter-name">callbackContext</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="generateTexture" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/generateTexture.html">generateTexture</a></span><span class="signature">(<wbr>[<span class="parameter" id="generateTexture-param-resolution"><span class="type-annotation">num</span> <span class="parameter-name">resolution</span>, </span> <span class="parameter" id="generateTexture-param-scaleMode"><span class="type-annotation">num</span> <span class="parameter-name">scaleMode</span>, </span> <span class="parameter" id="generateTexture-param-renderer"><span class="parameter-name">renderer</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="pixi/RenderTexture-class.html">RenderTexture</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getAt" class="callable inherited">
+          <span class="name"><a href="phaser/Group/getAt.html">getAt</a></span><span class="signature">(<wbr><span class="parameter" id="getAt-param-index"><span class="type-annotation">num</span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getBottom" class="callable inherited">
+          <span class="name"><a href="phaser/Group/getBottom.html">getBottom</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getBounds" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/getBounds.html">getBounds</a></span><span class="signature">(<wbr>[<span class="parameter" id="getBounds-param-targetCoordinateSpace"><span class="parameter-name">targetCoordinateSpace</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="pixi/Rectangle-class.html">Rectangle</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getByName" class="callable inherited">
+          <span class="name"><a href="phaser/Group/getByName.html">getByName</a></span><span class="signature">(<wbr><span class="parameter" id="getByName-param-name"><span class="type-annotation">String</span> <span class="parameter-name">name</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getChildAt" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/getChildAt.html">getChildAt</a></span><span class="signature">(<wbr><span class="parameter" id="getChildAt-param-index"><span class="type-annotation">num</span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; <a href="pixi/DisplayObject-class.html">DisplayObject</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getChildIndex" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/getChildIndex.html">getChildIndex</a></span><span class="signature">(<wbr><span class="parameter" id="getChildIndex-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; num</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getClosestTo" class="callable inherited">
+          <span class="name"><a href="phaser/Group/getClosestTo.html">getClosestTo</a></span><span class="signature">(<wbr><span class="parameter" id="getClosestTo-param-object"><span class="parameter-name">object</span>, [</span> <span class="parameter" id="getClosestTo-param-callback"><span class="type-annotation">Function</span> <span class="parameter-name">callback</span>, </span> <span class="parameter" id="getClosestTo-param-callbackContext"><span class="parameter-name">callbackContext</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getFirstAlive" class="callable inherited">
+          <span class="name"><a href="phaser/Group/getFirstAlive.html">getFirstAlive</a></span><span class="signature">(<wbr>[<span class="parameter" id="getFirstAlive-param-createIfNull"><span class="type-annotation">bool</span> <span class="parameter-name">createIfNull</span>, </span> <span class="parameter" id="getFirstAlive-param-x"><span class="type-annotation">num</span> <span class="parameter-name">x</span>, </span> <span class="parameter" id="getFirstAlive-param-y"><span class="type-annotation">num</span> <span class="parameter-name">y</span>, </span> <span class="parameter" id="getFirstAlive-param-key"><span class="parameter-name">key</span>, </span> <span class="parameter" id="getFirstAlive-param-frame"><span class="parameter-name">frame</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getFirstDead" class="callable inherited">
+          <span class="name"><a href="phaser/Group/getFirstDead.html">getFirstDead</a></span><span class="signature">(<wbr>[<span class="parameter" id="getFirstDead-param-createIfNull"><span class="type-annotation">bool</span> <span class="parameter-name">createIfNull</span>, </span> <span class="parameter" id="getFirstDead-param-x"><span class="type-annotation">num</span> <span class="parameter-name">x</span>, </span> <span class="parameter" id="getFirstDead-param-y"><span class="type-annotation">num</span> <span class="parameter-name">y</span>, </span> <span class="parameter" id="getFirstDead-param-key"><span class="parameter-name">key</span>, </span> <span class="parameter" id="getFirstDead-param-frame"><span class="parameter-name">frame</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getFirstExists" class="callable inherited">
+          <span class="name"><a href="phaser/Group/getFirstExists.html">getFirstExists</a></span><span class="signature">(<wbr><span class="parameter" id="getFirstExists-param-exists"><span class="type-annotation">bool</span> <span class="parameter-name">exists</span>, [</span> <span class="parameter" id="getFirstExists-param-createIfNull"><span class="type-annotation">bool</span> <span class="parameter-name">createIfNull</span>, </span> <span class="parameter" id="getFirstExists-param-x"><span class="type-annotation">num</span> <span class="parameter-name">x</span>, </span> <span class="parameter" id="getFirstExists-param-y"><span class="type-annotation">num</span> <span class="parameter-name">y</span>, </span> <span class="parameter" id="getFirstExists-param-key"><span class="parameter-name">key</span>, </span> <span class="parameter" id="getFirstExists-param-frame"><span class="parameter-name">frame</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getFurthestFrom" class="callable inherited">
+          <span class="name"><a href="phaser/Group/getFurthestFrom.html">getFurthestFrom</a></span><span class="signature">(<wbr><span class="parameter" id="getFurthestFrom-param-object"><span class="parameter-name">object</span>, [</span> <span class="parameter" id="getFurthestFrom-param-callback"><span class="type-annotation">Function</span> <span class="parameter-name">callback</span>, </span> <span class="parameter" id="getFurthestFrom-param-callbackContext"><span class="parameter-name">callbackContext</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getIndex" class="callable inherited">
+          <span class="name"><a href="phaser/Group/getIndex.html">getIndex</a></span><span class="signature">(<wbr><span class="parameter" id="getIndex-param-child"><span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; num</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getLocalBounds" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/getLocalBounds.html">getLocalBounds</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="pixi/Rectangle-class.html">Rectangle</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getRandom" class="callable inherited">
+          <span class="name"><a href="phaser/Group/getRandom.html">getRandom</a></span><span class="signature">(<wbr>[<span class="parameter" id="getRandom-param-startIndex"><span class="type-annotation">num</span> <span class="parameter-name">startIndex</span>, </span> <span class="parameter" id="getRandom-param-length"><span class="type-annotation">num</span> <span class="parameter-name">length</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="getTop" class="callable inherited">
+          <span class="name"><a href="phaser/Group/getTop.html">getTop</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="hasProperty" class="callable inherited">
+          <span class="name"><a href="phaser/Group/hasProperty.html">hasProperty</a></span><span class="signature">(<wbr><span class="parameter" id="hasProperty-param-child"><span class="parameter-name">child</span>, </span> <span class="parameter" id="hasProperty-param-key"><span class="type-annotation">List&lt;String&gt;</span> <span class="parameter-name">key</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="iterate" class="callable inherited">
+          <span class="name"><a href="phaser/Group/iterate.html">iterate</a></span><span class="signature">(<wbr><span class="parameter" id="iterate-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="iterate-param-value"><span class="parameter-name">value</span>, </span> <span class="parameter" id="iterate-param-returnType"><span class="type-annotation">num</span> <span class="parameter-name">returnType</span>, [</span> <span class="parameter" id="iterate-param-callback"><span class="type-annotation">Function</span> <span class="parameter-name">callback</span>, </span> <span class="parameter" id="iterate-param-callbackContext"><span class="parameter-name">callbackContext</span>, </span> <span class="parameter" id="iterate-param-args1"><span class="parameter-name">args1</span>, </span> <span class="parameter" id="iterate-param-args2"><span class="parameter-name">args2</span>, </span> <span class="parameter" id="iterate-param-args3"><span class="parameter-name">args3</span>, </span> <span class="parameter" id="iterate-param-args4"><span class="parameter-name">args4</span>, </span> <span class="parameter" id="iterate-param-args5"><span class="parameter-name">args5</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="JS$set" class="callable inherited">
+          <span class="name"><a href="phaser/Group/JS$set.html">JS$set</a></span><span class="signature">(<wbr><span class="parameter" id="JS$set-param-child"><span class="parameter-name">child</span>, </span> <span class="parameter" id="JS$set-param-key"><span class="type-annotation">List&lt;String&gt;</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="JS$set-param-value"><span class="parameter-name">value</span>, [</span> <span class="parameter" id="JS$set-param-operation"><span class="type-annotation">num</span> <span class="parameter-name">operation</span>, </span> <span class="parameter" id="JS$set-param-force"><span class="type-annotation">bool</span> <span class="parameter-name">force</span></span> ])
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="mousedown" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/mousedown.html">mousedown</a></span><span class="signature">(<wbr><span class="parameter" id="mousedown-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="mousemove" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/mousemove.html">mousemove</a></span><span class="signature">(<wbr><span class="parameter" id="mousemove-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="mouseout" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/mouseout.html">mouseout</a></span><span class="signature">(<wbr><span class="parameter" id="mouseout-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="mouseover" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/mouseover.html">mouseover</a></span><span class="signature">(<wbr><span class="parameter" id="mouseover-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="mouseup" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/mouseup.html">mouseup</a></span><span class="signature">(<wbr><span class="parameter" id="mouseup-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="mouseupoutside" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/mouseupoutside.html">mouseupoutside</a></span><span class="signature">(<wbr><span class="parameter" id="mouseupoutside-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="moveAll" class="callable inherited">
+          <span class="name"><a href="phaser/Group/moveAll.html">moveAll</a></span><span class="signature">(<wbr><span class="parameter" id="moveAll-param-group"><span class="type-annotation"><a href="phaser/Group-class.html">Group</a></span> <span class="parameter-name">group</span>, [</span> <span class="parameter" id="moveAll-param-silent"><span class="type-annotation">bool</span> <span class="parameter-name">silent</span></span> ])
+            <span class="returntype parameter">&#8594; <a href="phaser/Group-class.html">Group</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="moveDown" class="callable inherited">
+          <span class="name"><a href="phaser/Group/moveDown.html">moveDown</a></span><span class="signature">(<wbr><span class="parameter" id="moveDown-param-child"><span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="moveUp" class="callable inherited">
+          <span class="name"><a href="phaser/Group/moveUp.html">moveUp</a></span><span class="signature">(<wbr><span class="parameter" id="moveUp-param-child"><span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="multiplyAll" class="callable inherited">
+          <span class="name"><a href="phaser/Group/multiplyAll.html">multiplyAll</a></span><span class="signature">(<wbr><span class="parameter" id="multiplyAll-param-property"><span class="type-annotation">String</span> <span class="parameter-name">property</span>, </span> <span class="parameter" id="multiplyAll-param-amount"><span class="type-annotation">num</span> <span class="parameter-name">amount</span>, </span> <span class="parameter" id="multiplyAll-param-checkAlive"><span class="type-annotation">bool</span> <span class="parameter-name">checkAlive</span>, </span> <span class="parameter" id="multiplyAll-param-checkVisible"><span class="type-annotation">bool</span> <span class="parameter-name">checkVisible</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="next" class="callable inherited">
+          <span class="name"><a href="phaser/Group/next.html">next</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="phaser/BodyDebug/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Invoked when a non-existent method or property is accessed.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="postUpdate" class="callable inherited">
+          <span class="name"><a href="phaser/Group/postUpdate.html">postUpdate</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="preUpdate" class="callable inherited">
+          <span class="name"><a href="phaser/Group/preUpdate.html">preUpdate</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="previous" class="callable inherited">
+          <span class="name"><a href="phaser/Group/previous.html">previous</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="remove" class="callable inherited">
+          <span class="name"><a href="phaser/Group/remove.html">remove</a></span><span class="signature">(<wbr><span class="parameter" id="remove-param-child"><span class="parameter-name">child</span>, [</span> <span class="parameter" id="remove-param-destroy"><span class="type-annotation">bool</span> <span class="parameter-name">destroy</span>, </span> <span class="parameter" id="remove-param-silent"><span class="type-annotation">bool</span> <span class="parameter-name">silent</span></span> ])
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeAll" class="callable inherited">
+          <span class="name"><a href="phaser/Group/removeAll.html">removeAll</a></span><span class="signature">(<wbr>[<span class="parameter" id="removeAll-param-destroy"><span class="type-annotation">bool</span> <span class="parameter-name">destroy</span>, </span> <span class="parameter" id="removeAll-param-silent"><span class="type-annotation">bool</span> <span class="parameter-name">silent</span>, </span> <span class="parameter" id="removeAll-param-destroyTexture"><span class="type-annotation">bool</span> <span class="parameter-name">destroyTexture</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeBetween" class="callable inherited">
+          <span class="name"><a href="phaser/Group/removeBetween.html">removeBetween</a></span><span class="signature">(<wbr><span class="parameter" id="removeBetween-param-startIndex"><span class="type-annotation">num</span> <span class="parameter-name">startIndex</span>, [</span> <span class="parameter" id="removeBetween-param-endIndex"><span class="type-annotation">num</span> <span class="parameter-name">endIndex</span>, </span> <span class="parameter" id="removeBetween-param-destroy"><span class="type-annotation">bool</span> <span class="parameter-name">destroy</span>, </span> <span class="parameter" id="removeBetween-param-silent"><span class="type-annotation">bool</span> <span class="parameter-name">silent</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeChild" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/removeChild.html">removeChild</a></span><span class="signature">(<wbr><span class="parameter" id="removeChild-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; <a href="pixi/DisplayObject-class.html">DisplayObject</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeChildAt" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/removeChildAt.html">removeChildAt</a></span><span class="signature">(<wbr><span class="parameter" id="removeChildAt-param-index"><span class="type-annotation">num</span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; <a href="pixi/DisplayObject-class.html">DisplayObject</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeChildren" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/removeChildren.html">removeChildren</a></span><span class="signature">(<wbr>[<span class="parameter" id="removeChildren-param-beginIndex"><span class="type-annotation">num</span> <span class="parameter-name">beginIndex</span>, </span> <span class="parameter" id="removeChildren-param-endIndex"><span class="type-annotation">num</span> <span class="parameter-name">endIndex</span></span> ])
+            <span class="returntype parameter">&#8594; List&lt;<a href="pixi/DisplayObject-class.html">DisplayObject</a>&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeFromHash" class="callable inherited">
+          <span class="name"><a href="phaser/Group/removeFromHash.html">removeFromHash</a></span><span class="signature">(<wbr><span class="parameter" id="removeFromHash-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="removeStageReference" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/removeStageReference.html">removeStageReference</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="replace" class="callable inherited">
+          <span class="name"><a href="phaser/Group/replace.html">replace</a></span><span class="signature">(<wbr><span class="parameter" id="replace-param-oldChild"><span class="parameter-name">oldChild</span>, </span> <span class="parameter" id="replace-param-newChild"><span class="parameter-name">newChild</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="resetChild" class="callable inherited">
+          <span class="name"><a href="phaser/Group/resetChild.html">resetChild</a></span><span class="signature">(<wbr><span class="parameter" id="resetChild-param-child"><span class="parameter-name">child</span>, [</span> <span class="parameter" id="resetChild-param-x"><span class="type-annotation">num</span> <span class="parameter-name">x</span>, </span> <span class="parameter" id="resetChild-param-y"><span class="type-annotation">num</span> <span class="parameter-name">y</span>, </span> <span class="parameter" id="resetChild-param-key"><span class="parameter-name">key</span>, </span> <span class="parameter" id="resetChild-param-frame"><span class="parameter-name">frame</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="resetCursor" class="callable inherited">
+          <span class="name"><a href="phaser/Group/resetCursor.html">resetCursor</a></span><span class="signature">(<wbr>[<span class="parameter" id="resetCursor-param-index"><span class="type-annotation">num</span> <span class="parameter-name">index</span></span> ])
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="reverse" class="callable inherited">
+          <span class="name"><a href="phaser/Group/reverse.html">reverse</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="rightclick" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/rightclick.html">rightclick</a></span><span class="signature">(<wbr><span class="parameter" id="rightclick-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="rightdown" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/rightdown.html">rightdown</a></span><span class="signature">(<wbr><span class="parameter" id="rightdown-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="rightup" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/rightup.html">rightup</a></span><span class="signature">(<wbr><span class="parameter" id="rightup-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="rightupoutside" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/rightupoutside.html">rightupoutside</a></span><span class="signature">(<wbr><span class="parameter" id="rightupoutside-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="sendToBack" class="callable inherited">
+          <span class="name"><a href="phaser/Group/sendToBack.html">sendToBack</a></span><span class="signature">(<wbr><span class="parameter" id="sendToBack-param-child"><span class="parameter-name">child</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="setAll" class="callable inherited">
+          <span class="name"><a href="phaser/Group/setAll.html">setAll</a></span><span class="signature">(<wbr><span class="parameter" id="setAll-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="setAll-param-value"><span class="parameter-name">value</span>, [</span> <span class="parameter" id="setAll-param-checkAlive"><span class="type-annotation">bool</span> <span class="parameter-name">checkAlive</span>, </span> <span class="parameter" id="setAll-param-checkVisible"><span class="type-annotation">bool</span> <span class="parameter-name">checkVisible</span>, </span> <span class="parameter" id="setAll-param-operation"><span class="type-annotation">num</span> <span class="parameter-name">operation</span>, </span> <span class="parameter" id="setAll-param-force"><span class="type-annotation">bool</span> <span class="parameter-name">force</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="setAllChildren" class="callable inherited">
+          <span class="name"><a href="phaser/Group/setAllChildren.html">setAllChildren</a></span><span class="signature">(<wbr><span class="parameter" id="setAllChildren-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="setAllChildren-param-value"><span class="parameter-name">value</span>, [</span> <span class="parameter" id="setAllChildren-param-checkAlive"><span class="type-annotation">bool</span> <span class="parameter-name">checkAlive</span>, </span> <span class="parameter" id="setAllChildren-param-checkVisible"><span class="type-annotation">bool</span> <span class="parameter-name">checkVisible</span>, </span> <span class="parameter" id="setAllChildren-param-operation"><span class="type-annotation">num</span> <span class="parameter-name">operation</span>, </span> <span class="parameter" id="setAllChildren-param-force"><span class="type-annotation">bool</span> <span class="parameter-name">force</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="setChildIndex" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/setChildIndex.html">setChildIndex</a></span><span class="signature">(<wbr><span class="parameter" id="setChildIndex-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span>, </span> <span class="parameter" id="setChildIndex-param-index"><span class="type-annotation">num</span> <span class="parameter-name">index</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="setProperty" class="callable inherited">
+          <span class="name"><a href="phaser/Group/setProperty.html">setProperty</a></span><span class="signature">(<wbr><span class="parameter" id="setProperty-param-child"><span class="parameter-name">child</span>, </span> <span class="parameter" id="setProperty-param-key"><span class="type-annotation">List&lt;String&gt;</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="setProperty-param-value"><span class="parameter-name">value</span>, [</span> <span class="parameter" id="setProperty-param-operation"><span class="type-annotation">num</span> <span class="parameter-name">operation</span>, </span> <span class="parameter" id="setProperty-param-force"><span class="type-annotation">bool</span> <span class="parameter-name">force</span></span> ])
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="setStageReference" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/setStageReference.html">setStageReference</a></span><span class="signature">(<wbr><span class="parameter" id="setStageReference-param-stage"><span class="type-annotation"><a href="pixi/DisplayObjectContainer-class.html">DisplayObjectContainer</a></span> <span class="parameter-name">stage</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="sort" class="callable inherited">
+          <span class="name"><a href="phaser/Group/sort.html">sort</a></span><span class="signature">(<wbr>[<span class="parameter" id="sort-param-key"><span class="type-annotation">String</span> <span class="parameter-name">key</span>, </span> <span class="parameter" id="sort-param-order"><span class="type-annotation">num</span> <span class="parameter-name">order</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="subAll" class="callable inherited">
+          <span class="name"><a href="phaser/Group/subAll.html">subAll</a></span><span class="signature">(<wbr><span class="parameter" id="subAll-param-property"><span class="type-annotation">String</span> <span class="parameter-name">property</span>, </span> <span class="parameter" id="subAll-param-amount"><span class="type-annotation">num</span> <span class="parameter-name">amount</span>, </span> <span class="parameter" id="subAll-param-checkAlive"><span class="type-annotation">bool</span> <span class="parameter-name">checkAlive</span>, </span> <span class="parameter" id="subAll-param-checkVisible"><span class="type-annotation">bool</span> <span class="parameter-name">checkVisible</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="swap" class="callable inherited">
+          <span class="name"><a href="phaser/Group/swap.html">swap</a></span><span class="signature">(<wbr><span class="parameter" id="swap-param-child1"><span class="parameter-name">child1</span>, </span> <span class="parameter" id="swap-param-child2"><span class="parameter-name">child2</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="swapChildren" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObjectContainer/swapChildren.html">swapChildren</a></span><span class="signature">(<wbr><span class="parameter" id="swapChildren-param-child"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child</span>, </span> <span class="parameter" id="swapChildren-param-child2"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">child2</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="tap" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/tap.html">tap</a></span><span class="signature">(<wbr><span class="parameter" id="tap-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="toGlobal" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/toGlobal.html">toGlobal</a></span><span class="signature">(<wbr><span class="parameter" id="toGlobal-param-position"><span class="type-annotation"><a href="pixi/Point-class.html">Point</a></span> <span class="parameter-name">position</span></span>)
+            <span class="returntype parameter">&#8594; <a href="pixi/Point-class.html">Point</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="toLocal" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/toLocal.html">toLocal</a></span><span class="signature">(<wbr><span class="parameter" id="toLocal-param-position"><span class="type-annotation"><a href="pixi/Point-class.html">Point</a></span> <span class="parameter-name">position</span>, </span> <span class="parameter" id="toLocal-param-from"><span class="type-annotation"><a href="pixi/DisplayObject-class.html">DisplayObject</a></span> <span class="parameter-name">from</span></span>)
+            <span class="returntype parameter">&#8594; <a href="pixi/Point-class.html">Point</a></span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="phaser/BodyDebug/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p>Returns a string representation of this object.</p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="touchend" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/touchend.html">touchend</a></span><span class="signature">(<wbr><span class="parameter" id="touchend-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="touchendoutside" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/touchendoutside.html">touchendoutside</a></span><span class="signature">(<wbr><span class="parameter" id="touchendoutside-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="touchmove" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/touchmove.html">touchmove</a></span><span class="signature">(<wbr><span class="parameter" id="touchmove-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="touchstart" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/touchstart.html">touchstart</a></span><span class="signature">(<wbr><span class="parameter" id="touchstart-param-e"><span class="type-annotation"><a href="pixi/InteractionData-class.html">InteractionData</a></span> <span class="parameter-name">e</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="update" class="callable inherited">
+          <span class="name"><a href="phaser/Group/update.html">update</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="updateSpriteTransform" class="callable">
+          <span class="name"><a href="phaser/BodyDebug/updateSpriteTransform.html">updateSpriteTransform</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          <p></p>
+        </dd>
+        <dt id="updateTransform" class="callable inherited">
+          <span class="name"><a href="pixi/DisplayObject/updateTransform.html">updateTransform</a></span><span class="signature">(<wbr>[<span class="parameter" id="updateTransform-param-parent"><span class="type-annotation"><a href="pixi/DisplayObjectContainer-class.html">DisplayObjectContainer</a></span> <span class="parameter-name">parent</span></span> ])
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="updateZ" class="callable inherited">
+          <span class="name"><a href="phaser/Group/updateZ.html">updateZ</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+        <dt id="xy" class="callable inherited">
+          <span class="name"><a href="phaser/Group/xy.html">xy</a></span><span class="signature">(<wbr><span class="parameter" id="xy-param-index"><span class="type-annotation">num</span> <span class="parameter-name">index</span>, </span> <span class="parameter" id="xy-param-x"><span class="type-annotation">num</span> <span class="parameter-name">x</span>, </span> <span class="parameter" id="xy-param-y"><span class="type-annotation">num</span> <span class="parameter-name">y</span></span>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          <p></p>
+          <div class="features">inherited</div>
+        </dd>
+      </dl>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>BodyDebug</h5>
+    <ol>
+    
+    
+    
+      <li class="section-title"><a href="phaser/BodyDebug-class.html#constructors">Constructors</a></li>
+      <li><a href="phaser/BodyDebug/BodyDebug.html">BodyDebug</a></li>
+      <li><a href="phaser/BodyDebug/BodyDebug.fakeConstructor$.html">fakeConstructor$</a></li>
+    
+      <li class="section-title">
+        <a href="phaser/BodyDebug-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a href="phaser/Group/alive.html">alive</a></li>
+      <li class="inherited"><a href="phaser/Group/alpha.html">alpha</a></li>
+      <li class="inherited"><a href="phaser/Group/angle.html">angle</a></li>
+      <li><a href="phaser/BodyDebug/body.html">body</a></li>
+      <li class="inherited"><a href="phaser/Group/bottom.html">bottom</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/buttonMode.html">buttonMode</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/cacheAsBitmap.html">cacheAsBitmap</a></li>
+      <li class="inherited"><a href="phaser/Group/cameraOffset.html">cameraOffset</a></li>
+      <li><a href="phaser/BodyDebug/canvas.html">canvas</a></li>
+      <li class="inherited"><a href="phaser/Group/centerX.html">centerX</a></li>
+      <li class="inherited"><a href="phaser/Group/centerY.html">centerY</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/children.html">children</a></li>
+      <li class="inherited"><a href="phaser/Group/classType.html">classType</a></li>
+      <li class="inherited"><a href="phaser/Group/cursor.html">cursor</a></li>
+      <li class="inherited"><a href="phaser/Group/cursorIndex.html">cursorIndex</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/defaultCursor.html">defaultCursor</a></li>
+      <li class="inherited"><a href="phaser/Group/enableBody.html">enableBody</a></li>
+      <li class="inherited"><a href="phaser/Group/enableBodyDebug.html">enableBodyDebug</a></li>
+      <li class="inherited"><a href="phaser/Group/exists.html">exists</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/filterArea.html">filterArea</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/filters.html">filters</a></li>
+      <li class="inherited"><a href="phaser/Group/fixedToCamera.html">fixedToCamera</a></li>
+      <li class="inherited"><a href="phaser/Group/game.html">game</a></li>
+      <li class="inherited"><a href="phaser/Group/hash.html">hash</a></li>
+      <li class="inherited"><a href="phaser/BodyDebug/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/height.html">height</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/hitArea.html">hitArea</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/ignoreChildInput.html">ignoreChildInput</a></li>
+      <li class="inherited"><a href="phaser/Group/ignoreDestroy.html">ignoreDestroy</a></li>
+      <li class="inherited"><a href="phaser/Group/inputEnableChildren.html">inputEnableChildren</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/interactive.html">interactive</a></li>
+      <li class="inherited"><a href="phaser/Group/left.html">left</a></li>
+      <li class="inherited"><a href="phaser/Group/length.html">length</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mask.html">mask</a></li>
+      <li class="inherited"><a href="phaser/Group/name.html">name</a></li>
+      <li class="inherited"><a href="phaser/Group/onChildInputDown.html">onChildInputDown</a></li>
+      <li class="inherited"><a href="phaser/Group/onChildInputOut.html">onChildInputOut</a></li>
+      <li class="inherited"><a href="phaser/Group/onChildInputOver.html">onChildInputOver</a></li>
+      <li class="inherited"><a href="phaser/Group/onChildInputUp.html">onChildInputUp</a></li>
+      <li class="inherited"><a href="phaser/Group/onDestroy.html">onDestroy</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/parent.html">parent</a></li>
+      <li class="inherited"><a href="phaser/Group/pendingDestroy.html">pendingDestroy</a></li>
+      <li class="inherited"><a href="phaser/Group/physicsBodyType.html">physicsBodyType</a></li>
+      <li class="inherited"><a href="phaser/Group/physicsSortDirection.html">physicsSortDirection</a></li>
+      <li class="inherited"><a href="phaser/Group/physicsType.html">physicsType</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/pivot.html">pivot</a></li>
+      <li class="inherited"><a href="phaser/Group/position.html">position</a></li>
+      <li><a href="phaser/BodyDebug/ppu.html">ppu</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/renderable.html">renderable</a></li>
+      <li class="inherited"><a href="phaser/Group/right.html">right</a></li>
+      <li class="inherited"><a href="phaser/Group/rotation.html">rotation</a></li>
+      <li class="inherited"><a href="phaser/BodyDebug/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="phaser/Group/scale.html">scale</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/stage.html">stage</a></li>
+      <li class="inherited"><a href="phaser/Group/top.html">top</a></li>
+      <li class="inherited"><a href="phaser/Group/total.html">total</a></li>
+      <li class="inherited"><a href="phaser/Group/type.html">type</a></li>
+      <li class="inherited"><a href="phaser/Group/visible.html">visible</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/width.html">width</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldAlpha.html">worldAlpha</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldPosition.html">worldPosition</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldRotation.html">worldRotation</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldScale.html">worldScale</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldTransform.html">worldTransform</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/worldVisible.html">worldVisible</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/x.html">x</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/y.html">y</a></li>
+      <li class="inherited"><a href="phaser/Group/z.html">z</a></li>
+    
+      <li class="section-title inherited"><a href="phaser/BodyDebug-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="phaser/BodyDebug/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title"><a href="phaser/BodyDebug-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"><a href="phaser/Group/add.html">add</a></li>
+      <li class="inherited"><a href="phaser/Group/addAll.html">addAll</a></li>
+      <li class="inherited"><a href="phaser/Group/addAt.html">addAt</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/addChild.html">addChild</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/addChildAt.html">addChildAt</a></li>
+      <li class="inherited"><a href="phaser/Group/addMultiple.html">addMultiple</a></li>
+      <li class="inherited"><a href="phaser/Group/addToHash.html">addToHash</a></li>
+      <li class="inherited"><a href="phaser/Group/align.html">align</a></li>
+      <li class="inherited"><a href="phaser/Group/alignIn.html">alignIn</a></li>
+      <li class="inherited"><a href="phaser/Group/alignTo.html">alignTo</a></li>
+      <li class="inherited"><a href="phaser/Group/bringToTop.html">bringToTop</a></li>
+      <li class="inherited"><a href="phaser/Group/callAll.html">callAll</a></li>
+      <li class="inherited"><a href="phaser/Group/callAllExists.html">callAllExists</a></li>
+      <li class="inherited"><a href="phaser/Group/callbackFromArray.html">callbackFromArray</a></li>
+      <li class="inherited"><a href="phaser/Group/checkAll.html">checkAll</a></li>
+      <li class="inherited"><a href="phaser/Group/checkProperty.html">checkProperty</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/click.html">click</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/contains.html">contains</a></li>
+      <li class="inherited"><a href="phaser/Group/countDead.html">countDead</a></li>
+      <li class="inherited"><a href="phaser/Group/countLiving.html">countLiving</a></li>
+      <li class="inherited"><a href="phaser/Group/create.html">create</a></li>
+      <li class="inherited"><a href="phaser/Group/createMultiple.html">createMultiple</a></li>
+      <li class="inherited"><a href="phaser/Group/customSort.html">customSort</a></li>
+      <li class="inherited"><a href="phaser/Group/destroy.html">destroy</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/displayObjectUpdateTransform.html">displayObjectUpdateTransform</a></li>
+      <li class="inherited"><a href="phaser/Group/divideAll.html">divideAll</a></li>
+      <li><a href="phaser/BodyDebug/draw.html">draw</a></li>
+      <li class="inherited"><a href="phaser/Group/filter.html">filter</a></li>
+      <li class="inherited"><a href="phaser/Group/forEach.html">forEach</a></li>
+      <li class="inherited"><a href="phaser/Group/forEachAlive.html">forEachAlive</a></li>
+      <li class="inherited"><a href="phaser/Group/forEachDead.html">forEachDead</a></li>
+      <li class="inherited"><a href="phaser/Group/forEachExists.html">forEachExists</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/generateTexture.html">generateTexture</a></li>
+      <li class="inherited"><a href="phaser/Group/getAt.html">getAt</a></li>
+      <li class="inherited"><a href="phaser/Group/getBottom.html">getBottom</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/getBounds.html">getBounds</a></li>
+      <li class="inherited"><a href="phaser/Group/getByName.html">getByName</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/getChildAt.html">getChildAt</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/getChildIndex.html">getChildIndex</a></li>
+      <li class="inherited"><a href="phaser/Group/getClosestTo.html">getClosestTo</a></li>
+      <li class="inherited"><a href="phaser/Group/getFirstAlive.html">getFirstAlive</a></li>
+      <li class="inherited"><a href="phaser/Group/getFirstDead.html">getFirstDead</a></li>
+      <li class="inherited"><a href="phaser/Group/getFirstExists.html">getFirstExists</a></li>
+      <li class="inherited"><a href="phaser/Group/getFurthestFrom.html">getFurthestFrom</a></li>
+      <li class="inherited"><a href="phaser/Group/getIndex.html">getIndex</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/getLocalBounds.html">getLocalBounds</a></li>
+      <li class="inherited"><a href="phaser/Group/getRandom.html">getRandom</a></li>
+      <li class="inherited"><a href="phaser/Group/getTop.html">getTop</a></li>
+      <li class="inherited"><a href="phaser/Group/hasProperty.html">hasProperty</a></li>
+      <li class="inherited"><a href="phaser/Group/iterate.html">iterate</a></li>
+      <li class="inherited"><a href="phaser/Group/JS$set.html">JS$set</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mousedown.html">mousedown</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mousemove.html">mousemove</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mouseout.html">mouseout</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mouseover.html">mouseover</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mouseup.html">mouseup</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/mouseupoutside.html">mouseupoutside</a></li>
+      <li class="inherited"><a href="phaser/Group/moveAll.html">moveAll</a></li>
+      <li class="inherited"><a href="phaser/Group/moveDown.html">moveDown</a></li>
+      <li class="inherited"><a href="phaser/Group/moveUp.html">moveUp</a></li>
+      <li class="inherited"><a href="phaser/Group/multiplyAll.html">multiplyAll</a></li>
+      <li class="inherited"><a href="phaser/Group/next.html">next</a></li>
+      <li class="inherited"><a href="phaser/BodyDebug/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="phaser/Group/postUpdate.html">postUpdate</a></li>
+      <li class="inherited"><a href="phaser/Group/preUpdate.html">preUpdate</a></li>
+      <li class="inherited"><a href="phaser/Group/previous.html">previous</a></li>
+      <li class="inherited"><a href="phaser/Group/remove.html">remove</a></li>
+      <li class="inherited"><a href="phaser/Group/removeAll.html">removeAll</a></li>
+      <li class="inherited"><a href="phaser/Group/removeBetween.html">removeBetween</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/removeChild.html">removeChild</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/removeChildAt.html">removeChildAt</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/removeChildren.html">removeChildren</a></li>
+      <li class="inherited"><a href="phaser/Group/removeFromHash.html">removeFromHash</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/removeStageReference.html">removeStageReference</a></li>
+      <li class="inherited"><a href="phaser/Group/replace.html">replace</a></li>
+      <li class="inherited"><a href="phaser/Group/resetChild.html">resetChild</a></li>
+      <li class="inherited"><a href="phaser/Group/resetCursor.html">resetCursor</a></li>
+      <li class="inherited"><a href="phaser/Group/reverse.html">reverse</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/rightclick.html">rightclick</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/rightdown.html">rightdown</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/rightup.html">rightup</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/rightupoutside.html">rightupoutside</a></li>
+      <li class="inherited"><a href="phaser/Group/sendToBack.html">sendToBack</a></li>
+      <li class="inherited"><a href="phaser/Group/setAll.html">setAll</a></li>
+      <li class="inherited"><a href="phaser/Group/setAllChildren.html">setAllChildren</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/setChildIndex.html">setChildIndex</a></li>
+      <li class="inherited"><a href="phaser/Group/setProperty.html">setProperty</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/setStageReference.html">setStageReference</a></li>
+      <li class="inherited"><a href="phaser/Group/sort.html">sort</a></li>
+      <li class="inherited"><a href="phaser/Group/subAll.html">subAll</a></li>
+      <li class="inherited"><a href="phaser/Group/swap.html">swap</a></li>
+      <li class="inherited"><a href="pixi/DisplayObjectContainer/swapChildren.html">swapChildren</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/tap.html">tap</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/toGlobal.html">toGlobal</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/toLocal.html">toLocal</a></li>
+      <li class="inherited"><a href="phaser/BodyDebug/toString.html">toString</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/touchend.html">touchend</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/touchendoutside.html">touchendoutside</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/touchmove.html">touchmove</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/touchstart.html">touchstart</a></li>
+      <li class="inherited"><a href="phaser/Group/update.html">update</a></li>
+      <li><a href="phaser/BodyDebug/updateSpriteTransform.html">updateSpriteTransform</a></li>
+      <li class="inherited"><a href="pixi/DisplayObject/updateTransform.html">updateTransform</a></li>
+      <li class="inherited"><a href="phaser/Group/updateZ.html">updateZ</a></li>
+      <li class="inherited"><a href="phaser/Group/xy.html">xy</a></li>
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          phaser 2.6.2-beta+1
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+</body>
+
+</html>
