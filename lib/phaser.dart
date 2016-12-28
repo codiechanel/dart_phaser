@@ -2675,9 +2675,9 @@ class Gamepad {
 }
 
 @JS("Phaser.Graphics")
-class Graphics {
+class Graphics  {
   // @Ignore
-  // Graphics.fakeConstructor$() : super.fakeConstructor$();
+  Graphics.fakeConstructor$();
   external factory Graphics(Game game, [num x, num y]);
   external num get angle;
   external set angle(num v);
@@ -4212,7 +4212,7 @@ class LoaderParser {
 @JS("Phaser.Matrix")
 class Matrix {
   // @Ignore
-  Matrix.fakeConstructor$() : super.fakeConstructor$();
+  Matrix.fakeConstructor$();
   external num get a;
   external set a(num v);
   external num get b;
@@ -5708,13 +5708,13 @@ class CollisionGroup {
 @JS("Phaser.Physics.P2.ContactMaterial")
 class ContactMaterial {
   // @Ignore
-  // ContactMaterial.fakeConstructor$() : super.fakeConstructor$();
+  ContactMaterial.fakeConstructor$();
 }
 
 @JS("Phaser.Physics.P2.DistanceConstraint")
 class DistanceConstraint {
   // @Ignore
-  // DistanceConstraint.fakeConstructor$() : super.fakeConstructor$();
+  DistanceConstraint.fakeConstructor$();
   external factory DistanceConstraint(
       P2 world, P2_Body bodyA, P2_Body bodyB, num distance, num maxForce);
   external Game get game;
@@ -5743,7 +5743,7 @@ class FixtureList {
 @JS("Phaser.Physics.P2.GearConstraint")
 class GearConstraint {
   // @Ignore
-  // GearConstraint.fakeConstructor$() : super.fakeConstructor$();
+  GearConstraint.fakeConstructor$();
   external factory GearConstraint(P2 world, P2_Body bodyA, P2_Body bodyB,
       [num angle, num ratio]);
   external Game get game;
@@ -5770,7 +5770,7 @@ class InversePointProxy {
 @JS("Phaser.Physics.P2.LockConstraint")
 class LockConstraint {
   // @Ignore
-  // LockConstraint.fakeConstructor$() : super.fakeConstructor$();
+  LockConstraint.fakeConstructor$();
   external factory LockConstraint(P2 world, P2_Body bodyA, P2_Body bodyB,
       [List<num> offset, num angle, num maxForce]);
   external Game get game;
@@ -5780,9 +5780,9 @@ class LockConstraint {
 }
 
 @JS("Phaser.Physics.P2.Material")
-class Material  {
+class Material{
   // @Ignore
-  // Material.fakeConstructor$() : super.fakeConstructor$();
+  Material.fakeConstructor$();
   external factory Material(String name);
   external String get name;
   external set name(String v);
@@ -5806,7 +5806,7 @@ class PointProxy {
 @JS("Phaser.Physics.P2.PrismaticConstraint")
 class PrismaticConstraint {
   // @Ignore
-  // PrismaticConstraint.fakeConstructor$() : super.fakeConstructor$();
+  PrismaticConstraint.fakeConstructor$();
   external factory PrismaticConstraint(P2 world,
       [P2_Body bodyA,
       P2_Body bodyB,
@@ -5824,7 +5824,7 @@ class PrismaticConstraint {
 @JS("Phaser.Physics.P2.RevoluteConstraint")
 class RevoluteConstraint {
   // @Ignore
-  // RevoluteConstraint.fakeConstructor$() : super.fakeConstructor$();
+  RevoluteConstraint.fakeConstructor$();
   external factory RevoluteConstraint(P2 world, P2_Body bodyA, List<num> pivotA,
       P2_Body bodyB, List<num> pivotB,
       [num maxForce]);
@@ -6203,9 +6203,9 @@ class PluginManager implements IStateCycle {
 }
 
 @JS("Phaser.Point")
-class Point  {
+class Point {
   // @Ignore
-  // Point.fakeConstructor$() : super.fakeConstructor$();
+  Point.fakeConstructor$();
   external factory Point([num x, num y]);
   external num get x;
   external set x(num v);
@@ -6640,7 +6640,7 @@ class Rectangle {
 @JS("Phaser.RenderTexture")
 class RenderTexture {
   // @Ignore
-  // RenderTexture.fakeConstructor$() : super.fakeConstructor$();
+  RenderTexture.fakeConstructor$();
   external factory RenderTexture(Game game,
       [num width, num height, String key, num scaleMode, num resolution]);
   external PIXI.Rectangle get crop;
@@ -6764,9 +6764,9 @@ class RetroFont extends RenderTexture {
 }
 
 @JS("Phaser.Rope")
-class Rope  {
+class Rope {
   // @Ignore
-  // Rope.fakeConstructor$() : super.fakeConstructor$();
+  Rope.fakeConstructor$();
   external factory Rope(Game game, num x, num y,
       dynamic /*String|RenderTexture|BitmapData|PIXI.Texture|Video*/ key,
       [dynamic /*String|num*/ frame, List<Point> points]);
@@ -6910,7 +6910,7 @@ class Rope  {
 @JS("Phaser.RoundedRectangle")
 class RoundedRectangle {
   // @Ignore
-  // RoundedRectangle.fakeConstructor$() : super.fakeConstructor$();
+  RoundedRectangle.fakeConstructor$();
   external num get x;
   external set x(num v);
   external num get y;
@@ -7213,7 +7213,7 @@ class SoundManager {
 @JS("Phaser.Sprite")
 class Sprite {
   // @Ignore
-  // Sprite.fakeConstructor$() : super.fakeConstructor$();
+  Sprite.fakeConstructor$();
   external factory Sprite(Game game, num x, num y,
       [dynamic /*String|RenderTexture|BitmapData|PIXI.Texture*/ key,
       dynamic /*String|num*/ frame]);
@@ -9008,7 +9008,7 @@ class Debug {
   external set renderShadow(bool v);
   external Image get sprite;
   external set sprite(Image v);
-  external void AStar(AStarPath astar, num x, num y, bool showVisited);
+  external void AStar(AStar astar, num x, num y, bool showVisited);
   external void boot();
   external void body(Sprite sprite, [String color, bool filled]);
   external void bodyInfo(Sprite sprite, num x, num y, [String color]);
