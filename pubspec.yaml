@@ -2,7 +2,7 @@ author: "Tobe O <thosakwe@gmail.com>"
 description: "Dart bindings for Phaser 2.6.2."
 homepage: "https://github.com/thosakwe/dart_phaser"
 name: "phaser"
-version: "2.6.2-beta"
+version: "2.6.2-beta+1"
 dependencies: 
   func: "^0.1.0"
   js: "^0.6.1"
