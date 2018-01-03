@@ -1137,7 +1137,7 @@ class BitmapText extends DisplayObjectContainer {
   external set alive(bool v);
 
   /// The anchor value of this BitmapText.
-  external Point get anchor;
+  external PhaserPoint get anchor;
   external set anchor(Point v);
 
   /// If the Game Object is enabled for animation (such as a Phaser.Sprite) this is a reference to its AnimationManager instance.
@@ -1181,7 +1181,7 @@ class BitmapText extends DisplayObjectContainer {
 
   /// The x/y coordinate offset applied to the top-left of the camera that this Game Object will be drawn at if `fixedToCamera` is true.
   /// The values are relative to the top-left of the camera view and in addition to any parent of the Game Object on the display list.
-  external Point get cameraOffset;
+  external PhaserPoint get cameraOffset;
   external set cameraOffset(Point v);
 
   /// If this is set to `true` the Game Object checks if it is within the World bounds each frame.
@@ -1349,7 +1349,7 @@ class BitmapText extends DisplayObjectContainer {
   external set physicsType(num v);
 
   /// The position the Game Object was located in the previous frame.
-  external Point get previousPosition;
+  external PhaserPoint get previousPosition;
   external set previousPosition(Point v);
 
   /// The rotation the Game Object was in set to in the previous frame. Value is in radians.
@@ -1359,7 +1359,7 @@ class BitmapText extends DisplayObjectContainer {
   /// The coordinates, in pixels, of this DisplayObject, relative to its parent container.
   /// The value of this property does not reflect any positioning happening further up the display list.
   /// To obtain that value please see the `worldPosition` property.
-  external Point get position;
+  external PhaserPoint get position;
   external set position(Point v);
 
   /// The render order ID is used internally by the renderer and Input Manager and should not be modified.
@@ -1406,7 +1406,7 @@ class BitmapText extends DisplayObjectContainer {
   /// The world coordinates of this Game Object in pixels.
   /// Depending on where in the display list this Game Object is placed this value can differ from `position`,
   /// which contains the x/y coordinates relative to the Game Objects parent.
-  external Point get world;
+  external PhaserPoint get world;
   external set world(Point v);
 
   /// The horizontal position of the DisplayObject, in pixels, relative to its parent.
@@ -2314,11 +2314,11 @@ class Camera {
   /// A lower value, such as 0.1 means the camera will more slowly track the target, giving
   /// a smooth transition. You can set the horizontal and vertical values independently, and also
   /// adjust this value in real-time during your game.
-  external Point get lerp;
+  external PhaserPoint get lerp;
   external set lerp(Point v);
 
   /// The Cameras position. This value is automatically clamped if it falls outside of the World bounds. Gets or sets the cameras xy position using Phaser.Point object.
-  external Point get position;
+  external PhaserPoint get position;
   external set position(Point v);
 
   /// If a Camera has roundPx set to `true` it will call `view.floor` as part of its update loop, keeping its boundary to integer values. Set this to `false` to disable this from happening.
@@ -2327,7 +2327,7 @@ class Camera {
   external set roundPx(bool v);
 
   /// The scale of the display object to which all game objects are added. Set by World.boot.
-  external Point get scale;
+  external PhaserPoint get scale;
   external set scale(Point v);
 
   /// The Cameras shake intensity. Gets or sets the cameras shake intensity.
@@ -4084,7 +4084,7 @@ class Filter extends AbstractFilter {
   external set padding(num v);
 
   /// The previous position of the pointer (we don't update the uniform if the same)
-  external Point get prevPoint;
+  external PhaserPoint get prevPoint;
   external set prevPoint(Point v);
 
   /// The const type of this object, either Phaser.WEBGL_FILTER or Phaser.CANVAS_FILTER.
@@ -4368,25 +4368,25 @@ class FlexGrid {
   external set customOffsetY(num v);
 
   /// -
-  external Point get positionCustom;
+  external PhaserPoint get positionCustom;
   external set positionCustom(Point v);
-  external Point get positionFluid;
+  external PhaserPoint get positionFluid;
   external set positionFluid(Point v);
-  external Point get positionFull;
+  external PhaserPoint get positionFull;
   external set positionFull(Point v);
-  external Point get positionNone;
+  external PhaserPoint get positionNone;
   external set positionNone(Point v);
 
   /// The scale factor based on the game dimensions vs. the scaled dimensions.
-  external Point get scaleCustom;
+  external PhaserPoint get scaleCustom;
   external set scaleCustom(Point v);
-  external Point get scaleFluid;
+  external PhaserPoint get scaleFluid;
   external set scaleFluid(Point v);
-  external Point get scaleFluidInversed;
+  external PhaserPoint get scaleFluidInversed;
   external set scaleFluidInversed(Point v);
-  external Point get scaleFull;
+  external PhaserPoint get scaleFull;
   external set scaleFull(Point v);
-  external Point get scaleNone;
+  external PhaserPoint get scaleNone;
   external set scaleNone(Point v);
   external num get ratioH;
   external set ratioH(num v);
@@ -4450,11 +4450,11 @@ class FlexLayer extends Group {
   /// A reference to the ScaleManager.
   external ScaleManager get manager;
   external set manager(ScaleManager v);
-  external Point get bottomLeft;
+  external PhaserPoint get bottomLeft;
   external set bottomLeft(Point v);
-  external Point get bottomMiddle;
+  external PhaserPoint get bottomMiddle;
   external set bottomMiddle(Point v);
-  external Point get bottomRight;
+  external PhaserPoint get bottomRight;
   external set bottomRight(Point v);
   external Rectangle get bounds;
   external set bounds(Rectangle v);
@@ -4462,15 +4462,15 @@ class FlexLayer extends Group {
   /// Should the FlexLayer remain through a State swap?
   external bool get persist;
   external set persist(bool v);
-  external Point get position;
+  external PhaserPoint get position;
   external set position(Point v);
-  external Point get scale;
+  external PhaserPoint get scale;
   external set scale(Point v);
-  external Point get topLeft;
+  external PhaserPoint get topLeft;
   external set topLeft(Point v);
-  external Point get topMiddle;
+  external PhaserPoint get topMiddle;
   external set topMiddle(Point v);
-  external Point get topRight;
+  external PhaserPoint get topRight;
   external set topRight(Point v);
 
   /// Debug.
@@ -5807,7 +5807,7 @@ class Graphics extends DisplayObjectContainer {
 
   /// The x/y coordinate offset applied to the top-left of the camera that this Game Object will be drawn at if `fixedToCamera` is true.
   /// The values are relative to the top-left of the camera view and in addition to any parent of the Game Object on the display list.
-  external Point get cameraOffset;
+  external PhaserPoint get cameraOffset;
   external set cameraOffset(Point v);
 
   /// The local center x coordinate of the Game Object.
@@ -5986,11 +5986,11 @@ class Graphics extends DisplayObjectContainer {
   /// The coordinates, in pixels, of this DisplayObject, relative to its parent container.
   /// The value of this property does not reflect any positioning happening further up the display list.
   /// To obtain that value please see the `worldPosition` property.
-  external Point get position;
+  external PhaserPoint get position;
   external set position(Point v);
 
   /// The position the Game Object was located in the previous frame.
-  external Point get previousPosition;
+  external PhaserPoint get previousPosition;
   external set previousPosition(Point v);
 
   /// The rotation the Game Object was in set to in the previous frame. Value is in radians.
@@ -6026,7 +6026,7 @@ class Graphics extends DisplayObjectContainer {
   /// The world coordinates of this Game Object in pixels.
   /// Depending on where in the display list this Game Object is placed this value can differ from `position`,
   /// which contains the x/y coordinates relative to the Game Objects parent.
-  external Point get world;
+  external PhaserPoint get world;
   external set world(Point v);
 
   /// The multiplied alpha value of this DisplayObject. A value of 1 is fully opaque. A value of 0 is transparent.
@@ -6316,7 +6316,7 @@ class Group extends DisplayObjectContainer {
 
   /// If this object is [Phaser.Group#fixedToCamera fixedToCamera] then this stores the x/y position offset relative to the top-left of the camera view.
   /// If the parent of this Group is also `fixedToCamera` then the offset here is in addition to that and should typically be disabled.
-  external Point get cameraOffset;
+  external PhaserPoint get cameraOffset;
   external set cameraOffset(Point v);
 
   /// The center x coordinate of this Group.
@@ -6472,7 +6472,7 @@ class Group extends DisplayObjectContainer {
   /// The coordinates, in pixels, of this DisplayObject, relative to its parent container.
   /// The value of this property does not reflect any positioning happening further up the display list.
   /// To obtain that value please see the `worldPosition` property.
-  external Point get position;
+  external PhaserPoint get position;
   external set position(Point v);
 
   /// The right coordinate of this Group.
@@ -6487,7 +6487,7 @@ class Group extends DisplayObjectContainer {
   /// at its default size. A value of 0.5 would scale this DisplayObject by half, and so on.
   /// The value of this property does not reflect any scaling happening further up the display list.
   /// To obtain that value please see the `worldScale` property.
-  external Point get scale;
+  external PhaserPoint get scale;
   external set scale(Point v);
 
   /// The top coordinate of this Group.
@@ -7050,7 +7050,7 @@ class Image extends Sprite {
   /// (0.5, 0.5) is the center.
   /// (1, 1) is the bottom right.
   /// You can modify the default values in PIXI.Sprite.defaultAnchor.
-  external Point get anchor;
+  external PhaserPoint get anchor;
   external set anchor(Point v);
 
   /// If the Game Object is enabled for animation (such as a Phaser.Sprite) this is a reference to its AnimationManager instance.
@@ -7073,7 +7073,7 @@ class Image extends Sprite {
 
   /// The x/y coordinate offset applied to the top-left of the camera that this Game Object will be drawn at if `fixedToCamera` is true.
   /// The values are relative to the top-left of the camera view and in addition to any parent of the Game Object on the display list.
-  external Point get cameraOffset;
+  external PhaserPoint get cameraOffset;
   external set cameraOffset(Point v);
 
   /// The local center x coordinate of the Game Object.
@@ -7243,11 +7243,11 @@ class Image extends Sprite {
   /// The coordinates, in pixels, of this DisplayObject, relative to its parent container.
   /// The value of this property does not reflect any positioning happening further up the display list.
   /// To obtain that value please see the `worldPosition` property.
-  external Point get position;
+  external PhaserPoint get position;
   external set position(Point v);
 
   /// The position the Game Object was located in the previous frame.
-  external Point get previousPosition;
+  external PhaserPoint get previousPosition;
   external set previousPosition(Point v);
 
   /// The rotation the Game Object was in set to in the previous frame. Value is in radians.
@@ -7268,7 +7268,7 @@ class Image extends Sprite {
   /// at its default size. A value of 0.5 would scale this DisplayObject by half, and so on.
   /// The value of this property does not reflect any scaling happening further up the display list.
   /// To obtain that value please see the `worldScale` property.
-  external Point get scale;
+  external PhaserPoint get scale;
   external set scale(Point v);
 
   /// Enable or disable texture smoothing for this Game Object.
@@ -7289,7 +7289,7 @@ class Image extends Sprite {
   /// The world coordinates of this Game Object in pixels.
   /// Depending on where in the display list this Game Object is placed this value can differ from `position`,
   /// which contains the x/y coordinates relative to the Game Objects parent.
-  external Point get world;
+  external PhaserPoint get world;
   external set world(Point v);
 
   /// The z depth of this Game Object within its parent Group.
@@ -7722,7 +7722,7 @@ class Input {
   external set pollRate(num v);
 
   /// A point object representing the current position of the Pointer.
-  external Point get position;
+  external PhaserPoint get position;
   external set position(Point v);
   external List<Pointer> get pointer;
   external set pointer(List<Pointer> v);
@@ -7750,11 +7750,11 @@ class Input {
   external set resetLocked(bool v);
 
   /// The scale by which all input coordinates are multiplied; calculated by the ScaleManager. In an un-scaled game the values will be x = 1 and y = 1.
-  external Point get scale;
+  external PhaserPoint get scale;
   external set scale(Point v);
 
   /// A point object representing the speed of the Pointer. Only really useful in single Pointer games; otherwise see the Pointer objects directly.
-  external Point get speed;
+  external PhaserPoint get speed;
   external set speed(Point v);
 
   /// The number of milliseconds that the Pointer has to be pressed down and then released to be considered a tap or click.
@@ -7821,7 +7821,7 @@ class Input {
   external void destroy();
 
   /// This will return the local coordinates of the specified displayObject based on the given Pointer.
-  external Point getLocalPosition(dynamic displayObject, Pointer pointer);
+  external PhaserPoint getLocalPosition(dynamic displayObject, Pointer pointer);
 
   /// Get the first Pointer with the given active state.
   external Pointer getPointer([bool isActive]);
@@ -7912,7 +7912,7 @@ class InputHandler {
   external set bringToTop(bool v);
 
   /// A Point object containing the coordinates of the Pointer when it was first pressed down onto this Sprite.
-  external Point get downPoint;
+  external PhaserPoint get downPoint;
   external set downPoint(Point v);
 
   /// The distance, in pixels, the pointer has to move while being held down, before the Sprite thinks it is being dragged.
@@ -7920,7 +7920,7 @@ class InputHandler {
   external set dragDistanceThreshold(num v);
 
   /// The offset from the Sprites position that dragging takes place from.
-  external Point get dragOffset;
+  external PhaserPoint get dragOffset;
   external set dragOffset(Point v);
 
   /// Is the Sprite dragged from its center, or the point at which the Pointer was pressed down upon it?
@@ -7932,7 +7932,7 @@ class InputHandler {
   external set draggable(bool v);
 
   /// The Point from which the most recent drag started from. Useful if you need to return an object to its starting position.
-  external Point get dragStartPoint;
+  external PhaserPoint get dragStartPoint;
   external set dragStartPoint(Point v);
 
   /// If enabled, when the Sprite stops being dragged, it will only dispatch the `onDragStop` event, and not the `onInputUp` event. If set to `false` it will dispatch both events.
@@ -7991,7 +7991,7 @@ class InputHandler {
   external set scaleLayer(bool v);
 
   /// A Point object that contains by how far the Sprite snap is offset.
-  external Point get snapOffset;
+  external PhaserPoint get snapOffset;
   external set snapOffset(Point v);
 
   /// This defines the top-left X coordinate of the snap grid.
@@ -8011,7 +8011,7 @@ class InputHandler {
   external set snapOnRelease(bool v);
 
   /// If the sprite is set to snap while dragging this holds the point of the most recent 'snap' event.
-  external Point get snapPoint;
+  external PhaserPoint get snapPoint;
   external set snapPoint(Point v);
 
   /// When a Sprite has snapping enabled this holds the width of the snap grid.
@@ -8869,7 +8869,7 @@ class Line {
   external set angle(num v);
 
   /// The end point of the line.
-  external Point get end;
+  external PhaserPoint get end;
   external set end(Point v);
 
   /// Gets the height of this bounds of this line.
@@ -8909,7 +8909,7 @@ class Line {
   external set slope(num v);
 
   /// The start point of the line.
-  external Point get start;
+  external PhaserPoint get start;
   external set start(Point v);
 
   /// Gets the top-most point of this line.
@@ -10519,7 +10519,7 @@ class Emitter extends Group {
   external set bottom(num v);
 
   /// How much each particle should bounce on each axis. 1 = full bounce, 0 = no bounce.
-  external Point get bounce;
+  external PhaserPoint get bounce;
   external set bounce(Point v);
   external EmitterCount get counts;
   external set counts(EmitterCount v);
@@ -10547,7 +10547,7 @@ class Emitter extends Group {
   external set frequency(num v);
 
   /// Sets the `body.gravity` of each particle sprite to this on launch.
-  external Point get gravity;
+  external PhaserPoint get gravity;
   external set gravity(Point v);
   external Group get group;
   external set group(Group v);
@@ -10583,7 +10583,7 @@ class Emitter extends Group {
   external set maxParticleScale(num v);
 
   /// The maximum possible velocity of a particle.
-  external Point get maxParticleSpeed;
+  external PhaserPoint get maxParticleSpeed;
   external set maxParticleSpeed(Point v);
 
   /// The maximum possible angular velocity of a particle.
@@ -10606,7 +10606,7 @@ class Emitter extends Group {
   external set minParticleScale(num v);
 
   /// The minimum possible velocity of a particle.
-  external Point get minParticleSpeed;
+  external PhaserPoint get minParticleSpeed;
   external set minParticleSpeed(Point v);
 
   /// The minimum possible angular velocity of a particle.
@@ -10630,7 +10630,7 @@ class Emitter extends Group {
   external set output(num v);
 
   /// When a particle is created its anchor will be set to match this Point object (defaults to x/y: 0.5 to aid in rotation)
-  external Point get particleAnchor;
+  external PhaserPoint get particleAnchor;
   external set particleAnchor(Point v);
 
   /// If this is `true` then when the Particle is emitted it will be bought to the top of the Emitters display list.
@@ -10646,7 +10646,7 @@ class Emitter extends Group {
   external set particleClass(dynamic v);
 
   /// The X and Y drag component of particles launched from the emitter.
-  external Point get particleDrag;
+  external PhaserPoint get particleDrag;
   external set particleDrag(Point v);
 
   /// The const physics body type of this object.
@@ -10656,7 +10656,7 @@ class Emitter extends Group {
   /// The coordinates, in pixels, of this DisplayObject, relative to its parent container.
   /// The value of this property does not reflect any positioning happening further up the display list.
   /// To obtain that value please see the `worldPosition` property.
-  external Point get position;
+  external PhaserPoint get position;
   external set position(Point v);
 
   /// The expected number of unreleased particles after a flow interval of [Phaser.Particles.Arcade.Emitter#lifespan lifespan], after calling [Phaser.Particles.Arcade.Emitter#flow flow].
@@ -11225,7 +11225,7 @@ class Arcade {
   external set game(Game v);
 
   /// The World gravity setting. Defaults to x: 0, y: 0, or no gravity.
-  external Point get gravity;
+  external PhaserPoint get gravity;
   external set gravity(Point v);
 
   /// If `true` the `Body.preUpdate` method will be skipped, halting all motion for all bodies. Note that other methods such as `collide` will still work, so be careful not to call them on paused bodies.
@@ -11488,7 +11488,7 @@ class Body {
   external factory Body(Sprite sprite);
 
   /// The acceleration is the rate of change of the velocity. Measured in pixels per second squared.
-  external Point get acceleration;
+  external PhaserPoint get acceleration;
   external set acceleration(Point v);
 
   /// Allow this Body to be influenced by [Phaser.Physics.Arcade.Body#drag drag]?
@@ -11532,11 +11532,11 @@ class Body {
   external set bottom(num v);
 
   /// The elasticity of the Body when colliding. bounce.x/y = 1 means full rebound, bounce.x/y = 0.5 means 50% rebound velocity.
-  external Point get bounce;
+  external PhaserPoint get bounce;
   external set bounce(Point v);
 
   /// The center coordinate of the Physics Body.
-  external Point get center;
+  external PhaserPoint get center;
   external set center(Point v);
 
   /// Set the checkCollision properties to control which directions collision is processed for this Body.
@@ -11561,7 +11561,7 @@ class Body {
   external set customSeparateY(bool v);
 
   /// The Sprite position is updated based on the delta x/y values. You can set a cap on those (both +-) using deltaMax.
-  external Point get deltaMax;
+  external PhaserPoint get deltaMax;
   external set deltaMax(Point v);
 
   /// If this Body in a preUpdate (true) or postUpdate (false) state?
@@ -11569,7 +11569,7 @@ class Body {
   external set dirty(bool v);
 
   /// The drag applied to the motion of the Body (when [Phaser.Physics.Arcade.Body#allowDrag allowDrag] is enabled). Measured in pixels per second squared.
-  external Point get drag;
+  external PhaserPoint get drag;
   external set drag(Point v);
 
   /// If a body is overlapping with another body, but neither of them are moving (maybe they spawned on-top of each other?) this is set to true. Body embed value.
@@ -11586,7 +11586,7 @@ class Body {
   external set facing(num v);
 
   /// If this Body is [Phaser.Physics.Arcade.Body#immovable immovable] and moving, and another Body is 'riding' this one, this is the amount of motion the riding Body receives on each axis.
-  external Point get friction;
+  external PhaserPoint get friction;
   external set friction(Point v);
 
   /// Local reference to game.
@@ -11594,7 +11594,7 @@ class Body {
   external set game(Game v);
 
   /// This Body's local gravity, **added** to any world gravity, unless Body.allowGravity is set to false.
-  external Point get gravity;
+  external PhaserPoint get gravity;
   external set gravity(Point v);
 
   /// The calculated width / 2 of the physics body.
@@ -11633,7 +11633,7 @@ class Body {
   external set maxAngular(num v);
 
   /// The maximum velocity (in pixels per second squared) that the Body can reach.
-  external Point get maxVelocity;
+  external PhaserPoint get maxVelocity;
   external set maxVelocity(Point v);
 
   /// Whether the physics system should update the Body's position and rotation based on its velocity, acceleration, drag, and gravity.
@@ -11654,11 +11654,11 @@ class Body {
   external set movementCallbackContext(dynamic v);
 
   /// The distanced traveled during the last update, equal to `velocity * physicsElapsed`. Calculated during the Body.preUpdate and applied to its position.
-  external Point get newVelocity;
+  external PhaserPoint get newVelocity;
   external set newVelocity(Point v);
 
   /// The offset of the Physics Body from the Sprite's texture.
-  external Point get offset;
+  external PhaserPoint get offset;
   external set offset(Point v);
 
   /// A Signal that is dispatched when this Body collides with another Body.
@@ -11712,7 +11712,7 @@ class Body {
   external set phase(num v);
 
   /// The position of the physics body, equivalent to ([Phaser.Physics.Arcade.Body#left left], [Phaser.Physics.Arcade.Body#top top]).
-  external Point get position;
+  external PhaserPoint get position;
   external set position(Point v);
 
   /// The previous rotation of the physics body, in degrees.
@@ -11720,7 +11720,7 @@ class Body {
   external set preRotation(num v);
 
   /// The previous position of the physics body.
-  external Point get prev;
+  external PhaserPoint get prev;
   external set prev(Point v);
 
   /// The radius of the circular collision shape this Body is using if Body.setCircle has been enabled, relative to the Sprite's _texture_.
@@ -11772,7 +11772,7 @@ class Body {
 
   /// If this is an especially small or fast moving object then it can sometimes skip over tilemap collisions if it moves through a tile in a step.
   /// Set this padding value to add extra padding to its bounds. tilePadding.x applied to its width, y to its height. Extra padding to be added to this sprite's dimensions when checking for tile collision.
-  external Point get tilePadding;
+  external PhaserPoint get tilePadding;
   external set tilePadding(Point v);
 
   /// This object is populated with boolean values when the Body collides with another.
@@ -11795,11 +11795,11 @@ class Body {
   /// The elasticity of the Body when colliding with the World bounds.
   /// By default this property is `null`, in which case `Body.bounce` is used instead. Set this property
   /// to a Phaser.Point object in order to enable a World bounds specific bounce value.
-  external Point get worldBounce;
+  external PhaserPoint get worldBounce;
   external set worldBounce(Point v);
 
   /// The velocity, or rate of change the Body's position. Measured in pixels per second.
-  external Point get velocity;
+  external PhaserPoint get velocity;
   external set velocity(Point v);
 
   /// The x position.
@@ -12196,7 +12196,7 @@ class Ninja_Body {
   external set speed(num v);
 
   /// The velocity in pixels per second sq. of the Body.
-  external Point get velocity;
+  external PhaserPoint get velocity;
   external set velocity(Point v);
 
   /// This object is populated with previous touching values from the bodies previous collision. An object containing previous touching results.
@@ -12279,11 +12279,11 @@ class AABB {
   /// The height.
   external num get height;
   external set height(num v);
-  external Point get oldPos;
+  external PhaserPoint get oldPos;
   external set oldPos(Point v);
 
   /// The position of this object.
-  external Point get pos;
+  external PhaserPoint get pos;
   external set pos(Point v);
 
   /// A reference to the physics system.
@@ -12295,7 +12295,7 @@ class AABB {
   external set width(num v);
 
   /// The velocity of this object.
-  external Point get velocity;
+  external PhaserPoint get velocity;
   external set velocity(Point v);
 
   /// Half the width.
@@ -12366,7 +12366,7 @@ class Ninja_Circle {
   external dynamic /*JSMap of <num,(x: number, y: number, oH: number, oV: number, obj: Phaser.Physics.Ninja.Circle, t: Phaser.Physics.Ninja.Tile) => number>*/ get circleTileProjections;
   external set circleTileProjections(
       dynamic /*JSMap of <num,(x: number, y: number, oH: number, oV: number, obj: Phaser.Physics.Ninja.Circle, t: Phaser.Physics.Ninja.Tile) => number>*/ v);
-  external Point get oldPos;
+  external PhaserPoint get oldPos;
   external set oldPos(Point v);
 
   /// The height.
@@ -12374,7 +12374,7 @@ class Ninja_Circle {
   external set height(num v);
 
   /// The position of this object.
-  external Point get pos;
+  external PhaserPoint get pos;
   external set pos(Point v);
 
   /// The radius of this circle shape.
@@ -12388,7 +12388,7 @@ class Ninja_Circle {
   external set type(num v);
 
   /// The velocity of this object.
-  external Point get velocity;
+  external PhaserPoint get velocity;
   external set velocity(Point v);
 
   /// The width.
@@ -12483,11 +12483,11 @@ class Ninja_Tile {
   external set id(num v);
 
   /// The position of this object in the previous update.
-  external Point get oldpos;
+  external PhaserPoint get oldpos;
   external set oldpos(Point v);
 
   /// The position of this object.
-  external Point get pos;
+  external PhaserPoint get pos;
   external set pos(Point v);
 
   /// The right value of this Body (same as Body.x + Body.width)
@@ -12505,7 +12505,7 @@ class Ninja_Tile {
   external set type(num /*enum Phaser.Physics.Ninja.TileType*/ v);
 
   /// The velocity of this object.
-  external Point get velocity;
+  external PhaserPoint get velocity;
   external set velocity(Point v);
 
   /// The width.
@@ -13090,7 +13090,7 @@ class P2_Body {
   external set game(Game v);
 
   /// A locally applied gravity force to the Body. Applied directly before the world step. NOTE: Not currently implemented.
-  external Point get gravity;
+  external PhaserPoint get gravity;
   external set gravity(Point v);
 
   /// The Body ID. Each Body that has been added to the World has a unique ID.
@@ -13110,7 +13110,7 @@ class P2_Body {
   external set motionState(num v);
 
   /// The offset of the Physics Body from the Sprite x/y position.
-  external Point get offset;
+  external PhaserPoint get offset;
   external set offset(Point v);
 
   /// Dispatched when a first contact is created between shapes in two bodies.
@@ -13930,7 +13930,7 @@ class TilemapWalker extends Plugin {
   external set facing(num v);
   external Tilemap get map;
   external set map(Tilemap v);
-  external Point get location;
+  external PhaserPoint get location;
   external set location(Point v);
   external num get locationLayer;
   external set locationLayer(num v);
@@ -13990,9 +13990,9 @@ class VirtualJoystick extends Plugin {
   external set isDragging(bool v);
   external num get limit;
   external set limit(num v);
-  external Point get limitPoint;
+  external PhaserPoint get limitPoint;
   external set limitPoint(Point v);
-  external Point get location;
+  external PhaserPoint get location;
   external set location(Point v);
   external Sprite get nub;
   external set nub(Sprite v);
@@ -14458,15 +14458,15 @@ class Pointer {
   external set pointerMode(num v);
 
   /// A Phaser.Point object containing the current x/y values of the pointer on the display.
-  external Point get position;
+  external PhaserPoint get position;
   external set position(Point v);
 
   /// A Phaser.Point object containing the x/y values of the pointer when it was last in a down state on the display.
-  external Point get positionDown;
+  external PhaserPoint get positionDown;
   external set positionDown(Point v);
 
   /// A Phaser.Point object containing the x/y values of the pointer when it was last released.
-  external Point get positionUp;
+  external PhaserPoint get positionUp;
   external set positionUp(Point v);
 
   /// A timestamp representing when the Pointer was last tapped or clicked.
@@ -14894,11 +14894,11 @@ class Rectangle {
   external set bottom(num v);
 
   /// The location of the Rectangles bottom right corner as a Point object. Gets or sets the location of the Rectangles bottom right corner as a Point object.
-  external Point get bottomRight;
+  external PhaserPoint get bottomRight;
   external set bottomRight(Point v);
 
   /// The location of the Rectangles bottom left corner as a Point object. Gets or sets the location of the Rectangles bottom left corner as a Point object.
-  external Point get bottomLeft;
+  external PhaserPoint get bottomLeft;
   external set bottomLeft(Point v);
 
   /// The x coordinate of the center of the Rectangle.
@@ -14952,11 +14952,11 @@ class Rectangle {
   external set top(num v);
 
   /// The location of the Rectangles top left corner as a Point object.
-  external Point get topLeft;
+  external PhaserPoint get topLeft;
   external set topLeft(Point v);
 
   /// The location of the Rectangles top right corner as a Point object. The location of the Rectangles top left corner as a Point object.
-  external Point get topRight;
+  external PhaserPoint get topRight;
   external set topRight(Point v);
 
   /// The const type of this object.
@@ -15044,7 +15044,7 @@ class Rectangle {
   external dynamic copyTo(dynamic dest);
   external void floor();
   external void floorAll();
-  external Point getPoint(num position, Point out);
+  external PhaserPoint getPoint(num position, Point out);
   external Rectangle offset(num dx, num dy);
   external Rectangle offsetPoint(Point point);
   external Point random([Point out]);
@@ -15389,7 +15389,7 @@ class PhaserRope extends Rope {
 
   /// The x/y coordinate offset applied to the top-left of the camera that this Game Object will be drawn at if `fixedToCamera` is true.
   /// The values are relative to the top-left of the camera view and in addition to any parent of the Game Object on the display list.
-  external Point get cameraOffset;
+  external PhaserPoint get cameraOffset;
   external set cameraOffset(Point v);
 
   /// If this is set to `true` the Game Object checks if it is within the World bounds each frame.
@@ -15566,11 +15566,11 @@ class PhaserRope extends Rope {
   /// The coordinates, in pixels, of this DisplayObject, relative to its parent container.
   /// The value of this property does not reflect any positioning happening further up the display list.
   /// To obtain that value please see the `worldPosition` property.
-  external Point get position;
+  external PhaserPoint get position;
   external set position(Point v);
 
   /// The position the Game Object was located in the previous frame.
-  external Point get previousPosition;
+  external PhaserPoint get previousPosition;
   external set previousPosition(Point v);
 
   /// The rotation the Game Object was in set to in the previous frame. Value is in radians.
@@ -15617,13 +15617,13 @@ class PhaserRope extends Rope {
   /// The minimum scale this Game Object will scale down to.
   /// It allows you to prevent a parent from scaling this Game Object lower than the given value.
   /// Set it to `null` to remove the limit.
-  external Point get scaleMin;
+  external PhaserPoint get scaleMin;
   external set scaleMin(Point v);
 
   /// The maximum scale this Game Object will scale up to.
   /// It allows you to prevent a parent from scaling this Game Object higher than the given value.
   /// Set it to `null` to remove the limit.
-  external Point get scaleMax;
+  external PhaserPoint get scaleMax;
   external set scaleMax(Point v);
 
   /// A Rope will call its updateAnimation function on each update loop if it has one. Set to a function if you'd like the rope to animate during the update phase. Set to false or null to remove it.
@@ -15633,7 +15633,7 @@ class PhaserRope extends Rope {
   /// The world coordinates of this Game Object in pixels.
   /// Depending on where in the display list this Game Object is placed this value can differ from `position`,
   /// which contains the x/y coordinates relative to the Game Objects parent.
-  external Point get world;
+  external PhaserPoint get world;
   external set world(Point v);
 
   /// The horizontal position of the DisplayObject, in pixels, relative to its parent.
@@ -16427,7 +16427,7 @@ class PhaserSprite extends Sprite {
   /// (0.5, 0.5) is the center.
   /// (1, 1) is the bottom right.
   /// You can modify the default values in PIXI.Sprite.defaultAnchor.
-  external Point get anchor;
+  external PhaserPoint get anchor;
   external set anchor(Point v);
 
   /// The angle property is the rotation of the Game Object in *degrees* from its original orientation.
@@ -16471,7 +16471,7 @@ class PhaserSprite extends Sprite {
 
   /// The x/y coordinate offset applied to the top-left of the camera that this Game Object will be drawn at if `fixedToCamera` is true.
   /// The values are relative to the top-left of the camera view and in addition to any parent of the Game Object on the display list.
-  external Point get cameraOffset;
+  external PhaserPoint get cameraOffset;
   external set cameraOffset(Point v);
 
   /// The local center x coordinate of the Game Object.
@@ -16680,7 +16680,7 @@ class PhaserSprite extends Sprite {
   external set pendingDestroy(bool v);
 
   /// The position the Game Object was located in the previous frame.
-  external Point get previousPosition;
+  external PhaserPoint get previousPosition;
   external set previousPosition(Point v);
 
   /// The rotation the Game Object was in set to in the previous frame. Value is in radians.
@@ -16690,7 +16690,7 @@ class PhaserSprite extends Sprite {
   /// The coordinates, in pixels, of this DisplayObject, relative to its parent container.
   /// The value of this property does not reflect any positioning happening further up the display list.
   /// To obtain that value please see the `worldPosition` property.
-  external Point get position;
+  external PhaserPoint get position;
   external set position(Point v);
   external bool get physicsEnabled;
   external set physicsEnabled(bool v);
@@ -16713,19 +16713,19 @@ class PhaserSprite extends Sprite {
   /// at its default size. A value of 0.5 would scale this DisplayObject by half, and so on.
   /// The value of this property does not reflect any scaling happening further up the display list.
   /// To obtain that value please see the `worldScale` property.
-  external Point get scale;
+  external PhaserPoint get scale;
   external set scale(Point v);
 
   /// The minimum scale this Game Object will scale down to.
   /// It allows you to prevent a parent from scaling this Game Object lower than the given value.
   /// Set it to `null` to remove the limit.
-  external Point get scaleMin;
+  external PhaserPoint get scaleMin;
   external set scaleMin(Point v);
 
   /// The maximum scale this Game Object will scale up to.
   /// It allows you to prevent a parent from scaling this Game Object higher than the given value.
   /// Set it to `null` to remove the limit.
-  external Point get scaleMax;
+  external PhaserPoint get scaleMax;
   external set scaleMax(Point v);
 
   /// Enable or disable texture smoothing for this Game Object.
@@ -16759,7 +16759,7 @@ class PhaserSprite extends Sprite {
   /// The world coordinates of this Game Object in pixels.
   /// Depending on where in the display list this Game Object is placed this value can differ from `position`,
   /// which contains the x/y coordinates relative to the Game Objects parent.
-  external Point get world;
+  external PhaserPoint get world;
   external set world(Point v);
 
   /// The horizontal position of the DisplayObject, in pixels, relative to its parent.
@@ -17319,7 +17319,7 @@ class ScaleManager {
 
   /// The offset coordinates of the Display canvas from the top-left of the browser window.
   /// The is used internally by Phaser.Pointer (for Input) and possibly other types.
-  external Point get offset;
+  external PhaserPoint get offset;
   external set offset(Point v);
 
   /// This signal is dispatched when fullscreen mode is ready to be initialized but
@@ -17411,15 +17411,15 @@ class ScaleManager {
   external set parentIsWindow(bool v);
 
   /// The scale of the game in relation to its parent container.
-  external Point get parentScaleFactor;
+  external PhaserPoint get parentScaleFactor;
   external set parentScaleFactor(Point v);
 
   /// The _current_ scale factor based on the game dimensions vs. the scaled dimensions.
-  external Point get scaleFactor;
+  external PhaserPoint get scaleFactor;
   external set scaleFactor(Point v);
 
   /// The _current_ inversed scale factor. The displayed dimensions divided by the game dimensions.
-  external Point get scaleFactorInversed;
+  external PhaserPoint get scaleFactorInversed;
   external set scaleFactorInversed(Point v);
 
   /// The scaling method used by the ScaleManager when not in fullscreen.
@@ -17698,7 +17698,7 @@ class DOM {
 
   /// Get the [absolute] position of the element relative to the Document.
   /// The value may vary slightly as the page is scrolled due to rounding errors.
-  external static Point getOffset(dynamic element, [Point point]);
+  external static PhaserPoint getOffset(dynamic element, [Point point]);
 
   /// Tests if the given DOM element is within the Layout viewport.
   /// The optional cushion parameter allows you to specify a distance.
@@ -18135,7 +18135,7 @@ class Text extends Sprite {
 
   /// The x/y coordinate offset applied to the top-left of the camera that this Game Object will be drawn at if `fixedToCamera` is true.
   /// The values are relative to the top-left of the camera view and in addition to any parent of the Game Object on the display list.
-  external Point get cameraOffset;
+  external PhaserPoint get cameraOffset;
   external set cameraOffset(Point v);
 
   /// The canvas element that the text is rendered.
@@ -18252,7 +18252,7 @@ class Text extends Sprite {
 
   /// Specify a padding value which is added to the line width and height when calculating the Text size.
   /// ALlows you to add extra spacing if Phaser is unable to accurately determine the true font dimensions.
-  external Point get padding;
+  external PhaserPoint get padding;
   external set padding(Point v);
 
   /// A Game Object is that is pendingDestroy is flagged to have its destroy method called on the next logic update.
@@ -18269,11 +18269,11 @@ class Text extends Sprite {
   /// The coordinates, in pixels, of this DisplayObject, relative to its parent container.
   /// The value of this property does not reflect any positioning happening further up the display list.
   /// To obtain that value please see the `worldPosition` property.
-  external Point get position;
+  external PhaserPoint get position;
   external set position(Point v);
 
   /// The position the Game Object was located in the previous frame.
-  external Point get previousPosition;
+  external PhaserPoint get previousPosition;
   external set previousPosition(Point v);
 
   /// The rotation the Game Object was in set to in the previous frame. Value is in radians.
@@ -18336,7 +18336,7 @@ class Text extends Sprite {
   /// at its default size. A value of 0.5 would scale this DisplayObject by half, and so on.
   /// The value of this property does not reflect any scaling happening further up the display list.
   /// To obtain that value please see the `worldScale` property.
-  external Point get scale;
+  external PhaserPoint get scale;
   external set scale(Point v);
   external num get tab;
   external set tab(num v);
@@ -18374,7 +18374,7 @@ class Text extends Sprite {
   /// The world coordinates of this Game Object in pixels.
   /// Depending on where in the display list this Game Object is placed this value can differ from `position`,
   /// which contains the x/y coordinates relative to the Game Objects parent.
-  external Point get world;
+  external PhaserPoint get world;
   external set world(Point v);
 
   /// Indicates if word wrap should be used.
@@ -19106,7 +19106,7 @@ class TilemapLayer extends Sprite {
 
   /// The x/y coordinate offset applied to the top-left of the camera that this Game Object will be drawn at if `fixedToCamera` is true.
   /// The values are relative to the top-left of the camera view and in addition to any parent of the Game Object on the display list.
-  external Point get cameraOffset;
+  external PhaserPoint get cameraOffset;
   external set cameraOffset(Point v);
 
   /// The canvas to which this TilemapLayer draws.
@@ -19230,7 +19230,7 @@ class TilemapLayer extends Sprite {
   external num getTileX(num x);
 
   /// Convert a pixel coordinate to a tile coordinate.
-  external Point getTileXY(num x, num y, Point point);
+  external PhaserPoint getTileXY(num x, num y, Point point);
 
   /// Convert a pixel value to a tile coordinate.
   external num getTileY(num y);
@@ -19520,7 +19520,7 @@ class TileSprite extends TilingSprite {
 
   /// The x/y coordinate offset applied to the top-left of the camera that this Game Object will be drawn at if `fixedToCamera` is true.
   /// The values are relative to the top-left of the camera view and in addition to any parent of the Game Object on the display list.
-  external Point get cameraOffset;
+  external PhaserPoint get cameraOffset;
   external set cameraOffset(Point v);
 
   /// If this is set to `true` the Game Object checks if it is within the World bounds each frame.
@@ -19680,7 +19680,7 @@ class TileSprite extends TilingSprite {
   /// The coordinates, in pixels, of this DisplayObject, relative to its parent container.
   /// The value of this property does not reflect any positioning happening further up the display list.
   /// To obtain that value please see the `worldPosition` property.
-  external Point get position;
+  external PhaserPoint get position;
   external set position(Point v);
 
   /// Enable or disable texture smoothing for this Game Object.
@@ -19690,7 +19690,7 @@ class TileSprite extends TilingSprite {
   external set smoothed(bool v);
 
   /// The position the Game Object was located in the previous frame.
-  external Point get previousPosition;
+  external PhaserPoint get previousPosition;
   external set previousPosition(Point v);
   external num get previousRoation;
   external set previousRoation(num v);
@@ -19717,7 +19717,7 @@ class TileSprite extends TilingSprite {
   /// The world coordinates of this Game Object in pixels.
   /// Depending on where in the display list this Game Object is placed this value can differ from `position`,
   /// which contains the x/y coordinates relative to the Game Objects parent.
-  external Point get world;
+  external PhaserPoint get world;
   external set world(Point v);
 
   /// The z depth of this Game Object within its parent Group.
@@ -21289,7 +21289,7 @@ class Weapon extends Plugin {
 
   /// This is the amount of [Phaser.Physics.Arcade.Body#gravity] added to the Bullets physics body when fired.
   /// Gravity is expressed in pixels / second / second.
-  external Point get bulletGravity;
+  external PhaserPoint get bulletGravity;
   external set bulletGravity(Point v);
 
   /// When a Bullet is fired it can optionally inherit the velocity of the `trackedSprite` if set.
@@ -21441,7 +21441,7 @@ class Weapon extends Plugin {
   /// when launching from a tracked Sprite or Pointer. For example if you've got a bullet that is 2x2 pixels
   /// in size, but you're tracking a Sprite that is 32x32, then you can set `trackOffset.x = 16` to have
   /// the bullet launched from the center of the Sprite.
-  external Point get trackOffset;
+  external PhaserPoint get trackOffset;
   external set trackOffset(Point v);
 
   /// If the Weapon is tracking a Sprite, should it also track the Sprites rotation?
