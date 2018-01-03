@@ -2,7 +2,7 @@ author: Tobe O <thosakwe@gmail.com>
 description: Dart bindings for Phaser CE 2.9.4.
 homepage: https://github.com/thosakwe/dart_phaser
 name: phaser
-version: 2.9.4-beta
+version: 2.9.4
 dependencies: 
   func: ^0.1.0
   js: ^0.6.1
