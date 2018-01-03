@@ -6,6 +6,7 @@ version: 2.9.4-beta
 dependencies: 
   func: ^0.1.0
   js: ^0.6.1
+  meta: ^1.0.0
 dev_dependencies:
   browser: ^0.10.0
   build_runner: ^0.6.1
