@@ -3,7 +3,7 @@ library pixi;
 
 import "package:js/js.dart";
 import "dart:web_gl"
-    show RenderingContext, Framebuffer, Program, Texture, Buffer;
+    show RenderingContext, Framebuffer, Program, Buffer;
 import "dart:html"
     show
         HttpRequest,

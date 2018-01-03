@@ -3,7 +3,7 @@ library phaser.phaser_box2d;
 
 import "package:js/js.dart";
 import "phaser.comments.dart"
-    show Game, Signal, Debug,  Tilemap, TilemapLayer, Image;
+    show Game, Signal, Debug,  Tilemap;
 import "pixi.comments.dart" show Point, Sprite;
 import "box2d.dart"
     show
