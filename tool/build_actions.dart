@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:build/build.dart';
 import 'package:build_runner/build_runner.dart';
-import 'package:build_test/build_test.dart';
 import 'package:path/path.dart' as p;
 import 'package:where/where.dart';
 
@@ -15,12 +14,6 @@ final List<BuilderApplication> builderApplications = [
     inputs: const [
       'lib/*.ts',
     ],
-  ),
-  applyToRoot(
-    new CopyBuilder(
-      inputExtension: '.comments.dart',
-      extension: '.comments.dart',
-    ),
   ),
 ];
 
@@ -80,14 +73,17 @@ class _Dart2JsFacadeGenBuilder implements Builder {
     process.stdout.forEach(buffer.add);
     var exitCode = await process.exitCode;
     print('Exit code: $exitCode');
+    process.kill();
 
     if (exitCode != 0) {
       var stderr = await process.stderr.transform(UTF8.decoder).join();
+      await process.stdout.toList();
       throw new StateError(
           'dart_js_facade_gen exited with code $exitCode: $stderr');
     } else {
       print('Writing ${newAsset.uri}');
       buildStep.writeAsBytes(newAsset, buffer.takeBytes());
+      await process.stderr.toList();
     }
   }
 

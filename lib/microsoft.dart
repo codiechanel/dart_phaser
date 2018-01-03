@@ -1,5 +1,5 @@
 @JS()
-library microsoft;
+library phaser.microsoft;
 
 import "package:js/js.dart";
 import "dart:html" show MouseEvent, Window, EventTarget, Element;

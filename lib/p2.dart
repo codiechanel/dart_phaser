@@ -1,5 +1,5 @@
 @JS()
-library p2;
+library phaser.p2;
 
 import "package:js/js.dart";
 import "dart:html" show Node;
@@ -600,10 +600,9 @@ class vec2 {
   external static String str(List<num> a);
 }
 
-@JS("p2.BodyOptions")
-class BodyOptions {
-  // @Ignore
-  BodyOptions.fakeConstructor$();
+@anonymous
+@JS()
+abstract class BodyOptions {
   external num get mass;
   external set mass(num v);
   external List<num> get position;
@@ -618,8 +617,17 @@ class BodyOptions {
   external set force(List<num> v);
   external num get angularForce;
   external set angularForce(num v);
-  external num get fixedRotation;
-  external set fixedRotation(num v);
+  external bool get fixedRotation;
+  external set fixedRotation(bool v);
+  external factory BodyOptions(
+      {num mass,
+      List<num> position,
+      List<num> velocity,
+      num angle,
+      num angularVelocity,
+      List<num> force,
+      num angularForce,
+      bool fixedRotation});
 }
 
 @JS("p2.Body")
@@ -891,6 +899,45 @@ class Heightfield extends Shape {
   external set elementWidth(num v);
 }
 
+@anonymous
+@JS()
+abstract class SharedShapeOptions {
+  external List<num> get position;
+  external set position(List<num> v);
+  external num get angle;
+  external set angle(num v);
+  external num get collisionGroup;
+  external set collisionGroup(num v);
+  external bool get collisionResponse;
+  external set collisionResponse(bool v);
+  external num get collisionMask;
+  external set collisionMask(num v);
+  external bool get sensor;
+  external set sensor(bool v);
+  external factory SharedShapeOptions(
+      {List<num> position,
+      num angle,
+      num collisionGroup,
+      bool collisionResponse,
+      num collisionMask,
+      bool sensor});
+}
+
+@anonymous
+@JS()
+abstract class ShapeOptions implements SharedShapeOptions {
+  external num get type;
+  external set type(num v);
+  external factory ShapeOptions(
+      {num type,
+      List<num> position,
+      num angle,
+      num collisionGroup,
+      bool collisionResponse,
+      num collisionMask,
+      bool sensor});
+}
+
 @JS("p2.Shape")
 class Shape {
   // @Ignore
@@ -913,7 +960,7 @@ class Shape {
   external static set CAPSULE(num v);
   external static num get HEIGHTFIELD;
   external static set HEIGHTFIELD(num v);
-  external factory Shape(num type);
+  external factory Shape([ShapeOptions options]);
   external num get type;
   external set type(num v);
   external num get id;
