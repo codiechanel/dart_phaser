@@ -6,6 +6,7 @@ Dart bindings for [Phaser CE](https://github.com/photonstorm/phaser-ce).
 [API Documentation](https://thosakwe.github.io/dart_phaser)
 
 [Live Example](https://thosakwe.github.io/dart_phaser
+Credit to [Sithjester](http://untamed.wild-refuge.net/rmxpresources.php?characters) for the "Arabian Boy" spritesheet.
 
 # Notes
 * This package now also bundles with built versions of Phaser, i.e. `package:phaser/phaser.js`.
