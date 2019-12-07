@@ -1,0 +1,32 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "func2",
+      "rootUri": "file:///C:/Users/jea/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/func2-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "js",
+      "rootUri": "file:///C:/Users/jea/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/js-0.6.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "1.19"
+    },
+    {
+      "name": "meta",
+      "rootUri": "file:///C:/Users/jea/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/meta-1.1.8",
+      "packageUri": "lib/",
+      "languageVersion": "1.12"
+    },
+    {
+      "name": "phaser",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
+    }
+  ],
+  "generated": "2019-12-07T15:55:58.020989Z",
+  "generator": "pub",
+  "generatorVersion": "2.7.0-dev.2.1.flutter-a9c77229c2"
+}

@@ -3,20 +3,20 @@ description: Dart bindings for Phaser CE 2.9.4.
 homepage: https://github.com/thosakwe/dart_phaser
 name: phaser
 version: 2.9.4
-dependencies: 
-  func: ^0.1.0
+dependencies:
+  func2:
   js: ^0.6.1
   meta: ^1.0.0
-dev_dependencies:
-  browser: ^0.10.0
-  build_runner: ^0.6.1
-  build_test: ^0.9.3
-  dart_to_js_script_rewriter: ^1.0.0
-  where: ^3.0.0
-dev_transformers:
-  - dart_to_js_script_rewriter
-environment:
-  sdk: ">=1.19.0"
+# dev_dependencies:
+#   browser: ^0.10.0
+# build_runner: ^0.6.1
+# build_test: ^0.9.3
+#  dart_to_js_script_rewriter: ^1.0.0
+# where: ^3.0.0
+#dev_transformers:
+#  - dart_to_js_script_rewriter
+#environment:
+#  sdk: ">=1.19.0"
 web:
   compiler:
     debug: dartdevc

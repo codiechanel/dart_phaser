@@ -2,8 +2,7 @@
 library pixi;
 
 import "package:js/js.dart";
-import "dart:web_gl"
-    show RenderingContext, Framebuffer, Program, Buffer;
+import "dart:web_gl" show RenderingContext, Framebuffer, Program, Buffer;
 import "dart:html"
     show
         HttpRequest,
@@ -12,7 +11,7 @@ import "dart:html"
         ImageElement,
         HtmlElement,
         VideoElement;
-import "package:func/func.dart";
+import "package:func2/func.dart";
 import "package:meta/meta.dart";
 import "dart:typed_data" show ByteBuffer;
 import "phaser.comments.dart" as Phaser;
@@ -921,7 +920,7 @@ class Graphics extends DisplayObjectContainer {
       dynamic /*Circle|Rectangle|Ellipse|Polygon*/ shape);
   external Graphics endFill();
   external RenderTexture generateTexture(
-      [num resolution, num scaleMode, @checked num padding]);
+      [num resolution, num scaleMode, covariant num padding]);
   external Graphics lineStyle([num lineWidth, num color, num alpha]);
   external Graphics lineTo(num x, num y);
   external Graphics moveTo(num x, num y);
@@ -1433,13 +1432,14 @@ class Strip extends DisplayObjectContainer {
         }*/
       get DrawModes;
   external static set DrawModes(
-      dynamic /*{
+      dynamic
+          /*{
 
             TRIANGLE_STRIP: number;
             TRIANGLES: number;
 
         }*/
-      v);
+          v);
   external factory Strip(Texture texture);
   external num get blendMode;
   external set blendMode(num v);
@@ -1457,7 +1457,7 @@ class Strip extends DisplayObjectContainer {
   external set uvs(List<num> v);
   external List<num> get vertices;
   external set vertices(List<num> v);
-  external Rectangle getBounds([@checked Matrix matrix]);
+  external Rectangle getBounds([covariant Matrix matrix]);
 }
 
 @JS("PIXI.Texture")
@@ -2370,7 +2370,8 @@ class Atlas {
         }*/
       get FORMAT;
   external static set FORMAT(
-      dynamic /*{
+      dynamic
+          /*{
 
             alpha: number;
             intensity: number;
@@ -2381,7 +2382,7 @@ class Atlas {
             rgba8888: number;
 
         }*/
-      v);
+          v);
   external static dynamic
       /*{
 
@@ -2396,7 +2397,8 @@ class Atlas {
         }*/
       get TextureFilter;
   external static set TextureFilter(
-      dynamic /*{
+      dynamic
+          /*{
 
             nearest: number;
             linear: number;
@@ -2407,7 +2409,7 @@ class Atlas {
             mipMapLinearLinear: number;
 
         }*/
-      v);
+          v);
   external static dynamic
       /*{
 
@@ -2418,14 +2420,15 @@ class Atlas {
         }*/
       get textureWrap;
   external static set textureWrap(
-      dynamic /*{
+      dynamic
+          /*{
 
             mirroredRepeat: number;
             clampToEdge: number;
             repeat: number;
 
         }*/
-      v);
+          v);
   external factory Atlas(String atlasText, AtlasLoader textureLoader);
   external AtlasLoader get textureLoader;
   external set textureLoader(AtlasLoader v);

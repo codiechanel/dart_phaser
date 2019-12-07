@@ -32,7 +32,7 @@ import "dart:html"
         Blob,
         Event;
 import "dart:typed_data" show ByteBuffer, Uint8List, Uint32List, Float32List;
-import "package:func/func.dart";
+import "package:func2/func.dart";
 import "dart:web_gl" show Framebuffer;
 import "p2.dart"
     show
@@ -6170,7 +6170,7 @@ class Graphics extends DisplayObjectContainer {
   /// This can be quite useful if your geometry is complicated and needs to be reused multiple times.
   /// Transparent areas adjoining the edges may be removed ([https://github.com/photonstorm/phaser-ce/issues/283 #283]).
   external PhaserRenderTexture generateTexture(
-      [num resolution, num /*enum Phaser.scaleModes*/ scaleMode, @checked num padding]);
+      [num resolution, num /*enum Phaser.scaleModes*/ scaleMode, covariant num padding]);
 
   /// Kills a Game Object. A killed Game Object has its `alive`, `exists` and `visible` properties all set to false.
   /// It will dispatch the `onKilled` event. You can listen to `events.onKilled` for the signal.
